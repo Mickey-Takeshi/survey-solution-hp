@@ -57,7 +57,7 @@ export default function Footer() {
 
         {/* Nav */}
         <div className="border-t border-b border-gray-600 py-4 mb-6">
-          <nav className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm">
+          <nav className="flex flex-wrap justify-center gap-x-4 gap-y-3 md:gap-x-6 md:gap-y-4 text-sm">
             {footerNavItems.map((item) => (
               <Link
                 key={item.href}

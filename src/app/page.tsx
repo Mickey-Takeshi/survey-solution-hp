@@ -31,7 +31,7 @@ export default function Home() {
           </h1>
 
           {/* Contact overlay */}
-          <div className="absolute bottom-8 right-6 bg-white/85 backdrop-blur-sm rounded-sm p-6 max-w-md hidden md:block shadow-lg">
+          <div className="absolute bottom-8 right-6 bg-white/85 backdrop-blur-sm rounded-sm p-6 max-w-md hidden lg:block shadow-lg">
             <h2 className="text-center text-xl font-bold tracking-wider mb-1">CONTACT</h2>
             <p className="text-center text-primary font-bold text-sm mb-4">
               3D測量で困りごとを解決
@@ -169,7 +169,7 @@ export default function Home() {
             <span className="section-label text-gray-500">REASON</span>
             <h2 className="section-title-ja text-primary mt-2">選ばれる3つの理由</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {[
               {
                 num: "01",
@@ -318,7 +318,7 @@ export default function Home() {
             <span className="section-label text-gray-500">FLOW</span>
             <h2 className="section-title-ja text-primary mt-2">ご依頼の流れ</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 step: "01",
@@ -346,7 +346,7 @@ export default function Home() {
                   {item.step}
                 </div>
                 {i < 3 && (
-                  <div className="hidden md:block absolute top-8 left-[calc(50%+40px)] w-[calc(100%-80px)] h-px bg-primary/30" />
+                  <div className="hidden lg:block absolute top-8 left-[calc(50%+40px)] w-[calc(100%-80px)] h-px bg-primary/30" />
                 )}
                 <h3 className="font-bold text-gray-800 mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
