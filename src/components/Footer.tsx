@@ -51,7 +51,7 @@ export default function Footer() {
             alt="株式会社 Survey Solution"
             width={240}
             height={48}
-            className="h-10 w-auto brightness-0 invert"
+            className="h-10 w-auto"
           />
         </div>
 
