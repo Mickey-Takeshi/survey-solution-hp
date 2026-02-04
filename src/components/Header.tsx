@@ -11,7 +11,6 @@ const navItems = [
   { label: "よくある質問", href: "/faq" },
   { label: "アクセス", href: "/about#access" },
   { label: "ブログ", href: "/blog" },
-  { label: "お問い合わせ", href: "/contact" },
   { label: "京都土地境界トラブル相談室", href: "http://kyoukai-shokunin.com/", external: true },
 ];
 
@@ -34,7 +33,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-6">
+        <nav className="hidden lg:flex items-center gap-5">
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -46,6 +45,20 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
+          <div className="flex items-center gap-3 ml-2">
+            <a
+              href="tel:075-744-1775"
+              className="text-sm font-bold text-primary whitespace-nowrap"
+            >
+              075-744-1775
+            </a>
+            <Link
+              href="/contact"
+              className="bg-primary text-white px-6 py-2.5 text-sm font-bold rounded hover:bg-primary-dark transition-colors whitespace-nowrap"
+            >
+              お問い合わせ
+            </Link>
+          </div>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -75,6 +88,21 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
+          <div className="px-6 py-4 space-y-3">
+            <a
+              href="tel:075-744-1775"
+              className="block text-center text-lg font-bold text-primary"
+            >
+              075-744-1775
+            </a>
+            <Link
+              href="/contact"
+              className="block bg-primary text-white text-center px-6 py-3 text-sm font-bold rounded hover:bg-primary-dark transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              お問い合わせ
+            </Link>
+          </div>
         </nav>
       )}
     </header>

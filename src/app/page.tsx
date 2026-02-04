@@ -73,6 +73,47 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== TROUBLE / お悩み ===== */}
+      <section className="py-16 md:py-24 bg-[#f8f6f2]">
+        <div className="max-w-[1000px] mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-2">
+              こんなお悩みありませんか？
+            </h2>
+            <div className="w-16 h-0.5 bg-primary mx-auto" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {[
+              "建物や構造物の傾きが気になる…",
+              "既存建物の正確な図面がない…",
+              "従来の測量では対応できない複雑な地形がある…",
+              "工事前の現状を正確に記録しておきたい…",
+              "隣地との境界トラブルを解決したい…",
+              "歴史的建造物のデータを残したい…",
+            ].map((text, i) => (
+              <div
+                key={i}
+                className="flex items-center gap-3 bg-white rounded px-5 py-4 shadow-sm"
+              >
+                <span className="text-primary text-lg shrink-0">&#10003;</span>
+                <p className="text-sm text-gray-700">{text}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <p className="text-primary font-bold text-lg mb-4">
+              そのお悩み、3Dスキャナで解決できます！
+            </p>
+            <Link
+              href="/contact"
+              className="inline-block bg-primary text-white px-10 py-4 text-sm font-bold rounded hover:bg-primary-dark transition-colors shadow-md"
+            >
+              まずは無料相談する
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ===== ABOUT ===== */}
       <section className="py-20 md:py-28">
         <div className="max-w-[1200px] mx-auto px-6">
@@ -99,7 +140,7 @@ export default function Home() {
               </p>
               <Link
                 href="/about"
-                className="inline-block border border-primary text-primary px-12 py-4 text-sm hover:bg-primary hover:text-white transition-colors"
+                className="inline-block border-2 border-primary text-primary px-12 py-4 text-sm font-bold rounded hover:bg-primary hover:text-white transition-colors"
               >
                 当社の思い
               </Link>
@@ -117,6 +158,46 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== REASON / 選ばれる理由 ===== */}
+      <section className="py-16 md:py-24 bg-[#f0f4f8]">
+        <div className="max-w-[1100px] mx-auto px-6">
+          <div className="text-center mb-12">
+            <span className="section-label text-gray-500">REASON</span>
+            <h2 className="section-title-ja text-primary mt-2">選ばれる3つの理由</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                num: "01",
+                title: "最新3Dスキャナで\n高精度なデータ取得",
+                desc: "最新の3Dレーザースキャナを使用し、ミリ単位の高精度なデータを取得。従来の測量では難しかった複雑な形状も正確に計測します。",
+              },
+              {
+                num: "02",
+                title: "多角的な分析で\n付加価値を提供",
+                desc: "取得したデータを2次元図面にとどまらず、三次元での現状把握・リスク分析・シミュレーションなど多角的に活用。新たな価値を提供します。",
+              },
+              {
+                num: "03",
+                title: "京都を拠点に\n迅速な対応",
+                desc: "京都市中京区を拠点に、近畿圏を中心としたエリアで迅速に対応。お急ぎの案件もお気軽にご相談ください。",
+              },
+            ].map((item) => (
+              <div
+                key={item.num}
+                className="bg-white rounded-lg shadow-md p-8 text-center"
+              >
+                <span className="text-4xl font-bold text-primary/20">{item.num}</span>
+                <h3 className="text-base font-bold mt-4 mb-4 leading-relaxed whitespace-pre-line text-gray-800">
+                  {item.title}
+                </h3>
+                <p className="text-sm leading-loose text-gray-600">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -149,7 +230,7 @@ export default function Home() {
               </p>
               <Link
                 href="/profile"
-                className="inline-block border border-primary text-primary px-12 py-4 text-sm hover:bg-primary hover:text-white transition-colors"
+                className="inline-block border-2 border-primary text-primary px-12 py-4 text-sm font-bold rounded hover:bg-primary hover:text-white transition-colors"
               >
                 詳細はこちら
               </Link>
@@ -195,9 +276,89 @@ export default function Home() {
           <div className="text-center mt-10">
             <Link
               href="/service"
-              className="inline-block border border-white text-white px-12 py-4 text-sm hover:bg-white hover:text-primary transition-colors"
+              className="inline-block border-2 border-white text-white px-12 py-4 text-sm font-bold rounded hover:bg-white hover:text-primary transition-colors"
             >
               一覧はこちら
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== MID-PAGE CTA ===== */}
+      <section className="py-12 md:py-16 bg-primary">
+        <div className="max-w-[900px] mx-auto px-6 text-center text-white">
+          <h2 className="text-xl md:text-2xl font-bold mb-3">
+            3D測量のことなら、まずはお気軽にご相談ください
+          </h2>
+          <p className="text-sm mb-6 opacity-90">
+            現地調査からデータ分析まで、お客様の課題に合わせた最適なご提案をいたします。
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link
+              href="/contact"
+              className="inline-block bg-white text-primary px-10 py-4 text-sm font-bold rounded hover:bg-gray-100 transition-colors shadow-md"
+            >
+              無料相談・お問い合わせ
+            </Link>
+            <a
+              href="tel:075-744-1775"
+              className="inline-flex items-center gap-2 text-white border border-white px-8 py-4 text-sm font-bold rounded hover:bg-white/10 transition-colors"
+            >
+              <span>TEL:</span>
+              <span className="tracking-wider">075-744-1775</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== FLOW / ご依頼の流れ ===== */}
+      <section className="py-16 md:py-24">
+        <div className="max-w-[1000px] mx-auto px-6">
+          <div className="text-center mb-12">
+            <span className="section-label text-gray-500">FLOW</span>
+            <h2 className="section-title-ja text-primary mt-2">ご依頼の流れ</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            {[
+              {
+                step: "01",
+                title: "お問い合わせ",
+                desc: "お電話・メールフォームよりお気軽にご連絡ください。",
+              },
+              {
+                step: "02",
+                title: "ヒアリング・お見積り",
+                desc: "ご要望をお伺いし、最適なプランとお見積りをご提案します。",
+              },
+              {
+                step: "03",
+                title: "現地測量・データ取得",
+                desc: "3Dスキャナで現地の測量を行い、高精度なデータを取得します。",
+              },
+              {
+                step: "04",
+                title: "分析・納品",
+                desc: "取得データを分析し、図面・3Dモデル等をご納品いたします。",
+              },
+            ].map((item, i) => (
+              <div key={item.step} className="relative text-center">
+                <div className="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center text-white text-xl font-bold mb-4">
+                  {item.step}
+                </div>
+                {i < 3 && (
+                  <div className="hidden md:block absolute top-8 left-[calc(50%+40px)] w-[calc(100%-80px)] h-px bg-primary/30" />
+                )}
+                <h3 className="font-bold text-gray-800 mb-2">{item.title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href="/contact"
+              className="inline-block bg-primary text-white px-10 py-4 text-sm font-bold rounded hover:bg-primary-dark transition-colors shadow-md"
+            >
+              お問い合わせはこちら
             </Link>
           </div>
         </div>
@@ -223,7 +384,7 @@ export default function Home() {
           <div className="text-center mt-10">
             <Link
               href="/blog"
-              className="inline-block border border-primary text-primary px-12 py-4 text-sm hover:bg-primary hover:text-white transition-colors"
+              className="inline-block border-2 border-primary text-primary px-12 py-4 text-sm font-bold rounded hover:bg-primary hover:text-white transition-colors"
             >
               詳細はこちら
             </Link>
