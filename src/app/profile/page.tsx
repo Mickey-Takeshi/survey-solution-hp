@@ -3,8 +3,10 @@ import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "プロフィール｜株式会社SurveySolution",
-  description: "株式会社SurveySolution 代表 齋藤大輔のプロフィールをご紹介します。",
+  title: "代表プロフィール - 齋藤大輔",
+  description:
+    "株式会社SurveySolution 代表取締役 齋藤大輔のプロフィール。京都を拠点に3Dスキャナを用いた測量サービスを提供し、三次元の可視化・分析で課題解決に貢献します。",
+  alternates: { canonical: "/profile" },
 };
 
 export default function ProfilePage() {

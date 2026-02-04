@@ -66,7 +66,7 @@ export default function Home() {
             NEWS
           </span>
           <Link href="/blog" className="flex items-center gap-4 text-sm hover:text-primary transition-colors flex-1 min-w-0">
-            <time className="font-bold tracking-wider text-gray-600 shrink-0">2020.07.21</time>
+            <time dateTime="2020-07-21" className="font-bold tracking-wider text-gray-600 shrink-0">2020.07.21</time>
             <span className="truncate">Webサイトを公開しました</span>
             <span className="ml-auto text-primary shrink-0">&rsaquo;</span>
           </Link>
@@ -148,13 +148,13 @@ export default function Home() {
             <div className="md:w-1/2">
               <div className="grid grid-cols-2 gap-3">
                 <div className="rounded-lg overflow-hidden shadow-lg">
-                  <Image src="/images/hero-bg2.jpg" alt="3D測量の様子" width={400} height={300} className="object-cover w-full h-48" />
+                  <Image src="/images/hero-bg2.jpg" alt="3Dスキャナによる現場測量の様子" width={400} height={300} className="object-cover w-full h-48" />
                 </div>
                 <div className="rounded-lg overflow-hidden shadow-lg mt-8">
-                  <Image src="/images/service-bg.jpg" alt="測量技術" width={400} height={300} className="object-cover w-full h-48" />
+                  <Image src="/images/service-bg.jpg" alt="3D測量データの分析・図面作成" width={400} height={300} className="object-cover w-full h-48" />
                 </div>
                 <div className="rounded-lg overflow-hidden shadow-lg col-span-2 mx-auto max-w-[280px]">
-                  <Image src="/images/hero-bg.jpg" alt="3Dスキャナ" width={400} height={300} className="object-cover w-full h-48" />
+                  <Image src="/images/hero-bg.jpg" alt="3Dレーザースキャナ機器" width={400} height={300} className="object-cover w-full h-48" />
                 </div>
               </div>
             </div>
@@ -373,11 +373,11 @@ export default function Home() {
           </div>
           <div className="max-w-[800px] mx-auto divide-y">
             <Link href="/blog" className="flex items-center gap-4 py-4 hover:text-primary transition-colors">
-              <time className="text-sm tracking-wider text-gray-500 shrink-0">2021.01.21</time>
+              <time dateTime="2021-01-21" className="text-sm tracking-wider text-gray-500 shrink-0">2021.01.21</time>
               <span className="text-sm">3D測量で出来ることは？方法、メリット、活用場所も併せて紹介！</span>
             </Link>
             <Link href="/blog" className="flex items-center gap-4 py-4 hover:text-primary transition-colors">
-              <time className="text-sm tracking-wider text-gray-500 shrink-0">2020.07.21</time>
+              <time dateTime="2020-07-21" className="text-sm tracking-wider text-gray-500 shrink-0">2020.07.21</time>
               <span className="text-sm">Webサイトを公開しました</span>
             </Link>
           </div>
@@ -396,7 +396,7 @@ export default function Home() {
       <section className="py-4">
         <div className="max-w-[1400px] mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-4">
           <Link href="/about#access" className="group relative overflow-hidden rounded-sm block aspect-[16/8]">
-            <Image src="/images/access.jpg" alt="アクセス" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+            <Image src="/images/access.jpg" alt="株式会社SurveySolution オフィスへのアクセス" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
             <div className="absolute inset-0 bg-primary/50 group-hover:bg-primary/60 transition-colors" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
               <span className="text-xs tracking-widest mb-1">ACCESS</span>
@@ -404,7 +404,7 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/faq" className="group relative overflow-hidden rounded-sm block aspect-[16/8]">
-            <Image src="/images/faq.jpg" alt="よくある質問" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+            <Image src="/images/faq.jpg" alt="3D測量に関するよくある質問" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
               <span className="text-xs tracking-widest mb-1">FAQ</span>

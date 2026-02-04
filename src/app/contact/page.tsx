@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "お問い合わせ｜株式会社SurveySolution",
-  description: "株式会社SurveySolutionへのお問い合わせはこちらから。",
+  title: "お問い合わせ - 3D測量の無料相談・見積り",
+  description:
+    "株式会社SurveySolutionへの3D測量に関するご相談・お見積りはこちら。お問い合わせフォーム（24時間受付）またはお電話（075-744-1775）でお気軽にご連絡ください。",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

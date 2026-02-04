@@ -3,8 +3,10 @@ import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "依頼事例｜株式会社SurveySolution",
-  description: "株式会社SurveySolutionの3D測量依頼事例をご紹介します。",
+  title: "依頼事例 - 3D測量・3Dスキャナの活用事例",
+  description:
+    "工場の柱の傾き調査、擁壁計画の高低調査、急傾斜地の断面図作成、歴史的建造物の保存など、株式会社SurveySolutionの3Dスキャナ測量の依頼事例をご紹介します。",
+  alternates: { canonical: "/service" },
 };
 
 const services = [

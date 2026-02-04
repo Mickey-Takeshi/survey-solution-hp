@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "よくある質問｜株式会社SurveySolution",
-  description: "株式会社SurveySolutionへのよくある質問と回答をまとめました。",
+  title: "よくある質問 - 3D測量の精度・対応エリア・費用",
+  description:
+    "株式会社SurveySolutionの3D測量サービスに関するよくある質問。精度、対応エリア、見積もり費用、対応建物、納期などについてお答えします。",
+  alternates: { canonical: "/faq" },
 };
 
 const faqs = [
@@ -29,9 +31,26 @@ const faqs = [
   },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
+};
+
 export default function FaqPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <PageHeader title="よくある質問" subtitle="FAQ" image="/images/faq.jpg" />
 
       <section className="py-16 md:py-24">

@@ -3,8 +3,10 @@ import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "当社について｜株式会社SurveySolution",
-  description: "株式会社SurveySolutionの企業理念・思いをご紹介します。",
+  title: "当社について - 3Dスキャナで情報を見える化",
+  description:
+    "京都市三条烏丸の3D測量会社 株式会社SurveySolution。3Dスキャナによるあらゆる情報の見える化で、安心・安全・利益を提供。企業理念とアクセス情報をご紹介します。",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {
@@ -43,7 +45,7 @@ export default function AboutPage() {
             <div>
               <Image
                 src="/images/access.jpg"
-                alt="オフィス外観"
+                alt="株式会社SurveySolution 京都市中京区オフィス外観"
                 width={500}
                 height={350}
                 className="rounded-sm w-full object-cover"
@@ -85,7 +87,7 @@ export default function AboutPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Google Maps"
+              title="株式会社SurveySolution 京都市中京区錦小路通烏丸西入の所在地 Google Maps"
             />
           </div>
         </div>
