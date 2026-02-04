@@ -21,7 +21,7 @@ export default function ContactPage() {
 
           <div className="bg-gray-50 rounded-sm p-6 mb-8 text-center">
             <p className="text-sm text-gray-600 mb-2">お電話でのお問い合わせ</p>
-            <p className="text-2xl font-bold tracking-wider text-[--color-primary]">075-744-1775</p>
+            <p className="text-2xl font-bold tracking-wider text-primary">075-744-1775</p>
             <p className="text-xs text-gray-500 mt-1">受付時間：平日 9:00～18:00</p>
           </div>
 
@@ -35,7 +35,7 @@ export default function ContactPage() {
                 id="name"
                 name="name"
                 required
-                className="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-[--color-primary]"
+                className="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-primary"
               />
             </div>
             <div>
@@ -46,7 +46,7 @@ export default function ContactPage() {
                 type="text"
                 id="company"
                 name="company"
-                className="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-[--color-primary]"
+                className="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-primary"
               />
             </div>
             <div>
@@ -58,7 +58,7 @@ export default function ContactPage() {
                 id="email"
                 name="email"
                 required
-                className="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-[--color-primary]"
+                className="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-primary"
               />
             </div>
             <div>
@@ -69,7 +69,7 @@ export default function ContactPage() {
                 type="tel"
                 id="phone"
                 name="phone"
-                className="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-[--color-primary]"
+                className="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-primary"
               />
             </div>
             <div>
@@ -81,13 +81,13 @@ export default function ContactPage() {
                 name="message"
                 rows={6}
                 required
-                className="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-[--color-primary] resize-vertical"
+                className="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-primary resize-vertical"
               />
             </div>
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-[--color-primary] text-white px-16 py-4 text-sm font-bold hover:bg-[--color-primary-dark] transition-colors rounded-sm"
+                className="bg-primary text-white px-16 py-4 text-sm font-bold hover:bg-primary-dark transition-colors rounded-sm"
               >
                 送信する
               </button>

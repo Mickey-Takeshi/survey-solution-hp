@@ -16,7 +16,7 @@ export default function PageHeader({ title, subtitle, image }: Props) {
         className="object-cover"
         priority
       />
-      <div className="absolute inset-0 bg-[--color-primary]/60" />
+      <div className="absolute inset-0 bg-primary/60" />
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
         {subtitle && (
           <span className="text-xs tracking-widest mb-2 uppercase">{subtitle}</span>

@@ -40,7 +40,7 @@ export default function FaqPage() {
             {faqs.map((faq, i) => (
               <div key={i} className="border-b border-gray-200 pb-6">
                 <h3 className="flex items-start gap-3 text-base font-bold mb-3">
-                  <span className="text-[--color-primary] text-xl font-bold shrink-0">Q.</span>
+                  <span className="text-primary text-xl font-bold shrink-0">Q.</span>
                   {faq.q}
                 </h3>
                 <p className="flex items-start gap-3 text-sm leading-loose text-gray-700 pl-0">

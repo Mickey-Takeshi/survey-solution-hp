@@ -32,12 +32,12 @@ export default function BlogPage() {
               <Link
                 key={i}
                 href={post.slug}
-                className="flex items-start gap-4 py-6 hover:text-[--color-primary] transition-colors group"
+                className="flex items-start gap-4 py-6 hover:text-primary transition-colors group"
               >
                 <time className="text-sm tracking-wider text-gray-500 shrink-0 pt-0.5">
                   {post.date}
                 </time>
-                <h2 className="text-base group-hover:text-[--color-primary] transition-colors">
+                <h2 className="text-base group-hover:text-primary transition-colors">
                   {post.title}
                 </h2>
               </Link>

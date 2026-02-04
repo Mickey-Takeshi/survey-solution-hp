@@ -33,22 +33,22 @@ export default function Home() {
           {/* Contact overlay */}
           <div className="absolute bottom-8 right-6 bg-white/85 backdrop-blur-sm rounded-sm p-6 max-w-md hidden md:block shadow-lg">
             <h2 className="text-center text-xl font-bold tracking-wider mb-1">CONTACT</h2>
-            <p className="text-center text-[--color-primary] font-bold text-sm mb-4">
+            <p className="text-center text-primary font-bold text-sm mb-4">
               3D測量で困りごとを解決
             </p>
             <div className="grid grid-cols-2 gap-3">
               <Link
                 href="/contact"
-                className="bg-[--color-primary] text-white text-center rounded-sm overflow-hidden block"
+                className="bg-primary text-white text-center rounded-sm overflow-hidden block"
               >
-                <div className="bg-[--color-primary-dark] py-1 text-xs">メールでの受付</div>
+                <div className="bg-primary-dark py-1 text-xs">メールでの受付</div>
                 <div className="py-2">
                   <p className="font-bold text-sm">お問い合わせフォーム</p>
                   <p className="text-xs mt-0.5">24時間受付中</p>
                 </div>
               </Link>
               <div className="bg-gray-100 text-center rounded-sm overflow-hidden">
-                <div className="bg-[--color-primary-dark] text-white py-1 text-xs">お電話での受付</div>
+                <div className="bg-primary-dark text-white py-1 text-xs">お電話での受付</div>
                 <div className="py-2">
                   <p className="font-bold text-base tracking-wider">075-744-1775</p>
                   <p className="text-xs text-gray-600 mt-0.5">受付時間：平日 9:00～18:00</p>
@@ -62,13 +62,13 @@ export default function Home() {
       {/* ===== NEWS ===== */}
       <section className="bg-[#f0f4f8] py-4">
         <div className="max-w-[1200px] mx-auto px-6 flex items-center gap-4">
-          <span className="bg-[--color-primary] text-white px-6 py-2 text-sm font-bold tracking-wider shrink-0">
+          <span className="bg-primary text-white px-6 py-2 text-sm font-bold tracking-wider shrink-0">
             NEWS
           </span>
-          <Link href="/blog" className="flex items-center gap-4 text-sm hover:text-[--color-primary] transition-colors flex-1 min-w-0">
+          <Link href="/blog" className="flex items-center gap-4 text-sm hover:text-primary transition-colors flex-1 min-w-0">
             <time className="font-bold tracking-wider text-gray-600 shrink-0">2020.07.21</time>
             <span className="truncate">Webサイトを公開しました</span>
-            <span className="ml-auto text-[--color-primary] shrink-0">&rsaquo;</span>
+            <span className="ml-auto text-primary shrink-0">&rsaquo;</span>
           </Link>
         </div>
       </section>
@@ -79,10 +79,10 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-12 items-start">
             <div className="md:w-1/2">
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-px bg-[--color-primary]" />
-                <span className="section-label text-[--color-primary]">ABOUT</span>
+                <div className="w-12 h-px bg-primary" />
+                <span className="section-label text-primary">ABOUT</span>
               </div>
-              <h2 className="text-[--color-primary] text-2xl md:text-3xl font-bold leading-relaxed mb-8">
+              <h2 className="text-primary text-2xl md:text-3xl font-bold leading-relaxed mb-8">
                 あらゆる情報の「見える化」で安心・安全・利益をあなたに
               </h2>
               <p className="text-sm leading-loose text-gray-700 mb-4">
@@ -99,7 +99,7 @@ export default function Home() {
               </p>
               <Link
                 href="/about"
-                className="inline-block border border-[--color-primary] text-[--color-primary] px-12 py-4 text-sm hover:bg-[--color-primary] hover:text-white transition-colors"
+                className="inline-block border border-primary text-primary px-12 py-4 text-sm hover:bg-primary hover:text-white transition-colors"
               >
                 当社の思い
               </Link>
@@ -138,10 +138,10 @@ export default function Home() {
             </div>
             <div className="md:w-7/12">
               <div className="flex items-center gap-4 mb-2">
-                <span className="section-label text-[--color-primary]">PROFILE</span>
-                <div className="flex-1 h-px bg-[--color-primary]" />
+                <span className="section-label text-primary">PROFILE</span>
+                <div className="flex-1 h-px bg-primary" />
               </div>
-              <h2 className="section-title-ja text-[--color-primary] mb-6">
+              <h2 className="section-title-ja text-primary mb-6">
                 代表プロフィール
               </h2>
               <p className="text-sm leading-loose text-gray-700 mb-8">
@@ -149,7 +149,7 @@ export default function Home() {
               </p>
               <Link
                 href="/profile"
-                className="inline-block border border-[--color-primary] text-[--color-primary] px-12 py-4 text-sm hover:bg-[--color-primary] hover:text-white transition-colors"
+                className="inline-block border border-primary text-primary px-12 py-4 text-sm hover:bg-primary hover:text-white transition-colors"
               >
                 詳細はこちら
               </Link>
@@ -162,7 +162,7 @@ export default function Home() {
       <section className="relative py-20 md:py-28">
         <div className="absolute inset-0 z-0">
           <Image src="/images/service-bg.jpg" alt="" fill className="object-cover" />
-          <div className="absolute inset-0 bg-[--color-primary]/70" />
+          <div className="absolute inset-0 bg-primary/70" />
         </div>
         <div className="relative z-10 max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-12">
@@ -195,7 +195,7 @@ export default function Home() {
           <div className="text-center mt-10">
             <Link
               href="/service"
-              className="inline-block border border-white text-white px-12 py-4 text-sm hover:bg-white hover:text-[--color-primary] transition-colors"
+              className="inline-block border border-white text-white px-12 py-4 text-sm hover:bg-white hover:text-primary transition-colors"
             >
               一覧はこちら
             </Link>
@@ -208,14 +208,14 @@ export default function Home() {
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label text-gray-500">BLOG</span>
-            <h2 className="section-title-ja text-[--color-primary] mt-2">ブログ</h2>
+            <h2 className="section-title-ja text-primary mt-2">ブログ</h2>
           </div>
           <div className="max-w-[800px] mx-auto divide-y">
-            <Link href="/blog" className="flex items-center gap-4 py-4 hover:text-[--color-primary] transition-colors">
+            <Link href="/blog" className="flex items-center gap-4 py-4 hover:text-primary transition-colors">
               <time className="text-sm tracking-wider text-gray-500 shrink-0">2021.01.21</time>
               <span className="text-sm">3D測量で出来ることは？方法、メリット、活用場所も併せて紹介！</span>
             </Link>
-            <Link href="/blog" className="flex items-center gap-4 py-4 hover:text-[--color-primary] transition-colors">
+            <Link href="/blog" className="flex items-center gap-4 py-4 hover:text-primary transition-colors">
               <time className="text-sm tracking-wider text-gray-500 shrink-0">2020.07.21</time>
               <span className="text-sm">Webサイトを公開しました</span>
             </Link>
@@ -223,7 +223,7 @@ export default function Home() {
           <div className="text-center mt-10">
             <Link
               href="/blog"
-              className="inline-block border border-[--color-primary] text-[--color-primary] px-12 py-4 text-sm hover:bg-[--color-primary] hover:text-white transition-colors"
+              className="inline-block border border-primary text-primary px-12 py-4 text-sm hover:bg-primary hover:text-white transition-colors"
             >
               詳細はこちら
             </Link>
@@ -236,7 +236,7 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-4">
           <Link href="/about#access" className="group relative overflow-hidden rounded-sm block aspect-[16/8]">
             <Image src="/images/access.jpg" alt="アクセス" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-            <div className="absolute inset-0 bg-[--color-primary]/50 group-hover:bg-[--color-primary]/60 transition-colors" />
+            <div className="absolute inset-0 bg-primary/50 group-hover:bg-primary/60 transition-colors" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
               <span className="text-xs tracking-widest mb-1">ACCESS</span>
               <h3 className="text-2xl font-bold tracking-wider">アクセス</h3>
@@ -256,15 +256,15 @@ export default function Home() {
       {/* Mobile Contact */}
       <section className="md:hidden bg-[#2a2a2a] py-8 px-4">
         <div className="grid grid-cols-1 gap-3">
-          <Link href="/contact" className="bg-[--color-primary] text-white text-center rounded-sm overflow-hidden block">
-            <div className="bg-[--color-primary-dark] py-1 text-xs">メールでの受付</div>
+          <Link href="/contact" className="bg-primary text-white text-center rounded-sm overflow-hidden block">
+            <div className="bg-primary-dark py-1 text-xs">メールでの受付</div>
             <div className="py-3">
               <p className="font-bold">お問い合わせフォーム</p>
               <p className="text-xs mt-0.5">24時間受付中</p>
             </div>
           </Link>
           <div className="bg-[#333] text-white text-center rounded-sm overflow-hidden">
-            <div className="bg-[--color-primary-dark] py-1 text-xs">お電話での受付</div>
+            <div className="bg-primary-dark py-1 text-xs">お電話での受付</div>
             <div className="py-3">
               <p className="text-xl font-bold tracking-wider">075-744-1775</p>
               <p className="text-xs mt-0.5">受付時間：平日 9:00～18:00</p>

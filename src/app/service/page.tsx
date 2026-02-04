@@ -62,7 +62,7 @@ export default function ServicePage() {
               </div>
               <div className="md:w-1/2">
                 <span className="text-xs tracking-widest text-gray-400 mb-2 block">SERVICE{s.id}</span>
-                <h2 className="text-xl font-bold text-[--color-primary] mb-4">{s.title}</h2>
+                <h2 className="text-xl font-bold text-primary mb-4">{s.title}</h2>
                 <p className="text-sm leading-loose text-gray-700">{s.description}</p>
               </div>
             </div>

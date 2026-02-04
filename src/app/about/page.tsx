@@ -14,7 +14,7 @@ export default function AboutPage() {
 
       <section className="py-16 md:py-24">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="text-[--color-primary] text-2xl md:text-3xl font-bold leading-relaxed mb-8 text-center">
+          <h2 className="text-primary text-2xl md:text-3xl font-bold leading-relaxed mb-8 text-center">
             あらゆる情報の「見える化」で<br />安心・安全・利益をあなたに
           </h2>
           <p className="text-sm leading-loose text-gray-700 mb-6">
@@ -37,7 +37,7 @@ export default function AboutPage() {
         <div className="max-w-[1000px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label text-gray-500">ACCESS</span>
-            <h2 className="section-title-ja text-[--color-primary] mt-2">アクセス</h2>
+            <h2 className="section-title-ja text-primary mt-2">アクセス</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>

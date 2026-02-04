@@ -41,7 +41,7 @@ export default function Header() {
               href={item.href}
               target={item.external ? "_blank" : undefined}
               rel={item.external ? "noopener noreferrer" : undefined}
-              className="text-sm text-gray-700 hover:text-[--color-primary] transition-colors whitespace-nowrap"
+              className="text-sm text-gray-700 hover:text-primary transition-colors whitespace-nowrap"
             >
               {item.label}
             </Link>

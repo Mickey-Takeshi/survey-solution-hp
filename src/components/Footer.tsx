@@ -20,9 +20,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Link
             href="/contact"
-            className="block bg-[--color-primary] rounded-sm overflow-hidden hover:opacity-90 transition-opacity"
+            className="block bg-primary rounded-sm overflow-hidden hover:opacity-90 transition-opacity"
           >
-            <div className="bg-[--color-primary-dark] text-center py-2 text-sm">
+            <div className="bg-primary-dark text-center py-2 text-sm">
               メールでの受付
             </div>
             <div className="text-center py-4">
@@ -31,7 +31,7 @@ export default function Footer() {
             </div>
           </Link>
           <div className="bg-[#333] rounded-sm overflow-hidden">
-            <div className="bg-[--color-primary-dark] text-center py-2 text-sm">
+            <div className="bg-primary-dark text-center py-2 text-sm">
               お電話での受付
             </div>
             <div className="text-center py-4">
