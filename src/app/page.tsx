@@ -146,15 +146,15 @@ export default function Home() {
               </Link>
             </div>
             <div className="md:w-1/2">
-              <div className="grid grid-cols-2 gap-3">
-                <div className="rounded-lg overflow-hidden shadow-lg">
-                  <Image src="/images/hero-bg2.jpg" alt="3Dスキャナによる現場測量の様子" width={400} height={300} className="object-cover w-full h-48" />
+              <div className="grid grid-cols-2 gap-4">
+                <div className="rounded-lg overflow-hidden shadow-lg bg-gray-100">
+                  <Image src="/images/hero-bg.jpg" alt="3Dスキャナによる現場測量の様子" width={400} height={300} className="object-cover w-full h-48" />
                 </div>
-                <div className="rounded-lg overflow-hidden shadow-lg mt-8">
-                  <Image src="/images/service-bg.jpg" alt="3D測量データの分析・図面作成" width={400} height={300} className="object-cover w-full h-48" />
+                <div className="rounded-lg overflow-hidden shadow-lg mt-8 bg-gray-100">
+                  <Image src="/images/hero-bg2.jpg" alt="京都タワーと測量風景" width={400} height={300} className="object-cover w-full h-48" />
                 </div>
-                <div className="rounded-lg overflow-hidden shadow-lg col-span-2 mx-auto max-w-[280px]">
-                  <Image src="/images/hero-bg.jpg" alt="3Dレーザースキャナ機器" width={400} height={300} className="object-cover w-full h-48" />
+                <div className="rounded-lg overflow-hidden shadow-lg col-span-2 mx-auto w-full max-w-[300px] bg-gray-100">
+                  <Image src="/images/service-bg.jpg" alt="3Dレーザースキャナ機器で計測中" width={400} height={300} className="object-cover w-full h-52" />
                 </div>
               </div>
             </div>
