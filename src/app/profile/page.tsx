@@ -9,9 +9,47 @@ export const metadata: Metadata = {
   alternates: { canonical: "/profile" },
 };
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://surveysolution.pro/profile#person",
+  name: "齋藤 大輔",
+  alternateName: "Daisuke Saito",
+  jobTitle: "代表取締役",
+  description: "土地家屋調査士。1975年長野県松本市生まれ。同志社大学法学部で民事訴訟法を専攻後、土地家屋調査士として独立。2018年に株式会社SurveySolutionを設立し、3Dスキャナによる測量サービスを提供。京都産業大学・同志社大学で講師を務める。",
+  image: "https://surveysolution.pro/images/profile.jpg",
+  birthDate: "1975-09",
+  birthPlace: {
+    "@type": "Place",
+    name: "長野県松本市",
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "同志社大学",
+  },
+  hasCredential: [
+    {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "国家資格",
+      name: "土地家屋調査士",
+    },
+  ],
+  worksFor: {
+    "@type": "Organization",
+    name: "株式会社SurveySolution",
+    url: "https://surveysolution.pro",
+  },
+  knowsAbout: ["3D測量", "3Dスキャナ", "土地家屋調査", "測量", "点群データ"],
+  sameAs: [],
+};
+
 export default function ProfilePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
       <PageHeader title="プロフィール" subtitle="PROFILE" image="/images/profile-bg.jpg" />
 
       {/* 代表者生い立ち */}

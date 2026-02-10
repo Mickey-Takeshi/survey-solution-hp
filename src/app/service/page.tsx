@@ -102,9 +102,37 @@ const services = [
   },
 ];
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: services.map((s, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    item: {
+      "@type": "Service",
+      "@id": `https://surveysolution.pro/service#service${s.id}`,
+      name: s.title,
+      description: s.description,
+      provider: {
+        "@type": "LocalBusiness",
+        name: "株式会社SurveySolution",
+      },
+      areaServed: {
+        "@type": "Country",
+        name: "日本",
+      },
+      image: `https://surveysolution.pro${s.image}`,
+    },
+  })),
+};
+
 export default function ServicePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <PageHeader title="依頼事例" subtitle="SERVICE" image="/images/service-bg.jpg" />
 
       <section className="py-16 md:py-24">

@@ -1,6 +1,46 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const howToJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "3D測量の依頼方法",
+  description: "株式会社SurveySolutionへの3D測量依頼の流れを説明します。お問い合わせから納品まで、スムーズに対応いたします。",
+  totalTime: "P14D",
+  estimatedCost: {
+    "@type": "MonetaryAmount",
+    currency: "JPY",
+    value: "150000",
+  },
+  step: [
+    {
+      "@type": "HowToStep",
+      position: 1,
+      name: "お問い合わせ",
+      text: "お電話（075-744-1775）またはメールフォームよりお気軽にご連絡ください。測量対象の概要をお聞かせください。",
+      url: "https://surveysolution.pro/contact",
+    },
+    {
+      "@type": "HowToStep",
+      position: 2,
+      name: "ヒアリング・お見積り",
+      text: "ご要望を詳しくお伺いし、最適な測量プランとお見積りをご提案します。現地確認が必要な場合は無料で対応します。",
+    },
+    {
+      "@type": "HowToStep",
+      position: 3,
+      name: "現地測量・データ取得",
+      text: "3Dスキャナで現地の測量を行い、高精度な点群データを取得します。作業時間は対象の規模により異なります。",
+    },
+    {
+      "@type": "HowToStep",
+      position: 4,
+      name: "分析・納品",
+      text: "取得した点群データを分析し、ご要望に応じた成果物（CAD図面、3Dモデル等）をご納品いたします。",
+    },
+  ],
+};
+
 const services = [
   { id: "01", title: "工場の柱の傾き調査", image: "/images/service01.jpg" },
   { id: "02", title: "擁壁計画のための\n高低調査", image: "/images/service02.jpg" },
@@ -13,6 +53,10 @@ const services = [
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+      />
       {/* ===== HERO ===== */}
       <section className="relative h-[80vh] md:h-[90vh] overflow-hidden">
         <Image
@@ -70,6 +114,47 @@ export default function Home() {
             <span className="truncate">Webサイトを公開しました</span>
             <span className="ml-auto text-primary shrink-0">&rsaquo;</span>
           </Link>
+        </div>
+      </section>
+
+      {/* ===== 3D測量とは / AIO対応セクション ===== */}
+      <section className="py-16 md:py-20 bg-white">
+        <div className="max-w-[900px] mx-auto px-6">
+          <div className="text-center mb-10">
+            <span className="section-label text-gray-500">WHAT IS 3D SURVEY</span>
+            <h2 className="section-title-ja text-primary mt-2">3D測量とは</h2>
+          </div>
+          <div className="bg-gray-50 rounded-lg p-8 mb-8">
+            <p className="text-base leading-loose text-gray-800 font-medium mb-4">
+              <strong>3D測量（3次元測量）</strong>とは、3Dレーザースキャナを使用して対象物を非接触で計測し、数百万～数億点の点群データとして三次元的に記録する測量技術です。
+            </p>
+            <p className="text-sm leading-loose text-gray-700">
+              従来の測量が「点と点を結んで図面を作成する」のに対し、3D測量は対象物の表面全体を高密度の点の集合（点群）として取得します。これにより、後から任意の位置での寸法確認や断面図作成が可能となり、複雑な形状も正確に記録できます。
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl text-primary">📐</span>
+              </div>
+              <h3 className="font-bold text-gray-800 mb-2">高精度</h3>
+              <p className="text-sm text-gray-600">ミリメートル単位の精度で計測。従来測量では難しい複雑形状も正確に記録</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl text-primary">⚡</span>
+              </div>
+              <h3 className="font-bold text-gray-800 mb-2">効率的</h3>
+              <p className="text-sm text-gray-600">短時間で大量のデータを取得。後から必要な図面を自由に作成可能</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl text-primary">🔒</span>
+              </div>
+              <h3 className="font-bold text-gray-800 mb-2">安全</h3>
+              <p className="text-sm text-gray-600">非接触で計測するため、危険な場所でも離れた位置から安全に測量</p>
+            </div>
+          </div>
         </div>
       </section>
 
