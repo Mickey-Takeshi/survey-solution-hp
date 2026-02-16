@@ -69,10 +69,14 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/20" />
         <div className="relative z-10 flex flex-col justify-center h-full max-w-[1200px] mx-auto px-6">
           <h1 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold leading-relaxed drop-shadow-lg">
-            3Dスキャナによるデータ化で
+            京都の3D測量専門会社
             <br />
-            測量に新たな価値を
+            <span className="text-xl md:text-3xl lg:text-4xl">3Dスキャナで測量に新たな価値を</span>
           </h1>
+          <p className="text-white/90 text-sm md:text-base mt-4 max-w-xl drop-shadow">
+            建物傾斜調査・図面作成・点群データ取得・文化財保存など<br className="hidden md:block" />
+            関西全域対応｜無料見積り受付中
+          </p>
 
           {/* Contact overlay */}
           <div className="absolute bottom-8 right-6 bg-white/85 backdrop-blur-sm rounded-sm p-6 max-w-md hidden lg:block shadow-lg">

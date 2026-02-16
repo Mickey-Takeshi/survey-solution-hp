@@ -3,9 +3,10 @@ import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "代表プロフィール - 齋藤大輔",
+  title: "代表プロフィール 齋藤大輔｜土地家屋調査士・3D測量のスペシャリスト",
   description:
-    "株式会社SurveySolution 代表取締役 齋藤大輔のプロフィール。土地家屋調査士として京都を拠点に3Dスキャナを用いた測量サービスを提供。三次元測量で新しい価値を提供します。",
+    "株式会社SurveySolution代表 齋藤大輔のプロフィール。土地家屋調査士として25年以上の経験を持ち、3Dスキャナ測量のパイオニア。京都産業大学・同志社大学講師、ライカジオシステムズ研修講師を歴任。",
+  keywords: ["齋藤大輔", "土地家屋調査士", "3D測量", "3Dスキャナ専門家", "測量士", "京都"],
   alternates: { canonical: "/profile" },
 };
 

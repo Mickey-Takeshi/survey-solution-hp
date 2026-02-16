@@ -3,9 +3,10 @@ import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "依頼事例 - 3D測量・3Dスキャナの活用事例",
+  title: "3D測量の活用事例・依頼事例｜建物傾斜調査・図面作成・文化財保存",
   description:
-    "工場の柱の傾き調査、擁壁計画の高低調査、急傾斜地の断面図作成、歴史的建造物の保存など、株式会社SurveySolutionの3Dスキャナ測量の依頼事例をご紹介します。",
+    "3Dスキャナ測量の活用事例。工場・倉庫の柱傾き調査、擁壁計画の高低調査、急傾斜地の断面図作成、既存建物の図面作成、寺社仏閣・文化財のデジタルアーカイブなど実績多数。京都・大阪・関西全域対応。",
+  keywords: ["3D測量 事例", "建物傾斜調査", "傾き調査", "図面作成", "断面図作成", "文化財測量", "デジタルアーカイブ", "3Dスキャナ活用"],
   alternates: { canonical: "/service" },
 };
 
@@ -167,6 +168,32 @@ export default function ServicePage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* CTA セクション */}
+      <section className="py-16 bg-primary">
+        <div className="max-w-[800px] mx-auto px-6 text-center text-white">
+          <h2 className="text-xl md:text-2xl font-bold mb-4">
+            3D測量のご相談・お見積りはお気軽に
+          </h2>
+          <p className="text-sm mb-6 opacity-90">
+            上記以外の用途でも対応可能です。まずはお気軽にご相談ください。
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="/contact"
+              className="inline-block bg-white text-primary px-10 py-4 text-sm font-bold rounded hover:bg-gray-100 transition-colors shadow-md"
+            >
+              無料相談・お見積り
+            </a>
+            <a
+              href="/faq"
+              className="inline-flex items-center gap-2 text-white border border-white px-8 py-4 text-sm font-bold rounded hover:bg-white/10 transition-colors"
+            >
+              よくある質問を見る
+            </a>
+          </div>
         </div>
       </section>
     </>

@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "よくある質問 - 3D測量の精度・対応エリア・費用",
+  title: "よくある質問（FAQ）｜3D測量の精度・費用・納期・対応エリア",
   description:
-    "株式会社SurveySolutionの3D測量サービスに関するよくある質問。精度、対応エリア、見積もり費用、対応建物、納期などについてお答えします。",
+    "3D測量・3Dスキャナ測量に関するよくある質問。測量精度（±2〜5mm）、費用目安（15万円〜）、納期（1〜4週間）、対応エリア（京都・大阪・関西全域・全国出張可）、対応建物などについて詳しく解説。",
+  keywords: ["3D測量 費用", "3D測量 精度", "3Dスキャナ測量 価格", "測量 納期", "測量 対応エリア", "FAQ"],
   alternates: { canonical: "/faq" },
 };
 
@@ -93,6 +94,28 @@ export default function FaqPage() {
                 </p>
               </div>
             ))}
+          </div>
+
+          {/* 関連ページへのリンク */}
+          <div className="mt-16 bg-gray-50 rounded-lg p-8">
+            <h3 className="text-lg font-bold text-primary mb-4 text-center">関連ページ</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <a href="/service" className="block bg-white p-4 rounded shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-xs text-gray-500">SERVICE</span>
+                <p className="font-bold text-gray-800">依頼事例を見る</p>
+                <p className="text-sm text-gray-600 mt-1">3D測量の具体的な活用事例</p>
+              </a>
+              <a href="/contact" className="block bg-white p-4 rounded shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-xs text-gray-500">CONTACT</span>
+                <p className="font-bold text-gray-800">無料相談・見積り</p>
+                <p className="text-sm text-gray-600 mt-1">お気軽にお問い合わせください</p>
+              </a>
+              <a href="/about" className="block bg-white p-4 rounded shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-xs text-gray-500">ABOUT</span>
+                <p className="font-bold text-gray-800">会社概要</p>
+                <p className="text-sm text-gray-600 mt-1">保有機器・事業内容</p>
+              </a>
+            </div>
           </div>
         </div>
       </section>

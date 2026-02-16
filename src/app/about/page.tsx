@@ -3,9 +3,10 @@ import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "当社について - 3Dスキャナで情報を見える化",
+  title: "会社概要・企業理念・アクセス｜京都の3D測量会社",
   description:
-    "京都市三条烏丸の3D測量会社 株式会社SurveySolution。3Dスキャナによるあらゆる情報の見える化で、安心・安全・利益を提供。企業理念とアクセス情報をご紹介します。",
+    "株式会社SurveySolutionの会社概要・企業理念・アクセス情報。京都市中京区を拠点に、3Dレーザースキャナによる高精度測量サービスを提供。地上型・ハンドヘルド3Dスキャナ、トータルステーション完備。烏丸駅徒歩3分。",
+  keywords: ["3D測量会社", "京都 測量会社", "3Dスキャナ測量", "会社概要", "企業理念", "アクセス", "株式会社SurveySolution"],
   alternates: { canonical: "/about" },
 };
 
@@ -22,9 +23,15 @@ export default function AboutPage() {
       {/* 企業理念 */}
       <section className="py-16 md:py-24">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="text-primary text-2xl md:text-3xl font-bold leading-relaxed mb-8 text-center">
+          <div className="text-center mb-8">
+            <span className="section-label text-gray-500">PHILOSOPHY</span>
+            <h2 className="text-primary text-2xl md:text-3xl font-bold leading-relaxed mt-2">
+              企業理念
+            </h2>
+          </div>
+          <p className="text-primary text-xl md:text-2xl font-bold leading-relaxed mb-8 text-center">
             あらゆる情報の「見える化」で<br />安心・安全・利益をあなたに
-          </h2>
+          </p>
           <p className="text-sm leading-loose text-gray-700 mb-6">
             京都市の三条烏丸にある【株式会社SurveySolution】は、測量により取得したデータを2次元の図面作成だけにとどまらず、多角的な視野から分析をすることを得意としております。
           </p>
@@ -45,29 +52,29 @@ export default function AboutPage() {
         <div className="max-w-[900px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label text-gray-500">BUSINESS</span>
-            <h2 className="section-title-ja text-primary mt-2">事業内容</h2>
+            <h2 className="section-title-ja text-primary mt-2">3D測量の事業内容</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-gray-50 p-6 rounded">
-              <h3 className="font-bold text-primary mb-3">3Dスキャナ測量</h3>
+              <h3 className="font-bold text-primary mb-3">3Dレーザースキャナ測量・点群データ取得</h3>
               <p className="text-sm leading-loose text-gray-700">
                 最新の3Dレーザースキャナを使用し、建物・構造物・地形を高精度にデータ化。ミリ単位の精密な計測で、従来の測量では難しかった複雑な対象物も正確に記録します。
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded">
-              <h3 className="font-bold text-primary mb-3">図面作成・CADデータ化</h3>
+              <h3 className="font-bold text-primary mb-3">図面作成・CADデータ化（DXF/DWG）</h3>
               <p className="text-sm leading-loose text-gray-700">
                 取得した点群データから、平面図・断面図・立面図などの各種図面を作成。CADデータ（DXF/DWG）での納品に対応し、設計・施工にすぐに活用いただけます。
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded">
-              <h3 className="font-bold text-primary mb-3">傾き・変位調査</h3>
+              <h3 className="font-bold text-primary mb-3">建物傾斜調査・変位測定</h3>
               <p className="text-sm leading-loose text-gray-700">
                 建物や構造物の傾き・変位を高精度で計測。経年変化のモニタリングや、地震後の安全診断、補修計画の立案に必要なデータを提供します。
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded">
-              <h3 className="font-bold text-primary mb-3">デジタルアーカイブ</h3>
+              <h3 className="font-bold text-primary mb-3">文化財・歴史的建造物のデジタルアーカイブ</h3>
               <p className="text-sm leading-loose text-gray-700">
                 歴史的建造物や文化財を3Dデータとして保存。将来の修復・復元のための基礎資料として、また教育・研究用コンテンツとしても活用いただけます。
               </p>
@@ -81,7 +88,7 @@ export default function AboutPage() {
         <div className="max-w-[900px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label text-gray-500">EQUIPMENT</span>
-            <h2 className="section-title-ja text-primary mt-2">保有機器</h2>
+            <h2 className="section-title-ja text-primary mt-2">3D測量の保有機器</h2>
           </div>
           <div className="bg-white rounded-lg p-8">
             <p className="text-sm leading-loose text-gray-700 mb-6">
