@@ -122,59 +122,72 @@ export default function AboutPage() {
       </section>
 
       {/* ACCESS */}
-      <section id="access" className="py-16 md:py-24 bg-gray-50">
-        <div className="max-w-[1000px] mx-auto px-6">
+      <section id="access" className="py-16 md:py-24 bg-white">
+        <div className="max-w-[1100px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label text-gray-500">ACCESS</span>
             <h2 className="section-title-ja text-primary mt-2">アクセス</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+            {/* 左側：オフィス画像 */}
             <div>
               <Image
                 src="/images/access.jpg"
-                alt="株式会社SurveySolution 京都市中京区オフィス外観"
-                width={500}
-                height={350}
-                className="rounded-sm w-full object-cover"
+                alt="株式会社SurveySolution 京都市中京区オフィス内観"
+                width={600}
+                height={400}
+                className="w-full object-cover shadow-md"
               />
             </div>
-            <div className="text-sm leading-loose">
-              <table className="w-full">
+            {/* 右側：会社情報テーブル */}
+            <div className="bg-white">
+              <table className="w-full text-sm">
                 <tbody>
-                  <tr className="border-b">
-                    <th className="py-3 text-left font-bold w-24">会社名</th>
-                    <td className="py-3">株式会社SurveySolution</td>
+                  <tr className="border-b-2 border-primary">
+                    <th className="py-4 text-left text-primary font-bold w-32 align-top">名称</th>
+                    <td className="py-4 text-gray-800">株式会社SurveySolution</td>
                   </tr>
-                  <tr className="border-b">
-                    <th className="py-3 text-left font-bold">代表</th>
-                    <td className="py-3">齋藤 大輔</td>
+                  <tr className="border-b-2 border-primary">
+                    <th className="py-4 text-left text-primary font-bold align-top">代表者</th>
+                    <td className="py-4 text-gray-800">齋藤 大輔</td>
                   </tr>
-                  <tr className="border-b">
-                    <th className="py-3 text-left font-bold">所在地</th>
-                    <td className="py-3">〒604-8155<br />京都府京都市中京区錦小路通烏丸西入占出山町312 ケイズビル6F</td>
+                  <tr className="border-b-2 border-primary">
+                    <th className="py-4 text-left text-primary font-bold align-top">所在地</th>
+                    <td className="py-4 text-gray-800 leading-relaxed">
+                      〒604-8241京都市中京区新町通三条<br />
+                      西入釜座町22番地ストークビル三条<br />
+                      烏丸515
+                    </td>
                   </tr>
-                  <tr className="border-b">
-                    <th className="py-3 text-left font-bold">TEL</th>
-                    <td className="py-3">075-744-1775</td>
+                  <tr className="border-b-2 border-primary">
+                    <th className="py-4 text-left text-primary font-bold align-top">電話番号</th>
+                    <td className="py-4">
+                      <a href="tel:075-744-1775" className="text-primary underline hover:no-underline">075-744-1775</a>
+                    </td>
                   </tr>
-                  <tr className="border-b">
-                    <th className="py-3 text-left font-bold">営業時間</th>
-                    <td className="py-3">平日 9:00～18:00</td>
+                  <tr className="border-b-2 border-primary">
+                    <th className="py-4 text-left text-primary font-bold align-top">FAX番号</th>
+                    <td className="py-4 text-gray-800">075-744-1776</td>
+                  </tr>
+                  <tr className="border-b-2 border-primary">
+                    <th className="py-4 text-left text-primary font-bold align-top">メールアドレス</th>
+                    <td className="py-4 text-gray-800">surveysolution.jp@gmail.com</td>
                   </tr>
                 </tbody>
               </table>
+              <p className="text-xs text-gray-500 mt-4">※営業・勧誘のお電話はすべてお控えください。</p>
             </div>
           </div>
-          <div className="mt-8">
+          <div className="mt-10">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.0!2d135.758!3d35.004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z5qCq5byP5Lya56S-U3VydmV5U29sdXRpb24!5e0!3m2!1sja!2sjp!4v1"
               width="100%"
               height="300"
-              className="border-0 rounded-sm w-full h-[250px] md:h-[400px]"
+              className="border-0 w-full h-[300px] md:h-[400px]"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="株式会社SurveySolution 京都市中京区錦小路通烏丸西入の所在地 Google Maps"
+              title="株式会社SurveySolution 京都市中京区の所在地 Google Maps"
             />
           </div>
         </div>
