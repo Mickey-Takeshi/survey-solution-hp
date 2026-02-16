@@ -132,7 +132,7 @@ export default function AboutPage() {
             {/* 左側：オフィス画像 */}
             <div>
               <Image
-                src="/images/access.jpg"
+                src="/images/office.jpg"
                 alt="株式会社SurveySolution 京都市中京区オフィス内観"
                 width={600}
                 height={400}
