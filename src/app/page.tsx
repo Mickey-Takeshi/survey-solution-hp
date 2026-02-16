@@ -191,9 +191,10 @@ export default function Home() {
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-primary text-white px-10 py-4 text-sm font-bold rounded hover:bg-primary-dark transition-colors shadow-md"
+              className="btn-primary inline-flex items-center gap-2 bg-primary text-white px-10 py-4 text-sm font-bold rounded hover:bg-primary-dark shadow-md"
             >
-              まずは無料相談する
+              <span>まずは無料相談する</span>
+              <span>&rarr;</span>
             </Link>
           </div>
         </div>
@@ -202,8 +203,8 @@ export default function Home() {
       {/* ===== ABOUT ===== */}
       <section className="py-20 md:py-28">
         <div className="max-w-[1200px] mx-auto px-6">
-          <div className="flex flex-col md:flex-row gap-12 items-start">
-            <div className="md:w-1/2">
+          <div className="flex flex-col md:flex-row gap-12 items-center">
+            <div className="md:w-1/2 order-2 md:order-1">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-px bg-primary" />
                 <span className="section-label text-primary">ABOUT</span>
@@ -225,21 +226,34 @@ export default function Home() {
               </p>
               <Link
                 href="/about"
-                className="inline-block border-2 border-primary text-primary px-12 py-4 text-sm font-bold rounded hover:bg-primary hover:text-white transition-colors"
+                className="btn-outline-primary btn-arrow inline-flex items-center gap-2 px-10 py-4 text-sm font-bold rounded"
               >
-                当社の思い
+                <span>当社の思い</span>
+                <span className="arrow">&rarr;</span>
               </Link>
             </div>
-            <div className="md:w-1/2">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="rounded-lg overflow-hidden shadow-lg bg-gray-100">
-                  <Image src="/images/hero-bg.jpg" alt="3Dスキャナによる現場測量の様子" width={400} height={300} className="object-cover w-full h-48" />
+            <div className="md:w-1/2 order-1 md:order-2">
+              {/* 六角形画像レイアウト */}
+              <div className="relative h-[420px] md:h-[480px]">
+                {/* 上段中央 */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-36 h-40 md:w-44 md:h-48 hexagon-clip overflow-hidden shadow-lg">
+                  <Image src="/images/hero-bg.jpg" alt="3Dスキャナによる現場測量の様子" fill className="object-cover" />
                 </div>
-                <div className="rounded-lg overflow-hidden shadow-lg mt-8 bg-gray-100">
-                  <Image src="/images/hero-bg2.jpg" alt="京都タワーと測量風景" width={400} height={300} className="object-cover w-full h-48" />
+                {/* 中段左 */}
+                <div className="absolute top-24 md:top-28 left-[5%] md:left-[8%] w-36 h-40 md:w-44 md:h-48 hexagon-clip overflow-hidden shadow-lg">
+                  <Image src="/images/service01.jpg" alt="工場の柱の傾き調査" fill className="object-cover" />
                 </div>
-                <div className="rounded-lg overflow-hidden shadow-lg col-span-2 mx-auto w-full max-w-[300px] bg-gray-100">
-                  <Image src="/images/service-bg.jpg" alt="3Dレーザースキャナ機器で計測中" width={400} height={300} className="object-cover w-full h-52" />
+                {/* 中段右 */}
+                <div className="absolute top-24 md:top-28 right-[5%] md:right-[8%] w-36 h-40 md:w-44 md:h-48 hexagon-clip overflow-hidden shadow-lg">
+                  <Image src="/images/service04.jpg" alt="建物丸ごと保存" fill className="object-cover" />
+                </div>
+                {/* 下段左 */}
+                <div className="absolute bottom-0 left-[15%] md:left-[18%] w-36 h-40 md:w-44 md:h-48 hexagon-clip overflow-hidden shadow-lg">
+                  <Image src="/images/hero-bg2.jpg" alt="京都タワーと測量風景" fill className="object-cover" />
+                </div>
+                {/* 下段右 */}
+                <div className="absolute bottom-0 right-[15%] md:right-[18%] w-36 h-40 md:w-44 md:h-48 hexagon-clip overflow-hidden shadow-lg">
+                  <Image src="/images/service-bg.jpg" alt="3Dレーザースキャナ機器" fill className="object-cover" />
                 </div>
               </div>
             </div>
@@ -252,7 +266,9 @@ export default function Home() {
         <div className="max-w-[1100px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label text-gray-500">REASON</span>
-            <h2 className="section-title-ja text-primary mt-2">選ばれる3つの理由</h2>
+            <div className="section-heading mt-2">
+              <h2 className="section-title-ja text-primary">選ばれる3つの理由</h2>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {[
@@ -274,7 +290,7 @@ export default function Home() {
             ].map((item) => (
               <div
                 key={item.num}
-                className="bg-white rounded-lg shadow-md p-8 text-center"
+                className="reason-card bg-white rounded-lg shadow-md p-8 text-center"
               >
                 <span className="text-4xl font-bold text-primary/20">{item.num}</span>
                 <h3 className="text-base font-bold mt-4 mb-4 leading-relaxed whitespace-pre-line text-gray-800">
@@ -292,14 +308,17 @@ export default function Home() {
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-5/12">
-              <div className="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden border-4 border-gray-100 shadow-lg">
-                <Image
-                  src="/images/profile.jpg"
-                  alt="代表 齋藤 大輔"
-                  width={400}
-                  height={400}
-                  className="object-cover w-full h-full"
-                />
+              {/* 六角形プロフィール画像 */}
+              <div className="relative w-64 h-72 md:w-80 md:h-[360px] mx-auto">
+                <div className="absolute inset-0 hexagon-clip bg-gradient-to-br from-primary to-primary-dark" style={{ transform: 'scale(1.03)' }} />
+                <div className="absolute inset-0 hexagon-clip overflow-hidden">
+                  <Image
+                    src="/images/profile.jpg"
+                    alt="代表 齋藤 大輔"
+                    fill
+                    className="object-cover object-top"
+                  />
+                </div>
               </div>
             </div>
             <div className="md:w-7/12">
@@ -307,17 +326,21 @@ export default function Home() {
                 <span className="section-label text-primary">PROFILE</span>
                 <div className="flex-1 h-px bg-primary" />
               </div>
-              <h2 className="section-title-ja text-primary mb-6">
+              <h2 className="section-title-ja text-primary mb-4">
                 代表プロフィール
               </h2>
+              <p className="text-lg font-bold text-gray-800 mb-2">齋藤 大輔</p>
+              <p className="text-sm text-gray-500 mb-6">代表取締役 / 土地家屋調査士</p>
               <p className="text-sm leading-loose text-gray-700 mb-8">
-                当社代表「齋藤 大輔」のご紹介です。今までの生い立ちやキャリアなどについて書いていますので、ぜひご覧ください。
+                当社代表「齋藤 大輔」のご紹介です。今までの生い立ちやキャリアなどについて書いていますので、ぜひご覧ください。<br />
+                京都を拠点に、3Dスキャナを用いた測量サービスを提供しております。
               </p>
               <Link
                 href="/profile"
-                className="inline-block border-2 border-primary text-primary px-12 py-4 text-sm font-bold rounded hover:bg-primary hover:text-white transition-colors"
+                className="btn-outline-primary btn-arrow inline-flex items-center gap-2 px-10 py-4 text-sm font-bold rounded"
               >
-                詳細はこちら
+                <span>詳細はこちら</span>
+                <span className="arrow">&rarr;</span>
               </Link>
             </div>
           </div>
@@ -401,7 +424,9 @@ export default function Home() {
         <div className="max-w-[1000px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label text-gray-500">FLOW</span>
-            <h2 className="section-title-ja text-primary mt-2">ご依頼の流れ</h2>
+            <div className="section-heading mt-2">
+              <h2 className="section-title-ja text-primary">ご依頼の流れ</h2>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -441,9 +466,10 @@ export default function Home() {
           <div className="text-center mt-10">
             <Link
               href="/contact"
-              className="inline-block bg-primary text-white px-10 py-4 text-sm font-bold rounded hover:bg-primary-dark transition-colors shadow-md"
+              className="btn-primary inline-flex items-center gap-2 bg-primary text-white px-10 py-4 text-sm font-bold rounded hover:bg-primary-dark shadow-md"
             >
-              お問い合わせはこちら
+              <span>お問い合わせはこちら</span>
+              <span>&rarr;</span>
             </Link>
           </div>
         </div>
@@ -454,7 +480,9 @@ export default function Home() {
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label text-gray-500">BLOG</span>
-            <h2 className="section-title-ja text-primary mt-2">ブログ</h2>
+            <div className="section-heading mt-2">
+              <h2 className="section-title-ja text-primary">ブログ</h2>
+            </div>
           </div>
           <div className="max-w-[800px] mx-auto divide-y">
             <Link href="/blog" className="flex items-center gap-4 py-4 hover:text-primary transition-colors">
@@ -469,9 +497,10 @@ export default function Home() {
           <div className="text-center mt-10">
             <Link
               href="/blog"
-              className="inline-block border-2 border-primary text-primary px-12 py-4 text-sm font-bold rounded hover:bg-primary hover:text-white transition-colors"
+              className="btn-outline-primary btn-arrow inline-flex items-center gap-2 px-12 py-4 text-sm font-bold rounded"
             >
-              詳細はこちら
+              <span>詳細はこちら</span>
+              <span className="arrow">&rarr;</span>
             </Link>
           </div>
         </div>
