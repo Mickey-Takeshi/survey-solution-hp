@@ -73,8 +73,8 @@ export default function Article3DSurveyingPage() {
           {/* アイキャッチ */}
           <div className="relative aspect-video mb-10 rounded-lg overflow-hidden">
             <Image
-              src="/images/hero-bg.jpg"
-              alt="3D測量のイメージ"
+              src="/images/blog-3d-surveying-main.jpeg"
+              alt="3D測量のイメージ - 3Dレーザースキャナによる高精度測量"
               fill
               className="object-cover"
             />
@@ -106,6 +106,14 @@ export default function Article3DSurveyingPage() {
             <h3 className="text-lg font-bold text-gray-800 mt-8 mb-3">
               1. レーザースキャナによる測量
             </h3>
+            <div className="relative aspect-video mb-6 rounded-lg overflow-hidden">
+              <Image
+                src="/images/blog-3d-surveying-01.jpeg"
+                alt="3Dレーザースキャナによる測量の様子"
+                fill
+                className="object-cover"
+              />
+            </div>
             <p className="text-base leading-loose text-gray-700 mb-6">
               <strong>3Dレーザースキャナ</strong>は、レーザー光を対象物に照射し、その反射を検出することで距離を計測します。1秒間に数十万〜数百万点もの情報を取得できるため、短時間で高密度なデータを得られます。
             </p>
@@ -121,6 +129,14 @@ export default function Article3DSurveyingPage() {
             <h3 className="text-lg font-bold text-gray-800 mt-8 mb-3">
               2. ドローンによる測量
             </h3>
+            <div className="relative aspect-video mb-6 rounded-lg overflow-hidden">
+              <Image
+                src="/images/blog-3d-surveying-02.jpeg"
+                alt="ドローンによる3D測量"
+                fill
+                className="object-cover"
+              />
+            </div>
             <p className="text-base leading-loose text-gray-700 mb-8">
               ドローンにカメラを搭載し、上空から大量の写真を撮影。それらの画像を合成・解析（フォトグラメトリ）することで3Dモデルを作成します。広大な土地や屋根など、地上からアクセスしにくい場所の計測に適しています。
             </p>
@@ -128,6 +144,14 @@ export default function Article3DSurveyingPage() {
             <h2 className="text-xl font-bold text-primary mt-12 mb-4 pb-2 border-b-2 border-primary">
               3D測量のメリット
             </h2>
+            <div className="relative aspect-video mb-6 rounded-lg overflow-hidden">
+              <Image
+                src="/images/blog-3d-surveying-03.jpeg"
+                alt="3D測量のメリット - 高精度なデータ取得"
+                fill
+                className="object-cover"
+              />
+            </div>
             <div className="bg-gray-50 rounded-lg p-6 mb-8">
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
@@ -171,6 +195,14 @@ export default function Article3DSurveyingPage() {
             <h2 className="text-xl font-bold text-primary mt-12 mb-4 pb-2 border-b-2 border-primary">
               3D測量の活用場所
             </h2>
+            <div className="relative aspect-video mb-6 rounded-lg overflow-hidden">
+              <Image
+                src="/images/blog-3d-surveying-04.jpeg"
+                alt="3D測量の活用場所 - 建設現場での活用"
+                fill
+                className="object-cover"
+              />
+            </div>
             <p className="text-base leading-loose text-gray-700 mb-6">
               3D測量は、以下のような様々な分野で活用されています：
             </p>
@@ -205,6 +237,14 @@ export default function Article3DSurveyingPage() {
             <h2 className="text-xl font-bold text-primary mt-12 mb-4 pb-2 border-b-2 border-primary">
               まとめ
             </h2>
+            <div className="relative aspect-video mb-6 rounded-lg overflow-hidden">
+              <Image
+                src="/images/blog-3d-surveying-05.jpeg"
+                alt="3D測量のまとめ - 点群データの活用"
+                fill
+                className="object-cover"
+              />
+            </div>
             <p className="text-base leading-loose text-gray-700 mb-6">
               3D測量は、従来の測量では難しかった複雑な形状の計測や、広範囲のデータ取得を可能にする技術です。建設・土木はもちろん、文化財保存や災害対策など、様々な分野で活用が広がっています。
             </p>
