@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
@@ -14,13 +13,11 @@ const posts = [
     date: "2021.01.21",
     dateTime: "2021-01-21",
     title: "3D測量で出来ることは？方法、メリット、活用場所も併せて紹介！",
-    slug: "#",
   },
   {
     date: "2020.07.21",
     dateTime: "2020-07-21",
     title: "Webサイトを公開しました",
-    slug: "#",
   },
 ];
 
@@ -37,18 +34,17 @@ export default function BlogPage() {
         <div className="max-w-[800px] mx-auto px-6">
           <div className="divide-y">
             {posts.map((post, i) => (
-              <Link
+              <article
                 key={i}
-                href={post.slug}
-                className="flex items-start gap-4 py-6 hover:text-primary transition-colors group"
+                className="flex items-start gap-4 py-6"
               >
                 <time dateTime={post.dateTime} className="text-sm tracking-wider text-gray-500 shrink-0 pt-0.5">
                   {post.date}
                 </time>
-                <h2 className="text-base group-hover:text-primary transition-colors">
+                <h2 className="text-base text-gray-800">
                   {post.title}
                 </h2>
-              </Link>
+              </article>
             ))}
           </div>
         </div>
