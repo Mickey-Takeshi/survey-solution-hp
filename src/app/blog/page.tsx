@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "3d-surveying",
     date: "2021.01.21",
     dateTime: "2021-01-21",
     title: "3D測量で出来ることは？方法、メリット、活用場所も併せて紹介！",
@@ -18,6 +20,7 @@ const posts = [
     category: "技術解説",
   },
   {
+    slug: "open",
     date: "2020.07.21",
     dateTime: "2020-07-21",
     title: "Webサイトを公開しました",
@@ -76,20 +79,25 @@ export default function BlogPage() {
                 key={i}
                 className="py-6"
               >
-                <div className="flex items-center gap-3 mb-2">
-                  <time dateTime={post.dateTime} className="text-sm tracking-wider text-gray-500">
-                    {post.date}
-                  </time>
-                  <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded">
-                    {post.category}
+                <Link href={`/blog/${post.slug}`} className="block group">
+                  <div className="flex items-center gap-3 mb-2">
+                    <time dateTime={post.dateTime} className="text-sm tracking-wider text-gray-500">
+                      {post.date}
+                    </time>
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded">
+                      {post.category}
+                    </span>
+                  </div>
+                  <h2 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors">
+                    {post.title}
+                  </h2>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {post.description}
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-primary text-sm mt-3 group-hover:underline">
+                    続きを読む <span>&rarr;</span>
                   </span>
-                </div>
-                <h2 className="text-lg font-bold text-gray-800 mb-2">
-                  {post.title}
-                </h2>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  {post.description}
-                </p>
+                </Link>
               </article>
             ))}
           </div>
