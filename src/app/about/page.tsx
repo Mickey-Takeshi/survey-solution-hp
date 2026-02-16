@@ -12,7 +12,12 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <PageHeader title="当社について" subtitle="ABOUT" image="/images/hero-bg2.jpg" />
+      <PageHeader
+        title="当社について"
+        subtitle="ABOUT"
+        image="/images/hero-bg2.jpg"
+        breadcrumbItems={[{ name: "当社について", path: "/about" }]}
+      />
 
       {/* 企業理念 */}
       <section className="py-16 md:py-24">

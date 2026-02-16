@@ -50,7 +50,12 @@ export default function ProfilePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
       />
-      <PageHeader title="プロフィール" subtitle="PROFILE" image="/images/profile-bg.jpg" />
+      <PageHeader
+        title="プロフィール"
+        subtitle="PROFILE"
+        image="/images/profile-bg.jpg"
+        breadcrumbItems={[{ name: "プロフィール", path: "/profile" }]}
+      />
 
       {/* 代表者生い立ち */}
       <section className="py-16 md:py-24">

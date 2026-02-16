@@ -11,7 +11,11 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <PageHeader title="お問い合わせ" subtitle="CONTACT" />
+      <PageHeader
+        title="お問い合わせ"
+        subtitle="CONTACT"
+        breadcrumbItems={[{ name: "お問い合わせ", path: "/contact" }]}
+      />
 
       <section className="py-16 md:py-24">
         <div className="max-w-[700px] mx-auto px-6">

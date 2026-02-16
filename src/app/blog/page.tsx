@@ -27,7 +27,11 @@ const posts = [
 export default function BlogPage() {
   return (
     <>
-      <PageHeader title="ブログ" subtitle="BLOG" />
+      <PageHeader
+        title="ブログ"
+        subtitle="BLOG"
+        breadcrumbItems={[{ name: "ブログ", path: "/blog" }]}
+      />
 
       <section className="py-16 md:py-24">
         <div className="max-w-[800px] mx-auto px-6">

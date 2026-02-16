@@ -1,31 +1,16 @@
-"use client";
-
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
-const pathNames: Record<string, string> = {
-  about: "当社について",
-  service: "依頼事例",
-  profile: "プロフィール",
-  faq: "よくある質問",
-  blog: "ブログ",
-  contact: "お問い合わせ",
+type BreadcrumbItem = {
+  name: string;
+  path: string;
 };
 
-export default function Breadcrumb() {
-  const pathname = usePathname();
+type Props = {
+  items: BreadcrumbItem[];
+};
 
-  if (pathname === "/") return null;
-
-  const segments = pathname.split("/").filter(Boolean);
-
-  const breadcrumbItems = [
-    { name: "ホーム", path: "/" },
-    ...segments.map((segment, index) => ({
-      name: pathNames[segment] || segment,
-      path: "/" + segments.slice(0, index + 1).join("/"),
-    })),
-  ];
+export default function Breadcrumb({ items }: Props) {
+  const breadcrumbItems = [{ name: "ホーム", path: "/" }, ...items];
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -46,7 +31,11 @@ export default function Breadcrumb() {
       />
       <nav aria-label="パンくずリスト" className="bg-gray-100 py-3">
         <div className="max-w-[1200px] mx-auto px-6">
-          <ol className="flex items-center gap-2 text-xs text-gray-600" itemScope itemType="https://schema.org/BreadcrumbList">
+          <ol
+            className="flex items-center gap-2 text-xs text-gray-600"
+            itemScope
+            itemType="https://schema.org/BreadcrumbList"
+          >
             {breadcrumbItems.map((item, index) => (
               <li
                 key={item.path}

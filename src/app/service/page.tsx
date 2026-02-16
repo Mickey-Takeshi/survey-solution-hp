@@ -133,7 +133,12 @@ export default function ServicePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
       />
-      <PageHeader title="依頼事例" subtitle="SERVICE" image="/images/service-bg.jpg" />
+      <PageHeader
+        title="依頼事例"
+        subtitle="SERVICE"
+        image="/images/service-bg.jpg"
+        breadcrumbItems={[{ name: "依頼事例", path: "/service" }]}
+      />
 
       <section className="py-16 md:py-24">
         <div className="max-w-[1000px] mx-auto px-6 space-y-16">

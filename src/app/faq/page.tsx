@@ -71,7 +71,12 @@ export default function FaqPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-      <PageHeader title="よくある質問" subtitle="FAQ" image="/images/faq.jpg" />
+      <PageHeader
+        title="よくある質問"
+        subtitle="FAQ"
+        image="/images/faq.jpg"
+        breadcrumbItems={[{ name: "よくある質問", path: "/faq" }]}
+      />
 
       <section className="py-16 md:py-24">
         <div className="max-w-[800px] mx-auto px-6">
