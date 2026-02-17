@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.surveysolution.pro"
+        }
+      ],
+      "destination": "https://surveysolution.pro/:path*",
+      "permanent": true
+    }
+  ]
+}
