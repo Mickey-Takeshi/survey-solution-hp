@@ -2,23 +2,23 @@ import Link from "next/link";
 import Image from "next/image";
 
 const footerNavItems = [
-  { label: "当社について", href: "/about" },
-  { label: "プロフィール", href: "/profile" },
-  { label: "依頼事例", href: "/service" },
+  { label: "サービス概要", href: "/service" },
+  { label: "料金・費用の目安", href: "/price" },
+  { label: "導入事例", href: "/case" },
   { label: "よくある質問", href: "/faq" },
-  { label: "アクセス", href: "/about#access" },
+  { label: "会社概要", href: "/about" },
   { label: "ブログ", href: "/blog" },
   { label: "お問い合わせ", href: "/contact" },
-  { label: "京都土地境界トラブル相談室", href: "http://kyoukai-shokunin.com/", external: true },
+  { label: "プロフィール", href: "/profile" },
 ];
 
 const serviceLinks = [
-  { label: "工場の柱の傾き調査", href: "/service#service01" },
-  { label: "擁壁計画のための高低調査", href: "/service#service02" },
-  { label: "急傾斜地の断面・平面図作成", href: "/service#service03" },
-  { label: "建物丸ごと保存", href: "/service#service04" },
-  { label: "隣接建物の窓の位置調査", href: "/service#service05" },
-  { label: "建物の平面図・断面図作成", href: "/service#service06" },
+  { label: "地上レーザースキャン測量", href: "/service/laser-scan" },
+  { label: "ドローン（UAV）3D測量", href: "/service/drone" },
+  { label: "点群データ作成・処理", href: "/service/point-cloud" },
+  { label: "3Dモデリング・BIM連携", href: "/service/3d-modeling" },
+  { label: "建設・土木向け", href: "/solution/construction" },
+  { label: "建築・リノベ向け", href: "/solution/architecture" },
 ];
 
 export default function Footer() {
@@ -96,8 +96,6 @@ export default function Footer() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  target={item.external ? "_blank" : undefined}
-                  rel={item.external ? "noopener noreferrer" : undefined}
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   {item.label}
