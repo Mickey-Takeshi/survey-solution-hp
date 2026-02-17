@@ -82,7 +82,10 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {},
+  verification: {
+    // Google Search Consoleで取得した認証コードを設定してください
+    // google: "YOUR_GOOGLE_VERIFICATION_CODE",
+  },
 };
 
 const organizationJsonLd = {
@@ -98,13 +101,14 @@ const organizationJsonLd = {
   logo: `${siteUrl}/images/logo.png`,
   image: `${siteUrl}/images/og-image.jpg`,
   telephone: "075-744-1775",
-  email: "info@surveysolution.pro",
+  faxNumber: "075-744-1776",
+  email: "surveysolution.jp@gmail.com",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "錦小路通烏丸西入占出山町312 ケイズビル6F",
+    streetAddress: "新町通三条西入釜座町22番地ストークビル三条烏丸515",
     addressLocality: "京都市中京区",
     addressRegion: "京都府",
-    postalCode: "604-8155",
+    postalCode: "604-8241",
     addressCountry: "JP",
   },
   geo: {

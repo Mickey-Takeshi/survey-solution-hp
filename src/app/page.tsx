@@ -42,12 +42,12 @@ const howToJsonLd = {
 };
 
 const services = [
-  { id: "01", title: "工場の柱の傾き調査", image: "/images/service01.jpg" },
-  { id: "02", title: "擁壁計画のための\n高低調査", image: "/images/service02.jpg" },
-  { id: "03", title: "急傾斜地における\n断面・平面図作成", image: "/images/service03.jpg" },
-  { id: "04", title: "建物丸ごと保存", image: "/images/service04.jpg" },
-  { id: "05", title: "隣接建物の窓の位置調査", image: "/images/service05.jpg" },
-  { id: "06", title: "建物の\n平面図・断面図作成", image: "/images/service06.jpg" },
+  { id: "01", title: "工場の柱の傾き調査", image: "/images/service01.jpg", alt: "3Dスキャナによる工場の柱の傾き調査・傾斜測定" },
+  { id: "02", title: "擁壁計画のための\n高低調査", image: "/images/service02.jpg", alt: "擁壁計画のための3D測量による高低差調査" },
+  { id: "03", title: "急傾斜地における\n断面・平面図作成", image: "/images/service03.jpg", alt: "急傾斜地の3D測量による断面図・平面図作成" },
+  { id: "04", title: "建物丸ごと保存", image: "/images/service04.jpg", alt: "歴史的建造物の3Dデジタルアーカイブ・保存" },
+  { id: "05", title: "隣接建物の窓の位置調査", image: "/images/service05.jpg", alt: "隣接建物の窓位置を3Dスキャナで正確に調査" },
+  { id: "06", title: "建物の\n平面図・断面図作成", image: "/images/service06.jpg", alt: "建物の3D測量による平面図・断面図作成" },
 ];
 
 export default function Home() {
@@ -61,7 +61,7 @@ export default function Home() {
       <section className="relative h-[80vh] md:h-[90vh] overflow-hidden">
         <Image
           src="/images/hero-bg.jpg"
-          alt="3Dスキャナによる測量"
+          alt="京都の3D測量専門会社 株式会社SurveySolution - 3Dレーザースキャナによる高精度測量の様子"
           fill
           className="object-cover"
           priority
@@ -371,7 +371,7 @@ export default function Home() {
               >
                 <Image
                   src={s.image}
-                  alt={s.title.replace("\n", "")}
+                  alt={s.alt}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
