@@ -86,6 +86,14 @@ export const metadata: Metadata = {
     // Google Search Consoleで取得した認証コードを設定してください
     // google: "YOUR_GOOGLE_VERIFICATION_CODE",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
 };
 
 const organizationJsonLd = {
