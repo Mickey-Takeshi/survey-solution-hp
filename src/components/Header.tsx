@@ -5,13 +5,13 @@ import Image from "next/image";
 import { useState } from "react";
 
 const navItems = [
-  { label: "当社について", href: "/about" },
-  { label: "プロフィール", href: "/profile" },
-  { label: "依頼事例", href: "/service" },
+  { label: "サービス", href: "/service" },
+  { label: "業界別ソリューション", href: "/solution/construction" },
+  { label: "料金", href: "/price" },
+  { label: "導入事例", href: "/case" },
   { label: "よくある質問", href: "/faq" },
-  { label: "アクセス", href: "/about#access" },
+  { label: "会社概要", href: "/about" },
   { label: "ブログ", href: "/blog" },
-  { label: "京都土地境界トラブル相談室", href: "http://kyoukai-shokunin.com/", external: true },
 ];
 
 export default function Header() {
@@ -49,8 +49,6 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              target={item.external ? "_blank" : undefined}
-              rel={item.external ? "noopener noreferrer" : undefined}
               className="text-sm text-gray-700 hover:text-primary transition-colors whitespace-nowrap relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full"
             >
               {item.label}
@@ -93,8 +91,6 @@ export default function Header() {
           <Link
             key={item.href}
             href={item.href}
-            target={item.external ? "_blank" : undefined}
-            rel={item.external ? "noopener noreferrer" : undefined}
             className="block px-6 py-3.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary border-b border-gray-100 transition-colors"
             onClick={() => setIsOpen(false)}
           >
