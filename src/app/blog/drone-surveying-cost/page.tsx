@@ -66,6 +66,7 @@ export default function DroneSurveyingCostPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "ドローン測量の費用", path: "/blog/drone-surveying-cost" },

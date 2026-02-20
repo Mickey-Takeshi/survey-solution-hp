@@ -80,6 +80,7 @@ export default function WhatIs3DSurveyingPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "3D測量とは？", path: "/blog/what-is-3d-surveying" },

@@ -74,7 +74,7 @@ export default function PricePage() {
   return (
     <>
       <PageHeader
-        title="料金・費用の目安"
+        title="3D測量の料金・費用の目安"
         subtitle="PRICING"
         image="/images/service-bg.jpg"
         breadcrumbItems={[{ name: "料金・費用の目安", path: "/price" }]}
@@ -99,7 +99,7 @@ export default function PricePage() {
         <div className="max-w-[900px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">PRICE LIST</span>
-            <h2 className="section-title-ja">サービス別料金の目安</h2>
+            <h2 className="section-title-ja">3D測量サービス別料金の目安</h2>
           </div>
           <div className="space-y-10">
             {pricingCategories.map((cat) => (
@@ -145,7 +145,7 @@ export default function PricePage() {
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">COST FACTORS</span>
-            <h2 className="section-title-ja">費用が変動する5つのポイント</h2>
+            <h2 className="section-title-ja">3D測量の費用が変動する5つのポイント</h2>
           </div>
           <div className="space-y-6">
             {factors.map((f, i) => (
@@ -192,7 +192,7 @@ export default function PricePage() {
       <section className="py-12 md:py-16">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-8">
-            <h2 className="section-title-ja">料金に関するよくある質問</h2>
+            <h2 className="section-title-ja">3D測量の料金に関するよくある質問</h2>
           </div>
           <div className="space-y-6">
             {[
@@ -220,7 +220,7 @@ export default function PricePage() {
       <section className="py-16 bg-primary">
         <div className="max-w-[800px] mx-auto px-6 text-center text-white">
           <h2 className="text-xl md:text-2xl font-bold mb-4">
-            無料見積もりを申し込む
+            3D測量の無料見積もりを申し込む
           </h2>
           <p className="text-sm mb-6 opacity-90">
             対象物の所在地・規模・測量目的をお伝えいただければ、1〜3営業日以内に概算のお見積もりをご提示いたします。

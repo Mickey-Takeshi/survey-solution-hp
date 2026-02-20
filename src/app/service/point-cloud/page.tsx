@@ -109,7 +109,7 @@ export default function PointCloudPage() {
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">PROCESS</span>
-            <h2 className="section-title-ja">データ処理の流れ</h2>
+            <h2 className="section-title-ja">点群データ処理の流れ</h2>
           </div>
           <div className="space-y-6">
             {processes.map((item) => (
@@ -132,7 +132,7 @@ export default function PointCloudPage() {
         <div className="max-w-[900px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">DELIVERABLES</span>
-            <h2 className="section-title-ja">納品可能な成果物</h2>
+            <h2 className="section-title-ja">点群データから納品可能な成果物</h2>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border border-gray-200 rounded-lg overflow-hidden">
@@ -162,7 +162,7 @@ export default function PointCloudPage() {
         <div className="max-w-[1000px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">STRENGTHS</span>
-            <h2 className="section-title-ja">弊社のデータ処理の強み</h2>
+            <h2 className="section-title-ja">3D測量データ処理の強み</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -192,7 +192,7 @@ export default function PointCloudPage() {
       <section className="py-12 md:py-16">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-8">
-            <h2 className="section-title-ja">関連サービス</h2>
+            <h2 className="section-title-ja">3D測量の関連サービス</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <Link href="/service/laser-scan" className="block bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-shadow">
@@ -215,7 +215,7 @@ export default function PointCloudPage() {
       <section className="py-16 bg-primary">
         <div className="max-w-[800px] mx-auto px-6 text-center text-white">
           <h2 className="text-xl md:text-2xl font-bold mb-4">
-            まずはお気軽にご相談ください
+            点群データ処理のご相談はお気軽に
           </h2>
           <p className="text-sm mb-6 opacity-90">
             「既存の点群データを図面化したい」「どの形式で納品すればいいか分からない」など、データ処理に関するご相談を承ります。

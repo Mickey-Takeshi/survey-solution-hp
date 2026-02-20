@@ -14,7 +14,7 @@ export default function HighwayCasePage() {
   return (
     <>
       <PageHeader
-        title="高速道路の出来形管理"
+        title="高速道路の出来形管理｜3D測量導入事例"
         subtitle="CASE STUDY"
         image="/images/case-highway.jpg"
         breadcrumbItems={[
@@ -45,7 +45,7 @@ export default function HighwayCasePage() {
       {/* プロジェクト概要 */}
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="section-title-ja mb-8">プロジェクト概要</h2>
+          <h2 className="section-title-ja mb-8">高速道路3D測量のプロジェクト概要</h2>
           <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
             <table className="w-full text-sm">
               <tbody>
@@ -71,7 +71,7 @@ export default function HighwayCasePage() {
       {/* 課題 */}
       <section className="py-12 md:py-16">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="section-title-ja mb-8">導入前の課題</h2>
+          <h2 className="section-title-ja mb-8">従来測量による出来形管理の課題</h2>
           <div className="space-y-4">
             {[
               "TS測量による出来形管理は、1回の計測に2日以上かかっていた",
@@ -91,7 +91,7 @@ export default function HighwayCasePage() {
       {/* 解決策 */}
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="section-title-ja mb-8">弊社の解決策</h2>
+          <h2 className="section-title-ja mb-8">3Dスキャン・ドローン測量による解決策</h2>
           <div className="space-y-6">
             {[
               { title: "ドローン測量による面的データ取得", desc: "施工区間全体をドローンで上空から計測し、面的な出来形データを取得。計測時間を1回あたり半日に短縮しました。" },
@@ -111,7 +111,7 @@ export default function HighwayCasePage() {
       {/* 成果 */}
       <section className="py-12 md:py-16">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="section-title-ja mb-8">導入効果</h2>
+          <h2 className="section-title-ja mb-8">3D測量の導入効果｜工数60%削減</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { metric: "60%", label: "出来形管理の工数削減", detail: "計測2日→半日、帳票作成3日→1日" },
@@ -152,7 +152,7 @@ export default function HighwayCasePage() {
       {/* CTA */}
       <section className="py-16 bg-primary">
         <div className="max-w-[800px] mx-auto px-6 text-center text-white">
-          <h2 className="text-xl md:text-2xl font-bold mb-4">まずはお気軽にご相談ください</h2>
+          <h2 className="text-xl md:text-2xl font-bold mb-4">土木現場の3D測量はお気軽にご相談ください</h2>
           <p className="text-sm mb-6 opacity-90">
             建設・土木現場の出来形管理やICT施工対応について、無料でご相談を承ります。
           </p>

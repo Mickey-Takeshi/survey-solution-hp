@@ -80,6 +80,7 @@ export default function SurveyingDxPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "測量DXの進め方", path: "/blog/surveying-dx" },

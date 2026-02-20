@@ -80,6 +80,7 @@ export default function SoilVolume3DPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "土量計算を3Dスキャンで効率化", path: "/blog/soil-volume-3d" },

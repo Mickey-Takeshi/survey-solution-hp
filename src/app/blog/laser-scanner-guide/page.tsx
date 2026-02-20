@@ -80,6 +80,7 @@ export default function LaserScannerGuidePage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "レーザースキャナーとは？", path: "/blog/laser-scanner-guide" },

@@ -80,6 +80,7 @@ export default function PlantPiping3dModelPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "プラント配管の3Dモデル化", path: "/blog/plant-piping-3d-model" },

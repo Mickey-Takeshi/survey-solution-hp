@@ -80,6 +80,7 @@ export default function SurveyingTrends2026Page() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "2026年版 3D測量の最新トレンド", path: "/blog/3d-surveying-trends-2026" },

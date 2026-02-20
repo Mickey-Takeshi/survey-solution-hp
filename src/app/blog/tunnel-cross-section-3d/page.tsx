@@ -80,6 +80,7 @@ export default function TunnelCrossSection3DPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "トンネル断面測量の3D化", path: "/blog/tunnel-cross-section-3d" },

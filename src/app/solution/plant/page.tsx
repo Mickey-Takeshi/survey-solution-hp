@@ -80,7 +80,7 @@ export default function PlantPage() {
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-8">
-            <h2 className="section-title-ja">こんな課題はありませんか？</h2>
+            <h2 className="section-title-ja">プラント・工場でこんな課題はありませんか？</h2>
           </div>
           <div className="space-y-4">
             {challenges.map((c, i) => (
@@ -98,7 +98,7 @@ export default function PlantPage() {
         <div className="max-w-[1000px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">SOLUTIONS</span>
-            <h2 className="section-title-ja">3D測量による解決策</h2>
+            <h2 className="section-title-ja">プラント・工場での3D測量による解決策</h2>
           </div>
           <div className="space-y-8">
             {solutions.map((s) => (
@@ -119,7 +119,7 @@ export default function PlantPage() {
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-8">
             <span className="section-label">PRICING</span>
-            <h2 className="section-title-ja">料金の目安</h2>
+            <h2 className="section-title-ja">プラント・工場向け3D測量の料金目安</h2>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border border-gray-200 rounded-lg overflow-hidden bg-white">
@@ -153,7 +153,7 @@ export default function PlantPage() {
       <section className="py-12 md:py-16">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-8">
-            <h2 className="section-title-ja">よくある質問</h2>
+            <h2 className="section-title-ja">プラント・工場の3D測量に関するよくある質問</h2>
           </div>
           <div className="space-y-6">
             {[
@@ -179,7 +179,7 @@ export default function PlantPage() {
       {/* CTA */}
       <section className="py-16 bg-primary">
         <div className="max-w-[800px] mx-auto px-6 text-center text-white">
-          <h2 className="text-xl md:text-2xl font-bold mb-4">まずはお気軽にご相談ください</h2>
+          <h2 className="text-xl md:text-2xl font-bold mb-4">プラント・工場の3D測量はお気軽にご相談ください</h2>
           <p className="text-sm mb-6 opacity-90">
             プラント・工場の3D測量について、無料でご相談を承ります。対象エリアの規模・条件をお伺いし、最適な測量方法と概算費用をご提案いたします。
           </p>

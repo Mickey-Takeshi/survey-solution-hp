@@ -80,6 +80,7 @@ export default function Slope3DSurveyingPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "法面測量を3Dレーザーで行うメリット", path: "/blog/slope-3d-surveying" },

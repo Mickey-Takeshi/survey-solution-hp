@@ -126,7 +126,7 @@ export default function Home() {
         <div className="max-w-[900px] mx-auto px-6">
           <div className="text-center mb-10">
             <span className="section-label text-gray-500">WHAT IS 3D SURVEY</span>
-            <h2 className="section-title-ja text-primary mt-2">3D測量とは</h2>
+            <h2 className="section-title-ja text-primary mt-2">3D測量（三次元測量）とは</h2>
           </div>
           <div className="bg-gray-50 rounded-lg p-8 mb-8">
             <p className="text-base leading-loose text-gray-800 font-medium mb-4">
@@ -167,7 +167,7 @@ export default function Home() {
         <div className="max-w-[1000px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-2">
-              こんなお悩みありませんか？
+              建物測量・構造物調査でこんなお悩みありませんか？
             </h2>
             <div className="w-16 h-0.5 bg-primary mx-auto" />
           </div>
@@ -271,7 +271,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <span className="section-label text-gray-500">REASON</span>
             <div className="section-heading mt-2">
-              <h2 className="section-title-ja text-primary">選ばれる3つの理由</h2>
+              <h2 className="section-title-ja text-primary">3D測量会社として選ばれる3つの理由</h2>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
@@ -360,7 +360,7 @@ export default function Home() {
         <div className="relative z-10 max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label text-white/80">SERVICE</span>
-            <h2 className="section-title-ja text-white mt-2">依頼事例紹介</h2>
+            <h2 className="section-title-ja text-white mt-2">3Dスキャナ測量の依頼事例</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((s) => (
@@ -400,7 +400,7 @@ export default function Home() {
       <section className="py-12 md:py-16 bg-primary">
         <div className="max-w-[900px] mx-auto px-6 text-center text-white">
           <h2 className="text-xl md:text-2xl font-bold mb-3">
-            3D測量のことなら、まずはお気軽にご相談ください
+            3D測量・3Dスキャナ測量のご相談はお気軽に
           </h2>
           <p className="text-sm mb-6 opacity-90">
             現地調査からデータ分析まで、お客様の課題に合わせた最適なご提案をいたします。
@@ -429,7 +429,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <span className="section-label text-gray-500">FLOW</span>
             <div className="section-heading mt-2">
-              <h2 className="section-title-ja text-primary">ご依頼の流れ</h2>
+              <h2 className="section-title-ja text-primary">3D測量ご依頼の流れ</h2>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -485,7 +485,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <span className="section-label text-gray-500">BLOG</span>
             <div className="section-heading mt-2">
-              <h2 className="section-title-ja text-primary">ブログ</h2>
+              <h2 className="section-title-ja text-primary">3D測量の技術ブログ</h2>
             </div>
           </div>
           <div className="max-w-[800px] mx-auto divide-y">

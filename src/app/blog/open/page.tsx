@@ -45,6 +45,7 @@ export default function ArticleOpenPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "Webサイトを公開しました", path: "/blog/open" },

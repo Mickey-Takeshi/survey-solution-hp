@@ -73,7 +73,7 @@ export default function FaqPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <PageHeader
-        title="よくある質問"
+        title="3D測量のよくある質問"
         subtitle="FAQ"
         image="/images/faq.jpg"
         breadcrumbItems={[{ name: "よくある質問", path: "/faq" }]}

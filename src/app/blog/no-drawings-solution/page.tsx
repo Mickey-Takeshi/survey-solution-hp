@@ -80,6 +80,7 @@ export default function NoDrawingsSolutionPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "図面がない建物の現況図を作る方法", path: "/blog/no-drawings-solution" },

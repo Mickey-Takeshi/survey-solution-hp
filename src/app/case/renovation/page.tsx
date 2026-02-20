@@ -14,7 +14,7 @@ export default function RenovationCasePage() {
   return (
     <>
       <PageHeader
-        title="築50年ビルのリノベーション測量"
+        title="築50年ビルのリノベーション測量｜3Dスキャン導入事例"
         subtitle="CASE STUDY"
         image="/images/case-renovation.jpg"
         breadcrumbItems={[
@@ -46,7 +46,7 @@ export default function RenovationCasePage() {
       {/* プロジェクト概要 */}
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="section-title-ja mb-8">プロジェクト概要</h2>
+          <h2 className="section-title-ja mb-8">築50年ビル3Dスキャンのプロジェクト概要</h2>
           <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
             <table className="w-full text-sm">
               <tbody>
@@ -72,7 +72,7 @@ export default function RenovationCasePage() {
       {/* 課題 */}
       <section className="py-12 md:py-16">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="section-title-ja mb-8">導入前の課題</h2>
+          <h2 className="section-title-ja mb-8">図面のない既存建物の測量課題</h2>
           <div className="space-y-4">
             {[
               "竣工図面が紛失しており、建物の正確な寸法情報がない",
@@ -92,7 +92,7 @@ export default function RenovationCasePage() {
       {/* 解決策 */}
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="section-title-ja mb-8">弊社の解決策</h2>
+          <h2 className="section-title-ja mb-8">3Dスキャンによる現況図面作成の解決策</h2>
           <div className="space-y-6">
             {[
               { title: "建物内外の3Dスキャン", desc: "地上レーザースキャナとハンドヘルドスキャナを併用し、各階のフロア・階段室・外壁を2日間でスキャン。狭い設備室や天井裏もハンドヘルドスキャナで計測しました。" },
@@ -111,7 +111,7 @@ export default function RenovationCasePage() {
       {/* 成果 */}
       <section className="py-12 md:py-16">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="section-title-ja mb-8">導入効果</h2>
+          <h2 className="section-title-ja mb-8">3Dスキャン導入効果｜図面作成期間75%短縮</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { metric: "75%", label: "図面作成期間の短縮", detail: "従来4週間→1週間に短縮" },
@@ -152,7 +152,7 @@ export default function RenovationCasePage() {
       {/* CTA */}
       <section className="py-16 bg-primary">
         <div className="max-w-[800px] mx-auto px-6 text-center text-white">
-          <h2 className="text-xl md:text-2xl font-bold mb-4">まずはお気軽にご相談ください</h2>
+          <h2 className="text-xl md:text-2xl font-bold mb-4">既存建物の3Dスキャンはお気軽にご相談ください</h2>
           <p className="text-sm mb-6 opacity-90">
             図面のない既存建物の現況図面作成やBIM化について、無料でご相談を承ります。
           </p>

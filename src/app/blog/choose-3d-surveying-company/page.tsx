@@ -80,6 +80,7 @@ export default function Choose3DSurveyingCompanyPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "3D測量業者の選び方", path: "/blog/choose-3d-surveying-company" },

@@ -100,7 +100,7 @@ export default function LaserScanPage() {
         <div className="max-w-[1000px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">FEATURES</span>
-            <h2 className="section-title-ja">地上レーザースキャンの特長</h2>
+            <h2 className="section-title-ja">地上3Dレーザースキャン測量の特長</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -147,7 +147,7 @@ export default function LaserScanPage() {
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">SPECIFICATIONS</span>
-            <h2 className="section-title-ja">機器スペック・対応データ</h2>
+            <h2 className="section-title-ja">3Dレーザースキャナの機器スペック・対応データ</h2>
           </div>
           <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
             <table className="w-full text-sm">
@@ -171,7 +171,7 @@ export default function LaserScanPage() {
         <div className="max-w-[1000px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">USE CASES</span>
-            <h2 className="section-title-ja">活用シーン</h2>
+            <h2 className="section-title-ja">地上レーザースキャン測量の活用シーン</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {useCases.map((uc) => (
@@ -188,7 +188,7 @@ export default function LaserScanPage() {
       <section className="py-12 md:py-16">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-8">
-            <h2 className="section-title-ja">関連サービス</h2>
+            <h2 className="section-title-ja">3D測量の関連サービス</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <Link href="/service/drone" className="block bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-shadow">
@@ -211,7 +211,7 @@ export default function LaserScanPage() {
       <section className="py-16 bg-primary">
         <div className="max-w-[800px] mx-auto px-6 text-center text-white">
           <h2 className="text-xl md:text-2xl font-bold mb-4">
-            まずはお気軽にご相談ください
+            レーザースキャン測量のご相談はお気軽に
           </h2>
           <p className="text-sm mb-6 opacity-90">
             「この現場で3Dスキャンは使えるか？」「費用の目安を知りたい」など、どのような段階でもご相談を承ります。

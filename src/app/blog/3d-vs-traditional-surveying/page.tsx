@@ -80,6 +80,7 @@ export default function ThreeDVsTraditionalSurveyingPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "3D測量 vs 従来測量", path: "/blog/3d-vs-traditional-surveying" },

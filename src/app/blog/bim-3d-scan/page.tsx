@@ -80,6 +80,7 @@ export default function Bim3dScanPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "BIMと3Dスキャンの連携方法", path: "/blog/bim-3d-scan" },

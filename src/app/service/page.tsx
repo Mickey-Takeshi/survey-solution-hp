@@ -171,7 +171,7 @@ export default function ServicePage() {
         <div className="max-w-[1000px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">OUR SERVICES</span>
-            <h2 className="section-title-ja">4つのサービス</h2>
+            <h2 className="section-title-ja">3D測量の4つのサービス</h2>
           </div>
           <div className="space-y-12">
             {services.map((s, index) => (
@@ -218,7 +218,7 @@ export default function ServicePage() {
         <div className="max-w-[1000px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">SOLUTIONS</span>
-            <h2 className="section-title-ja">業界別ソリューション</h2>
+            <h2 className="section-title-ja">業界別3D測量ソリューション</h2>
             <p className="text-sm text-gray-600 mt-4">
               貴社の業界・課題に合わせた最適な3D測量の活用方法をご提案します。
             </p>
@@ -249,7 +249,7 @@ export default function ServicePage() {
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">FLOW</span>
-            <h2 className="section-title-ja">ご依頼の流れ</h2>
+            <h2 className="section-title-ja">3D測量ご依頼の流れ</h2>
           </div>
           <div className="space-y-6">
             {[
@@ -277,7 +277,7 @@ export default function ServicePage() {
       <section className="py-16 bg-primary">
         <div className="max-w-[800px] mx-auto px-6 text-center text-white">
           <h2 className="text-xl md:text-2xl font-bold mb-4">
-            まずはお気軽にご相談ください
+            3D測量のことなら、まずはお気軽にご相談ください
           </h2>
           <p className="text-sm mb-6 opacity-90">
             「何から始めればいいか分からない」という段階でも大丈夫です。

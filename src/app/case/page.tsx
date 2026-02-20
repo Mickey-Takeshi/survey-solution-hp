@@ -53,7 +53,7 @@ export default function CasePage() {
   return (
     <>
       <PageHeader
-        title="導入事例"
+        title="3D測量の導入事例"
         subtitle="CASE STUDIES"
         image="/images/service-bg.jpg"
         breadcrumbItems={[{ name: "導入事例", path: "/case" }]}
@@ -122,7 +122,7 @@ export default function CasePage() {
       <section className="py-16 bg-primary">
         <div className="max-w-[800px] mx-auto px-6 text-center text-white">
           <h2 className="text-xl md:text-2xl font-bold mb-4">
-            貴社の現場でも3D測量を活用しませんか？
+            3D測量の導入をご検討の方はお気軽にご相談ください
           </h2>
           <p className="text-sm mb-6 opacity-90">
             「自社の現場でも使えるか知りたい」「費用感を把握したい」など、どのような段階でもご相談を承ります。

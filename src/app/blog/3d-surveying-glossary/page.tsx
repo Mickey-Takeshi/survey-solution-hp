@@ -80,6 +80,7 @@ export default function SurveyingGlossaryPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "3D測量で使われる用語集", path: "/blog/3d-surveying-glossary" },

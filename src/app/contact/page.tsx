@@ -13,7 +13,7 @@ export default function ContactPage() {
   return (
     <>
       <PageHeader
-        title="お問い合わせ"
+        title="3D測量の無料相談・お問い合わせ"
         subtitle="CONTACT"
         breadcrumbItems={[{ name: "お問い合わせ", path: "/contact" }]}
       />

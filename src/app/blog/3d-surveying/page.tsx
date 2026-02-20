@@ -47,6 +47,7 @@ export default function Article3DSurveyingPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "3D測量で出来ることは？", path: "/blog/3d-surveying" },

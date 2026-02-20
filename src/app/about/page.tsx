@@ -14,7 +14,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHeader
-        title="当社について"
+        title="3D測量の専門会社｜会社概要"
         subtitle="ABOUT"
         image="/images/hero-bg2.jpg"
         breadcrumbItems={[{ name: "当社について", path: "/about" }]}
@@ -26,7 +26,7 @@ export default function AboutPage() {
           <div className="text-center mb-8">
             <span className="section-label text-gray-500">PHILOSOPHY</span>
             <h2 className="text-primary text-2xl md:text-3xl font-bold leading-relaxed mt-2">
-              企業理念
+              企業理念｜3D測量で世の中を変える
             </h2>
           </div>
           <p className="text-primary text-xl md:text-2xl font-bold leading-relaxed mb-8 text-center">
@@ -126,7 +126,7 @@ export default function AboutPage() {
         <div className="max-w-[1100px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label text-gray-500">ACCESS</span>
-            <h2 className="section-title-ja text-primary mt-2">アクセス</h2>
+            <h2 className="section-title-ja text-primary mt-2">アクセス｜京都市中京区 烏丸駅徒歩3分</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             {/* 左側：オフィス画像 */}

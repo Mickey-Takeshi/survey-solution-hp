@@ -6,9 +6,10 @@ type Props = {
   subtitle?: string;
   image?: string;
   breadcrumbItems?: { name: string; path: string }[];
+  as?: "h1" | "p";
 };
 
-export default function PageHeader({ title, subtitle, image, breadcrumbItems }: Props) {
+export default function PageHeader({ title, subtitle, image, breadcrumbItems, as: Tag = "h1" }: Props) {
   return (
     <>
       <div className="relative h-48 md:h-64 overflow-hidden">
@@ -24,7 +25,7 @@ export default function PageHeader({ title, subtitle, image, breadcrumbItems }: 
           {subtitle && (
             <span className="text-xs tracking-widest mb-2 uppercase">{subtitle}</span>
           )}
-          <h1 className="text-2xl md:text-4xl font-bold tracking-wider">{title}</h1>
+          <Tag className="text-2xl md:text-4xl font-bold tracking-wider">{title}</Tag>
         </div>
       </div>
       {breadcrumbItems && <Breadcrumb items={breadcrumbItems} />}

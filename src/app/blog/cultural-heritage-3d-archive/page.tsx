@@ -80,6 +80,7 @@ export default function CulturalHeritage3dArchivePage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "文化財の3Dデジタルアーカイブ", path: "/blog/cultural-heritage-3d-archive" },

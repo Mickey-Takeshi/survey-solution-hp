@@ -80,6 +80,7 @@ export default function SurveyingUseCasesPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "3D測量の活用事例10選", path: "/blog/3d-surveying-use-cases" },

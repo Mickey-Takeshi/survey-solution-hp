@@ -80,6 +80,7 @@ export default function FactoryLayout3dPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "工場レイアウト変更を3D測量で効率化", path: "/blog/factory-layout-3d" },

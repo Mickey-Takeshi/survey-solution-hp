@@ -115,7 +115,7 @@ export default function DronePage() {
         <div className="max-w-[1000px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">FEATURES</span>
-            <h2 className="section-title-ja">ドローン測量の特長</h2>
+            <h2 className="section-title-ja">ドローン（UAV）3D測量の特長</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((f) => (
@@ -133,7 +133,7 @@ export default function DronePage() {
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">COMPARISON</span>
-            <h2 className="section-title-ja">地上レーザースキャンとの比較</h2>
+            <h2 className="section-title-ja">ドローン測量と地上レーザースキャンの比較</h2>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border border-gray-200 rounded-lg overflow-hidden">
@@ -172,7 +172,7 @@ export default function DronePage() {
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">SPECIFICATIONS</span>
-            <h2 className="section-title-ja">計測スペック・成果物</h2>
+            <h2 className="section-title-ja">ドローン3D測量の計測スペック・成果物</h2>
           </div>
           <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
             <table className="w-full text-sm">
@@ -196,7 +196,7 @@ export default function DronePage() {
         <div className="max-w-[1000px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">USE CASES</span>
-            <h2 className="section-title-ja">活用シーン</h2>
+            <h2 className="section-title-ja">ドローン測量の活用シーン</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {useCases.map((uc) => (
@@ -213,7 +213,7 @@ export default function DronePage() {
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-8">
-            <h2 className="section-title-ja">関連サービス</h2>
+            <h2 className="section-title-ja">3D測量の関連サービス</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <Link href="/service/laser-scan" className="block bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-shadow">
@@ -236,7 +236,7 @@ export default function DronePage() {
       <section className="py-16 bg-primary">
         <div className="max-w-[800px] mx-auto px-6 text-center text-white">
           <h2 className="text-xl md:text-2xl font-bold mb-4">
-            まずはお気軽にご相談ください
+            ドローン測量のご相談はお気軽に
           </h2>
           <p className="text-sm mb-6 opacity-90">
             「ドローン測量でどのくらい効率化できるか知りたい」「費用の目安を知りたい」など、どのような段階でもご相談を承ります。

@@ -80,6 +80,7 @@ export default function BridgeInspection3DPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "橋梁点検における3D測量の活用", path: "/blog/bridge-inspection-3d" },

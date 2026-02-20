@@ -80,6 +80,7 @@ export default function IConstructionSurveyingPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "i-Construction対応の3D測量", path: "/blog/i-construction-3d-surveying" },

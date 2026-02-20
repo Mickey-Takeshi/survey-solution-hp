@@ -80,6 +80,7 @@ export default function PointCloudGuidePage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "点群データとは？", path: "/blog/point-cloud-guide" },

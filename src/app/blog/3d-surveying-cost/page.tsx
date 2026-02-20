@@ -66,6 +66,7 @@ export default function SurveyingCostPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "3D測量の費用相場", path: "/blog/3d-surveying-cost" },

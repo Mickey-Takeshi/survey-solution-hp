@@ -80,6 +80,7 @@ export default function LaborShortageSolutionPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
           { name: "測量の人手不足を解決する3つの方法", path: "/blog/labor-shortage-solution" },

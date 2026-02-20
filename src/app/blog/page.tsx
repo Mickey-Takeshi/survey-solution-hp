@@ -301,7 +301,7 @@ export default function BlogPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
       />
       <PageHeader
-        title="ブログ"
+        title="3D測量ブログ｜技術コラム・活用事例"
         subtitle="BLOG"
         image="/images/blog-mv.jpg"
         breadcrumbItems={[{ name: "ブログ", path: "/blog" }]}

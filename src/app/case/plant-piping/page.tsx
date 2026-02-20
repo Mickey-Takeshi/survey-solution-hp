@@ -14,7 +14,7 @@ export default function PlantPipingCasePage() {
   return (
     <>
       <PageHeader
-        title="化学工場の配管3D化"
+        title="化学工場の配管3Dモデル化｜3Dスキャン導入事例"
         subtitle="CASE STUDY"
         image="/images/case-plant-piping.jpg"
         breadcrumbItems={[
@@ -47,7 +47,7 @@ export default function PlantPipingCasePage() {
       {/* プロジェクト概要 */}
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="section-title-ja mb-8">プロジェクト概要</h2>
+          <h2 className="section-title-ja mb-8">化学工場の配管3Dスキャン プロジェクト概要</h2>
           <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
             <table className="w-full text-sm">
               <tbody>
@@ -73,7 +73,7 @@ export default function PlantPipingCasePage() {
       {/* 課題 */}
       <section className="py-12 md:py-16">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="section-title-ja mb-8">導入前の課題</h2>
+          <h2 className="section-title-ja mb-8">既存配管設備の管理・干渉チェックの課題</h2>
           <div className="space-y-4">
             {[
               "竣工時の配管図面が実態と大きく異なっており、設計の基礎データとして使えない",
@@ -93,7 +93,7 @@ export default function PlantPipingCasePage() {
       {/* 解決策 */}
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="section-title-ja mb-8">弊社の解決策</h2>
+          <h2 className="section-title-ja mb-8">3Dスキャンによる配管モデル化の解決策</h2>
           <div className="space-y-6">
             {[
               { title: "配管密集区画の3Dスキャン", desc: "地上レーザースキャナとハンドヘルドスキャナを併用し、配管が密集する区画を3日間でスキャン。配管の背面や狭隘部もハンドヘルドスキャナで漏れなく計測しました。" },
@@ -112,7 +112,7 @@ export default function PlantPipingCasePage() {
       {/* 成果 */}
       <section className="py-12 md:py-16">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="section-title-ja mb-8">導入効果</h2>
+          <h2 className="section-title-ja mb-8">3D測量の導入効果｜干渉チェック工数80%削減</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { metric: "80%", label: "干渉チェック工数の削減", detail: "現場合わせ→3Dモデル上での事前検証" },
@@ -153,7 +153,7 @@ export default function PlantPipingCasePage() {
       {/* CTA */}
       <section className="py-16 bg-primary">
         <div className="max-w-[800px] mx-auto px-6 text-center text-white">
-          <h2 className="text-xl md:text-2xl font-bold mb-4">まずはお気軽にご相談ください</h2>
+          <h2 className="text-xl md:text-2xl font-bold mb-4">プラントの3Dスキャンはお気軽にご相談ください</h2>
           <p className="text-sm mb-6 opacity-90">
             プラント・工場の配管3D化や設備改修の効率化について、無料でご相談を承ります。
           </p>

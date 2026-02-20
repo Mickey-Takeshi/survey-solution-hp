@@ -117,7 +117,7 @@ export default function ModelingPage() {
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">SCAN TO BIM FLOW</span>
-            <h2 className="section-title-ja">スキャンtoBIMの流れ</h2>
+            <h2 className="section-title-ja">3Dスキャンから BIMモデル作成の流れ</h2>
           </div>
           <div className="space-y-6">
             {bimFlows.map((item) => (
@@ -140,7 +140,7 @@ export default function ModelingPage() {
         <div className="max-w-[1000px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">ADVANTAGES</span>
-            <h2 className="section-title-ja">BIM化のメリット</h2>
+            <h2 className="section-title-ja">3Dスキャンによる BIM化のメリット</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {advantages.map((adv) => (
@@ -158,7 +158,7 @@ export default function ModelingPage() {
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">COMPATIBILITY</span>
-            <h2 className="section-title-ja">対応ソフトウェア・納品形式</h2>
+            <h2 className="section-title-ja">3Dモデリングの対応ソフトウェア・納品形式</h2>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border border-gray-200 rounded-lg overflow-hidden">
@@ -192,7 +192,7 @@ export default function ModelingPage() {
       <section className="py-12 md:py-16">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-8">
-            <h2 className="section-title-ja">関連サービス</h2>
+            <h2 className="section-title-ja">3D測量の関連サービス</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <Link href="/service/laser-scan" className="block bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-shadow">
@@ -215,7 +215,7 @@ export default function ModelingPage() {
       <section className="py-16 bg-primary">
         <div className="max-w-[800px] mx-auto px-6 text-center text-white">
           <h2 className="text-xl md:text-2xl font-bold mb-4">
-            まずはお気軽にご相談ください
+            3Dモデリング・BIM連携のご相談はお気軽に
           </h2>
           <p className="text-sm mb-6 opacity-90">
             「既存建物をBIM化したい」「i-Construction基準に準拠したCIMモデルが必要」など、3Dモデリングに関するご相談を承ります。

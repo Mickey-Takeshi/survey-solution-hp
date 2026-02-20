@@ -52,7 +52,7 @@ export default function ProfilePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
       />
       <PageHeader
-        title="プロフィール"
+        title="代表プロフィール｜土地家屋調査士 齋藤大輔"
         subtitle="PROFILE"
         image="/images/profile-bg.jpg"
         breadcrumbItems={[{ name: "プロフィール", path: "/profile" }]}
