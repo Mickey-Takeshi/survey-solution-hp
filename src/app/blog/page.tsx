@@ -247,12 +247,12 @@ const posts: {
   // 既存記事
   {
     slug: "3d-surveying",
-    date: "2021.01.21",
-    dateTime: "2021-01-21",
-    title: "3D測量で出来ることは？方法、メリット、活用場所も併せて紹介！",
-    description: "3D測量（三次元測量）の基本から活用方法まで詳しく解説。建設・土木・文化財保存など様々な分野での活用事例を紹介します。",
-    category: "技術解説",
-    image: "/images/blog-3d-surveying-main.jpeg",
+    date: "2026.02.20",
+    dateTime: "2026-02-20",
+    title: "3D測量とは？方法・メリット・費用・活用事例を専門家が徹底解説【2026年最新】",
+    description: "3D測量（三次元測量）の定義・3つの手法・5つのメリット・費用相場・7業種の活用事例・最新トレンドを、土地家屋調査士が徹底解説。",
+    category: "基礎知識",
+    image: "/images/blog-construction-survey.jpg",
   },
   {
     slug: "open",

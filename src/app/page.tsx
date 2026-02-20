@@ -490,8 +490,8 @@ export default function Home() {
           </div>
           <div className="max-w-[800px] mx-auto divide-y">
             <Link href="/blog/3d-surveying" className="flex items-center gap-4 py-4 hover:text-primary transition-colors">
-              <time dateTime="2021-01-21" className="text-sm tracking-wider text-gray-500 shrink-0">2021.01.21</time>
-              <span className="text-sm">3D測量で出来ることは？方法、メリット、活用場所も併せて紹介！</span>
+              <time dateTime="2026-02-20" className="text-sm tracking-wider text-gray-500 shrink-0">2026.02.20</time>
+              <span className="text-sm">3D測量とは？方法・メリット・費用・活用事例を専門家が徹底解説【2026年最新】</span>
             </Link>
             <Link href="/blog/open" className="flex items-center gap-4 py-4 hover:text-primary transition-colors">
               <time dateTime="2020-07-21" className="text-sm tracking-wider text-gray-500 shrink-0">2020.07.21</time>
