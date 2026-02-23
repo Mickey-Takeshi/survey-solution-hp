@@ -74,8 +74,8 @@ export default function Home() {
             <span className="text-xl md:text-3xl lg:text-4xl">3Dスキャナで測量に新たな価値を</span>
           </h1>
           <p className="text-white/90 text-sm md:text-base mt-4 max-w-xl drop-shadow">
-            建物傾斜調査・図面作成・点群データ取得・文化財保存など<br className="hidden md:block" />
-            関西全域対応｜無料見積り受付中
+            建物・床の傾斜調査、土量計算、壁面調査、建物平面図作成など<br className="hidden md:block" />
+            全国対応　無料見積り受付中
           </p>
 
           {/* Contact overlay */}
@@ -175,9 +175,9 @@ export default function Home() {
             {[
               "建物や構造物の傾きが気になる…",
               "既存建物の正確な図面がない…",
-              "従来の測量では対応できない複雑な地形がある…",
+              "従来の測量では測量できない場所がある…",
               "工事前の現状を正確に記録しておきたい…",
-              "隣地との境界トラブルを解決したい…",
+              "敷地が広大であり、なんとか安価に測量したい…",
               "歴史的建造物のデータを残したい…",
             ].map((text, i) => (
               <div
