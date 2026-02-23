@@ -154,9 +154,9 @@ export default function AboutPage() {
                   <tr className="border-b-2 border-primary">
                     <th className="py-4 text-left text-primary font-bold align-top">所在地</th>
                     <td className="py-4 text-gray-800 leading-relaxed">
-                      〒604-8241京都市中京区新町通三条<br />
-                      西入釜座町22番地ストークビル三条<br />
-                      烏丸515
+                      〒604-8241<br />
+                      京都市中京区釜座町22番地<br />
+                      ストークビル三条烏丸608
                     </td>
                   </tr>
                   <tr className="border-b-2 border-primary">

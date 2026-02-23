@@ -76,8 +76,8 @@ export default function Footer() {
               className="h-8 w-auto mb-4"
             />
             <address className="not-italic text-sm text-gray-300 leading-relaxed">
-              <p className="mb-2">〒604-8155</p>
-              <p className="mb-2">京都府京都市中京区<br />錦小路通烏丸西入占出山町312<br />ケイズビル6F</p>
+              <p className="mb-2">〒604-8241</p>
+              <p className="mb-2">京都市中京区釜座町22番地<br />ストークビル三条烏丸608</p>
               <p className="mb-1">
                 <span className="text-gray-400">TEL:</span>{" "}
                 <a href="tel:075-744-1775" className="hover:text-white">075-744-1775</a>

@@ -113,7 +113,7 @@ const organizationJsonLd = {
   email: "surveysolution.jp@gmail.com",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "新町通三条西入釜座町22番地ストークビル三条烏丸515",
+    streetAddress: "釜座町22番地ストークビル三条烏丸608",
     addressLocality: "京都市中京区",
     addressRegion: "京都府",
     postalCode: "604-8241",
