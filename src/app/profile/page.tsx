@@ -164,27 +164,23 @@ export default function ProfilePage() {
           </div>
           <div className="space-y-0">
             <div className="flex border-b py-4">
-              <span className="text-primary font-bold shrink-0 w-36">平成11年3月</span>
+              <span className="text-primary font-bold shrink-0 w-36">1999年3月</span>
               <span className="text-gray-700">同志社大学法学部卒業</span>
             </div>
             <div className="flex border-b py-4">
-              <span className="text-primary font-bold shrink-0 w-36">平成11年12月</span>
+              <span className="text-primary font-bold shrink-0 w-36">1999年12月</span>
               <span className="text-gray-700">土地家屋調査士試験合格、調査士事務所勤務</span>
             </div>
             <div className="flex border-b py-4">
-              <span className="text-primary font-bold shrink-0 w-36">平成22年1月</span>
+              <span className="text-primary font-bold shrink-0 w-36">2010年1月</span>
               <span className="text-gray-700">さいとう土地家屋調査士事務所設立</span>
             </div>
             <div className="flex border-b py-4">
-              <span className="text-primary font-bold shrink-0 w-36">平成23年4月</span>
-              <span className="text-gray-700">後継者の軍師®認定コンサルタント認定</span>
+              <span className="text-primary font-bold shrink-0 w-36">2016年12月</span>
+              <span className="text-gray-700">3DスキャナGLS-2000導入</span>
             </div>
             <div className="flex border-b py-4">
-              <span className="text-primary font-bold shrink-0 w-36">平成28年12月</span>
-              <span className="text-gray-700">3DスキャナGLS-2000購入</span>
-            </div>
-            <div className="flex border-b py-4">
-              <span className="text-primary font-bold shrink-0 w-36">平成30年1月</span>
+              <span className="text-primary font-bold shrink-0 w-36">2018年1月</span>
               <span className="text-gray-700">株式会社SurveySolution設立</span>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "お問い合わせ・無料見積り｜3D測量のご相談はこちら",
@@ -32,74 +33,7 @@ export default function ContactPage() {
             <p className="text-xs text-gray-500 mt-1">受付時間：平日 9:00～18:00</p>
           </div>
 
-          <form className="space-y-6">
-            <div>
-              <label htmlFor="name" className="block text-sm font-bold mb-2">
-                お名前 <span className="text-red-500">*</span>
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                className="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-primary"
-              />
-            </div>
-            <div>
-              <label htmlFor="company" className="block text-sm font-bold mb-2">
-                会社名
-              </label>
-              <input
-                type="text"
-                id="company"
-                name="company"
-                className="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-primary"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-bold mb-2">
-                メールアドレス <span className="text-red-500">*</span>
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                className="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-primary"
-              />
-            </div>
-            <div>
-              <label htmlFor="phone" className="block text-sm font-bold mb-2">
-                電話番号
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                className="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-primary"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-bold mb-2">
-                お問い合わせ内容 <span className="text-red-500">*</span>
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={6}
-                required
-                className="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-primary resize-vertical"
-              />
-            </div>
-            <div className="text-center">
-              <button
-                type="submit"
-                className="bg-primary text-white px-16 py-4 text-sm font-bold hover:bg-primary-dark transition-colors rounded-sm"
-              >
-                送信する
-              </button>
-            </div>
-          </form>
+          <ContactForm />
         </div>
       </section>
     </>

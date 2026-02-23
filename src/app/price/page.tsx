@@ -5,13 +5,12 @@ import PageHeader from "@/components/PageHeader";
 export const metadata: Metadata = {
   title: "3D測量の費用・料金の目安｜サービス別の価格相場と見積もりのポイント",
   description:
-    "3D測量の費用は一般的な現場（500㎡程度）で15万円〜50万円が目安です。地上レーザースキャン・ドローン測量・点群データ処理・BIMモデル作成のサービス別料金と、費用が変動するポイントを解説。無料見積もり受付中。",
+    "3D測量の費用は一般的な現場（500㎡程度）で15万円〜50万円が目安です。地上レーザースキャン・点群データ処理・3Dモデル作成のサービス別料金と、費用が変動するポイントを解説。無料見積もり受付中。",
   keywords: [
     "3D測量 費用",
     "3D測量 価格相場",
     "3Dスキャン 料金",
     "レーザー測量 費用",
-    "ドローン測量 費用",
     "点群データ 料金",
   ],
   alternates: { canonical: "/price" },
@@ -29,19 +28,10 @@ const pricingCategories = [
     ],
   },
   {
-    category: "ドローン（UAV）測量",
-    items: [
-      { service: "写真測量（SfM）＋オルソ画像作成", price: "20万円〜", note: "1ヘクタール程度まで" },
-      { service: "ドローン測量＋土量計算", price: "25万円〜", note: "造成工事・盛土・切土の土量算出" },
-      { service: "広域地形測量（LiDAR）", price: "40万円〜", note: "数ヘクタール規模" },
-    ],
-  },
-  {
     category: "データ処理・モデリング",
     items: [
       { service: "点群データ処理（ノイズ除去・合成）", price: "5万円〜", note: "データ量・処理内容により変動" },
       { service: "CAD図面作成（平面図・断面図）", price: "5万円〜/枚", note: "図面の複雑さにより変動" },
-      { service: "BIMモデル作成（スキャンtoBIM）", price: "50万円〜", note: "建物規模・LODにより変動" },
       { service: "3Dモデル作成（メッシュモデル）", price: "10万円〜", note: "対象物の複雑さにより変動" },
     ],
   },

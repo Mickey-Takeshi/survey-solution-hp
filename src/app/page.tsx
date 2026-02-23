@@ -336,7 +336,7 @@ export default function Home() {
               <p className="text-lg font-bold text-gray-800 mb-2">齋藤 大輔</p>
               <p className="text-sm text-gray-500 mb-6">代表取締役 / 土地家屋調査士</p>
               <p className="text-sm leading-loose text-gray-700 mb-8">
-                当社代表「齋藤 大輔」のご紹介です。今までの生い立ちやキャリアなどについて書いていますので、ぜひご覧ください。<br />
+                当社代表「齋藤 大輔」です。今までの生い立ちやキャリアなどについて書いていますので、ぜひご覧ください。<br />
                 京都を拠点に、3Dスキャナを用いた測量サービスを提供しております。
               </p>
               <Link
