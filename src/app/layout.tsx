@@ -121,8 +121,8 @@ const organizationJsonLd = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 35.004,
-    longitude: 135.758,
+    latitude: 35.008286,
+    longitude: 135.755844,
   },
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",

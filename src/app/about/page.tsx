@@ -180,7 +180,7 @@ export default function AboutPage() {
           </div>
           <div className="mt-10">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.0!2d135.758!3d35.004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z5qCq5byP5Lya56S-U3VydmV5U29sdXRpb24!5e0!3m2!1sja!2sjp!4v1"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1634.0!2d135.755844!3d35.008286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108a4b2d6c0ed%3A0x4b4b8e2e3e8bce4d!2z44K544OI44O844Kv44OT44Or5LiJ5p2h54OP5Li4!5e0!3m2!1sja!2sjp!4v1"
               width="100%"
               height="300"
               className="border-0 w-full h-[300px] md:h-[400px]"
