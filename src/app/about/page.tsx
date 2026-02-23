@@ -68,9 +68,9 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded">
-              <h3 className="font-bold text-primary mb-3">建物傾斜調査・変位測定</h3>
+              <h3 className="font-bold text-primary mb-3">建物傾斜調査・床の凹凸調査</h3>
               <p className="text-sm leading-loose text-gray-700">
-                建物や構造物の傾き・変位を高精度で計測。経年変化のモニタリングや、地震後の安全診断、補修計画の立案に必要なデータを提供します。
+                建物や構造物の傾き・変位を高精度で計測。床の凹凸（不陸）や、地震後の安全診断、補修計画の立案に必要なデータを提供します。
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded">
