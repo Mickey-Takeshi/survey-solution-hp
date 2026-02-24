@@ -1,10 +1,15 @@
 "use server";
 
 import { supabaseAdmin } from "@/lib/supabase";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-const NOTIFICATION_EMAIL = "surveysolution.jp@gmail.com";
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
+  },
+});
 
 export type ContactFormState = {
   success: boolean;
@@ -57,9 +62,9 @@ export async function submitContactForm(
     }
 
     // メール通知を送信
-    await resend.emails.send({
-      from: "SurveySolution お問い合わせ <onboarding@resend.dev>",
-      to: NOTIFICATION_EMAIL,
+    await transporter.sendMail({
+      from: `"SurveySolution お問い合わせ" <${process.env.SMTP_USER}>`,
+      to: process.env.NOTIFICATION_EMAIL,
       subject: `【お問い合わせ】${name}様（${company || "個人"}）`,
       html: `
         <h2>ホームページからお問い合わせがありました</h2>
