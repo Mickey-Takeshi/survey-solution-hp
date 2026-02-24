@@ -1,6 +1,61 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // 旧WordPress URLのリダイレクト設定
+  async redirects() {
+    return [
+      // 削除済みドローンサービスページ → サービス一覧へ301リダイレクト
+      {
+        source: "/service/drone",
+        destination: "/service",
+        permanent: true,
+      },
+      // 旧WordPress: gutenbergページ（個別に列挙）
+      { source: "/gutenberg01", destination: "/", permanent: true },
+      { source: "/gutenberg02", destination: "/", permanent: true },
+      { source: "/gutenberg06", destination: "/", permanent: true },
+      // 旧WordPress: /home/ 配下
+      {
+        source: "/home/:slug",
+        destination: "/",
+        permanent: true,
+      },
+      // 旧WordPress: /logo-8/
+      {
+        source: "/logo-8",
+        destination: "/",
+        permanent: true,
+      },
+      // 旧WordPress: /service/service_* パターン（個別に列挙）
+      { source: "/service/service_under06", destination: "/service", permanent: true },
+      { source: "/service/service_under03-2", destination: "/service", permanent: true },
+      { source: "/service/service_top04-2", destination: "/service", permanent: true },
+      // 旧WordPress: /profile/staff_mv/
+      {
+        source: "/profile/staff_mv",
+        destination: "/profile",
+        permanent: true,
+      },
+      // 旧WordPress: /about/message_img02-2/
+      {
+        source: "/about/message_img02-2",
+        destination: "/about",
+        permanent: true,
+      },
+      // 旧WordPress: /open/ → ブログのopenページへ
+      {
+        source: "/open",
+        destination: "/blog/open",
+        permanent: true,
+      },
+      // 旧WordPress: /3d-surveying/ 配下（画像URLなど）
+      {
+        source: "/3d-surveying/:slug",
+        destination: "/blog/3d-surveying",
+        permanent: true,
+      },
+    ];
+  },
   // 画像最適化設定
   images: {
     formats: ["image/avif", "image/webp"],
