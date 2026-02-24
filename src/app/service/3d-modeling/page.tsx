@@ -199,12 +199,8 @@ export default function ModelingPage() {
               <span className="text-xs text-gray-500">SERVICE 01</span>
               <p className="font-bold text-gray-900 mt-1">地上レーザースキャン測量</p>
             </Link>
-            <Link href="/service/drone" className="block bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-shadow">
-              <span className="text-xs text-gray-500">SERVICE 02</span>
-              <p className="font-bold text-gray-900 mt-1">ドローン3D測量</p>
-            </Link>
             <Link href="/service/point-cloud" className="block bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-shadow">
-              <span className="text-xs text-gray-500">SERVICE 03</span>
+              <span className="text-xs text-gray-500">SERVICE 02</span>
               <p className="font-bold text-gray-900 mt-1">点群データ作成・処理</p>
             </Link>
           </div>

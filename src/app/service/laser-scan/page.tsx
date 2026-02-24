@@ -191,12 +191,8 @@ export default function LaserScanPage() {
             <h2 className="section-title-ja">3D測量の関連サービス</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <Link href="/service/drone" className="block bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-shadow">
-              <span className="text-xs text-gray-500">SERVICE 02</span>
-              <p className="font-bold text-gray-900 mt-1">ドローン3D測量</p>
-            </Link>
             <Link href="/service/point-cloud" className="block bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-shadow">
-              <span className="text-xs text-gray-500">SERVICE 03</span>
+              <span className="text-xs text-gray-500">SERVICE 02</span>
               <p className="font-bold text-gray-900 mt-1">点群データ作成・処理</p>
             </Link>
             <Link href="/service/3d-modeling" className="block bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-shadow">

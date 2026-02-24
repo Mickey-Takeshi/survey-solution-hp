@@ -5,7 +5,7 @@ import PageHeader from "@/components/PageHeader";
 export const metadata: Metadata = {
   title: "【土木】高速道路の出来形管理｜3D測量で工数60%削減した事例",
   description:
-    "高速道路の盛土工事において、ドローン測量と地上レーザースキャンを併用し、i-Construction基準に準拠した出来形管理を実施。従来の測量方法と比較して出来形管理の工数を60%削減した事例を紹介。",
+    "高速道路の盛土工事において、地上レーザースキャンを活用し、i-Construction基準に準拠した出来形管理を実施。従来の測量方法と比較して出来形管理の工数を60%削減した事例を紹介。",
   keywords: ["出来形管理 3D", "ICT施工 測量 事例", "高速道路 3D測量", "i-Construction 事例"],
   alternates: { canonical: "/case/highway" },
 };
@@ -30,13 +30,13 @@ export default function HighwayCasePage() {
             <span className="text-xs bg-primary/10 text-primary font-bold px-3 py-1 rounded-full">土木</span>
             <span className="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full">出来形管理</span>
             <span className="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full">ICT施工</span>
-            <span className="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full">ドローン測量</span>
+            <span className="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full">3Dスキャン</span>
           </div>
           <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">
             3Dスキャンによる出来形管理で、工数を60%削減
           </h2>
           <p className="text-sm leading-loose text-gray-700">
-            高速道路の盛土工事において、ドローン測量と地上レーザースキャンを併用し、i-Construction基準に準拠した出来形管理を実施しました。
+            高速道路の盛土工事において、地上レーザースキャンを活用し、i-Construction基準に準拠した出来形管理を実施しました。
             従来の測量方法（TS測量＋手作業の計算）と比較して、出来形管理の工数を60%削減しました。
           </p>
         </div>
@@ -53,7 +53,7 @@ export default function HighwayCasePage() {
                   { label: "業種", value: "高速道路建設（土木工事）" },
                   { label: "工事内容", value: "盛土工事の出来形管理" },
                   { label: "施工延長", value: "約500m" },
-                  { label: "使用機器", value: "ドローン（UAV）＋地上3Dレーザースキャナ" },
+                  { label: "使用機器", value: "地上3Dレーザースキャナ" },
                   { label: "計測回数", value: "月2回（施工進捗に合わせて実施）" },
                   { label: "納品物", value: "点群データ・出来形管理図・土量計算書" },
                 ].map((row, i) => (
@@ -91,11 +91,11 @@ export default function HighwayCasePage() {
       {/* 解決策 */}
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="section-title-ja mb-8">3Dスキャン・ドローン測量による解決策</h2>
+          <h2 className="section-title-ja mb-8">3Dスキャンによる解決策</h2>
           <div className="space-y-6">
             {[
-              { title: "ドローン測量による面的データ取得", desc: "施工区間全体をドローンで上空から計測し、面的な出来形データを取得。計測時間を1回あたり半日に短縮しました。" },
-              { title: "地上レーザースキャンによる高精度補完", desc: "構造物周辺や法面など、ドローンでは精度が不足する箇所を地上レーザースキャナで補完。全域で設計精度基準を満たすデータを取得しました。" },
+              { title: "3Dスキャンによる面的データ取得", desc: "施工区間全体を地上レーザースキャナで計測し、面的な出来形データを取得。計測時間を1回あたり半日に短縮しました。" },
+              { title: "地上レーザースキャンによる高精度計測", desc: "構造物周辺や法面など、複雑な形状の箇所も地上レーザースキャナで高精度に計測。全域で設計精度基準を満たすデータを取得しました。" },
               { title: "3Dデータによる自動土量計算", desc: "取得した点群データと設計データを3D上で比較し、切土・盛土の土量を自動算出。手計算によるミスをゼロにしました。" },
               { title: "i-Construction基準に準拠した帳票作成", desc: "出来形管理基準に準拠した管理図・管理表を自動生成し、監督員への報告資料として納品しました。" },
             ].map((s) => (
@@ -137,9 +137,9 @@ export default function HighwayCasePage() {
               <span className="text-xs text-gray-500">SOLUTION</span>
               <p className="font-bold text-gray-900 mt-1">建設・土木向け3D測量</p>
             </Link>
-            <Link href="/service/drone" className="block bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-shadow">
+            <Link href="/service/laser-scan" className="block bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-shadow">
               <span className="text-xs text-gray-500">SERVICE</span>
-              <p className="font-bold text-gray-900 mt-1">ドローン3D測量</p>
+              <p className="font-bold text-gray-900 mt-1">地上レーザースキャン測量</p>
             </Link>
             <Link href="/case" className="block bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-shadow">
               <span className="text-xs text-gray-500">CASE</span>

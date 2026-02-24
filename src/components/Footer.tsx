@@ -14,7 +14,6 @@ const footerNavItems = [
 
 const serviceLinks = [
   { label: "地上レーザースキャン測量", href: "/service/laser-scan" },
-  { label: "ドローン（UAV）3D測量", href: "/service/drone" },
   { label: "点群データ作成・処理", href: "/service/point-cloud" },
   { label: "3Dモデリング・BIM連携", href: "/service/3d-modeling" },
   { label: "建設・土木向け", href: "/solution/construction" },

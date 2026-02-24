@@ -22,7 +22,7 @@ const processes = [
   {
     step: "01",
     title: "データ取得",
-    desc: "地上レーザースキャナ・ドローンで現場の3Dデータを取得します。複数のスキャン位置から取得したデータを統合するための基準点も設置します。",
+    desc: "地上レーザースキャナで現場の3Dデータを取得します。複数のスキャン位置から取得したデータを統合するための基準点も設置します。",
   },
   {
     step: "02",
@@ -97,7 +97,7 @@ export default function PointCloudPage() {
             三次元座標（X・Y・Z）の集合です。
           </h2>
           <p className="text-sm leading-loose text-gray-700">
-            3Dレーザースキャナやドローンで取得した生データは、そのままではノイズや不要な情報を含んでいます。
+            3Dレーザースキャナで取得した生データは、そのままではノイズや不要な情報を含んでいます。
             弊社では、データの合成・ノイズ除去・座標変換といった処理工程を経て、CAD図面やBIMモデルの基礎となるクリーンな点群データを作成します。
             成果物は、LAS/E57等の点群フォーマット、DXF/DWGのCAD図面、PDF報告書など、貴社の用途に合わせた形式で納品します。
           </p>
@@ -199,12 +199,8 @@ export default function PointCloudPage() {
               <span className="text-xs text-gray-500">SERVICE 01</span>
               <p className="font-bold text-gray-900 mt-1">地上レーザースキャン測量</p>
             </Link>
-            <Link href="/service/drone" className="block bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-shadow">
-              <span className="text-xs text-gray-500">SERVICE 02</span>
-              <p className="font-bold text-gray-900 mt-1">ドローン3D測量</p>
-            </Link>
             <Link href="/service/3d-modeling" className="block bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-shadow">
-              <span className="text-xs text-gray-500">SERVICE 04</span>
+              <span className="text-xs text-gray-500">SERVICE 03</span>
               <p className="font-bold text-gray-900 mt-1">3Dモデリング・BIM連携</p>
             </Link>
           </div>

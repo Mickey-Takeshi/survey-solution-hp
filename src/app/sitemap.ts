@@ -12,7 +12,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // サービス
     { url: `${baseUrl}/service`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/service/laser-scan`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/service/drone`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/service/point-cloud`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/service/3d-modeling`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
 

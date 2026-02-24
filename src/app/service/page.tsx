@@ -4,15 +4,14 @@ import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "3D測量サービスとは｜地上レーザー・ドローン・点群データ・BIM連携",
+  title: "3D測量サービスとは｜地上レーザー・点群データ・BIM連携",
   description:
-    "3D測量サービスの全体像を解説。地上レーザースキャン、ドローン（UAV）測量、点群データ作成・処理、3Dモデリング・BIM連携の4つのサービスで、建設・建築・プラント・インフラの課題を解決します。京都・関西全域対応。",
+    "3D測量サービスの全体像を解説。地上レーザースキャン、点群データ作成・処理、3Dモデリング・BIM連携の3つのサービスで、建設・建築・プラント・インフラの課題を解決します。全国対応。",
   keywords: [
     "3D測量 サービス",
     "三次元測量",
     "3Dスキャナ測量",
     "レーザースキャン測量",
-    "ドローン測量",
     "点群データ",
     "BIM連携",
   ],
@@ -37,21 +36,6 @@ const services = [
   },
   {
     id: "02",
-    slug: "drone",
-    title: "ドローン（UAV）3D測量",
-    subtitle: "DRONE SURVEY",
-    image: "/images/service02.jpg",
-    description:
-      "ドローンに搭載したカメラ・LiDARで上空から広範囲を効率的に3D計測します。地上からの計測が困難な高所・広大な敷地・危険区域のデータ取得に最適です。",
-    features: [
-      "広範囲を短時間で計測",
-      "高所・危険区域も安全にデータ取得",
-      "地上レーザーとの併用で死角ゼロ",
-    ],
-    keywords: "ドローン測量 / UAV測量 3D",
-  },
-  {
-    id: "03",
     slug: "point-cloud",
     title: "点群データ作成・処理",
     subtitle: "POINT CLOUD",
@@ -66,7 +50,7 @@ const services = [
     keywords: "点群データ 作成 / 点群処理",
   },
   {
-    id: "04",
+    id: "03",
     slug: "3d-modeling",
     title: "3Dモデリング・BIM連携",
     subtitle: "3D MODELING / BIM",
@@ -115,7 +99,7 @@ const serviceJsonLd = {
   "@type": "Service",
   name: "3D測量サービス",
   description:
-    "3Dレーザースキャナ・ドローン測量による高精度3Dデータ取得サービス。点群データ作成、BIM/CIM連携、CAD図面作成まで一貫対応。",
+    "3Dレーザースキャナによる高精度3Dデータ取得サービス。点群データ作成、BIM/CIM連携、CAD図面作成まで一貫対応。",
   provider: {
     "@type": "LocalBusiness",
     name: "株式会社SurveySolution",
@@ -155,7 +139,7 @@ export default function ServicePage() {
       <section className="py-12 md:py-16">
         <div className="max-w-[800px] mx-auto px-6 text-center">
           <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">
-            3D測量とは、3Dレーザースキャナやドローンを使用して<br className="hidden md:block" />
+            3D測量とは、3Dレーザースキャナを使用して<br className="hidden md:block" />
             対象物の三次元座標データを取得する測量技術です。
           </h2>
           <p className="text-sm leading-loose text-gray-700">
@@ -171,7 +155,7 @@ export default function ServicePage() {
         <div className="max-w-[1000px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">OUR SERVICES</span>
-            <h2 className="section-title-ja">3D測量の4つのサービス</h2>
+            <h2 className="section-title-ja">3D測量の3つのサービス</h2>
           </div>
           <div className="space-y-12">
             {services.map((s, index) => (
@@ -255,7 +239,7 @@ export default function ServicePage() {
             {[
               { step: "01", title: "お問い合わせ・ヒアリング", desc: "測量対象・目的・ご要望をお伺いし、最適な測量方法をご提案します。概算のお見積もりもこの段階でお伝えします。" },
               { step: "02", title: "現地調査・正式見積もり", desc: "必要に応じて現地を下見し、正確な作業範囲・条件を確認した上で正式なお見積もりをご提示します。" },
-              { step: "03", title: "3Dスキャン・データ取得", desc: "地上レーザースキャナやドローンを使用し、現地で3Dデータを取得します。小規模な現場であれば半日〜1日で完了します。" },
+              { step: "03", title: "3Dスキャン・データ取得", desc: "地上レーザースキャナを使用し、現地で3Dデータを取得します。小規模な現場であれば半日〜1日で完了します。" },
               { step: "04", title: "データ処理・成果物作成", desc: "取得したデータのノイズ除去・合成処理を行い、ご要望に応じた成果物（点群データ・CAD図面・3Dモデル等）を作成します。" },
               { step: "05", title: "納品・アフターサポート", desc: "成果物を納品し、データの活用方法についてもサポートいたします。追加の断面図作成や形式変換にも対応可能です。" },
             ].map((item) => (
