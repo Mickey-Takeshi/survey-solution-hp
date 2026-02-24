@@ -1,6 +1,10 @@
 "use server";
 
 import { supabaseAdmin } from "@/lib/supabase";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+const NOTIFICATION_EMAIL = "surveysolution.jp@gmail.com";
 
 export type ContactFormState = {
   success: boolean;
@@ -35,6 +39,7 @@ export async function submitContactForm(
   }
 
   try {
+    // Supabaseにデータ保存
     const { error } = await supabaseAdmin.from("contacts").insert({
       name,
       company: company || null,
@@ -50,6 +55,38 @@ export async function submitContactForm(
         error: "送信に失敗しました。時間をおいて再度お試しください。",
       };
     }
+
+    // メール通知を送信
+    await resend.emails.send({
+      from: "SurveySolution お問い合わせ <onboarding@resend.dev>",
+      to: NOTIFICATION_EMAIL,
+      subject: `【お問い合わせ】${name}様（${company || "個人"}）`,
+      html: `
+        <h2>ホームページからお問い合わせがありました</h2>
+        <table style="border-collapse:collapse;width:100%;max-width:600px;">
+          <tr style="border-bottom:1px solid #ddd;">
+            <th style="text-align:left;padding:8px 12px;background:#f5f5f5;width:120px;">お名前</th>
+            <td style="padding:8px 12px;">${name}</td>
+          </tr>
+          <tr style="border-bottom:1px solid #ddd;">
+            <th style="text-align:left;padding:8px 12px;background:#f5f5f5;">会社名</th>
+            <td style="padding:8px 12px;">${company || "未入力"}</td>
+          </tr>
+          <tr style="border-bottom:1px solid #ddd;">
+            <th style="text-align:left;padding:8px 12px;background:#f5f5f5;">メールアドレス</th>
+            <td style="padding:8px 12px;"><a href="mailto:${email}">${email}</a></td>
+          </tr>
+          <tr style="border-bottom:1px solid #ddd;">
+            <th style="text-align:left;padding:8px 12px;background:#f5f5f5;">電話番号</th>
+            <td style="padding:8px 12px;">${phone || "未入力"}</td>
+          </tr>
+          <tr>
+            <th style="text-align:left;padding:8px 12px;background:#f5f5f5;vertical-align:top;">お問い合わせ内容</th>
+            <td style="padding:8px 12px;white-space:pre-wrap;">${message}</td>
+          </tr>
+        </table>
+      `,
+    });
 
     return {
       success: true,
