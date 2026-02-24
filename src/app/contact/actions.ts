@@ -4,7 +4,9 @@ import { supabaseAdmin } from "@/lib/supabase";
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true,
   auth: {
     user: process.env.SMTP_USER,
     pass: process.env.SMTP_PASS,
@@ -61,37 +63,43 @@ export async function submitContactForm(
       };
     }
 
-    // メール通知を送信
-    await transporter.sendMail({
-      from: `"SurveySolution お問い合わせ" <${process.env.SMTP_USER}>`,
-      to: process.env.NOTIFICATION_EMAIL,
-      subject: `【お問い合わせ】${name}様（${company || "個人"}）`,
-      html: `
-        <h2>ホームページからお問い合わせがありました</h2>
-        <table style="border-collapse:collapse;width:100%;max-width:600px;">
-          <tr style="border-bottom:1px solid #ddd;">
-            <th style="text-align:left;padding:8px 12px;background:#f5f5f5;width:120px;">お名前</th>
-            <td style="padding:8px 12px;">${name}</td>
-          </tr>
-          <tr style="border-bottom:1px solid #ddd;">
-            <th style="text-align:left;padding:8px 12px;background:#f5f5f5;">会社名</th>
-            <td style="padding:8px 12px;">${company || "未入力"}</td>
-          </tr>
-          <tr style="border-bottom:1px solid #ddd;">
-            <th style="text-align:left;padding:8px 12px;background:#f5f5f5;">メールアドレス</th>
-            <td style="padding:8px 12px;"><a href="mailto:${email}">${email}</a></td>
-          </tr>
-          <tr style="border-bottom:1px solid #ddd;">
-            <th style="text-align:left;padding:8px 12px;background:#f5f5f5;">電話番号</th>
-            <td style="padding:8px 12px;">${phone || "未入力"}</td>
-          </tr>
-          <tr>
-            <th style="text-align:left;padding:8px 12px;background:#f5f5f5;vertical-align:top;">お問い合わせ内容</th>
-            <td style="padding:8px 12px;white-space:pre-wrap;">${message}</td>
-          </tr>
-        </table>
-      `,
-    });
+    // メール通知を送信（失敗してもフォーム送信は成功扱い）
+    try {
+      await transporter.sendMail({
+        from: `"SurveySolution お問い合わせ" <${process.env.SMTP_USER}>`,
+        to: process.env.NOTIFICATION_EMAIL,
+        subject: `【お問い合わせ】${name}様（${company || "個人"}）`,
+        html: `
+          <h2>ホームページからお問い合わせがありました</h2>
+          <table style="border-collapse:collapse;width:100%;max-width:600px;">
+            <tr style="border-bottom:1px solid #ddd;">
+              <th style="text-align:left;padding:8px 12px;background:#f5f5f5;width:120px;">お名前</th>
+              <td style="padding:8px 12px;">${name}</td>
+            </tr>
+            <tr style="border-bottom:1px solid #ddd;">
+              <th style="text-align:left;padding:8px 12px;background:#f5f5f5;">会社名</th>
+              <td style="padding:8px 12px;">${company || "未入力"}</td>
+            </tr>
+            <tr style="border-bottom:1px solid #ddd;">
+              <th style="text-align:left;padding:8px 12px;background:#f5f5f5;">メールアドレス</th>
+              <td style="padding:8px 12px;"><a href="mailto:${email}">${email}</a></td>
+            </tr>
+            <tr style="border-bottom:1px solid #ddd;">
+              <th style="text-align:left;padding:8px 12px;background:#f5f5f5;">電話番号</th>
+              <td style="padding:8px 12px;">${phone || "未入力"}</td>
+            </tr>
+            <tr>
+              <th style="text-align:left;padding:8px 12px;background:#f5f5f5;vertical-align:top;">お問い合わせ内容</th>
+              <td style="padding:8px 12px;white-space:pre-wrap;">${message}</td>
+            </tr>
+          </table>
+        `,
+      });
+      console.log("Email notification sent successfully");
+    } catch (emailErr) {
+      console.error("Email notification failed:", emailErr);
+      // メール送信失敗でもフォーム送信は成功とする
+    }
 
     return {
       success: true,
