@@ -90,6 +90,7 @@ export async function submitContactForm(
     try {
       await transporter.sendMail({
         from: `"SurveySolution お問い合わせ" <${process.env.SMTP_USER}>`,
+        replyTo: "info@emplay.jp",
         to: process.env.NOTIFICATION_EMAIL,
         subject: `【お問い合わせ】${name}様（${company || "個人"}）`,
         html: `
