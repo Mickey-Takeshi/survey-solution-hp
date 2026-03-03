@@ -22,6 +22,20 @@ export async function submitContactForm(
   _prevState: ContactFormState,
   formData: FormData
 ): Promise<ContactFormState> {
+  // --- スパム対策 ---
+  // 1. ハニーポット: 隠しフィールドに値があればボット
+  const honeypot = formData.get("website") as string;
+  if (honeypot) {
+    // ボットにはエラーを見せず成功扱いにする（再試行を防ぐ）
+    return { success: true, error: null };
+  }
+
+  // 2. 時間チェック: フォーム表示から3秒未満の送信はボット
+  const loadedAt = Number(formData.get("_loaded"));
+  if (loadedAt && Date.now() - loadedAt < 3000) {
+    return { success: true, error: null };
+  }
+
   const name = formData.get("name") as string;
   const company = formData.get("company") as string;
   const email = formData.get("email") as string;
@@ -42,6 +56,15 @@ export async function submitContactForm(
     return {
       success: false,
       error: "正しいメールアドレスを入力してください。",
+    };
+  }
+
+  // 3. URL検出: メッセージ内にURLが含まれていればスパム
+  const urlPattern = /https?:\/\/|www\./i;
+  if (urlPattern.test(message)) {
+    return {
+      success: false,
+      error: "メッセージにURLを含めることはできません。",
     };
   }
 

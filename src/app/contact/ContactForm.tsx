@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useState } from "react";
 import { submitContactForm, type ContactFormState } from "./actions";
 
 const initialState: ContactFormState = {
@@ -13,6 +13,8 @@ export default function ContactForm() {
     submitContactForm,
     initialState
   );
+  // フォーム表示時のタイムスタンプ（スパムボットの即時送信を検知）
+  const [loadedAt] = useState(() => Date.now().toString());
 
   if (state.success) {
     return (
@@ -37,6 +39,14 @@ export default function ContactForm() {
           {state.error}
         </div>
       )}
+
+      {/* ハニーポット: ボットだけが入力する隠しフィールド */}
+      <div className="absolute opacity-0 -z-10" aria-hidden="true">
+        <label htmlFor="website">Website</label>
+        <input type="text" id="website" name="website" tabIndex={-1} autoComplete="off" />
+      </div>
+      {/* タイムスタンプ: 送信速度チェック用 */}
+      <input type="hidden" name="_loaded" value={loadedAt} />
 
       <div>
         <label htmlFor="name" className="block text-sm font-bold mb-2">
