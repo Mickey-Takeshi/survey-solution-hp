@@ -16,6 +16,7 @@ const navItems = [
   { label: "サービス", href: "/service" },
   { label: "業界別ソリューション", href: "/solution/construction", children: solutionItems },
   { label: "料金", href: "/price" },
+  { label: "活用事例", href: "/use-case" },
   { label: "導入事例", href: "/case" },
   { label: "よくある質問", href: "/faq" },
   { label: "会社概要", href: "/about" },

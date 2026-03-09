@@ -31,6 +31,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/case/renovation`, lastModified: now, changeFrequency: "yearly", priority: 0.7 },
     { url: `${baseUrl}/case/plant-piping`, lastModified: now, changeFrequency: "yearly", priority: 0.7 },
 
+    // 活用事例
+    { url: `${baseUrl}/use-case`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/use-case/mountain-forest-survey`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/use-case/tree-branch-mapping`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/use-case/tree-burial-cemetery`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/use-case/garden-mapping`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/use-case/basement-survey`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/use-case/floor-levelness`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/use-case/column-tilt`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/use-case/building-tilt`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/use-case/as-built-drawings`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/use-case/rooftop-survey`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/use-case/adjacent-window-survey`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/use-case/underground-connection`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/use-case/disaster-survey`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/use-case/shadow-simulation`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/use-case/simplified-site-plan`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/use-case/aerial-encroachment`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/use-case/site-heatmap`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/use-case/climbing-kiln-mesh`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+
     // その他
     { url: `${baseUrl}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
