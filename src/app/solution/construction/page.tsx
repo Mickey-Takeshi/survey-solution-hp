@@ -81,7 +81,7 @@ export default function ConstructionPage() {
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-8">
-            <h2 className="section-title-ja">建設・土木現場でこんな課題はありませんか？</h2>
+            <h2 className="section-title-ja">こんな課題はありませんか？</h2>
           </div>
           <div className="space-y-4">
             {challenges.map((c, i) => (
