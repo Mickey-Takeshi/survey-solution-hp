@@ -42,12 +42,12 @@ const howToJsonLd = {
 };
 
 const services = [
-  { id: "01", title: "工場の柱の傾き調査", image: "/images/service01.jpg", alt: "3Dスキャナによる工場の柱の傾き調査・傾斜測定" },
-  { id: "02", title: "擁壁計画のための\n高低調査", image: "/images/service02.jpg", alt: "擁壁計画のための3D測量による高低差調査" },
-  { id: "03", title: "急傾斜地における\n断面・平面図作成", image: "/images/service03.jpg", alt: "急傾斜地の3D測量による断面図・平面図作成" },
-  { id: "04", title: "建物丸ごと保存", image: "/images/service04.jpg", alt: "歴史的建造物の3Dデジタルアーカイブ・保存" },
-  { id: "05", title: "隣接建物の窓の位置調査", image: "/images/service05.jpg", alt: "隣接建物の窓位置を3Dスキャナで正確に調査" },
-  { id: "06", title: "建物の\n平面図・断面図作成", image: "/images/service06.jpg", alt: "建物の3D測量による平面図・断面図作成" },
+  { id: "01", title: "工場の柱の傾き調査", image: "/images/service01.jpg", alt: "3Dスキャナによる工場の柱の傾き調査・傾斜測定", href: "/solution/plant" },
+  { id: "02", title: "擁壁計画のための\n高低調査", image: "/images/service02.jpg", alt: "擁壁計画のための3D測量による高低差調査", href: "/solution/construction" },
+  { id: "03", title: "急傾斜地における\n断面・平面図作成", image: "/images/service03.jpg", alt: "急傾斜地の3D測量による断面図・平面図作成", href: "/solution/infrastructure" },
+  { id: "04", title: "建物丸ごと保存", image: "/images/service04.jpg", alt: "歴史的建造物の3Dデジタルアーカイブ・保存", href: "/solution/heritage" },
+  { id: "05", title: "隣接建物の窓の位置調査", image: "/images/service05.jpg", alt: "隣接建物の窓位置を3Dスキャナで正確に調査", href: "/solution/architecture" },
+  { id: "06", title: "建物の\n平面図・断面図作成", image: "/images/service06.jpg", alt: "建物の3D測量による平面図・断面図作成", href: "/case/renovation" },
 ];
 
 export default function Home() {
@@ -366,7 +366,7 @@ export default function Home() {
             {services.map((s) => (
               <Link
                 key={s.id}
-                href={`/service#service${s.id}`}
+                href={s.href}
                 className="group relative overflow-hidden rounded-sm block aspect-[16/10]"
               >
                 <Image
