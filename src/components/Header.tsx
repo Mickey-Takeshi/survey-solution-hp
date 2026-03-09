@@ -4,9 +4,17 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
+const solutionItems = [
+  { label: "建設・土木", href: "/solution/construction" },
+  { label: "建築", href: "/solution/architecture" },
+  { label: "プラント・工場", href: "/solution/plant" },
+  { label: "インフラ", href: "/solution/infrastructure" },
+  { label: "文化財・遺跡", href: "/solution/heritage" },
+];
+
 const navItems = [
   { label: "サービス", href: "/service" },
-  { label: "業界別ソリューション", href: "/solution/construction" },
+  { label: "業界別ソリューション", href: "/solution/construction", children: solutionItems },
   { label: "料金", href: "/price" },
   { label: "導入事例", href: "/case" },
   { label: "よくある質問", href: "/faq" },
@@ -16,6 +24,7 @@ const navItems = [
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSolutionOpen, setIsSolutionOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
@@ -45,15 +54,42 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-4 xl:gap-5">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm text-gray-700 hover:text-primary transition-colors whitespace-nowrap relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full"
-            >
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) =>
+            item.children ? (
+              <div key={item.href} className="relative group">
+                <Link
+                  href={item.href}
+                  className="text-sm text-gray-700 hover:text-primary transition-colors whitespace-nowrap relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full flex items-center gap-1"
+                >
+                  {item.label}
+                  <svg className="w-3 h-3 text-gray-400 group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </Link>
+                <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <div className="bg-white border border-gray-200 rounded-lg shadow-lg py-2 min-w-[180px]">
+                    {item.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-colors"
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-sm text-gray-700 hover:text-primary transition-colors whitespace-nowrap relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full"
+              >
+                {item.label}
+              </Link>
+            )
+          )}
           <div className="flex items-center gap-3 ml-2 pl-4 border-l border-gray-200">
             <a
               href="tel:075-744-1775"
@@ -86,17 +122,43 @@ export default function Header() {
       </div>
 
       {/* Mobile Nav */}
-      <nav className={`lg:hidden bg-white border-t overflow-hidden transition-all duration-300 ${isOpen ? "max-h-[500px]" : "max-h-0"}`}>
-        {navItems.map((item) => (
-          <Link
-            key={item.href}
-            href={item.href}
-            className="block px-6 py-3.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary border-b border-gray-100 transition-colors"
-            onClick={() => setIsOpen(false)}
-          >
-            {item.label}
-          </Link>
-        ))}
+      <nav className={`lg:hidden bg-white border-t overflow-hidden transition-all duration-300 ${isOpen ? "max-h-[600px]" : "max-h-0"}`}>
+        {navItems.map((item) =>
+          item.children ? (
+            <div key={item.href}>
+              <button
+                className="w-full flex items-center justify-between px-6 py-3.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary border-b border-gray-100 transition-colors"
+                onClick={() => setIsSolutionOpen(!isSolutionOpen)}
+              >
+                {item.label}
+                <svg className={`w-4 h-4 text-gray-400 transition-transform duration-200 ${isSolutionOpen ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className={`overflow-hidden transition-all duration-200 ${isSolutionOpen ? "max-h-[300px]" : "max-h-0"}`}>
+                {item.children.map((child) => (
+                  <Link
+                    key={child.href}
+                    href={child.href}
+                    className="block pl-10 pr-6 py-3 text-sm text-gray-600 hover:bg-gray-50 hover:text-primary border-b border-gray-100 transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {child.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="block px-6 py-3.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary border-b border-gray-100 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              {item.label}
+            </Link>
+          )
+        )}
         <div className="px-6 py-5 space-y-3 bg-gray-50">
           <a
             href="tel:075-744-1775"
