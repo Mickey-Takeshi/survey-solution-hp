@@ -147,7 +147,7 @@ export default function LaserScanPage() {
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label">SPECIFICATIONS</span>
-            <h2 className="section-title-ja">3Dレーザースキャナの機器スペック・対応データ</h2>
+            <h2 className="section-title-ja">機器スペック・対応データ</h2>
           </div>
           <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
             <table className="w-full text-sm">
@@ -196,7 +196,7 @@ export default function LaserScanPage() {
               <p className="font-bold text-gray-900 mt-1">点群データ作成・処理</p>
             </Link>
             <Link href="/service/3d-modeling" className="block bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-shadow">
-              <span className="text-xs text-gray-500">SERVICE 04</span>
+              <span className="text-xs text-gray-500">SERVICE 03</span>
               <p className="font-bold text-gray-900 mt-1">3Dモデリング・BIM連携</p>
             </Link>
           </div>
