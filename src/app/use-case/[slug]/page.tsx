@@ -27,19 +27,30 @@ export default async function UseCaseDetailPage({ params }: Props) {
   const uc = useCases.find((u) => u.slug === slug);
   if (!uc) notFound();
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: uc.title,
-    description: uc.metaDescription,
-    provider: {
-      "@type": "LocalBusiness",
-      name: "株式会社SurveySolution",
-      url: "https://surveysolution.pro",
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: uc.title,
+      description: uc.metaDescription,
+      provider: {
+        "@type": "LocalBusiness",
+        name: "株式会社SurveySolution",
+        url: "https://surveysolution.pro",
+      },
+      areaServed: { "@type": "Country", name: "日本" },
+      serviceType: "3D測量・レーザースキャン測量",
     },
-    areaServed: { "@type": "Country", name: "日本" },
-    serviceType: "3D測量・レーザースキャン測量",
-  };
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: uc.faq.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    },
+  ];
 
   return (
     <>
@@ -75,15 +86,17 @@ export default async function UseCaseDetailPage({ params }: Props) {
         </div>
       </section>
 
-      {/* ニーズ（課題） */}
+      {/* 課題（複数） */}
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="section-title-ja mb-8">こんなお悩みに対応します</h2>
-          <div className="flex items-start gap-3 bg-red-50 p-5 rounded-lg">
-            <span className="shrink-0 w-6 h-6 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-sm font-bold">
-              !
-            </span>
-            <p className="text-sm text-gray-700 leading-relaxed">{uc.needs}</p>
+          <h2 className="section-title-ja mb-8">こんな課題はありませんか？</h2>
+          <div className="space-y-4">
+            {uc.challenges.map((c, i) => (
+              <div key={i} className="flex items-start gap-3 bg-red-50 p-4 rounded-lg">
+                <span className="shrink-0 w-6 h-6 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-sm font-bold">!</span>
+                <p className="text-sm text-gray-700 leading-relaxed">{c}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -98,16 +111,48 @@ export default async function UseCaseDetailPage({ params }: Props) {
         </div>
       </section>
 
+      {/* 測量の流れ */}
+      <section className="py-12 md:py-16 bg-gray-50">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="section-title-ja mb-8">測量の流れ</h2>
+          <div className="space-y-6">
+            {uc.process.map((step, i) => (
+              <div key={i} className="flex gap-4 items-start">
+                <div className="shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
+                  {i + 1}
+                </div>
+                <div className="flex-1 bg-white p-5 rounded-lg shadow-sm">
+                  <h3 className="font-bold text-gray-900 mb-2">{step.title}</h3>
+                  <p className="text-sm text-gray-700 leading-relaxed">{step.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 3D測量のメリット */}
+      <section className="py-12 md:py-16">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="section-title-ja mb-8">3D測量を活用するメリット</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {uc.benefits.map((b) => (
+              <div key={b.title} className="bg-primary/5 border border-primary/20 rounded-lg p-6">
+                <h3 className="font-bold text-primary mb-3">{b.title}</h3>
+                <p className="text-sm text-gray-700 leading-relaxed">{b.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* 納品物 */}
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="section-title-ja mb-8">主な納品物</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {uc.deliverables.map((d) => (
-              <div
-                key={d}
-                className="bg-white border border-gray-200 p-4 rounded-lg text-center"
-              >
+              <div key={d} className="bg-white border border-gray-200 p-4 rounded-lg text-center">
                 <p className="text-sm font-bold text-gray-900">{d}</p>
               </div>
             ))}
@@ -115,12 +160,27 @@ export default async function UseCaseDetailPage({ params }: Props) {
         </div>
       </section>
 
-      {/* 使用する測量手法 */}
+      {/* FAQ */}
       <section className="py-12 md:py-16">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="section-title-ja mb-8">使用する測量手法</h2>
-          <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 text-center">
-            <p className="font-bold text-primary text-lg">{uc.method}</p>
+          <h2 className="section-title-ja mb-8">よくある質問</h2>
+          <div className="space-y-4">
+            {uc.faq.map((f, i) => (
+              <div key={i} className="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                <div className="px-6 py-4 bg-gray-50 border-b border-gray-200">
+                  <p className="font-bold text-gray-900 text-sm">
+                    <span className="text-primary mr-2">Q.</span>
+                    {f.q}
+                  </p>
+                </div>
+                <div className="px-6 py-4">
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    <span className="text-primary font-bold mr-2">A.</span>
+                    {f.a}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -152,6 +212,7 @@ export default async function UseCaseDetailPage({ params }: Props) {
           </h2>
           <p className="text-sm mb-6 opacity-90">
             現場の状況をお伺いし、最適な測量方法と概算費用をご提案いたします。
+            「この現場で3Dスキャンは使えるか？」という段階でもお気軽にご相談ください。
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
