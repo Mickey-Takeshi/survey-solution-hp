@@ -117,7 +117,7 @@ export default function PointCloudGuidePage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>点群データとは、3Dスキャナやドローンで取得した数百万〜数億個の三次元座標点（X,Y,Z）の集合体です。</strong>建物・地形・設備の形状をmm単位で正確に再現でき、CAD図面作成・BIMモデル構築・土量計算・干渉チェック・変位計測など幅広い用途に活用されています。本記事では、点群データの基本的な仕組みから取得方法、活用事例、処理フロー、主要ソフトウェア、ファイル形式まで体系的に解説します。
+              <strong>点群データとは、3Dスキャナやドローンで取得した数百万〜数億個の三次元座標点（X,Y,Z）の集合体です。</strong>建物・地形・設備の形状をmm単位で正確に再現でき、CAD図面作成・BIMモデル構築・土量計算・干渉チェック・変位計測といった実務に欠かせない存在になっています。この記事では、点群データの仕組みから取得方法、現場での活用事例、処理の流れ、ソフトウェア選び、ファイル形式の使い分けまで、実務者目線でまとめました。
             </p>
           </div>
 
@@ -166,7 +166,7 @@ export default function PointCloudGuidePage() {
               点群データの3つの取得方法
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              点群データの取得方法は主に3つあり、対象物の規模・精度要件・現場条件に応じて最適な手法を選定します。
+              取得方法は大きく3つ。対象物の規模や求める精度、現場の条件によって使い分けます。
             </p>
 
             <div className="space-y-6 mb-8">
@@ -211,7 +211,7 @@ export default function PointCloudGuidePage() {
               点群データの活用事例6選
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              点群データは取得して終わりではなく、目的に応じた加工・分析を経て設計・施工・維持管理の各工程で活用されます。代表的な活用事例を6つ紹介します。
+              点群データは取得して終わりではありません。目的に合わせた加工・分析を経て、設計・施工・維持管理の各場面で力を発揮します。現場でよく使われる6つの活用パターンを見ていきましょう。
             </p>
 
             <div className="space-y-6 mb-8">
@@ -270,7 +270,7 @@ export default function PointCloudGuidePage() {
               点群データの処理フロー
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              現場で取得した生データからCAD図面やBIMモデルなどの成果物を作成するまで、5つのステップで処理を行います。
+              現場で取得した生データから成果物を仕上げるまでの流れは、次の5ステップです。
             </p>
 
             <div className="space-y-4 mb-8">
@@ -300,7 +300,7 @@ export default function PointCloudGuidePage() {
               点群データ処理に使用する主要ソフトウェア
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              点群データの処理には専用ソフトウェアが必要です。用途・対応形式・価格帯が異なるため、プロジェクトの要件に応じて選定します。
+              点群処理には専用ソフトが欠かせません。用途・対応形式・価格帯がそれぞれ違うので、プロジェクトに合わせて選びましょう。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -335,7 +335,7 @@ export default function PointCloudGuidePage() {
             </div>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm text-gray-700 leading-relaxed">
-                <strong>ソフトウェア選定のポイント：</strong>使用するスキャナのメーカーとの互換性、必要な成果物の形式、チーム内のライセンス共有方法を事前に確認することが重要です。弊社では、お客様のソフトウェア環境に合わせた形式で点群データを納品しています。
+                <strong>ソフト選びの勘どころ：</strong>スキャナのメーカーとの互換性、必要な成果物のフォーマット、チーム内でのライセンス共有方法は事前に確認しておきましょう。弊社では、お客様のソフトウェア環境に合わせた形式で点群データを納品しています。
               </p>
             </div>
 
@@ -344,7 +344,7 @@ export default function PointCloudGuidePage() {
               点群データのファイル形式
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              点群データには複数のファイル形式が存在し、用途やソフトウェアとの互換性に応じて使い分けます。主要な5形式を比較します。
+              点群データのファイル形式は複数あり、用途やソフトとの相性で使い分けるのがポイントです。主要な5形式を比較してみましょう。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -406,7 +406,7 @@ export default function PointCloudGuidePage() {
               まとめ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              点群データは、3Dスキャナやドローンで取得した三次元座標点の集合体であり、建物・地形・設備の形状をmm単位で正確に再現できる技術です。
+              点群データは、建物・地形・設備の形状をmm単位で再現する強力な技術です。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm font-bold text-gray-800 mb-2">この記事のポイント：</p>
@@ -419,7 +419,7 @@ export default function PointCloudGuidePage() {
               </ul>
             </div>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              点群データの取得から成果物作成までワンストップで対応できる業者を選ぶことで、データの品質と活用効果を最大化できます。弊社では、計測計画の立案から点群データの取得・処理・成果物作成まで一貫して対応しています。
+              取得から成果物作成までワンストップで任せられる業者を選ぶと、データ品質と活用効果を最大限引き出せます。弊社でも、計測計画の立案から取得・処理・成果物作成まで一貫対応していますので、お気軽にご相談ください。
             </p>
           </div>
 
@@ -451,7 +451,7 @@ export default function PointCloudGuidePage() {
           <div className="mt-12 pt-8 border-t">
             <h3 className="text-lg font-bold text-gray-800 mb-4">関連記事</h3>
             <div className="space-y-3">
-              <Link href="/blog/what-is-3d-surveying" className="block text-sm text-primary hover:underline">
+              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">
                 → 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説
               </Link>
               <Link href="/blog/laser-scanner-guide" className="block text-sm text-primary hover:underline">

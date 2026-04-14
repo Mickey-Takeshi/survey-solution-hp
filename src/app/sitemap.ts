@@ -1,9 +1,19 @@
 import type { MetadataRoute } from "next";
+import { useCases } from "@/data/use-cases";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://surveysolution.pro";
   const now = new Date();
   const blogDate = new Date("2026-02-17");
+  const useCaseDate = new Date("2026-03-09");
+
+  // 活用事例を動的生成
+  const useCaseEntries: MetadataRoute.Sitemap = useCases.map((uc) => ({
+    url: `${baseUrl}/use-case/${uc.slug}`,
+    lastModified: useCaseDate,
+    changeFrequency: "yearly" as const,
+    priority: 0.6,
+  }));
 
   return [
     // トップ
@@ -31,26 +41,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/case/renovation`, lastModified: now, changeFrequency: "yearly", priority: 0.7 },
     { url: `${baseUrl}/case/plant-piping`, lastModified: now, changeFrequency: "yearly", priority: 0.7 },
 
-    // 活用事例
+    // 活用事例（データファイルから動的生成）
     { url: `${baseUrl}/use-case`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/use-case/mountain-forest-survey`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/use-case/tree-branch-mapping`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/use-case/tree-burial-cemetery`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/use-case/garden-mapping`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/use-case/basement-survey`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/use-case/floor-levelness`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/use-case/column-tilt`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/use-case/building-tilt`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/use-case/as-built-drawings`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/use-case/rooftop-survey`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/use-case/adjacent-window-survey`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/use-case/underground-connection`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/use-case/disaster-survey`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/use-case/shadow-simulation`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/use-case/simplified-site-plan`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/use-case/aerial-encroachment`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/use-case/site-heatmap`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/use-case/climbing-kiln-mesh`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    ...useCaseEntries,
 
     // その他
     { url: `${baseUrl}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
@@ -62,7 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
 
     // ブログ記事 ★★★
-    { url: `${baseUrl}/blog/what-is-3d-surveying`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.7 },
+    { url: `${baseUrl}/blog/3d-surveying`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.9 },
     { url: `${baseUrl}/blog/3d-surveying-cost`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.7 },
     { url: `${baseUrl}/blog/drone-surveying-cost`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.7 },
     { url: `${baseUrl}/blog/choose-3d-surveying-company`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.7 },
@@ -75,7 +68,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog/drone-vs-laser`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.6 },
     { url: `${baseUrl}/blog/bim-3d-scan`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.6 },
     { url: `${baseUrl}/blog/labor-shortage-solution`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/blog/no-drawings-solution`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/blog/no-drawings-solution`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.7 },
+    { url: `${baseUrl}/blog/renovation-3d-scan`, lastModified: new Date("2026-04-15"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${baseUrl}/blog/surveying-dx`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.6 },
     { url: `${baseUrl}/blog/3d-surveying-use-cases`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.6 },
 
@@ -91,7 +85,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog/3d-surveying-trends-2026`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.5 },
 
     // 既存ブログ記事
-    { url: `${baseUrl}/blog/3d-surveying`, lastModified: new Date("2021-01-21"), changeFrequency: "yearly", priority: 0.6 },
     { url: `${baseUrl}/blog/open`, lastModified: new Date("2020-07-21"), changeFrequency: "yearly", priority: 0.5 },
   ];
 }

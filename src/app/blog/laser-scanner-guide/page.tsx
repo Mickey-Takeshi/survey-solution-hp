@@ -52,7 +52,7 @@ const faqJsonLd = {
       name: "レーザースキャナーの導入費用はどのくらいですか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "機器本体の価格は、ハンドヘルド型で300〜800万円、地上据置型で500〜2,000万円程度です。計測業務を外注する場合は1日あたり30万円〜が目安です。自社導入が難しい場合はレンタルや計測代行サービスの活用もおすすめです。",
+        text: "機器本体の価格は、ハンドヘルド型で300〜800万円、地上据置型で500〜2,000万円程度です。計測業務を外注する場合は1日あたり30万円〜が目安です。自社導入のハードルが高ければ、レンタルや計測代行サービスを使う手もあります。",
       },
     },
     {
@@ -60,7 +60,7 @@ const faqJsonLd = {
       name: "レーザースキャナーで取得したデータはどう活用できますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "取得した点群データはCAD図面の作成、BIM/CIMモデルの構築、土量計算、干渉チェック、変位計測、施工シミュレーションなどに活用できます。建設・建築・プラント・インフラ点検・文化財保存など幅広い分野で利用されています。",
+        text: "取得した点群データはCAD図面の作成、BIM/CIMモデルの構築、土量計算、干渉チェック、変位計測、施工シミュレーションなどに使えます。建設・建築・プラント・インフラ点検・文化財保存など、活用の場は広がり続けています。",
       },
     },
   ],
@@ -117,7 +117,7 @@ export default function LaserScannerGuidePage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>3Dレーザースキャナーとは、レーザー光を対象物に照射し、反射光の到達時間から距離を計測して三次元座標データを取得する計測機器です。</strong>1秒間に最大200万点のデータを取得でき、±1〜3mmの精度で対象物を立体的にデータ化します。本記事では、レーザースキャナーの基本原理から種類ごとの特徴、測量現場での具体的な使い方までを技術者向けに解説します。
+              <strong>3Dレーザースキャナーとは、レーザー光を対象物に照射し、反射光の到達時間から距離を計測して三次元座標データを取得する計測機器です。</strong>1秒間に最大200万点のデータを取得でき、±1〜3mmの精度で対象物を立体的にデータ化できます。ここでは、レーザースキャナーの基本原理から種類ごとの使いどころ、測量現場での実際のワークフローまで、現場経験をもとにまとめました。
             </p>
           </div>
 
@@ -186,7 +186,7 @@ export default function LaserScannerGuidePage() {
               レーザースキャナーの4つの種類
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              レーザースキャナーは搭載プラットフォームによって4つに分類されます。それぞれの特徴・精度・適した用途を把握し、現場条件に合わせて選定することが重要です。
+              レーザースキャナーは搭載プラットフォームによって4タイプに分かれます。特徴・精度・得意分野が異なるため、現場条件に合った機種選びが成果を左右します。
             </p>
 
             <div className="space-y-6 mb-8">
@@ -244,16 +244,16 @@ export default function LaserScannerGuidePage() {
               測量でのレーザースキャナーの使い方
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              地上据置型レーザースキャナーを使った測量の一般的なワークフローを紹介します。現場での作業はスキャンとターゲット設置が中心で、データの合成・処理は事務所で行います。
+              地上据置型レーザースキャナーを使った測量の流れを紹介します。現場ではスキャンとターゲット設置が中心。データの合成・処理は事務所に戻ってからの作業になります。
             </p>
 
             <div className="space-y-4 mb-8">
               {[
-                { step: "STEP 1", title: "現場踏査・スキャン計画", desc: "現場の規模・形状を確認し、スキャナーの設置位置と台数を計画します。死角が生じないよう、設置ポイント間のオーバーラップ（重複範囲）を確保することがポイントです。" },
+                { step: "STEP 1", title: "現場踏査・スキャン計画", desc: "現場の規模・形状を確認し、スキャナーの設置位置と台数を計画します。死角が生じないよう、設置ポイント間のオーバーラップ（重複範囲）を確保するのがコツです。" },
                 { step: "STEP 2", title: "基準点・ターゲット設置", desc: "測量基準点（既知点）とスキャン合成用のターゲット（球体や平面ターゲット）を設置します。ターゲットは隣接するスキャン間で3点以上共有されるよう配置します。" },
                 { step: "STEP 3", title: "スキャン実行", desc: "スキャナーを三脚に据え付け、各設置ポイントでスキャンを実行します。1回のスキャンは数分〜十数分で完了します。屋内では照明条件、屋外では天候（雨天時は計測精度が低下）に注意が必要です。" },
                 { step: "STEP 4", title: "データ合成（レジストレーション）", desc: "複数のスキャンデータをターゲットや特徴点を基準に位置合わせし、1つの統合点群データに合成します。専用ソフトウェア（FARO SCENE、Leica Cyclone、Trimble RealWorksなど）を使用します。" },
-                { step: "STEP 5", title: "ノイズ除去・座標変換", desc: "不要な点（通行人、車両、反射ノイズなど）を除去し、測量座標系（公共座標や現場座標）に変換します。この工程でデータの品質が決まるため、経験豊富な技術者による作業が重要です。" },
+                { step: "STEP 5", title: "ノイズ除去・座標変換", desc: "不要な点（通行人、車両、反射ノイズなど）を除去し、測量座標系（公共座標や現場座標）に変換します。この工程でデータの品質が決まるため、経験豊富な技術者の手腕が問われます。" },
                 { step: "STEP 6", title: "成果物作成・納品", desc: "クリーニング済みの点群データから、CAD図面・3Dモデル・BIMモデル・断面図・土量計算書など、発注者が求める成果物を作成して納品します。" },
               ].map((s, i) => (
                 <div key={s.step} className="flex items-start gap-4">
@@ -283,7 +283,7 @@ export default function LaserScannerGuidePage() {
               レーザースキャナーの選び方｜用途別おすすめ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              レーザースキャナーは用途・現場条件・要求精度によって最適な種類が異なります。以下の表を参考に、自社の業務に合った機種タイプを選定してください。
+              レーザースキャナーは用途・現場条件・要求精度によって最適な種類が変わります。下の表を参考に、自社の業務に合った機種タイプを見極めてください。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -318,7 +318,7 @@ export default function LaserScannerGuidePage() {
               レーザースキャナーの主要メーカーと機種
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              測量・建設分野で広く使用されている主要メーカーと代表的な機種を紹介します。
+              測量・建設分野で実績の多い主要メーカーと代表機種をまとめました。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -355,7 +355,7 @@ export default function LaserScannerGuidePage() {
               レーザースキャン vs ドローン測量
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              レーザースキャンとドローン測量はどちらも3Dデータを取得する技術ですが、得意分野が異なります。現場条件に応じた使い分けが重要です。
+              レーザースキャンとドローン測量はどちらも3Dデータを取得する技術ですが、得意分野がまったく違います。現場条件に応じた使い分けがカギです。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -398,8 +398,8 @@ export default function LaserScannerGuidePage() {
             <div className="space-y-4 mb-8">
               {[
                 { q: "レーザースキャナーの精度はどのくらいですか？", a: "地上据置型の場合、±1〜3mmの精度で計測できます。ハンドヘルド型は±5〜30mm、車載型MMSは±10〜50mm、航空LiDARは±5〜15cm程度です。計測距離や環境条件により変動しますが、対象物に合った機種を選定することで高精度な三次元データを取得できます。" },
-                { q: "レーザースキャナーの導入費用はどのくらいですか？", a: "機器本体はハンドヘルド型で300〜800万円、地上据置型で500〜2,000万円程度です。計測業務を外注する場合は1日あたり30万円〜が目安です。自社導入が難しい場合はレンタルや計測代行サービスの活用も検討してみてください。" },
-                { q: "レーザースキャナーで取得したデータはどう活用できますか？", a: "点群データとして取得し、CAD図面の作成、BIM/CIMモデルの構築、土量計算、干渉チェック、変位計測、施工シミュレーションなどに活用できます。建設・建築・プラント・インフラ点検・文化財保存など幅広い分野で利用されています。" },
+                { q: "レーザースキャナーの導入費用はどのくらいですか？", a: "機器本体はハンドヘルド型で300〜800万円、地上据置型で500〜2,000万円程度。計測業務を外注する場合は1日あたり30万円〜が目安です。自社導入のハードルが高ければ、レンタルや計測代行サービスを使う手もあります。" },
+                { q: "レーザースキャナーで取得したデータはどう活用できますか？", a: "点群データとして取得し、CAD図面の作成、BIM/CIMモデルの構築、土量計算、干渉チェック、変位計測、施工シミュレーションなどに使えます。建設・建築・プラント・インフラ点検・文化財保存など、活用の場は広がり続けています。" },
               ].map((item) => (
                 <div key={item.q} className="bg-gray-50 rounded-lg p-5">
                   <h3 className="font-bold text-gray-900 mb-2">Q. {item.q}</h3>
@@ -460,7 +460,7 @@ export default function LaserScannerGuidePage() {
             <div className="space-y-3">
               <Link href="/blog/point-cloud-guide" className="block text-sm text-primary hover:underline">→ 点群データとは？</Link>
               <Link href="/blog/drone-vs-laser" className="block text-sm text-primary hover:underline">→ ドローン測量 vs 地上レーザースキャン</Link>
-              <Link href="/blog/what-is-3d-surveying" className="block text-sm text-primary hover:underline">→ 3D測量とは？</Link>
+              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">→ 3D測量とは？</Link>
             </div>
           </div>
 

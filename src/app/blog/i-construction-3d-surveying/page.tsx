@@ -44,7 +44,7 @@ const faqJsonLd = {
       name: "i-Constructionに初めて対応する場合、何から始めればよいですか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "まずは発注者（国交省・自治体）が求める成果物の仕様を確認してください。起工測量の段階から3D測量を導入し、3次元設計データとの照合環境を整えることが重要です。弊社では初めてのi-Con対応でも、成果物作成から提出までサポートしています。",
+        text: "最初の一歩は、発注者（国交省・自治体）が求める成果物の仕様を確認すること。起工測量の段階から3D測量を導入し、3次元設計データとの照合環境を整えておくのがカギです。弊社は初めてのi-Con対応でも、成果物作成から提出までサポートしています。",
       },
     },
     {
@@ -52,7 +52,7 @@ const faqJsonLd = {
       name: "i-Construction対応の3D測量に必要な資格はありますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "測量業務自体には測量士・測量士補の資格が必要です。ドローン測量を行う場合は、無人航空機操縦者技能証明（国家資格）の取得が推奨されます。弊社は測量業者登録済みで、有資格者が全案件を担当します。",
+        text: "測量業務には測量士・測量士補の資格が必要です。ドローン測量の場合は無人航空機操縦者技能証明（国家資格）の取得も推奨されます。弊社は測量業者登録済みで、有資格者が全案件を担当しています。",
       },
     },
     {
@@ -117,7 +117,7 @@ export default function IConstructionSurveyingPage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>i-Constructionとは、国土交通省が推進する建設現場の生産性向上施策です。</strong>3D測量はその中核技術であり、起工測量・出来形管理・土量計算の各工程で活用されます。i-Construction対応で求められる主な成果物は、3次元設計データ・点群データ・出来形管理図表の3つです。本記事では、国交省が定める精度基準から成果物の作成方法、計測手法の使い分けまで、ICT施工担当者が押さえるべきポイントをまとめました。
+              <strong>i-Constructionとは、国土交通省が推進する建設現場の生産性向上施策です。</strong>3D測量はその中核を担う技術で、起工測量・出来形管理・土量計算の各工程で活用されます。求められる主な成果物は、3次元設計データ・点群データ・出来形管理図表の3つ。ここでは国交省の精度基準から成果物の作り方、計測手法の使い分けまで、ICT施工担当者が押さえておくべきポイントを整理しました。
             </p>
           </div>
 
@@ -146,10 +146,10 @@ export default function IConstructionSurveyingPage() {
               i-Constructionとは？3D測量との関係
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              i-Constructionとは、国土交通省が2016年度から推進している建設現場の生産性向上施策です。ICT（情報通信技術）を測量・設計・施工・検査の全プロセスに導入し、建設業の生産性を2025年度までに2割向上させることを目標としています。
+              i-Constructionは、国土交通省が2016年度からスタートさせた建設現場の生産性向上施策です。ICT（情報通信技術）を測量・設計・施工・検査の全プロセスに導入し、建設業の生産性を2割向上させることを目指しています。
             </p>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              3D測量はi-Constructionの起点となる技術です。従来の横断測量では断面ごとに「線」でしか地形を把握できませんでしたが、3D測量では現況地形を「面」として取得します。この面的データがあることで、3次元設計データとの照合、ICT建機への設計面の転送、出来形の面的管理が可能になります。
+              3D測量はi-Constructionの起点となる技術です。従来の横断測量では断面ごとに「線」でしか地形を捉えられませんでしたが、3D測量なら現況地形を「面」で取得できます。この面的データがあってはじめて、3次元設計データとの照合、ICT建機への設計面転送、出来形の面管理が実現するわけです。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm text-gray-700 leading-relaxed">
@@ -162,10 +162,10 @@ export default function IConstructionSurveyingPage() {
               i-Constructionで求められる3D測量の基準
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              国土交通省は「ICT活用工事における3次元計測技術の活用に関する手引き」等で、3D測量に必要な精度基準と計測方法の要件を定めています。
+              国土交通省の「ICT活用工事における3次元計測技術の活用に関する手引き」等で、精度基準と計測方法の要件が定められています。
             </p>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              主な精度基準は以下の通りです。
+              主な精度基準をまとめると次の通りです。
             </p>
             <div className="overflow-x-auto mb-6">
               <table className="w-full text-sm border-collapse">
@@ -193,7 +193,7 @@ export default function IConstructionSurveyingPage() {
               </table>
             </div>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              計測方法の要件としては、空中写真測量（ドローン）・地上レーザースキャン・トータルステーションのいずれかを使用し、計測結果は検証点を用いて精度確認を行うことが求められます。なお、計測範囲は施工区域に加え、法肩・法尻から外側に余裕幅をもって取得する必要があります。
+              計測方法は、空中写真測量（ドローン）・地上レーザースキャン・トータルステーションのいずれかを使用し、検証点で精度確認を行うことが求められます。計測範囲は施工区域だけでなく、法肩・法尻から外側に余裕幅を持たせて取得する必要がある点もお忘れなく。
             </p>
 
             {/* 3. 成果物一覧 */}
@@ -201,7 +201,7 @@ export default function IConstructionSurveyingPage() {
               必要な成果物一覧と作成方法
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              i-Construction対応で提出が求められる主な成果物を一覧にまとめます。
+              提出が求められる主な成果物を一覧にしました。
             </p>
             <div className="overflow-x-auto mb-6">
               <table className="w-full text-sm border-collapse">
@@ -233,7 +233,7 @@ export default function IConstructionSurveyingPage() {
               </table>
             </div>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              成果物の作成には専用の3D点群処理ソフトウェア（TREND-POINT、EL.Point、Terra Solidなど）が必要です。点群データからTINモデル（不整三角形網）を生成し、設計面との差分をヒートマップ形式で可視化して出来形管理図表を作成します。
+              成果物の作成には専用の3D点群処理ソフト（TREND-POINT、EL.Point、Terra Solidなど）が必要です。点群データからTINモデル（不整三角形網）を生成し、設計面との差分をヒートマップで可視化して出来形管理図表に仕上げます。
             </p>
 
             {/* 4. 対応工程 */}
@@ -241,29 +241,29 @@ export default function IConstructionSurveyingPage() {
               3D測量の対応工程
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              i-Construction対応のICT施工では、以下の4つの段階で3D測量が活用されます。
+              ICT施工の現場では、次の4つの段階で3D測量が登場します。
             </p>
             <div className="space-y-4 mb-8">
               {[
                 {
                   step: "STEP 1",
                   title: "起工測量",
-                  desc: "施工前の現況地形を3D測量で面的に取得します。ドローンまたはレーザースキャナを使用し、施工区域全体の点群データを作成します。この現況データが設計データとの照合基準になります。",
+                  desc: "施工前の現況地形を3D測量で面的に取得。ドローンまたはレーザースキャナを使い、施工区域全体の点群データを作ります。この現況データが、設計データとの照合基準になります。",
                 },
                 {
                   step: "STEP 2",
                   title: "3次元設計データ作成・ICT建機への転送",
-                  desc: "設計図面から3次元設計データ（TINサーフェス）を作成し、ICT建機のマシンコントロール・マシンガイダンスシステムに転送します。オペレーターはモニター上で設計面と現況面の差を確認しながら施工できます。",
+                  desc: "設計図面から3次元設計データ（TINサーフェス）を作成し、ICT建機のマシンコントロール・マシンガイダンスに転送。オペレーターはモニターで設計面と現況面の差を見ながら施工を進められます。",
                 },
                 {
                   step: "STEP 3",
                   title: "出来形管理（施工中〜施工後）",
-                  desc: "施工の各段階で3D測量を実施し、出来形を面的に計測します。設計データとの差分をヒートマップで表示し、規格値（±50mm等）を満たしているか確認します。従来の断面管理から面管理に移行することで、施工品質の均一化が図れます。",
+                  desc: "施工の各段階で3D測量を実施し、出来形を面的に計測。設計データとの差分をヒートマップで表示して、規格値（±50mm等）をクリアしているか確認します。断面管理から面管理に変わることで、施工品質の均一化が格段に進みます。",
                 },
                 {
                   step: "STEP 4",
                   title: "完成検査・土量算出",
-                  desc: "最終の出来形計測を行い、出来形管理図表・精度管理表・土量計算書を作成して完成検査に臨みます。点群同士の差分から土量（切土量・盛土量）を算出するため、従来の平均断面法より正確な数量把握が可能です。",
+                  desc: "最終の出来形計測を行い、出来形管理図表・精度管理表・土量計算書を揃えて完成検査へ。点群同士の差分から土量（切土量・盛土量）を出すので、従来の平均断面法より正確な数量把握ができます。",
                 },
               ].map((s, i) => (
                 <div key={s.step} className="flex items-start gap-4">
@@ -293,7 +293,7 @@ export default function IConstructionSurveyingPage() {
               対応する計測手法と使い分け
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              i-Construction対応の3D測量では、主にドローン（UAV）測量と地上レーザースキャンの2手法が使用されます。現場条件に応じた使い分けが重要です。
+              i-Construction対応では、主にドローン（UAV）測量と地上レーザースキャンの2手法が使われます。現場に合った使い分けがポイントです。
             </p>
             <div className="overflow-x-auto mb-6">
               <table className="w-full text-sm border-collapse">
@@ -324,7 +324,7 @@ export default function IConstructionSurveyingPage() {
               </table>
             </div>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              一般的に、広域の土工現場ではドローン測量が効率的で、構造物の出来形計測や高精度が求められる箇所では地上レーザースキャンが適しています。両手法を組み合わせて使用するケースも多く、弊社では現場条件を踏まえた最適な手法を提案しています。
+              現場の感覚としては、広域の土工現場はドローンが効率的で、構造物の出来形計測や高精度が必要な箇所は地上レーザーの出番です。両方を組み合わせるケースも多く、弊社では現場条件を踏まえて最適な手法を提案しています。
             </p>
 
             {/* 6. メリット */}
@@ -332,24 +332,24 @@ export default function IConstructionSurveyingPage() {
               i-Construction対応のメリット
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              i-Constructionに対応することで、施工者には以下の3つのメリットがあります。
+              i-Constructionに対応すると、施工者には次の3つのメリットが生まれます。
             </p>
             <div className="space-y-4 mb-8">
               {[
                 {
                   num: "1",
                   title: "総合評価での加点評価",
-                  desc: "ICT活用工事の実績は、公共工事の総合評価落札方式において加点対象となります。i-Construction対応の実績を積むことで、今後の入札で競争優位性を確保できます。発注者指定型だけでなく、受注者希望型で積極的にICTを活用する姿勢も評価されます。",
+                  desc: "ICT活用工事の実績は、公共工事の総合評価落札方式で加点対象になります。実績を積むほど今後の入札で有利に。発注者指定型だけでなく、受注者希望型で積極的にICTを活用する姿勢も評価されます。",
                 },
                 {
                   num: "2",
                   title: "測量・検査工数の大幅削減",
-                  desc: "従来の丁張り設置・横断測量・出来形検測にかかる時間を大幅に削減できます。ドローン測量なら起工測量を1日で完了でき、出来形管理も面的データの差分解析で効率化されます。検査時の立会い時間も短縮されるため、プロジェクト全体の工期短縮に寄与します。",
+                  desc: "従来の丁張り設置・横断測量・出来形検測にかかる時間を大幅にカットできます。ドローンなら起工測量が1日で完了し、出来形管理も面的データの差分解析でスピードアップ。検査時の立会い時間も短くなるため、プロジェクト全体の工期短縮につながります。",
                 },
                 {
                   num: "3",
                   title: "施工品質の向上と可視化",
-                  desc: "面的な出来形管理により、断面管理では見落としがちな局所的な不陸や施工ムラを検出できます。ヒートマップ形式で施工精度を可視化することで、手直し箇所の早期発見と品質の均一化が実現します。発注者への説明資料としても説得力があります。",
+                  desc: "面的な出来形管理だからこそ、断面管理では見落としがちな局所的な不陸や施工ムラを検出できます。ヒートマップで施工精度を「見える化」すれば、手直し箇所の早期発見と品質の均一化を両立。発注者への説明資料としても説得力が段違いです。",
                 },
               ].map((m) => (
                 <div key={m.num} className="flex items-start gap-4 bg-white border border-gray-200 p-5 rounded-lg">
@@ -367,7 +367,7 @@ export default function IConstructionSurveyingPage() {
               弊社のi-Construction対応実績
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              弊社では、高速道路の改良工事においてi-Construction対応の3D測量を実施しました。ドローン測量と地上レーザースキャンを併用し、延長約2kmの土工区間の起工測量から出来形管理までを一貫して担当しました。
+              弊社では高速道路の改良工事で、i-Construction対応の3D測量を実施しました。ドローン測量と地上レーザースキャンを併用し、延長約2kmの土工区間の起工測量から出来形管理まで一貫して担当した事例です。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm text-gray-700 leading-relaxed mb-2">
@@ -394,11 +394,11 @@ export default function IConstructionSurveyingPage() {
               {[
                 {
                   q: "i-Constructionに初めて対応する場合、何から始めればよいですか？",
-                  a: "まずは発注者（国交省・自治体）が求める成果物の仕様を確認してください。起工測量の段階から3D測量を導入し、3次元設計データとの照合環境を整えることが重要です。弊社では初めてのi-Con対応でも、成果物作成から提出までサポートしています。",
+                  a: "最初の一歩は、発注者（国交省・自治体）が求める成果物の仕様を確認すること。起工測量の段階から3D測量を導入し、3次元設計データとの照合環境を整えておくのがカギです。弊社は初めてのi-Con対応でも、成果物作成から提出までサポートしています。",
                 },
                 {
                   q: "i-Construction対応の3D測量に必要な資格はありますか？",
-                  a: "測量業務自体には測量士・測量士補の資格が必要です。ドローン測量を行う場合は、無人航空機操縦者技能証明（国家資格）の取得が推奨されます。弊社は測量業者登録済みで、有資格者が全案件を担当します。",
+                  a: "測量業務には測量士・測量士補の資格が必要です。ドローン測量の場合は無人航空機操縦者技能証明（国家資格）の取得も推奨されます。弊社は測量業者登録済みで、有資格者が全案件を担当しています。",
                 },
                 {
                   q: "対応エリアはどこまでですか？",
@@ -417,7 +417,7 @@ export default function IConstructionSurveyingPage() {
               まとめ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              i-Construction対応の3D測量は、公共工事のICT施工において不可欠な技術です。国交省が定める精度基準を満たした測量と成果物の作成が求められるため、対応実績のある測量会社への依頼が重要になります。
+              i-Construction対応の3D測量は、もはや公共工事のICT施工に欠かせない技術です。国交省の精度基準を満たした測量と成果物作成が求められるため、対応実績のある測量会社に依頼することが成功のカギになります。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm font-bold text-gray-800 mb-2">この記事のポイント：</p>
@@ -430,7 +430,7 @@ export default function IConstructionSurveyingPage() {
               </ul>
             </div>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              i-Construction対応の3D測量をご検討中の方は、まずは対象工事の概要をお聞かせください。必要な成果物と最適な計測手法をご提案します。
+              i-Construction対応の3D測量をお考えの方は、まず対象工事の概要を教えてください。必要な成果物と最適な計測手法をご提案します。
             </p>
           </div>
 
@@ -462,7 +462,7 @@ export default function IConstructionSurveyingPage() {
           <div className="mt-12 pt-8 border-t">
             <h3 className="text-lg font-bold text-gray-800 mb-4">関連記事</h3>
             <div className="space-y-3">
-              <Link href="/blog/what-is-3d-surveying" className="block text-sm text-primary hover:underline">
+              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">
                 → 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説
               </Link>
               <Link href="/blog/3d-vs-traditional-surveying" className="block text-sm text-primary hover:underline">

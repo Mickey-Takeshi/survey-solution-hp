@@ -60,7 +60,7 @@ const faqJsonLd = {
       name: "既存のCADソフトとデータ連携できますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "はい、点群データはAutoCAD、Civil 3D、Revitなど主要なCADソフトにインポートできます。LAS、E57、PTSなど汎用的なフォーマットで納品するため、お使いのソフトウェア環境に合わせた連携が可能です。",
+        text: "AutoCAD、Civil 3D、Revitなど主要なCADソフトにインポートできます。LAS、E57、PTSなど汎用フォーマットで納品するので、お使いのソフト環境にそのまま連携可能です。",
       },
     },
   ],
@@ -117,7 +117,7 @@ export default function LaborShortageSolutionPage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>建設業界の測量技術者は過去10年で約30%減少し、人手不足が深刻化しています。</strong>3D測量の導入により、(1)計測要員を3名から1名に削減、(2)現場作業時間を1/3に短縮、(3)データ処理の自動化で事務工数を50%削減、の3つの方法で省人化を実現できます。本記事では、各方法の具体的な手順と導入事例をもとに、測量の人手不足を解決するための実践的なアプローチを解説します。
+              <strong>建設業界の測量技術者は過去10年で約30%減少し、人手不足が深刻化しています。</strong>3D測量を導入すれば、(1)計測要員を3名から1名に削減、(2)現場作業時間を1/3に短縮、(3)データ処理の自動化で事務工数を50%カット、という3つの方法で省人化が実現できます。この記事では、それぞれの具体的な手順と現場の導入事例をもとに、すぐ使える実践的なアプローチをまとめました。
             </p>
           </div>
 
@@ -176,7 +176,7 @@ export default function LaborShortageSolutionPage() {
             </div>
 
             <p className="text-base leading-loose text-gray-700 mb-4">
-              こうした状況のなか、限られた人員で測量品質を維持するために注目されているのが、3Dスキャナやドローンを活用した省人化です。以下に、具体的な3つの方法を解説します。
+              こうした状況を打開する手段として注目を集めているのが、3Dスキャナやドローンを活用した省人化です。具体的な3つの方法を見ていきましょう。
             </p>
 
             {/* 2. 方法1 */}
@@ -309,7 +309,7 @@ export default function LaborShortageSolutionPage() {
               3D測量による省人化の成功事例
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              実際に3D測量を導入し、人手不足の解消に成功した事例を紹介します。
+              実際に3D測量を導入して、人手不足の壁を乗り越えた現場の事例を紹介します。
             </p>
 
             <div className="space-y-6 mb-8">
@@ -394,7 +394,7 @@ export default function LaborShortageSolutionPage() {
               導入に必要なコストと回収期間
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              3D測量の導入には初期投資が必要ですが、人件費削減と作業効率化により投資回収が可能です。自社導入と外注の2パターンで試算を示します。
+              3D測量の導入には初期投資がかかりますが、人件費削減と作業効率化で十分に回収できます。自社導入と外注の2パターンで比較してみましょう。
             </p>
 
             <div className="overflow-x-auto mb-6">
@@ -426,7 +426,7 @@ export default function LaborShortageSolutionPage() {
 
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm text-gray-700 leading-relaxed">
-                <strong>まずは外注で効果を実感：</strong>3D測量の導入を検討中の企業には、まず外注で1〜2現場を試し、省人化の効果を実感した上で自社導入を判断する方法をお勧めしています。当社では初回のトライアル測量もご相談いただけます。
+                <strong>まずは外注で試してみる：</strong>導入を検討中なら、まず外注で1〜2現場を試し、省人化の効果を肌で感じてから自社導入を判断するのがおすすめです。当社では初回のトライアル測量も受け付けています。
               </p>
             </div>
 
@@ -446,7 +446,7 @@ export default function LaborShortageSolutionPage() {
                 },
                 {
                   q: "既存のCADソフトとデータ連携できますか？",
-                  a: "はい、点群データはAutoCAD、Civil 3D、Revitなど主要なCADソフトにインポートできます。LAS、E57、PTSなど汎用的なフォーマットで納品するため、お使いのソフトウェア環境に合わせた連携が可能です。",
+                  a: "AutoCAD、Civil 3D、Revitなど主要なCADソフトにインポートできます。LAS、E57、PTSなど汎用フォーマットで納品するので、お使いのソフト環境にそのまま連携可能です。",
                 },
               ].map((item) => (
                 <div key={item.q} className="bg-gray-50 rounded-lg p-5">
@@ -461,7 +461,7 @@ export default function LaborShortageSolutionPage() {
               まとめ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              測量業界の人手不足は今後も続くことが予想されますが、3D測量の導入によって限られた人員でも高品質な測量を実現できます。
+              測量業界の人手不足はこの先も続くでしょう。とはいえ、3D測量の導入で限られた人員でも高品質な測量は十分に実現できます。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm font-bold text-gray-800 mb-2">本記事のポイント：</p>
@@ -474,7 +474,7 @@ export default function LaborShortageSolutionPage() {
               </ul>
             </div>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              人手不足でお悩みの建設会社の管理者の方は、まずは1現場でのトライアル導入から始めてみてはいかがでしょうか。当社では、現場の状況に合わせた最適な省人化プランをご提案しています。
+              人手不足に頭を抱えている建設会社の管理者の方は、まず1現場でトライアル導入してみてください。当社では、現場の状況に合わせた省人化プランをご提案しています。
             </p>
           </div>
 
@@ -506,7 +506,7 @@ export default function LaborShortageSolutionPage() {
           <div className="mt-12 pt-8 border-t">
             <h3 className="text-lg font-bold text-gray-800 mb-4">関連記事</h3>
             <div className="space-y-3">
-              <Link href="/blog/what-is-3d-surveying" className="block text-sm text-primary hover:underline">
+              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">
                 → 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説
               </Link>
               <Link href="/blog/surveying-dx" className="block text-sm text-primary hover:underline">

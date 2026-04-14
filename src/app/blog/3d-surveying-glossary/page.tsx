@@ -44,7 +44,7 @@ const faqJsonLd = {
       name: "3D測量の用語を効率よく学ぶにはどうすればいいですか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "まず「点群データ」「メッシュ」「座標系」の3つの基本用語を理解することが重要です。この3つを押さえた上で、計測機器の用語（レーザースキャナ・LiDAR等）→データ処理の用語（レジストレーション・フィルタリング等）→ファイル形式（LAS・E57等）の順で学ぶと、3D測量のワークフロー全体を体系的に理解できます。",
+        text: "最初に「点群データ」「メッシュ」「座標系」の3つを押さえるのがおすすめです。その上で、計測機器の用語（レーザースキャナ・LiDAR等）→データ処理の用語（レジストレーション・フィルタリング等）→ファイル形式（LAS・E57等）の順で学ぶと、3D測量のワークフロー全体を体系的に理解できます。",
       },
     },
     {
@@ -52,7 +52,7 @@ const faqJsonLd = {
       name: "BIMとCIMの違いは何ですか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BIM（Building Information Modeling）は建築分野の3Dモデル技術で、建物の設計・施工・維持管理に使用します。CIM（Construction Information Modeling/Management）は土木分野の3Dモデル技術で、橋梁・道路・トンネルなどのインフラ構造物を対象とします。いずれも3D測量データを活用して構築しますが、対象分野と使用するソフトウェアが異なります。",
+        text: "BIMは建築分野、CIMは土木分野の3Dモデル技術です。BIMは建物の設計・施工・維持管理、CIMは橋梁・道路・トンネルなどのインフラが対象になります。どちらも3D測量データをもとに構築しますが、扱う対象物とソフトウェアが違います。現場では「建築ならBIM、土木ならCIM」と覚えておけば十分です。",
       },
     },
     {
@@ -60,7 +60,7 @@ const faqJsonLd = {
       name: "点群データとメッシュデータの違いは何ですか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "点群データは三次元座標を持つ点の集合体で、スキャナやドローンで直接取得した「生データ」に近い形式です。メッシュデータは点群の点同士を三角形（ポリゴン）で結んで面を生成したもので、体積計算・断面表示・3Dプリントなどに使用します。点群→メッシュへの変換は「メッシュ化」と呼ばれるデータ処理工程で行います。",
+        text: "点群データはスキャナやドローンで取得した座標付きの点の集まりで、いわば「生データ」です。メッシュデータは、その点同士を三角形でつないで面を作ったもの。体積計算や断面表示、3Dプリントにはメッシュが必要です。点群からメッシュへの変換工程を「メッシュ化」と呼びます。",
       },
     },
   ],
@@ -117,7 +117,7 @@ export default function SurveyingGlossaryPage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              3D測量では「点群データ」「メッシュ」「BIM/CIM」など、専門的な用語が多く使われます。本記事では、3D測量の初心者〜中級者に向けて、現場でよく使われる<strong>用語30以上をカテゴリ別にわかりやすく解説</strong>します。基本用語・計測機器・データ処理・ファイル形式・BIM/CIM関連の5分野を網羅しているため、辞書的にご活用ください。
+              3D測量では「点群データ」「メッシュ」「BIM/CIM」など、専門的な用語が飛び交います。打ち合わせや仕様書で戸惑った経験がある方も多いのではないでしょうか。ここでは、現場でよく使われる<strong>30以上の用語をカテゴリ別にわかりやすく整理</strong>しました。基本用語・計測機器・データ処理・ファイル形式・BIM/CIM関連の5分野を網羅していますので、辞書的にご活用ください。
             </p>
           </div>
 
@@ -144,7 +144,7 @@ export default function SurveyingGlossaryPage() {
               基本用語
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3D測量を理解するうえで最初に押さえるべき基礎的な用語です。計測データの構造や3D空間の表現方法に関する用語を解説します。
+              3D測量を理解するうえで、まず押さえておきたい基礎用語です。計測データの構造や3D空間の表現方法に関わる言葉を整理しました。
             </p>
 
             <div className="space-y-5 mb-8">
@@ -203,7 +203,7 @@ export default function SurveyingGlossaryPage() {
               計測機器の用語
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3D測量で使用するスキャナ・センサ・計測技術に関する用語です。機器選定や計測手法の理解に役立ちます。
+              3D測量で使用するスキャナ・センサ・計測技術に関する用語です。機器選定や計測手法を理解する際に押さえておきましょう。
             </p>
 
             <div className="space-y-5 mb-8">
@@ -267,7 +267,7 @@ export default function SurveyingGlossaryPage() {
             {/* 中間CTA */}
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-8 text-center">
               <p className="text-sm text-gray-700 mb-3">3D測量の基本を体系的に学びたい方はこちらの記事もご覧ください。</p>
-              <Link href="/blog/what-is-3d-surveying" className="inline-block bg-primary text-white px-6 py-2.5 text-sm font-bold rounded hover:bg-primary-dark transition-colors">
+              <Link href="/blog/3d-surveying" className="inline-block bg-primary text-white px-6 py-2.5 text-sm font-bold rounded hover:bg-primary-dark transition-colors">
                 3D測量の基礎知識を読む
               </Link>
             </div>
@@ -277,7 +277,7 @@ export default function SurveyingGlossaryPage() {
               データ処理の用語
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              スキャナで取得した生データを成果物に加工するまでの処理工程で使われる用語です。データの品質と精度に直結する重要な工程を解説します。
+              スキャナで取得した生データを成果物に加工するまでの処理工程で使われる用語です。データの品質と精度に直結する工程なので、しっかり押さえておきたいところです。
             </p>
 
             <div className="space-y-5 mb-8">
@@ -329,7 +329,7 @@ export default function SurveyingGlossaryPage() {
               ファイル形式の用語
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3D測量データの保存・交換に使用するファイル形式です。ソフトウェアとの互換性や用途に応じて適切な形式を選定します。
+              3D測量データの保存・交換に使うファイル形式です。ソフトウェアとの互換性や用途に合わせて適切な形式を選ぶ必要があります。
             </p>
 
             <div className="space-y-5 mb-8">
@@ -388,7 +388,7 @@ export default function SurveyingGlossaryPage() {
               BIM/CIM関連の用語
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              建築・土木分野の3Dモデリング技術であるBIM/CIMに関する用語です。3D測量データの主要な活用先であり、i-Constructionの推進に伴い重要性が高まっています。
+              建築・土木分野の3Dモデリング技術、BIM/CIMに関する用語です。3D測量データの主な活用先であり、i-Constructionの推進とともに重要性が増しています。
             </p>
 
             <div className="space-y-5 mb-8">
@@ -443,15 +443,15 @@ export default function SurveyingGlossaryPage() {
               {[
                 {
                   q: "3D測量の用語を効率よく学ぶにはどうすればいいですか？",
-                  a: "まず「点群データ」「メッシュ」「座標系」の3つの基本用語を理解することが重要です。この3つを押さえた上で、計測機器の用語（レーザースキャナ・LiDAR等）→データ処理の用語（レジストレーション・フィルタリング等）→ファイル形式（LAS・E57等）の順で学ぶと、3D測量のワークフロー全体を体系的に理解できます。",
+                  a: "最初に「点群データ」「メッシュ」「座標系」の3つを押さえるのがおすすめです。その後、計測機器（レーザースキャナ・LiDAR等）→データ処理（レジストレーション・フィルタリング等）→ファイル形式（LAS・E57等）と進めると、ワークフロー全体の流れがつかめます。",
                 },
                 {
                   q: "BIMとCIMの違いは何ですか？",
-                  a: "BIM（Building Information Modeling）は建築分野の3Dモデル技術で、建物の設計・施工・維持管理に使用します。CIM（Construction Information Modeling/Management）は土木分野の3Dモデル技術で、橋梁・道路・トンネルなどのインフラ構造物を対象とします。いずれも3D測量データを活用して構築しますが、対象分野と使用するソフトウェアが異なります。",
+                  a: "BIMは建築分野、CIMは土木分野の3Dモデル技術です。BIMは建物の設計・施工・維持管理、CIMは橋梁・道路・トンネルなどのインフラが対象。どちらも3D測量データから構築しますが、扱う対象物とソフトウェアが異なります。",
                 },
                 {
                   q: "点群データとメッシュデータの違いは何ですか？",
-                  a: "点群データは三次元座標を持つ点の集合体で、スキャナやドローンで直接取得した「生データ」に近い形式です。メッシュデータは点群の点同士を三角形（ポリゴン）で結んで面を生成したもので、体積計算・断面表示・3Dプリントなどに使用します。点群→メッシュへの変換は「メッシュ化」と呼ばれるデータ処理工程で行います。",
+                  a: "点群データはスキャナやドローンで取得した座標付きの点の集まりで、いわば生データです。メッシュデータは点同士を三角形でつないで面にしたもの。体積計算や断面表示、3Dプリントにはメッシュが必要になります。この変換工程を「メッシュ化」と呼びます。",
                 },
               ].map((item) => (
                 <div key={item.q} className="bg-gray-50 rounded-lg p-5">
@@ -466,7 +466,7 @@ export default function SurveyingGlossaryPage() {
               まとめ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              3D測量で使われる用語を「基本用語」「計測機器」「データ処理」「ファイル形式」「BIM/CIM関連」の5カテゴリに分けて解説しました。
+              3D測量で使われる用語を5つのカテゴリに整理しました。現場で飛び交う専門用語も、体系的に並べてみると意外とシンプルです。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm font-bold text-gray-800 mb-2">この記事のポイント：</p>
@@ -479,7 +479,7 @@ export default function SurveyingGlossaryPage() {
               </ul>
             </div>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              3D測量は用語を理解することで、業者との打ち合わせや仕様書の読解がスムーズになります。まずは基本用語を押さえた上で、自社の業務に関連する分野の用語を深掘りしていくことをおすすめします。
+              用語がわかると、業者との打ち合わせや仕様書の読解が格段にスムーズになります。まずは基本用語から入り、自社の業務に関わる分野を深掘りしてみてください。
             </p>
           </div>
 
@@ -499,7 +499,7 @@ export default function SurveyingGlossaryPage() {
                 無料相談を申し込む
               </Link>
               <Link
-                href="/blog/what-is-3d-surveying"
+                href="/blog/3d-surveying"
                 className="inline-block border-2 border-primary text-primary px-8 py-3 text-sm font-bold rounded hover:bg-primary hover:text-white transition-colors"
               >
                 3D測量の基礎知識を読む
@@ -511,7 +511,7 @@ export default function SurveyingGlossaryPage() {
           <div className="mt-12 pt-8 border-t">
             <h3 className="text-lg font-bold text-gray-800 mb-4">関連記事</h3>
             <div className="space-y-3">
-              <Link href="/blog/what-is-3d-surveying" className="block text-sm text-primary hover:underline">
+              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">
                 → 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説
               </Link>
               <Link href="/blog/point-cloud-guide" className="block text-sm text-primary hover:underline">

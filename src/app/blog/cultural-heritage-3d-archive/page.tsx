@@ -52,7 +52,7 @@ const faqJsonLd = {
       name: "国宝や重要文化財でも3Dスキャンは可能ですか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "はい、可能です。3Dレーザースキャンは非接触で計測するため、文化財に物理的な影響を与えません。国宝・重要文化財の計測実績は全国で増加しており、文化庁も「文化財の記録・保存へのデジタル技術活用」を推進しています。計測前に所有者・管理者および教育委員会への届出が必要な場合があります。",
+        text: "問題なくスキャンできます。3Dレーザースキャンは非接触計測のため、文化財に物理的な影響を与えません。国宝・重要文化財の計測実績は全国で増加しており、文化庁もデジタル技術の活用を推進しています。ただし計測前に所有者・管理者および教育委員会への届出が必要な場合があります。",
       },
     },
     {
@@ -117,7 +117,7 @@ export default function CulturalHeritage3dArchivePage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>文化財の3Dデジタルアーカイブとは、歴史的建造物や遺跡を3Dレーザースキャンで精密に記録し、デジタルデータとして保存・活用する取り組みです。</strong>精度±2mmで形状を記録でき、修復計画の基礎資料、VR展示、学術研究、防災記録など多目的に活用できます。本記事では、文化財3Dアーカイブの基本から計測技術、活用事例、導入の流れ、費用目安まで、自治体・博物館の文化財担当者向けに体系的に解説します。
+              <strong>文化財の3Dデジタルアーカイブとは、歴史的建造物や遺跡を3Dレーザースキャンで精密に記録し、デジタルデータとして保存・活用する取り組みです。</strong>精度±2mmで形状を記録でき、修復計画の基礎資料やVR展示、学術研究、防災記録など幅広く活用できます。ここでは、文化財3Dアーカイブの基本から計測技術、活用事例、導入の流れ、費用目安まで、自治体・博物館の担当者向けにまとめました。
             </p>
           </div>
 
@@ -166,7 +166,7 @@ export default function CulturalHeritage3dArchivePage() {
               なぜ今デジタルアーカイブが必要か
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              文化財の3Dデジタルアーカイブが急務とされる背景には、災害リスク・老朽化の進行・技術継承の3つの課題があります。
+              なぜ今、急いで取り組むべきなのか。背景にある3つの課題を見ていきます。
             </p>
 
             <div className="space-y-6 mb-8">
@@ -197,7 +197,7 @@ export default function CulturalHeritage3dArchivePage() {
               使用する計測技術
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              文化財の3Dアーカイブでは、3Dレーザースキャンとフォトグラメトリの2つの技術を対象物の特性に応じて使い分け、または組み合わせて使用します。
+              文化財の3Dアーカイブでは、3Dレーザースキャンとフォトグラメトリの2つの技術を対象物に合わせて使い分け、必要に応じて組み合わせます。
             </p>
 
             <div className="space-y-6 mb-8">
@@ -244,7 +244,7 @@ export default function CulturalHeritage3dArchivePage() {
               活用事例4選
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              文化財の3Dデジタルアーカイブは、保存だけでなく修復・展示・研究・製造の各分野で活用されています。代表的な4つの事例を紹介します。
+              文化財の3Dデジタルアーカイブは、保存にとどまらず修復・展示・研究・製造の各分野で活用が広がっています。代表的な4つの事例を紹介します。
             </p>
 
             <div className="space-y-6 mb-8">
@@ -285,7 +285,7 @@ export default function CulturalHeritage3dArchivePage() {
               デジタルアーカイブの流れ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              文化財の3Dデジタルアーカイブは、事前調査から納品まで5つのステップで進めます。対象物の規模により、全体の所要期間は2週間〜3か月程度です。
+              文化財の3Dデジタルアーカイブは、事前調査から納品まで5ステップで進めます。対象物の規模にもよりますが、全体の所要期間は2週間〜3か月程度です。
             </p>
 
             <div className="space-y-4 mb-8">
@@ -315,7 +315,7 @@ export default function CulturalHeritage3dArchivePage() {
               費用と期間の目安
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              文化財の3Dアーカイブ費用は、対象物の規模・計測手法・成果物の種類によって異なります。以下は一般的な目安です。
+              文化財の3Dアーカイブ費用は、対象物の規模・計測手法・成果物の種類で変わります。一般的な目安は次のとおりです。
             </p>
 
             <div className="overflow-x-auto mb-8">
@@ -365,7 +365,7 @@ export default function CulturalHeritage3dArchivePage() {
                 },
                 {
                   q: "国宝や重要文化財でも3Dスキャンは可能ですか？",
-                  a: "はい、可能です。3Dレーザースキャンは非接触で計測するため、文化財に物理的な影響を与えません。国宝・重要文化財の計測実績は全国で増加しており、文化庁も「文化財の記録・保存へのデジタル技術活用」を推進しています。計測前に所有者・管理者および教育委員会への届出が必要な場合があります。",
+                  a: "問題なくスキャンできます。3Dレーザースキャンは非接触計測のため、文化財に物理的影響を与えません。国宝・重要文化財の計測実績は全国で増加中で、文化庁もデジタル技術の活用を推進しています。ただし、計測前に所有者・管理者や教育委員会への届出が必要な場合があります。",
                 },
                 {
                   q: "3Dデジタルアーカイブのデータはどのように保管・管理しますか？",
@@ -384,7 +384,7 @@ export default function CulturalHeritage3dArchivePage() {
               まとめ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              文化財の3Dデジタルアーカイブは、歴史的建造物や遺跡の形状を±2mmの精度でデジタル記録し、修復・展示・研究・防災に活用できる技術です。災害リスクの増大と老朽化の進行を背景に、全国の自治体・博物館での導入が加速しています。
+              文化財の3Dデジタルアーカイブは、歴史的建造物や遺跡の形状を±2mmの精度でデジタル記録し、修復・展示・研究・防災に活かせる技術です。災害リスクの増大と老朽化の進行を背景に、全国の自治体・博物館で導入が広がっています。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm font-bold text-gray-800 mb-2">この記事のポイント：</p>
@@ -429,7 +429,7 @@ export default function CulturalHeritage3dArchivePage() {
           <div className="mt-12 pt-8 border-t">
             <h3 className="text-lg font-bold text-gray-800 mb-4">関連記事</h3>
             <div className="space-y-3">
-              <Link href="/blog/what-is-3d-surveying" className="block text-sm text-primary hover:underline">
+              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">
                 → 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説
               </Link>
               <Link href="/blog/point-cloud-guide" className="block text-sm text-primary hover:underline">

@@ -71,7 +71,7 @@ const faqJsonLd = {
       name: "ドローン測量と地上レーザーを併用するメリットはありますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "はい、併用は効果的です。広域の地形をドローンで計測し、建物・構造物の詳細を地上レーザーで補完することで、広範囲かつ高精度なデータを効率的に取得できます。大規模造成現場や工場全体の現況測量などで併用が採用されています。",
+        text: "併用は非常に効果的です。広域の地形をドローンで計測し、建物・構造物の詳細を地上レーザーで補完すれば、広範囲かつ高精度なデータを効率的に取得できます。大規模造成現場や工場全体の現況測量で採用が増えています。",
       },
     },
   ],
@@ -138,7 +138,7 @@ export default function DroneVsLaserPage() {
               <strong>
                 ドローン測量は広域（1ha以上）の地形計測に強く、費用20万円〜、精度±2〜5cm。地上レーザースキャンは建物・構造物の高精度計測に強く、費用30万円〜、精度±1〜3mm。
               </strong>
-              どちらが優れているかではなく、現場条件と精度要件で使い分けるのが最適解です。本記事では、3D測量の専門家の視点から両手法の違いを精度・コスト・速度・対応現場の4軸で徹底比較し、現場責任者が最適な手法を選定できるよう解説します。
+              どちらが優れているかではなく、現場条件と精度要件で使い分けるのが正解です。この記事では、3D測量の専門家の立場から両手法の違いを精度・コスト・速度・対応現場の4つの軸で比較し、現場責任者が判断しやすいようまとめました。
             </p>
           </div>
 
@@ -216,7 +216,7 @@ export default function DroneVsLaserPage() {
               それぞれの基本的な仕組み
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              ドローン測量と地上レーザースキャンは、3Dデータを取得するという目的は同じですが、計測原理が根本的に異なります。
+              ドローン測量と地上レーザースキャンは、3Dデータを取得するゴールは同じでも、計測原理がまったく違います。
             </p>
 
             <div className="space-y-6 mb-8">
@@ -264,7 +264,7 @@ export default function DroneVsLaserPage() {
               精度で比較する
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              精度面では地上レーザースキャンが優位です。水平精度・垂直精度・点密度の3指標で比較します。
+              精度面では地上レーザースキャンに軍配が上がります。水平精度・垂直精度・点密度の3指標で見てみましょう。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -446,7 +446,7 @@ export default function DroneVsLaserPage() {
               計測速度・効率で比較する
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              計測速度ではドローンが圧倒的に有利です。ただし、データ処理時間を含めたトータル工数は用途によって異なります。
+              現場のスピード勝負ではドローンが圧倒的に有利。ただし、データ処理時間を含めたトータル工数は用途次第です。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -514,7 +514,7 @@ export default function DroneVsLaserPage() {
               対応できる現場条件で比較する
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              現場条件の対応力は地上レーザーの方が幅広いです。ドローンは屋外の広域地形に特化し、地上レーザーは屋内外を問わず対応できます。
+              対応力の広さでは地上レーザーが上。ドローンは屋外の広域地形に特化している一方、地上レーザーは屋内外を問わず使えます。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -573,7 +573,7 @@ export default function DroneVsLaserPage() {
               総合比較表
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              ここまでの比較内容を総合的に整理します。
+              ここまでの内容をまとめると次の通りです。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -666,7 +666,7 @@ export default function DroneVsLaserPage() {
               ドローン測量が最適な5つのケース
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              以下のケースではドローン測量のコストパフォーマンスと効率が優れます。
+              こんな現場ではドローン測量のコスパと効率が光ります。
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -723,7 +723,7 @@ export default function DroneVsLaserPage() {
               地上レーザーが最適な5つのケース
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              以下のケースでは地上レーザースキャンの精度と対応力が求められます。
+              次のような現場では、地上レーザースキャンの精度と対応力が欠かせません。
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -780,7 +780,7 @@ export default function DroneVsLaserPage() {
               併用が効果的なケース
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              ドローンと地上レーザーの併用は、広域性と高精度を両立させたい場合に効果的です。弊社でも併用提案を行うケースが増えています。
+              実際のところ、ドローンと地上レーザーの併用が最も効果を発揮する場面は少なくありません。弊社でも併用を提案するケースが年々増えています。
             </p>
             <div className="space-y-6 mb-8">
               <div className="bg-white border border-gray-200 rounded-lg p-6">
@@ -820,7 +820,7 @@ export default function DroneVsLaserPage() {
               {[
                 {
                   q: "ドローン測量と地上レーザースキャンはどちらが精度が高いですか？",
-                  a: "地上レーザースキャンの方が精度は高く、±1〜3mmの計測精度を実現します。ドローン測量は±2〜5cm程度です。ただし、土木の出来形管理など±5cmで十分な用途ではドローン測量のコストパフォーマンスが優れます。精度要件に応じた選定が重要です。",
+                  a: "地上レーザースキャンの方が高く、±1〜3mmの精度が出ます。ドローン測量は±2〜5cm程度。ただし、土木の出来形管理など±5cmで十分な用途ならドローンの方がコスパに優れます。求める精度に合わせて選びましょう。",
                 },
                 {
                   q: "ドローン測量と地上レーザーの費用差はどのくらいですか？",
@@ -828,7 +828,7 @@ export default function DroneVsLaserPage() {
                 },
                 {
                   q: "ドローン測量と地上レーザーを併用するメリットはありますか？",
-                  a: "はい、併用は効果的です。広域の地形データをドローンで効率的に取得し、構造物の詳細を地上レーザーで補完することで、広範囲かつ高精度なデータを取得できます。大規模造成現場や工場全体の現況測量で多く採用されています。",
+                  a: "併用は非常に効果的です。広域の地形はドローンで効率よく取得し、構造物の詳細は地上レーザーで補完する。これで広範囲かつ高精度なデータが手に入ります。大規模造成現場や工場全体の現況測量で採用が増えています。",
                 },
               ].map((item) => (
                 <div key={item.q} className="bg-gray-50 rounded-lg p-5">
@@ -850,7 +850,7 @@ export default function DroneVsLaserPage() {
               まとめ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              ドローン測量と地上レーザースキャンは、それぞれ異なる強みを持つ測量手法です。どちらが優れているかではなく、現場条件と精度要件に応じて最適な手法を選定することが、コスト削減と品質確保の鍵となります。
+              ドローン測量と地上レーザースキャンは、それぞれ異なる強みを持つ測量手法。どちらが上かではなく、現場条件と精度要件に合わせて選ぶことが、コスト削減と品質確保のカギになります。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm font-bold text-gray-800 mb-2">
@@ -922,7 +922,7 @@ export default function DroneVsLaserPage() {
                 → レーザースキャナーとは？仕組み・種類・選び方をわかりやすく解説
               </Link>
               <Link
-                href="/blog/what-is-3d-surveying"
+                href="/blog/3d-surveying"
                 className="block text-sm text-primary hover:underline"
               >
                 → 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説

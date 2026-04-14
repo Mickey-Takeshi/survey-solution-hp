@@ -4,16 +4,19 @@ import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "3D測量サービスとは｜地上レーザー・点群データ・BIM連携",
+  title: "3D測量サービス｜レーザースキャン・点群データ・BIM連携【全国対応・15万円〜】",
   description:
-    "3D測量サービスの全体像を解説。地上レーザースキャン、点群データ作成・処理、3Dモデリング・BIM連携の3つのサービスで、建設・建築・プラント・インフラの課題を解決します。全国対応。",
+    "3Dレーザースキャン測量・点群データ処理・3DモデリングのBIM連携を全国対応。建設・建築・プラント・インフラの3D計測は株式会社SurveySolution。15万円〜の明瞭料金、無料見積もり受付中。",
   keywords: [
     "3D測量 サービス",
+    "3Dスキャンサービス",
+    "3Dスキャン 料金",
     "三次元測量",
     "3Dスキャナ測量",
     "レーザースキャン測量",
     "点群データ",
     "BIM連携",
+    "3D計測サービス",
   ],
   alternates: { canonical: "/service" },
 };
@@ -56,7 +59,7 @@ const services = [
     subtitle: "3D MODELING / BIM",
     image: "/images/service04.jpg",
     description:
-      "点群データから3Dモデルを作成し、BIM/CIMソフトウェアと連携します。既存建物のBIM化（スキャンtooBIM）により、改修・増築計画の精度と効率を向上させます。",
+      "点群データから3Dモデルを作成し、BIM/CIMソフトウェアと連携します。既存建物のBIM化（スキャンtoBIM）により、改修・増築計画の精度と効率を向上させます。",
     features: [
       "Revit・ArchiCAD等のBIMソフト連携",
       "既存建物のスキャンtoBIM対応",
@@ -94,6 +97,53 @@ const industries = [
   },
 ];
 
+const serviceFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "3D測量サービスの費用はいくらですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "一般的な現場（500㎡程度）で15万円〜50万円が目安です。地上レーザースキャンは15万円〜、点群データ処理は5万円〜、3Dモデル作成は10万円〜です。正確な費用は無料見積もりにてお伝えいたします。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3D測量サービスでどんな成果物をもらえますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "点群データ（LAS・E57・PTS形式）、CAD図面（DXF・DWG）、3Dモデル（Revit・ArchiCAD対応）、断面図・平面図・立面図など、ご要望に応じた成果物を納品します。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "どんな現場・業種に対応していますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "建設・土木、建築・リノベーション、プラント・工場、インフラ点検（橋梁・トンネル）、文化財・遺跡など幅広い現場に対応しています。全国どこでも対応可能です。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "BIMとレーザースキャナーを連携できますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、対応しています。取得した点群データをRevit・ArchiCAD・Civil 3Dなどの主要BIM/CIMソフトと連携し、既存建物のスキャンtoBIM化や3次元設計データ作成が可能です。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "納品までどのくらいかかりますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "現地スキャンは規模にもよりますが1日〜数日で完了します。データ処理・成果物作成を含めた納品までの目安はご発注から2〜4週間程度です。急ぎの案件はご相談ください。",
+      },
+    },
+  ],
+};
+
 const serviceJsonLd = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -127,6 +177,10 @@ export default function ServicePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceFaqJsonLd) }}
       />
       <PageHeader
         title="3D測量サービス"

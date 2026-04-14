@@ -44,7 +44,7 @@ const faqJsonLd = {
       name: "3D測量はどのような業界で活用されていますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "建設・土木（出来形管理、土量計算）、建築（現況図面作成、BIMモデル構築）、プラント（配管3Dモデル化、干渉チェック）、インフラ（橋梁・トンネルの点検）、文化財（デジタルアーカイブ）、防災（被災状況記録）など幅広い分野で活用されています。",
+        text: "建設・土木（出来形管理、土量計算）、建築（現況図面作成、BIMモデル構築）、プラント（配管3Dモデル化、干渉チェック）、インフラ（橋梁・トンネルの点検）、文化財（デジタルアーカイブ）、防災（被災状況記録）など、現場のデジタル化が求められるあらゆる分野で導入が進んでいます。",
       },
     },
     {
@@ -60,7 +60,7 @@ const faqJsonLd = {
       name: "自社の現場でも3D測量を導入できますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "はい、対象物の規模・精度要件・現場条件に応じて最適な計測手法（地上レーザースキャン、ドローン測量、ハンドヘルドスキャン）を選定し、対応可能です。まずは現場の課題をお聞かせいただければ、適した手法と概算費用をご提案します。無料相談を受け付けていますので、お気軽にお問い合わせください。",
+        text: "対象物の規模・精度要件・現場条件に応じて最適な計測手法を選べば、ほとんどの現場に対応できます。まずは課題をお聞かせください。適した手法と概算費用をご提案します。",
       },
     },
   ],
@@ -117,7 +117,7 @@ export default function SurveyingUseCasesPage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>3D測量は建設・建築・プラント・インフラ・文化財など、幅広い分野で活用されています。</strong>本記事では、弊社の実績を含む代表的な活用事例10選を紹介します。各事例の課題・解決方法・成果を具体的な数値とともに解説します。
+              <strong>3D測量は建設・建築・プラント・インフラ・文化財まで、さまざまな現場で使われています。</strong>弊社の実績を含む代表的な活用事例を10件ピックアップしました。それぞれの課題・解決方法・成果を具体的な数値とともに紹介します。
             </p>
           </div>
 
@@ -487,7 +487,7 @@ export default function SurveyingUseCasesPage() {
               活用事例から見る3D測量の選び方
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3D測量は用途に応じて最適な計測手法が異なります。以下の表を参考に、自社の現場に適した手法を選定してください。
+              3D測量は用途によって最適な計測手法が変わります。下の表を参考に、自社の現場に合った手法を見極めてください。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -528,9 +528,9 @@ export default function SurveyingUseCasesPage() {
             </h2>
             <div className="space-y-4 mb-8">
               {[
-                { q: "3D測量はどのような業界で活用されていますか？", a: "建設・土木（出来形管理、土量計算）、建築（現況図面作成、BIMモデル構築）、プラント（配管3Dモデル化、干渉チェック）、インフラ（橋梁・トンネルの点検）、文化財（デジタルアーカイブ）、防災（被災状況記録）など幅広い分野で活用されています。" },
+                { q: "3D測量はどのような業界で活用されていますか？", a: "建設・土木（出来形管理、土量計算）、建築（現況図面作成、BIMモデル構築）、プラント（配管3Dモデル化、干渉チェック）、インフラ（橋梁・トンネルの点検）、文化財（デジタルアーカイブ）、防災（被災状況記録）など、現場のデジタル化が求められるあらゆる分野で導入が進んでいます。" },
                 { q: "3D測量を導入するとどのくらい工数を削減できますか？", a: "用途により異なりますが、出来形管理では工数60%削減、現況図面作成では作業期間75%短縮、配管干渉チェックでは工数80%削減などの実績があります。従来の手作業と比較して、計測から成果物作成まで大幅な効率化が可能です。" },
-                { q: "自社の現場でも3D測量を導入できますか？", a: "はい、対象物の規模・精度要件・現場条件に応じて最適な計測手法を選定し、対応可能です。まずは現場の課題をお聞かせいただければ、適した手法と概算費用をご提案します。無料相談を受け付けていますので、お気軽にお問い合わせください。" },
+                { q: "自社の現場でも3D測量を導入できますか？", a: "対象物の規模・精度要件・現場条件に応じて最適な計測手法を選べば、ほとんどの現場に対応できます。まずは課題をお聞かせください。適した手法と概算費用をご提案します。" },
               ].map((item) => (
                 <div key={item.q} className="bg-gray-50 rounded-lg p-5">
                   <h3 className="font-bold text-gray-900 mb-2">Q. {item.q}</h3>
@@ -544,7 +544,7 @@ export default function SurveyingUseCasesPage() {
               まとめ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              3D測量は、建設・建築・プラント・インフラ・文化財・防災など、幅広い分野で活用されています。本記事で紹介した10の事例が示すように、従来手法と比較して大幅な工数削減・品質向上・安全性確保を実現できます。
+              3D測量は建設・建築・プラント・インフラ・文化財・防災まで、現場を選びません。今回取り上げた10事例のとおり、従来手法と比べて工数削減・品質向上・安全性確保の面で確かな成果が出ています。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm font-bold text-gray-800 mb-2">活用事例のポイント：</p>
@@ -588,7 +588,7 @@ export default function SurveyingUseCasesPage() {
           <div className="mt-12 pt-8 border-t">
             <h3 className="text-lg font-bold text-gray-800 mb-4">関連記事</h3>
             <div className="space-y-3">
-              <Link href="/blog/what-is-3d-surveying" className="block text-sm text-primary hover:underline">
+              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">
                 &rarr; 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説
               </Link>
               <Link href="/blog/3d-surveying-cost" className="block text-sm text-primary hover:underline">

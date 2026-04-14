@@ -16,6 +16,53 @@ export const metadata: Metadata = {
   alternates: { canonical: "/price" },
 };
 
+const priceFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "3D測量の料金・費用の目安はいくらですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "一般的な現場（500㎡程度）で15万円〜50万円が目安です。地上レーザースキャンは15万円〜、住宅の現況図面作成は15万円〜30万円、工場・倉庫の3Dスキャンは30万円〜80万円です。正確な費用は無料見積もりにてお伝えします。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3Dスキャン測量の見積もりは無料ですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、お見積もりは無料です。対象物の情報をお聞かせいただければ、概算のお見積もりをご提示いたします。現地確認が必要な場合も、初回のご相談は無料で対応しております。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3D測量の料金が変動する主な要因は何ですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "料金は①対象物の規模・面積、②要求精度、③現場の複雑さ、④成果物の種類（点群データのみかBIMモデル作成まで含むか）、⑤現場へのアクセスの5つの要因で変動します。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "追加費用が発生することはありますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "お見積もり時にお伝えした金額から追加費用が発生することは原則ありません。作業開始後に範囲の追加や成果物の変更があった場合は、事前にご相談の上で追加費用をお見積もりいたします。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "キャンセル料はかかりますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "作業着手前のキャンセルについては、キャンセル料はかかりません。作業着手後のキャンセルについては、進捗に応じた実費をご請求する場合がございます。",
+      },
+    },
+  ],
+};
+
 const pricingCategories = [
   {
     category: "地上レーザースキャン測量",
@@ -63,6 +110,10 @@ const factors = [
 export default function PricePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(priceFaqJsonLd) }}
+      />
       <PageHeader
         title="3D測量の料金・費用の目安"
         subtitle="PRICING"

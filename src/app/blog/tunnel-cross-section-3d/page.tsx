@@ -52,7 +52,7 @@ const faqJsonLd = {
       name: "既設トンネルの点検にも3Dスキャンは使えますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "はい、既設トンネルの定期点検・臨時点検にも活用できます。初回スキャンを基準データとし、経年変化を定量的に比較することで、覆工コンクリートの変状進行を早期に検出できます。内空断面の変位量を全周にわたって把握できるため、目視点検の補完としても有効です。",
+        text: "既設トンネルの定期点検・臨時点検にも活用できます。初回スキャンを基準データとし、経年変化を定量比較することで覆工コンクリートの変状進行を早期に検出可能です。内空断面の変位量を全周にわたって把握でき、目視点検の補完としても有効です。",
       },
     },
     {
@@ -60,7 +60,7 @@ const faqJsonLd = {
       name: "施工中のトンネルでも計測できますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "はい、掘削直後の素掘り断面から覆工コンクリート打設後まで、各施工段階で計測可能です。粉塵が多い掘削直後は計測精度に影響する場合があるため、換気・集塵後の計測を推奨しています。弊社では施工サイクルに合わせた計測タイミングをご提案します。",
+        text: "掘削直後の素掘り断面から覆工コンクリート打設後まで、各施工段階で計測できます。ただし粉塵が多い掘削直後は精度に影響する場合があるため、換気・集塵後の計測がおすすめです。弊社では施工サイクルに合わせた計測タイミングをご提案しています。",
       },
     },
   ],
@@ -117,7 +117,7 @@ export default function TunnelCrossSection3DPage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>トンネル断面測量を3Dレーザースキャンで行うと、全周の断面形状を±5mmの精度で連続的に取得でき、従来のプロフィルメーター計測と比較して計測時間を1/3に短縮できます。</strong>巻厚不足・内空変位・余掘り量の自動算出が可能になり、施工管理と点検業務の両方で大幅な効率化を実現します。本記事では、トンネル断面測量の3D化について、従来手法との比較を交えて詳しく解説します。
+              <strong>トンネル断面測量を3Dレーザースキャンで行うと、全周の断面形状を±5mmの精度で連続取得でき、従来のプロフィルメーター計測と比べて計測時間は1/3に。</strong>巻厚不足・内空変位・余掘り量の自動算出も可能になり、施工管理・点検業務の両方が大幅に効率化します。ここでは、トンネル断面測量の3D化について、従来手法との比較を交えてまとめました。
             </p>
           </div>
 
@@ -145,7 +145,7 @@ export default function TunnelCrossSection3DPage() {
               従来のトンネル断面測量の課題
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              トンネルの断面測量は、施工管理や定期点検で欠かせない作業です。しかし、従来のプロフィルメーターやトータルステーション（TS）を使った断面計測には、いくつかの課題があります。
+              トンネルの断面測量は、施工管理や定期点検に欠かせない作業です。ただ、従来のプロフィルメーターやトータルステーション（TS）での断面計測には、現場で頭を悩ませる課題がいくつかあります。
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -212,7 +212,7 @@ export default function TunnelCrossSection3DPage() {
               取得できるデータと成果物
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3Dスキャンによるトンネル断面測量では、以下のデータと成果物を取得・作成できます。
+              3Dスキャンによるトンネル断面測量で得られるデータと成果物は、次のとおりです。
             </p>
             <div className="overflow-x-auto mb-6">
               <table className="w-full text-sm border-collapse">
@@ -250,7 +250,7 @@ export default function TunnelCrossSection3DPage() {
               従来手法との精度・効率比較
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              従来のプロフィルメーター計測と3Dレーザースキャンの主要指標を比較します。
+              プロフィルメーター計測と3Dレーザースキャン、主要な指標で比較してみましょう。
             </p>
             <div className="overflow-x-auto mb-6">
               <table className="w-full text-sm border-collapse">
@@ -300,7 +300,7 @@ export default function TunnelCrossSection3DPage() {
               施工時と点検時の活用方法
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3Dスキャンによる断面測量は、トンネルの施工段階と供用後の点検段階の双方で活用されています。
+              3Dスキャンによる断面測量は、施工段階と供用後の点検段階、どちらでも活用されています。
             </p>
 
             <h3 className="text-lg font-bold text-gray-800 mb-3">施工時の活用</h3>
@@ -367,7 +367,7 @@ export default function TunnelCrossSection3DPage() {
               導入時の注意点
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3Dスキャンによるトンネル断面測量を導入する際には、以下の点に注意が必要です。
+              3Dスキャンによるトンネル断面測量を導入する際、押さえておきたいポイントを挙げます。
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -414,11 +414,11 @@ export default function TunnelCrossSection3DPage() {
                 },
                 {
                   q: "既設トンネルの点検にも3Dスキャンは使えますか？",
-                  a: "はい、既設トンネルの定期点検・臨時点検にも活用できます。初回スキャンを基準データとし、経年変化を定量的に比較することで、覆工コンクリートの変状進行を早期に検出できます。内空断面の変位量を全周にわたって把握できるため、目視点検の補完としても有効です。",
+                  a: "既設トンネルの定期点検・臨時点検にも活用できます。初回スキャンを基準データにして経年変化を定量比較すれば、覆工コンクリートの変状進行を早期に検出可能です。内空断面の変位量を全周にわたって把握でき、目視点検の補完にもなります。",
                 },
                 {
                   q: "施工中のトンネルでも計測できますか？",
-                  a: "はい、掘削直後の素掘り断面から覆工コンクリート打設後まで、各施工段階で計測可能です。粉塵が多い掘削直後は計測精度に影響する場合があるため、換気・集塵後の計測を推奨しています。弊社では施工サイクルに合わせた計測タイミングをご提案します。",
+                  a: "掘削直後の素掘り断面から覆工コンクリート打設後まで、各施工段階で計測できます。ただし粉塵が多い掘削直後は精度に影響するため、換気・集塵後の計測がおすすめです。弊社では施工サイクルに合わせた計測タイミングをご提案しています。",
                 },
               ].map((item) => (
                 <div key={item.q} className="bg-gray-50 rounded-lg p-5">
@@ -433,7 +433,7 @@ export default function TunnelCrossSection3DPage() {
               まとめ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              3Dレーザースキャンによるトンネル断面測量は、従来のプロフィルメーター計測と比較して、精度・効率・データ活用性のすべてにおいて優れています。施工管理では余掘り量や巻厚の全周管理を実現し、点検業務では内空変位の経年比較を定量化できます。
+              3Dレーザースキャンによるトンネル断面測量は、精度・効率・データ活用性の全ての面でプロフィルメーター計測を上回ります。施工管理では余掘り量や巻厚の全周管理を実現し、点検業務では内空変位の経年比較を数値で追跡できるようになります。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm font-bold text-gray-800 mb-2">この記事のポイント：</p>
@@ -481,7 +481,7 @@ export default function TunnelCrossSection3DPage() {
               <Link href="/blog/bridge-inspection-3d" className="block text-sm text-primary hover:underline">
                 → 橋梁点検の3D化｜従来手法との精度・効率比較
               </Link>
-              <Link href="/blog/what-is-3d-surveying" className="block text-sm text-primary hover:underline">
+              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">
                 → 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説
               </Link>
               <Link href="/blog/i-construction-3d-surveying" className="block text-sm text-primary hover:underline">

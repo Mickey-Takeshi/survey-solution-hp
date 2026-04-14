@@ -52,7 +52,7 @@ const faqJsonLd = {
       name: "既存の断面法データから3D土量計算に移行できますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "はい、移行可能です。既存の横断測量データをインポートし、3Dスキャンで取得した点群データと組み合わせることで、段階的に3D土量計算へ移行できます。弊社では過去データとの整合性を確認しながら移行をサポートしています。",
+        text: "移行できます。既存の横断測量データをインポートし、3Dスキャンの点群データと組み合わせれば、段階的に3D土量計算へ切り替えられます。弊社では過去データとの整合性を確認しながら移行をサポートしています。",
       },
     },
     {
@@ -117,7 +117,7 @@ export default function SoilVolume3DPage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>3Dスキャンによる土量計算は、従来の断面法と比較して精度±3%以内、計算工数を70%削減できます。</strong>点群データから地形のメッシュモデルを自動生成し、設計面との差分から切土・盛土量を3D上で自動算出します。本記事では、従来の土量計算が抱える課題から3Dスキャンによる解決方法、精度と工数の改善効果まで、施工管理者が押さえるべきポイントを解説します。
+              <strong>3Dスキャンによる土量計算は、従来の断面法と比較して精度±3%以内、計算工数を70%削減できます。</strong>点群データから地形のメッシュモデルを自動生成し、設計面との差分から切土・盛土量を3D上で自動算出する仕組みです。ここでは、従来の土量計算が抱える課題から3Dスキャンでの解決方法、精度と工数の改善効果まで、施工管理者が押さえておきたいポイントをまとめました。
             </p>
           </div>
 
@@ -145,7 +145,7 @@ export default function SoilVolume3DPage() {
               従来の土量計算の課題
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              従来の土量計算は「平均断面法」が主流です。平均断面法とは、測量した横断面の面積を隣接する断面間で平均し、断面間距離を掛けて土量を算出する方法です。この手法は計算が比較的簡単ですが、以下の課題があります。
+              従来の土量計算は「平均断面法」が主流です。測量した横断面の面積を隣接する断面間で平均し、断面間距離を掛けて土量を算出する方法ですが、現場で使い込むほど限界も見えてきます。
             </p>
             <div className="space-y-3 mb-6">
               {[
@@ -222,7 +222,7 @@ export default function SoilVolume3DPage() {
               断面法 vs 3D土量計算の比較
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              平均断面法と3D土量計算の違いを項目別に比較します。
+              平均断面法と3D土量計算、具体的にどこが違うのか項目別に見てみましょう。
             </p>
             <div className="overflow-x-auto mb-6">
               <table className="w-full text-sm border-collapse">
@@ -269,7 +269,7 @@ export default function SoilVolume3DPage() {
               精度と工数の改善効果
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3Dスキャンによる土量計算を導入することで、精度と工数の両面で改善効果が得られます。
+              実際に3Dスキャンへ切り替えた現場では、精度と工数の両面で目に見える改善が出ています。
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -309,7 +309,7 @@ export default function SoilVolume3DPage() {
               対応する計測手法（ドローン/レーザー）
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3D土量計算に使用する点群データの取得方法は、主にドローン（UAV）測量と地上レーザースキャンの2種類です。現場の規模や精度要件に応じて使い分けます。
+              3D土量計算に使用する点群データの取得方法は、ドローン（UAV）測量と地上レーザースキャンの2種類。現場の規模や精度要件に応じた使い分けがポイントです。
             </p>
             <div className="overflow-x-auto mb-6">
               <table className="w-full text-sm border-collapse">
@@ -356,7 +356,7 @@ export default function SoilVolume3DPage() {
               国土交通省が推進するi-Constructionでは、土量算出に3次元データの活用が求められています。3Dスキャンによる土量計算は、i-Constructionの成果物要件に対応しています。
             </p>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              i-Constructionにおける土量計算の要件と、3Dスキャンでの対応方法は以下の通りです。
+              具体的には、次のような要件に対応できます。
             </p>
             <div className="space-y-3 mb-6">
               {[
@@ -383,7 +383,7 @@ export default function SoilVolume3DPage() {
               ))}
             </div>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              i-Construction対応の土量計算について詳しく知りたい方は、以下の記事もご覧ください。
+              i-Construction対応の土量計算について、さらに詳しくはこちらの記事もあわせてどうぞ。
             </p>
             <p className="mb-4">
               <Link href="/blog/i-construction-3d-surveying" className="text-sm text-primary hover:underline">
@@ -403,7 +403,7 @@ export default function SoilVolume3DPage() {
                 },
                 {
                   q: "既存の断面法データから3D土量計算に移行できますか？",
-                  a: "はい、移行可能です。既存の横断測量データをインポートし、3Dスキャンで取得した点群データと組み合わせることで、段階的に3D土量計算へ移行できます。弊社では過去データとの整合性を確認しながら移行をサポートしています。",
+                  a: "移行できます。既存の横断測量データをインポートし、3Dスキャンの点群データと組み合わせれば、段階的に切り替えが可能です。弊社では過去データとの整合性を確認しながら移行をサポートしています。",
                 },
                 {
                   q: "土量計算の3D化にはどのような機材が必要ですか？",
@@ -422,7 +422,7 @@ export default function SoilVolume3DPage() {
               まとめ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              3Dスキャンによる土量計算は、従来の平均断面法が抱える精度・工数・再計算の課題を解決する手法です。点群データから地形を面的に把握し、設計面との差分体積を自動算出することで、施工管理の効率と品質を向上させます。
+              3Dスキャンによる土量計算は、平均断面法が抱える精度・工数・再計算の課題をまとめて解消できる手法です。点群データで地形を面的に捉え、設計面との差分体積を自動算出することで、施工管理の効率と品質が大きく変わります。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm font-bold text-gray-800 mb-2">この記事のポイント：</p>
@@ -435,7 +435,7 @@ export default function SoilVolume3DPage() {
               </ul>
             </div>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              土量計算の3D化をご検討中の方は、まずは対象現場の規模・精度要件をお聞かせください。最適な計測方法と費用感をご提案します。
+              土量計算の3D化に興味がある方は、まず対象現場の規模・精度要件をお聞かせください。最適な計測方法と費用感をお伝えします。
             </p>
           </div>
 
@@ -470,7 +470,7 @@ export default function SoilVolume3DPage() {
               <Link href="/blog/i-construction-3d-surveying" className="block text-sm text-primary hover:underline">
                 → i-Construction対応の3D測量｜国交省基準と必要な成果物まとめ
               </Link>
-              <Link href="/blog/what-is-3d-surveying" className="block text-sm text-primary hover:underline">
+              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">
                 → 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説
               </Link>
               <Link href="/blog/3d-surveying-cost" className="block text-sm text-primary hover:underline">

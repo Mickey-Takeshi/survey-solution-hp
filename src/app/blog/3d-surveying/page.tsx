@@ -61,7 +61,7 @@ const faqJsonLd = {
       name: "3D測量の精度はどれくらいですか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "地上レーザースキャナの場合は±1〜3mm、ドローン測量（写真測量）の場合は±2〜5cmの精度で計測できます。従来のTS測量（±2〜5mm）と同等以上の精度を、大幅に短い時間で達成します。",
+        text: "地上レーザースキャナで±1〜3mm、ドローン測量（写真測量）で±2〜5cmの精度です。従来のTS測量（±2〜5mm）と同等以上の精度を、大幅に短い時間で達成できます。",
       },
     },
     {
@@ -69,7 +69,7 @@ const faqJsonLd = {
       name: "3D測量の費用はいくらかかりますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "対象面積500㎡程度の一般的な現場で15万円〜50万円が目安です。地上レーザースキャンは15万円〜、ドローン測量は20万円〜、BIMモデル作成は50万円〜が相場です。対象の規模・精度要件・納品物の種類によって変動します。",
+        text: "一般的な現場（500㎡程度）で15万円〜50万円が目安です。地上レーザースキャンは15万円〜、ドローン測量は20万円〜、BIMモデル作成は50万円〜が相場。対象の規模・精度要件・納品物の種類によって変動します。",
       },
     },
     {
@@ -77,7 +77,7 @@ const faqJsonLd = {
       name: "3D測量と従来測量の違いは何ですか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "従来のTS測量は1点ずつ手動で座標を取得するのに対し、3D測量はレーザーを360度照射して1秒間に最大200万点の座標データを自動取得します。面的にデータを取得するため計測漏れが起きにくく、後から任意の場所の寸法を確認できる点が最大の違いです。",
+        text: "従来のTS測量が1点ずつ手動で座標を取得するのに対し、3D測量はレーザーを360度照射して1秒間に最大200万点を自動取得します。面的にデータを取るため計測漏れが起きにくく、後から好きな場所の寸法を確認できる点が最大の違いです。",
       },
     },
     {
@@ -85,7 +85,7 @@ const faqJsonLd = {
       name: "3D測量のデータはどのように活用できますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "取得した点群データから、CAD図面（平面図・断面図・立面図）の作成、3DモデルやBIM/CIMモデルの構築、土量計算、干渉チェック、建物傾斜調査、経年変位計測、デジタルアーカイブなど幅広く活用できます。建設・建築・プラント・インフラ・文化財保存など7業種以上で導入が進んでいます。",
+        text: "点群データからCAD図面（平面図・断面図・立面図）の作成、3DモデルやBIM/CIMモデルの構築、土量計算、干渉チェック、建物傾斜調査、経年変位計測、デジタルアーカイブなど用途は多岐にわたります。建設・建築・プラント・インフラ・文化財保存など7業種以上で導入が進んでいます。",
       },
     },
     {
@@ -93,7 +93,31 @@ const faqJsonLd = {
       name: "3D測量は個人や中小企業でも依頼できますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "はい、個人・中小企業からの依頼も多数対応しています。弊社では住宅1棟の傾斜調査（15万円〜）から対応可能です。「まずは費用感を知りたい」という段階でも無料見積もりを受け付けています。",
+        text: "もちろん対応しています。個人・中小企業からのご依頼も多くお受けしており、住宅1棟の傾斜調査（15万円〜）から対応可能です。「まず費用感だけ知りたい」という段階でも、無料見積もりをご利用ください。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3D測量と3D計測の違いは何ですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "「3D測量」は土地・建物・地形の位置情報を高精度に取得することを指し、「3D計測」は対象物の形状・寸法を三次元的に測定することを指します。実務上はほぼ同義で使われることが多く、地上レーザースキャナを使って建物・構造物・プラントなどを三次元データ化する作業を総称して「3D測量・3D計測」と呼びます。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "建物の3D計測はどんな用途に使えますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "建物の3D計測は、①図面がない既存建物の現況図面作成、②リノベーション・改修工事の設計支援、③BIM化（スキャンtoBIM）、④建物傾斜・変位の調査、⑤竣工時の出来形確認など幅広く活用できます。特に「図面のない古い建物の現状を把握したい」というニーズに最適です。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3Dモデリングの料金・費用相場はいくらですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "点群データからの3Dモデル作成（メッシュモデル）は10万円〜が目安です。BIMモデル（Revit・ArchiCAD形式）は建物の規模・複雑さにより50万円〜となります。CAD図面（平面図・断面図）は5万円〜/枚が目安です。詳しくは料金ページをご確認ください。",
       },
     },
   ],
@@ -188,14 +212,14 @@ export default function Article3DSurveyingPage() {
               3D測量とは？定義と仕組みをわかりやすく解説
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              3D測量（三次元測量）とは、レーザー光やカメラ映像を用いて対象物の三次元座標（X・Y・Z）を高密度に取得する測量技術です。取得した数百万〜数億個の座標点の集合体を「点群データ」と呼び、対象物の形状をデジタル空間に忠実に再現します。
+              3D測量（三次元測量）とは、レーザー光やカメラ映像で対象物の三次元座標（X・Y・Z）を高密度に取得する測量技術です。数百万〜数億個の座標点の集合体、いわゆる「点群データ」によって、対象物の形状をデジタル空間にそのまま再現できます。
             </p>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              点群データを基に、CAD図面（平面図・断面図・立面図）、3Dモデル、BIM/CIMデータなど、設計・施工に必要な成果物を作成します。
+              この点群データをもとに、CAD図面（平面図・断面図・立面図）や3Dモデル、BIM/CIMデータといった設計・施工に必要な成果物へ展開していきます。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm text-gray-700 leading-relaxed">
-                <strong>従来測量との根本的な違い：</strong>従来のTS（トータルステーション）測量は測りたい「点」を1つずつ手動で計測します。一方、3D測量はレーザーを360度照射して対象物全体を「面」として自動計測します。計測漏れが起きにくく、後から任意の場所の寸法をデータ上で確認できる点が最大の特徴です。
+                <strong>従来測量との根本的な違い：</strong>従来のTS（トータルステーション）測量では、測りたい「点」を1つずつ手動で計測していました。3D測量はレーザーを360度照射して対象物全体を「面」で一気に自動計測します。測り漏れが起きにくく、後から好きな場所の寸法をデータ上で確認できる。これが最大の強みです。
               </p>
             </div>
 
@@ -204,14 +228,14 @@ export default function Article3DSurveyingPage() {
               3D測量の3つの方法｜レーザー・ドローン・モバイル
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3D測量には主に3つの手法があり、対象物の規模・精度要件・現場条件に応じて最適な手法を選定します。弊社では複数手法を組み合わせることで、コストを抑えつつ高品質なデータを取得しています。
+              3D測量の手法は大きく3つ。対象物の規模や求める精度、現場の条件によって使い分けます。弊社では複数手法を組み合わせて、コストを抑えながら高品質なデータを取得するケースも多いです。
             </p>
 
             <div className="space-y-6 mb-8">
               <div className="bg-white border border-gray-200 rounded-lg p-6">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">① 地上レーザースキャン測量</h3>
                 <p className="text-sm text-gray-700 leading-relaxed mb-3">
-                  三脚に設置した3Dレーザースキャナから360度にレーザーを照射し、1秒間に最大200万点の座標データを取得します。精度は±1〜3mmで、建物・プラント・トンネルなどの高精度計測に最適です。弊社では2,000㎡の商業ビル全体を2日間でスキャン完了した実績があります。
+                  三脚に設置した3Dレーザースキャナから360度にレーザーを照射し、1秒間に最大200万点の座標データを取得。精度±1〜3mmで、建物・プラント・トンネルなど高精度が求められる現場で真価を発揮します。弊社では2,000㎡の商業ビル全体を2日間でスキャンした実績があります。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">精度：±1〜3mm</span>
@@ -223,7 +247,7 @@ export default function Article3DSurveyingPage() {
               <div className="bg-white border border-gray-200 rounded-lg p-6">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">② ドローン（UAV）測量</h3>
                 <p className="text-sm text-gray-700 leading-relaxed mb-3">
-                  ドローンに搭載したカメラで上空から大量の写真を撮影し、SfM（Structure from Motion）技術で3Dモデルを生成します。1フライト（約15〜20分）で10ha以上の範囲を計測でき、広大な土地の地形測量に適しています。国土交通省のi-Construction基準に準拠した出来形管理にも対応可能です。
+                  ドローンに搭載したカメラで上空から大量の写真を撮影し、SfM（Structure from Motion）技術で3Dモデルを生成。1フライト約15〜20分で10ha以上の範囲をカバーできるため、広大な土地の地形測量に向いています。国土交通省のi-Construction基準に準拠した出来形管理にも対応できます。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">精度：±2〜5cm</span>
@@ -235,7 +259,7 @@ export default function Article3DSurveyingPage() {
               <div className="bg-white border border-gray-200 rounded-lg p-6">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">③ ハンドヘルド（モバイル）スキャン</h3>
                 <p className="text-sm text-gray-700 leading-relaxed mb-3">
-                  手持ち型のスキャナで歩行しながら計測します。SLAM（Simultaneous Localization and Mapping）技術により、移動しながらリアルタイムで点群を生成します。狭い通路・階段・配管裏など、据置型スキャナでは死角になる場所の計測に威力を発揮します。
+                  手持ち型のスキャナを持って歩きながら計測する方法です。SLAM（Simultaneous Localization and Mapping）技術で、移動中にリアルタイムで点群を生成。狭い通路・階段・配管裏など、据置型スキャナでは死角になりがちな場所で特に威力を発揮します。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">精度：±5〜30mm</span>
@@ -249,7 +273,7 @@ export default function Article3DSurveyingPage() {
               3D測量と従来測量の違いを徹底比較
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3D測量と従来のTS（トータルステーション）測量を8つの指標で比較します。3D測量は速度・データ量・後工程の柔軟性で圧倒的に優れています。
+              3D測量と従来のTS（トータルステーション）測量を8つの指標で並べてみました。速度・データ量・後工程の柔軟性、いずれの面でも3D測量の優位性は明らかです。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -289,15 +313,15 @@ export default function Article3DSurveyingPage() {
               3D測量の5つのメリット
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3D測量を導入することで、計測業務の効率化だけでなくプロジェクト全体のコスト削減・品質向上を実現します。弊社の実績を交えて5つのメリットを解説します。
+              3D測量の導入効果は、計測業務の効率化にとどまりません。プロジェクト全体のコスト削減や品質向上にもつながります。弊社の実績を交えながら、5つのメリットを紹介します。
             </p>
             <div className="space-y-4 mb-8">
               {[
-                { num: "1", title: "計測時間を1/3〜1/5に短縮", desc: "レーザースキャナは1秒間に100万〜200万点のデータを自動取得します。従来数日かかる計測を数時間で完了でき、現場の交通規制時間や足場費用の削減にも直結します。弊社の実績では、2,000㎡のビル全体を2日間でスキャン完了しています。" },
-                { num: "2", title: "面的データで計測漏れを防止", desc: "「点」ではなく「面」で計測するため、測り忘れが発生しません。取得データから後日、任意の場所の寸法や断面を抽出できるため、現場への戻り作業が不要になります。弊社の導入事例では、現場戻り作業を90%削減した実績があります。" },
-                { num: "3", title: "±1〜3mmのミリ精度で品質向上", desc: "地上レーザースキャナの計測精度は±1〜3mmです。手作業の実測（±10〜20mm）と比較して精度が大幅に向上し、設計の手戻り削減に貢献します。弊社の導入事例では設計手戻りを50%削減しました。" },
-                { num: "4", title: "BIM/CIM連携でi-Constructionに対応", desc: "点群データはRevit・ArchiCAD・Civil 3Dなど主要なBIM/CIMソフトに直接インポートできます。国土交通省が推進するi-Construction 2.0の3次元データ活用基準にも対応し、「2040年度までに省人化3割」の政策目標達成に貢献します。" },
-                { num: "5", title: "非接触計測で安全性を向上", desc: "レーザーによる非接触計測のため、高所・法面・老朽化した構造物など人が近づきにくい場所も安全に計測できます。ドローンを併用すれば、足場や高所作業車なしで屋根・外壁のデータを取得でき、墜落・転落リスクを排除します。" },
+                { num: "1", title: "計測時間を1/3〜1/5に短縮", desc: "レーザースキャナは1秒間に100万〜200万点のデータを自動取得。従来数日かかっていた計測が数時間で終わります。現場の交通規制時間や足場費用の削減にも直結するので、コストメリットは計測費だけにとどまりません。弊社では2,000㎡のビル全体を2日間でスキャンしています。" },
+                { num: "2", title: "面的データで計測漏れを防止", desc: "「点」ではなく「面」で計測するため、測り忘れがまず起きません。後日、データ上から好きな場所の寸法や断面を抽出できるので、「もう一回現場に行かないと…」がなくなります。弊社の事例では現場戻り作業を90%削減できました。" },
+                { num: "3", title: "±1〜3mmのミリ精度で品質向上", desc: "地上レーザースキャナの計測精度は±1〜3mm。手作業の実測（±10〜20mm）と比べると精度の差は歴然です。精度が上がれば設計の手戻りも減ります。弊社の事例では設計手戻りを50%削減しました。" },
+                { num: "4", title: "BIM/CIM連携でi-Constructionに対応", desc: "点群データはRevit・ArchiCAD・Civil 3Dなど主要なBIM/CIMソフトに直接インポート可能。国土交通省が推進するi-Construction 2.0の3次元データ活用基準にも対応でき、「2040年度までに省人化3割」という政策目標への対応にもつながります。" },
+                { num: "5", title: "非接触計測で安全性を向上", desc: "レーザーによる非接触計測なので、高所・法面・老朽化した構造物など人が近づきにくい場所も安全に計測可能。ドローンを併用すれば、足場や高所作業車なしで屋根・外壁のデータを取得でき、墜落・転落リスクをなくせます。" },
               ].map((m) => (
                 <div key={m.num} className="flex items-start gap-4 bg-white border border-gray-200 p-5 rounded-lg">
                   <span className="shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">{m.num}</span>
@@ -311,7 +335,7 @@ export default function Article3DSurveyingPage() {
 
             {/* 中間CTA */}
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-8 text-center">
-              <p className="text-sm text-gray-700 mb-3">3D測量の導入を検討中ですか？対象物に最適な計測手法と概算費用をご提案します。</p>
+              <p className="text-sm text-gray-700 mb-3">3D測量の導入を検討中の方へ。対象物に合った計測手法と概算費用をお伝えします。</p>
               <Link href="/contact" className="inline-block bg-primary text-white px-6 py-2.5 text-sm font-bold rounded hover:bg-primary-dark transition-colors">
                 無料見積もりを申し込む →
               </Link>
@@ -322,7 +346,7 @@ export default function Article3DSurveyingPage() {
               3D測量の費用相場｜サービス別料金の目安
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3D測量の費用は、対象面積500㎡程度の一般的な現場で15万円〜50万円が目安です。以下はサービス別の料金相場です。
+              対象面積500㎡程度の一般的な現場で、3D測量の費用は15万円〜50万円が目安です。サービス別の料金相場をまとめました。
             </p>
             <div className="overflow-x-auto mb-6">
               <table className="w-full text-sm border-collapse">
@@ -363,7 +387,7 @@ export default function Article3DSurveyingPage() {
               3D測量の活用事例｜7つの業種別ガイド
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3D測量は建設・土木を中心に、7つの業種で導入が進んでいます。各業種での具体的な活用方法と効果を紹介します。
+              建設・土木を中心に、現在7つの業種で3D測量の導入が広がっています。業種ごとの活用方法と効果を見ていきましょう。
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               {[
@@ -388,35 +412,35 @@ export default function Article3DSurveyingPage() {
               【2026年最新】3D測量の最新トレンド
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3D測量を取り巻く環境は急速に変化しています。2025〜2026年にかけて注目すべき4つのトレンドを解説します。
+              3D測量を取り巻く環境はここ数年で大きく変わりました。2025〜2026年にかけて、実務に直結する4つのトレンドを押さえておきましょう。
             </p>
 
             <div className="space-y-6 mb-8">
               <div className="bg-white border-l-4 border-primary p-5 rounded-r-lg">
                 <h3 className="font-bold text-gray-900 mb-2">①  i-Construction 2.0の本格化</h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  国土交通省は「i-Construction 2.0」で「2040年度までに建設現場の省人化3割」を目標に掲げています。2025年度からBIM/CIMの原則適用が段階的に拡大し、3D測量データの活用が公共工事の標準仕様になりつつあります。ICT施工や3次元出来形管理の適用範囲も拡大しており、3D測量の需要は今後も増加が見込まれます。
+                  国土交通省の「i-Construction 2.0」では、「2040年度までに建設現場の省人化3割」が目標。2025年度からBIM/CIMの原則適用が段階的に拡大し、3D測量データの活用は公共工事の標準仕様になりつつあります。ICT施工や3次元出来形管理の適用範囲も広がっており、3D測量の需要は今後さらに増えるでしょう。
                 </p>
               </div>
 
               <div className="bg-white border-l-4 border-primary p-5 rounded-r-lg">
                 <h3 className="font-bold text-gray-900 mb-2">② AIによる点群データ処理の自動化</h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  AI（人工知能）を活用した点群データの自動分類・ノイズ除去・3Dモデル自動生成が実用段階に入っています。従来は熟練オペレーターが数日かけていたデータ処理作業を、AIが数時間で完了させることが可能になりつつあります。これにより、3D測量のコスト低下と納期短縮が加速しています。
+                  AI（人工知能）による点群データの自動分類・ノイズ除去・3Dモデル自動生成が実用段階に入りました。これまで熟練オペレーターが数日かけていたデータ処理を、AIが数時間で片付けてくれる。結果として、3D測量のコスト低下と納期短縮が一気に進んでいます。
                 </p>
               </div>
 
               <div className="bg-white border-l-4 border-primary p-5 rounded-r-lg">
                 <h3 className="font-bold text-gray-900 mb-2">③ デジタルツイン市場の急成長</h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  建設デジタルツイン（現実の建物・インフラをデジタル空間に再現する技術）の市場規模は、2025年の約9.8兆円から2030年には約23.3兆円へ成長すると予測されています（年平均成長率17%）。3D測量はデジタルツインの基盤データを提供する技術として、重要性がさらに高まっています。
+                  建設デジタルツイン（現実の建物・インフラをデジタル空間に再現する技術）の市場規模は、2025年の約9.8兆円から2030年には約23.3兆円へ拡大する見込みです（年平均成長率17%）。3D測量はそのデジタルツインの「基盤データ」を提供する技術であり、存在感は年々増しています。
                 </p>
               </div>
 
               <div className="bg-white border-l-4 border-primary p-5 rounded-r-lg">
                 <h3 className="font-bold text-gray-900 mb-2">④ PLATEAU（3D都市モデル）との連携</h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  国土交通省が推進する3D都市モデル「PLATEAU」のデータが全国600都市以上に拡大しています。PLATEAUの都市モデルと3D測量の点群データを重ね合わせることで、都市開発シミュレーション・防災計画・景観検討などに活用するケースが増えています。
+                  国土交通省が推進する3D都市モデル「PLATEAU」は全国600都市以上に拡大中。PLATEAUの都市モデルと3D測量の点群データを重ね合わせることで、都市開発シミュレーションや防災計画、景観検討などに活かす事例が増えてきました。
                 </p>
               </div>
             </div>
@@ -426,15 +450,15 @@ export default function Article3DSurveyingPage() {
               3D測量を依頼する流れ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              弊社に3D測量をご依頼いただく場合の一般的な流れです。初回相談から納品まで、通常2〜4週間で対応します。
+              弊社に3D測量をご依頼いただく場合の流れをご紹介します。初回相談から納品まで、通常2〜4週間です。
             </p>
             <div className="space-y-4 mb-8">
               {[
-                { step: "STEP 1", title: "無料相談・ヒアリング", desc: "計測対象・精度要件・納品物をヒアリングし、最適な計測手法と概算費用をご提案します。お電話（075-744-1775）またはメールフォームからお気軽にご連絡ください。" },
-                { step: "STEP 2", title: "現地確認・正式見積もり", desc: "必要に応じて現地を確認し、正確な作業範囲・条件を反映した正式見積もりをご提示します。現地確認は無料で対応しています。" },
-                { step: "STEP 3", title: "現場スキャン・データ取得", desc: "レーザースキャナやドローンで現場を計測します。対象規模にもよりますが、1日〜数日で現場作業は完了します。" },
-                { step: "STEP 4", title: "データ処理・成果物作成", desc: "複数のスキャンデータを合成し、高品質な点群データを作成。ご要望に応じてCAD図面・3Dモデル・BIMモデルなどの成果物を作成します。" },
-                { step: "STEP 5", title: "納品・アフターサポート", desc: "成果物を納品し、データの活用方法をサポートします。納品後の追加計測・修正依頼にも柔軟に対応します。" },
+                { step: "STEP 1", title: "無料相談・ヒアリング", desc: "何を測りたいか、どんな精度が必要か、どんな成果物がほしいかをヒアリングし、最適な計測手法と概算費用をご提案します。お電話（075-744-1775）またはメールフォームからお気軽にどうぞ。" },
+                { step: "STEP 2", title: "現地確認・正式見積もり", desc: "必要に応じて現地を確認し、正確な作業範囲・条件を反映した正式見積もりをお出しします。現地確認は無料です。" },
+                { step: "STEP 3", title: "現場スキャン・データ取得", desc: "レーザースキャナやドローンで現場を計測。対象規模にもよりますが、現場作業は1日〜数日で完了します。" },
+                { step: "STEP 4", title: "データ処理・成果物作成", desc: "複数のスキャンデータを合成し、高品質な点群データに仕上げます。ご要望に応じてCAD図面・3Dモデル・BIMモデルなども作成。" },
+                { step: "STEP 5", title: "納品・アフターサポート", desc: "成果物を納品後、データの活用方法もサポートします。追加計測や修正のご依頼にも柔軟に対応しますのでご安心ください。" },
               ].map((s, i) => (
                 <div key={s.step} className="flex items-start gap-4">
                   <div className="shrink-0 text-center">
@@ -456,11 +480,11 @@ export default function Article3DSurveyingPage() {
             </h2>
             <div className="space-y-4 mb-8">
               {[
-                { q: "3D測量の精度はどれくらいですか？", a: "地上レーザースキャナの場合は±1〜3mm、ドローン測量の場合は±2〜5cmの精度で計測できます。対象物の表面素材や計測距離により精度は変動しますが、従来の手作業実測（±10〜20mm）と比較して高い精度を実現します。" },
-                { q: "3D測量の費用はいくらかかりますか？", a: "一般的な現場（500㎡程度）で15万円〜50万円が目安です。住宅1棟の傾斜調査は15万円〜、ドローン測量は20万円〜、BIMモデル作成は50万円〜となります。無料見積もりを受け付けていますので、お気軽にご相談ください。" },
-                { q: "3D測量と従来測量の違いは何ですか？", a: "従来のTS測量は1点ずつ手動で計測するのに対し、3D測量はレーザーで1秒間に最大200万点を自動取得します。面的にデータを取得するため計測漏れが少なく、後から任意の場所の寸法を確認できます。計測時間は従来の1/3〜1/5に短縮されます。" },
-                { q: "3D測量のデータはどのように活用できますか？", a: "CAD図面作成、3Dモデル構築、BIM/CIMモデル構築、土量計算、干渉チェック、建物傾斜調査、経年変位計測、デジタルアーカイブなど幅広く活用できます。建設・建築・プラント・インフラ・文化財保存など7業種以上で利用されています。" },
-                { q: "個人や中小企業でも依頼できますか？", a: "はい、個人・中小企業からの依頼も多数対応しています。住宅1棟の傾斜調査（15万円〜）からお受けしています。「まずは費用感を知りたい」という段階でも無料見積もりを受け付けています。" },
+                { q: "3D測量の精度はどれくらいですか？", a: "地上レーザースキャナで±1〜3mm、ドローン測量で±2〜5cmです。対象物の表面素材や計測距離によって多少変動しますが、従来の手作業実測（±10〜20mm）と比べるとかなり高い精度が出ます。" },
+                { q: "3D測量の費用はいくらかかりますか？", a: "一般的な現場（500㎡程度）で15万円〜50万円が目安。住宅1棟の傾斜調査なら15万円〜、ドローン測量は20万円〜、BIMモデル作成は50万円〜です。無料見積もりも受け付けていますので、まずはお気軽にご相談ください。" },
+                { q: "3D測量と従来測量の違いは何ですか？", a: "従来のTS測量が1点ずつ手動で計測するのに対し、3D測量はレーザーで1秒間に最大200万点を自動取得。面的にデータを取るため計測漏れが少なく、後から好きな場所の寸法を確認できます。計測時間は従来の1/3〜1/5程度です。" },
+                { q: "3D測量のデータはどのように活用できますか？", a: "CAD図面作成、3Dモデルの構築、BIM/CIMモデル構築、土量計算、干渉チェック、建物傾斜調査、経年変位計測、デジタルアーカイブなど用途は多岐にわたります。建設・建築・プラント・インフラ・文化財保存など7業種以上で使われています。" },
+                { q: "個人や中小企業でも依頼できますか？", a: "もちろんです。個人・中小企業からのご依頼も多くお受けしています。住宅1棟の傾斜調査（15万円〜）から対応可能です。「まず費用感だけ知りたい」という段階でも、無料見積もりをご利用ください。" },
               ].map((item) => (
                 <div key={item.q} className="bg-gray-50 rounded-lg p-5">
                   <h3 className="font-bold text-gray-900 mb-2">Q. {item.q}</h3>
@@ -474,21 +498,21 @@ export default function Article3DSurveyingPage() {
               まとめ｜3D測量は建設DXの中核技術
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              3D測量は、レーザースキャナやドローンで対象物を立体的にデータ化する技術です。従来測量と比較して計測時間を1/3〜1/5に短縮し、±1〜3mmの高精度データを取得できます。
+              3D測量は、レーザースキャナやドローンで対象物を丸ごと立体データ化する技術です。従来測量に比べて計測時間は1/3〜1/5、精度は±1〜3mm。速くて正確なデータが手に入ります。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm font-bold text-gray-800 mb-2">この記事のポイント：</p>
               <ul className="space-y-1.5 text-sm text-gray-700">
-                <li>• 3D測量は「点」ではなく「面」で計測し、計測漏れを防止できる</li>
-                <li>• 地上レーザー・ドローン・ハンドヘルドの3手法を対象に応じて使い分ける</li>
-                <li>• 費用は一般的な現場（500㎡）で15万円〜50万円が目安</li>
-                <li>• BIM/CIM連携でi-Construction 2.0にも対応</li>
+                <li>• 「点」ではなく「面」で計測するから、測り漏れが起きにくい</li>
+                <li>• 地上レーザー・ドローン・ハンドヘルドの3手法を現場に応じて使い分け</li>
+                <li>• 費用目安は一般的な現場（500㎡）で15万円〜50万円</li>
+                <li>• BIM/CIM連携でi-Construction 2.0にも対応可能</li>
                 <li>• AI自動化・デジタルツイン・PLATEAUなど最新技術との融合が進行中</li>
-                <li>• 建設・建築・プラント・インフラ・文化財・不動産など7業種以上で活用が拡大</li>
+                <li>• 建設・建築・プラント・インフラ・文化財・不動産など7業種以上で活用拡大中</li>
               </ul>
             </div>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              3D測量の導入を検討されている方は、まずは現場の課題をお聞かせください。対象物に適した計測手法と概算費用を、最短翌営業日にご提案いたします。
+              3D測量の導入を検討されている方は、まずは現場の課題をお聞かせください。対象物に合った計測手法と概算費用を、最短翌営業日にお伝えします。
             </p>
           </div>
 
@@ -498,7 +522,7 @@ export default function Article3DSurveyingPage() {
               3D測量・3Dスキャナ測量のご相談はお気軽に
             </h3>
             <p className="text-sm text-gray-600 mb-6 text-center">
-              「何から始めればいいか分からない」という段階でも大丈夫です。25年以上の測量経験を持つ土地家屋調査士が、最適な計測プランをご提案します。
+              「何から始めればいいか分からない」という段階で構いません。25年以上の測量経験を持つ土地家屋調査士が、最適な計測プランを一緒に考えます。
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
@@ -520,7 +544,7 @@ export default function Article3DSurveyingPage() {
           <div className="mt-12 pt-8 border-t">
             <h3 className="text-lg font-bold text-gray-800 mb-4">関連記事</h3>
             <div className="space-y-3">
-              <Link href="/blog/what-is-3d-surveying" className="block text-sm text-primary hover:underline">→ 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説</Link>
+              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">→ 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説</Link>
               <Link href="/blog/3d-surveying-cost" className="block text-sm text-primary hover:underline">→ 3D測量の費用相場はいくら？料金の決まり方と見積もりのポイント</Link>
               <Link href="/blog/3d-vs-traditional-surveying" className="block text-sm text-primary hover:underline">→ 3D測量 vs 従来測量｜精度・コスト・スピードを徹底比較</Link>
               <Link href="/blog/choose-3d-surveying-company" className="block text-sm text-primary hover:underline">→ 3D測量業者の選び方｜失敗しない5つのチェックポイント</Link>

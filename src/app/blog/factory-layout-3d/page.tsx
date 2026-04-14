@@ -52,7 +52,7 @@ const faqJsonLd = {
       name: "稼働中の工場でもスキャンできますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "はい、可能です。3Dレーザースキャナーは非接触で計測するため、設備に触れる必要がありません。稼働中の生産ラインの周囲からスキャンできます。ただし、移動する人やフォークリフトはノイズとして除去するため、計測時は一時的に通行を制限する場合があります。",
+        text: "スキャンできます。3Dレーザースキャナーは非接触で計測するため、設備に触れる必要がありません。稼働中の生産ラインの周囲からスキャン可能です。ただし、移動する人やフォークリフトはノイズとして除去するため、計測時は一時的に通行を制限する場合があります。",
       },
     },
     {
@@ -117,7 +117,7 @@ export default function FactoryLayout3dPage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>工場のレイアウト変更に3D測量を活用すると、既存設備の正確な配置データを短時間で取得でき、3Dモデル上でレイアウト検討・干渉チェック・動線シミュレーションが可能になります。</strong>手作業の実測と比較して、計画期間を50%短縮できます。本記事では、工場の設備管理者向けに、3Dスキャンを活用したレイアウト変更の具体的な進め方・メリット・費用目安を解説します。
+              <strong>工場のレイアウト変更に3D測量を活用すると、既存設備の正確な配置データを短時間で取得でき、3Dモデル上でレイアウト検討・干渉チェック・動線シミュレーションが可能になります。</strong>手作業の実測と比べて計画期間は50%短縮。ここでは、工場の設備管理者の方に向けて、3Dスキャンを活用したレイアウト変更の具体的な進め方・メリット・費用目安をまとめました。
             </p>
           </div>
 
@@ -148,7 +148,7 @@ export default function FactoryLayout3dPage() {
               工場のレイアウト変更は、生産効率の向上・新規設備の導入・製造ライン再編などの目的で実施されます。しかし、計画段階で正確な現況データが不足していると、手戻りやコスト超過が発生します。
             </p>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              設備管理者が直面する代表的な課題は以下の4つです。
+              設備管理者がよく直面する課題を4つ挙げます。
             </p>
 
             <div className="space-y-4 mb-8">
@@ -203,7 +203,7 @@ export default function FactoryLayout3dPage() {
               レイアウト検討の流れ（5ステップ）
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3Dスキャンを活用した工場レイアウト変更は、以下の5ステップで進めます。計画立案から施工までの全工程をデータドリブンで管理できます。
+              3Dスキャンを活用した工場レイアウト変更は、5ステップで進めます。計画立案から施工まで、データに基づいた管理が可能です。
             </p>
 
             <div className="space-y-4 mb-8">
@@ -261,7 +261,7 @@ export default function FactoryLayout3dPage() {
               工場レイアウト変更に3D測量を使う3つのメリット
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3D測量を活用したレイアウト変更には、正確な現況把握・干渉防止・動線最適化の3つのメリットがあります。
+              3D測量によるレイアウト変更の強みは、正確な現況把握・干渉防止・動線最適化の3点です。
             </p>
 
             <div className="space-y-6 mb-8">
@@ -316,7 +316,7 @@ export default function FactoryLayout3dPage() {
               費用と期間の目安
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              工場の3Dスキャンからレイアウト検討用3Dモデル作成までの費用と期間の目安は以下の通りです。工場の規模・設備密度・成果物の範囲により変動します。
+              工場の3Dスキャンからレイアウト検討用3Dモデル作成までの費用・期間の目安を示します。工場の規模・設備密度・成果物の範囲で変動します。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -357,7 +357,7 @@ export default function FactoryLayout3dPage() {
               手作業の実測と3Dスキャンの比較
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              従来の手作業による実測と3Dスキャンを、計測精度・所要時間・成果物・コストの観点で比較します。
+              手作業の実測と3Dスキャン、計測精度・所要時間・成果物・コストで比較してみましょう。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -406,7 +406,7 @@ export default function FactoryLayout3dPage() {
                 },
                 {
                   q: "稼働中の工場でもスキャンできますか？",
-                  a: "はい、可能です。3Dレーザースキャナーは非接触で計測するため、設備に触れる必要がありません。稼働中の生産ラインの周囲からスキャンできます。ただし、移動する人やフォークリフトはノイズとして除去するため、計測時は一時的に通行を制限する場合があります。",
+                  a: "スキャンできます。3Dレーザースキャナーは非接触計測なので、設備に触れる必要はありません。稼働中の生産ラインの周囲からスキャン可能です。ただし移動する人やフォークリフトはノイズとして除去するため、計測時は一時的に通行を制限する場合があります。",
                 },
                 {
                   q: "3Dデータの納品形式は何ですか？",
@@ -425,7 +425,7 @@ export default function FactoryLayout3dPage() {
               まとめ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              工場レイアウト変更に3D測量を活用することで、計画段階の精度と効率が飛躍的に向上します。既存設備の正確な現況把握から、干渉のない安全なレイアウト設計、動線の最適化まで、データに基づいた意思決定が可能になります。
+              工場レイアウト変更に3D測量を活用すれば、計画段階の精度と効率が飛躍的に上がります。正確な現況把握から干渉のないレイアウト設計、動線の最適化まで、データに基づいた判断ができるようになります。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm font-bold text-gray-800 mb-2">この記事のポイント：</p>
@@ -438,7 +438,7 @@ export default function FactoryLayout3dPage() {
               </ul>
             </div>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              工場レイアウト変更をご検討中の設備管理者の方は、まずは現場の3Dスキャンから始めてみてください。弊社では、スキャン計画の立案から3Dモデル作成・レイアウト検討支援まで一貫して対応しています。
+              工場レイアウト変更を検討中の設備管理者の方は、まず現場の3Dスキャンから始めてみてください。弊社では、スキャン計画の立案から3Dモデル作成・レイアウト検討支援まで一貫対応しています。
             </p>
           </div>
 
@@ -473,7 +473,7 @@ export default function FactoryLayout3dPage() {
               <Link href="/blog/plant-piping-3d-model" className="block text-sm text-primary hover:underline">
                 → プラント配管の3Dモデル化｜3Dスキャンで既存配管を正確にデータ化
               </Link>
-              <Link href="/blog/what-is-3d-surveying" className="block text-sm text-primary hover:underline">
+              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">
                 → 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説
               </Link>
               <Link href="/blog/3d-surveying-cost" className="block text-sm text-primary hover:underline">

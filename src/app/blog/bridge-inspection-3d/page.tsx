@@ -52,7 +52,7 @@ const faqJsonLd = {
       name: "既存の点検調書データと3D点群データは連携できますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "はい、可能です。点群データ上の変状箇所に点検調書の損傷番号を紐付けることで、2Dの調書情報と3Dの空間情報を統合管理できます。過去の点検記録との比較も、座標系を統一すれば実施できます。",
+        text: "連携できます。点群データ上の変状箇所に点検調書の損傷番号を紐付けることで、2Dの調書情報と3Dの空間情報を統合管理できます。過去の点検記録との比較も、座標系を統一すれば実施可能です。",
       },
     },
     {
@@ -117,7 +117,7 @@ export default function BridgeInspection3DPage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>橋梁点検に3D測量を活用すると、変状箇所を点群データ上で3D記録でき、経年変化を定量的に管理できます。</strong>従来の目視＋スケッチによる記録と比較して、変状記録の精度・効率が大幅に向上し、点検報告書の作成時間を50%削減できます。本記事では、橋梁点検における3D測量の具体的な活用方法・メリット・計測手法・点検フローを、インフラ点検担当者向けにまとめました。
+              <strong>橋梁点検に3D測量を活用すると、変状箇所を点群データ上で3D記録でき、経年変化を定量的に管理できます。</strong>従来の目視＋スケッチによる記録と比べ、変状記録の精度・効率が大幅に向上し、点検報告書の作成時間は50%削減。ここでは、橋梁点検における3D測量の具体的な活用方法・メリット・計測手法・点検フローを、インフラ点検の現場目線でまとめました。
             </p>
           </div>
 
@@ -148,7 +148,7 @@ export default function BridgeInspection3DPage() {
               日本国内の道路橋は約72万橋にのぼり、その多くが高度経済成長期に建設されたものです。2014年の道路法改正により、すべての道路橋に対して5年に1回の近接目視点検が義務化されましたが、点検を担う技術者の不足と老朽化橋梁の増加が深刻な課題となっています。
             </p>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              従来の橋梁点検では、技術者が橋梁点検車や足場を使って近接目視し、変状箇所をスケッチ・写真で記録します。この方法には以下の課題があります。
+              従来の橋梁点検では、技術者が橋梁点検車や足場を使って近接目視し、変状箇所をスケッチ・写真で記録します。現場で実際に感じる課題は次のようなものでしょう。
             </p>
             <ul className="space-y-2 mb-6">
               {[
@@ -165,7 +165,7 @@ export default function BridgeInspection3DPage() {
               ))}
             </ul>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              これらの課題に対し、3D測量（3Dスキャン）を活用することで、変状記録の定量化・経年比較の自動化・報告書作成の効率化が実現できます。
+              こうした課題に対し、3D測量（3Dスキャン）を組み合わせることで、変状記録の定量化・経年比較の自動化・報告書作成の効率化が実現します。
             </p>
 
             {/* 2. 3D測量の活用方法 */}
@@ -173,7 +173,7 @@ export default function BridgeInspection3DPage() {
               3D測量の活用方法（変状記録・断面計測・変位計測）
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              橋梁点検における3D測量の活用は、大きく3つの用途に分類できます。
+              橋梁点検で3D測量が活きる場面は、大きく3つあります。
             </p>
 
             <h3 className="text-lg font-bold text-gray-900 mt-8 mb-3">活用1：変状箇所の3D記録</h3>
@@ -209,7 +209,7 @@ export default function BridgeInspection3DPage() {
               橋梁点検に3D測量を導入する4つのメリット
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3D測量を橋梁点検に導入することで、以下の4つのメリットが得られます。
+              3D測量を橋梁点検に取り入れると、次の4つのメリットが生まれます。
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -297,7 +297,7 @@ export default function BridgeInspection3DPage() {
               3D測量を用いた点検フロー
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              橋梁点検に3D測量を導入する場合の標準的なフローを5ステップで示します。
+              橋梁点検に3D測量を導入する場合、標準的には5ステップで進めます。
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -346,7 +346,7 @@ export default function BridgeInspection3DPage() {
               従来点検との比較
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              従来の目視点検と3D測量を活用した点検を比較すると、以下のような違いがあります。
+              従来の目視点検と3D測量を活用した点検、具体的にどう違うのか比較してみます。
             </p>
             <div className="overflow-x-auto mb-6">
               <table className="w-full text-sm border-collapse">
@@ -392,7 +392,7 @@ export default function BridgeInspection3DPage() {
                 },
                 {
                   q: "既存の点検調書データと3D点群データは連携できますか？",
-                  a: "はい、可能です。点群データ上の変状箇所に点検調書の損傷番号を紐付けることで、2Dの調書情報と3Dの空間情報を統合管理できます。過去の点検記録との比較も、座標系を統一すれば実施できます。",
+                  a: "連携できます。点群データ上の変状箇所に点検調書の損傷番号を紐付ければ、2Dの調書情報と3Dの空間情報を統合管理できます。過去の点検記録との比較も、座標系を統一すれば問題ありません。",
                 },
                 {
                   q: "1橋あたりの3Dスキャン費用と所要日数はどのくらいですか？",
@@ -411,7 +411,7 @@ export default function BridgeInspection3DPage() {
               まとめ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              橋梁点検に3D測量を活用することで、変状記録の定量化・経年変化の自動比較・報告書作成の大幅な効率化が実現します。老朽化が進む国内インフラの維持管理において、3Dスキャンによる客観的なデータ蓄積は今後ますます重要になります。
+              橋梁点検に3D測量を取り入れれば、変状記録の定量化・経年変化の自動比較・報告書作成の大幅な効率化が一気に実現します。老朽化が進む国内インフラの維持管理で、3Dスキャンによる客観的なデータ蓄積はますます欠かせなくなるでしょう。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm font-bold text-gray-800 mb-2">この記事のポイント：</p>
@@ -459,7 +459,7 @@ export default function BridgeInspection3DPage() {
               <Link href="/blog/tunnel-cross-section-3d" className="block text-sm text-primary hover:underline">
                 → トンネル断面計測における3D測量の活用
               </Link>
-              <Link href="/blog/what-is-3d-surveying" className="block text-sm text-primary hover:underline">
+              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">
                 → 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説
               </Link>
               <Link href="/blog/3d-surveying-use-cases" className="block text-sm text-primary hover:underline">

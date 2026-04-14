@@ -44,7 +44,7 @@ const faqJsonLd = {
       name: "図面がない既存建物でもBIM化は可能ですか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "はい、可能です。3Dレーザースキャナで建物の現況を計測し、取得した点群データを基にBIMモデルを構築します。図面がない築50年以上の建物でも、精度±2〜3mmのBIMモデルを作成した実績があります。",
+        text: "問題なく対応できます。3Dレーザースキャナで建物の現況を計測し、取得した点群データからBIMモデルを構築します。図面がない築50年以上の建物でも、精度±2〜3mmのBIMモデルを作成した実績があります。",
       },
     },
     {
@@ -117,7 +117,7 @@ export default function Bim3dScanPage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>既存建物のBIM化（スキャンtoBIM）とは、3Dレーザースキャナで建物を計測し、取得した点群データを基にRevit等のBIMソフトで3Dモデルを構築するプロセスです。</strong>図面のない既存建物でも、精度±2〜3mmのBIMモデルを作成でき、リノベーション設計・維持管理・改修計画に活用できます。本記事では、BIMと3Dスキャンの連携フローを5つのステップで解説し、必要な機器・ソフトウェア・LOD（詳細度）・費用目安まで網羅します。
+              <strong>既存建物のBIM化（スキャンtoBIM）とは、3Dレーザースキャナで建物を計測し、取得した点群データを基にRevit等のBIMソフトで3Dモデルを構築するプロセスです。</strong>図面のない既存建物でも、精度±2〜3mmのBIMモデルを作成でき、リノベーション設計・維持管理・改修計画に活かせます。この記事では、連携フローを5ステップで解説するとともに、必要な機器・ソフトウェア・LOD（詳細度）・費用の目安まで一通りカバーしました。
             </p>
           </div>
 
@@ -162,7 +162,7 @@ export default function Bim3dScanPage() {
               既存建物のBIM化フロー｜5つのステップ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              既存建物のBIM化は、以下の5ステップで進行します。各工程の品質が最終的なBIMモデルの精度に直結するため、ステップごとの要件定義が重要です。
+              既存建物のBIM化は5ステップで進めます。各工程の出来がBIMモデルの精度に直結するため、ステップごとの要件定義がカギになります。
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -211,7 +211,7 @@ export default function Bim3dScanPage() {
               BIM化に必要な機器とソフトウェア
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              スキャンtoBIMの各工程で使用する主要な機器・ソフトウェアを以下にまとめます。
+              スキャンtoBIMの各工程で使う代表的な機器・ソフトウェアを整理しました。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -276,7 +276,7 @@ export default function Bim3dScanPage() {
             </div>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm text-gray-700 leading-relaxed">
-                <strong>LOD選定のポイント：</strong>必要以上のLODはコストと工期の増大につながります。リノベーション設計にはLOD300、FMや維持管理の基礎データにはLOD200が費用対効果の高い選択です。弊社では用途に応じた最適なLODをご提案します。
+                <strong>LOD選びの勘どころ：</strong>必要以上のLODはコストと工期を押し上げます。リノベーション設計ならLOD300、FMや維持管理の基礎データならLOD200がコスパの良い選択。弊社では用途に応じた最適なLODをご提案しています。
               </p>
             </div>
 
@@ -330,7 +330,7 @@ export default function Bim3dScanPage() {
               BIM化の費用目安
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              BIM化の費用は、対象建物の延床面積とLOD（詳細度）によって大きく変動します。以下に面積・LOD別の費用目安をまとめます。
+              BIM化の費用は、対象建物の延床面積とLODによって大きく変わります。面積・LOD別の費用目安はこちらです。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -368,7 +368,7 @@ export default function Bim3dScanPage() {
               弊社のBIM化対応実績
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              弊社では、図面が消失した既存建物を中心に、スキャンtoBIMの実績を積み重ねています。以下は代表的な対応事例です。
+              弊社では、図面が消失した既存建物を中心にスキャンtoBIMの実績を積んできました。代表的な事例を紹介します。
             </p>
             <div className="bg-white border border-gray-200 rounded-lg p-6 mb-6">
               <h3 className="font-bold text-gray-900 mb-3">築50年・RC造オフィスビルのBIM化</h3>
@@ -382,7 +382,7 @@ export default function Bim3dScanPage() {
               </Link>
             </div>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              このほかにも、工場・倉庫・病院・学校施設など、多様な建物種別でBIM化の実績があります。対象建物に応じた最適なスキャン計画とモデリング仕様をご提案します。
+              このほかにも、工場・倉庫・病院・学校施設など、さまざまな建物でBIM化に対応してきました。対象建物に応じたスキャン計画とモデリング仕様をご提案しますので、お気軽にご相談ください。
             </p>
 
             {/* 8. FAQ */}
@@ -393,7 +393,7 @@ export default function Bim3dScanPage() {
               {[
                 {
                   q: "図面がない既存建物でもBIM化は可能ですか？",
-                  a: "はい、可能です。3Dレーザースキャナで建物の現況を計測し、取得した点群データを基にBIMモデルを構築します。図面がない築50年以上の建物でも、精度±2〜3mmのBIMモデルを作成した実績があります。",
+                  a: "問題なく対応できます。3Dレーザースキャナで建物の現況を計測し、取得した点群データからBIMモデルを構築します。図面がない築50年以上の建物でも、精度±2〜3mmのBIMモデルを作成した実績があります。",
                 },
                 {
                   q: "BIM化にはどのくらいの期間がかかりますか？",
@@ -466,7 +466,7 @@ export default function Bim3dScanPage() {
               <Link href="/blog/point-cloud-guide" className="block text-sm text-primary hover:underline">
                 → 点群データとは？取得方法・活用事例・ファイル形式をわかりやすく解説
               </Link>
-              <Link href="/blog/what-is-3d-surveying" className="block text-sm text-primary hover:underline">
+              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">
                 → 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説
               </Link>
             </div>

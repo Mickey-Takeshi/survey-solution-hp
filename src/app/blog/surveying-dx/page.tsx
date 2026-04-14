@@ -52,7 +52,7 @@ const faqJsonLd = {
       name: "ITに詳しい社員がいなくても測量DXは始められますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "はい、始められます。ステップ1の外注活用であれば、社内にIT人材は不要です。ステップ2のデータ活用段階でも、点群ビューワソフトの操作は1〜2日の研修で習得できます。弊社では導入後の操作研修・サポートも提供しています。",
+        text: "問題なく始められます。ステップ1の外注活用なら社内にIT人材は不要です。ステップ2のデータ活用でも、点群ビューワの操作は1〜2日の研修で覚えられます。弊社では導入後の操作研修・サポートも行っています。",
       },
     },
     {
@@ -60,7 +60,7 @@ const faqJsonLd = {
       name: "測量DXを始めるのに最適なタイミングはいつですか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "i-Constructionの適用拡大と2024年問題による人手不足が進む今が最適なタイミングです。国土交通省は2025年度までに小規模工事を含む全公共工事でICT活用を原則化する方針を示しており、早期に取り組む企業ほど公共工事の受注で優位に立てます。",
+        text: "率直に言って、今です。i-Constructionの適用拡大と2024年問題による人手不足が加速する中、国土交通省は2025年度までに全公共工事でICT活用を原則化する方針です。早く動いた企業ほど受注で有利になるでしょう。",
       },
     },
   ],
@@ -117,7 +117,7 @@ export default function SurveyingDxPage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>測量DX（デジタルトランスフォーメーション）とは、3Dスキャナ・ドローン・クラウドなどのデジタル技術を活用し、測量業務の生産性を向上させる取り組みです。</strong>中小建設会社でも、(1)3D測量の外注から始める、(2)データ活用の社内体制を整える、(3)段階的に自社設備を導入する、の3ステップで無理なく進められます。本記事では、DX推進を検討中の経営者・管理者の方に向けて、具体的な進め方を成功事例・補助金情報とともに解説します。
+              <strong>測量DX（デジタルトランスフォーメーション）とは、3Dスキャナ・ドローン・クラウドなどのデジタル技術を活用し、測量業務の生産性を向上させる取り組みです。</strong>中小建設会社でも、(1)3D測量の外注から始める、(2)データ活用の社内体制を整える、(3)段階的に自社設備を導入する、の3ステップで無理なく進められます。DX推進を検討中の経営者・管理者の方に向けて、成功事例や補助金情報を交えながら具体的な進め方をまとめました。
             </p>
           </div>
 
@@ -176,7 +176,7 @@ export default function SurveyingDxPage() {
               中小建設会社の測量DX｜3つのステップ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              測量DXは「一度に全てを変える」必要はありません。以下の3ステップで段階的に進めることで、リスクを抑えながら着実に成果を得られます。
+              測量DXは「一度に全部変える」必要はありません。次の3ステップで段階的に進めれば、リスクを抑えつつ着実に成果が出ます。
             </p>
 
             {/* ステップ1 */}
@@ -198,7 +198,7 @@ export default function SurveyingDxPage() {
                 </ul>
               </div>
               <p className="text-sm text-gray-700 leading-relaxed">
-                まずは1〜2案件でトライアルし、従来測量との工数差・データ品質の違いを実感することが重要です。弊社では初回無料相談で、貴社の現場に最適な計測手法をご提案しています。
+                まずは1〜2案件でトライアルし、従来測量との工数差やデータ品質の違いを肌で感じてみてください。弊社では初回無料相談で、貴社の現場に合った計測手法をご提案しています。
               </p>
             </div>
 
@@ -261,7 +261,7 @@ export default function SurveyingDxPage() {
               測量DXで得られる4つの効果
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              測量DXを推進することで、以下の4つの効果が期待できます。
+              測量DXを進めると、次の4つの効果が得られます。
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -301,7 +301,7 @@ export default function SurveyingDxPage() {
               測量DXの成功事例
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              実際に測量DXに取り組んだ中小建設会社の事例を紹介します。
+              実際に測量DXに踏み出した中小建設会社の事例を見てみましょう。
             </p>
 
             <div className="space-y-6 mb-8">
@@ -369,7 +369,7 @@ export default function SurveyingDxPage() {
               DX推進で活用できる補助金・助成金
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              測量DXの設備投資・ソフトウェア導入には、以下の補助金・助成金を活用できます。申請には事業計画書の作成が必要ですが、採択されれば実質負担を大幅に軽減できます。
+              測量DXの設備投資やソフト導入には、補助金・助成金が使えます。事業計画書の作成が必要になりますが、採択されれば実質負担をかなり抑えられます。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -412,11 +412,11 @@ export default function SurveyingDxPage() {
                 },
                 {
                   q: "ITに詳しい社員がいなくても測量DXは始められますか？",
-                  a: "はい、始められます。ステップ1の外注活用であれば、社内にIT人材は不要です。ステップ2のデータ活用段階でも、点群ビューワソフトの操作は1〜2日の研修で習得できます。弊社では導入後の操作研修・サポートも提供しています。",
+                  a: "問題なく始められます。ステップ1の外注活用なら社内にIT人材は不要です。ステップ2のデータ活用でも、点群ビューワの操作は1〜2日の研修で覚えられます。弊社では導入後の操作研修・サポートも行っています。",
                 },
                 {
                   q: "測量DXを始めるのに最適なタイミングはいつですか？",
-                  a: "i-Constructionの適用拡大と2024年問題による人手不足が進む今が最適です。国土交通省は2025年度までに全公共工事でICT活用を原則化する方針を示しており、早期に取り組む企業ほど受注で優位に立てます。",
+                  a: "率直に言って、今です。i-Constructionの適用拡大と2024年問題による人手不足が進む中、国土交通省は2025年度までに全公共工事でICT活用を原則化する方針を打ち出しています。早く動いた企業ほど受注で有利になるでしょう。",
                 },
               ].map((item) => (
                 <div key={item.q} className="bg-gray-50 rounded-lg p-5">
@@ -431,7 +431,7 @@ export default function SurveyingDxPage() {
               まとめ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              測量DXは、中小建設会社でも段階的に進めることで確実に成果を得られる取り組みです。
+              測量DXは、中小建設会社でも段階を踏めば確実に成果が出る取り組みです。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm font-bold text-gray-800 mb-2">この記事のポイント：</p>
@@ -477,7 +477,7 @@ export default function SurveyingDxPage() {
             <div className="space-y-3">
               <Link href="/blog/labor-shortage-solution" className="block text-sm text-primary hover:underline">→ 測量の人手不足を解決する3つの方法</Link>
               <Link href="/blog/i-construction-3d-surveying" className="block text-sm text-primary hover:underline">→ i-Construction対応の3D測量</Link>
-              <Link href="/blog/what-is-3d-surveying" className="block text-sm text-primary hover:underline">→ 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説</Link>
+              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">→ 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説</Link>
             </div>
           </div>
 

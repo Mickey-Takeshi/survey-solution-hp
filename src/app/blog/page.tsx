@@ -20,13 +20,13 @@ const posts: {
   category: string;
   image?: string;
 }[] = [
-  // ★★★ 基礎知識
+  // ★★★ 基礎知識（/blog/3d-surveying に統合済み）
   {
-    slug: "what-is-3d-surveying",
-    date: "2026.02.17",
-    dateTime: "2026-02-17",
-    title: "3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説",
-    description: "3D測量（三次元測量）の定義・仕組み・3つの計測手法・5つのメリット・活用分野を、初めての方にもわかりやすく解説します。",
+    slug: "3d-surveying",
+    date: "2026.02.20",
+    dateTime: "2026-02-20",
+    title: "3D測量とは？方法・メリット・費用・活用事例を専門家が徹底解説【2026年最新】",
+    description: "3D測量（三次元測量）の定義・3つの手法・5つのメリット・費用相場・7業種の活用事例・最新トレンドを、土地家屋調査士が徹底解説。",
     category: "基礎知識",
     image: "/images/blog-construction-survey.jpg",
   },
@@ -127,6 +127,16 @@ const posts: {
     description: "建設業界の測量人手不足を3D測量で解決する3つの方法を紹介。計測要員削減・作業時間短縮・データ処理自動化の具体的な事例を解説。",
     category: "課題解決",
     image: "/images/blog-business-meeting.jpg",
+  },
+  {
+    slug: "renovation-3d-scan",
+    date: "2026.04.15",
+    dateTime: "2026-04-15",
+    title: "リノベーション前の3D計測ガイド｜現況把握で設計の手戻りゼロ",
+    description:
+      "リノベーション前に3D計測をすると、現況把握から設計反映までが劇的に効率化します。住宅・店舗・ビルの用途別料金、計測の流れ、失敗しない5つのポイントを解説。",
+    category: "課題解決",
+    image: "/images/blog-building-architecture.jpg",
   },
   {
     slug: "no-drawings-solution",
@@ -245,15 +255,6 @@ const posts: {
     image: "/images/blog-ai-robot.jpg",
   },
   // 既存記事
-  {
-    slug: "3d-surveying",
-    date: "2026.02.20",
-    dateTime: "2026-02-20",
-    title: "3D測量とは？方法・メリット・費用・活用事例を専門家が徹底解説【2026年最新】",
-    description: "3D測量（三次元測量）の定義・3つの手法・5つのメリット・費用相場・7業種の活用事例・最新トレンドを、土地家屋調査士が徹底解説。",
-    category: "基礎知識",
-    image: "/images/blog-construction-survey.jpg",
-  },
   {
     slug: "open",
     date: "2020.07.21",

@@ -117,7 +117,7 @@ export default function PlantPiping3dModelPage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>プラント配管の3Dモデル化とは、3Dレーザースキャナで既存配管設備をスキャンし、点群データから配管の径・ルート・接続関係を3Dモデルとして再構築するプロセスです。</strong>干渉チェック工数を80%削減し、修繕工期を30%短縮した実績があります。本記事では、3Dスキャンから設計データ連携までの作業フロー、対応する設計ソフト・ファイル形式、費用と期間の目安をプラント設計・保全のエンジニア向けに解説します。
+              <strong>プラント配管の3Dモデル化とは、3Dレーザースキャナで既存配管設備をスキャンし、点群データから配管の径・ルート・接続関係を3Dモデルとして再構築するプロセスです。</strong>干渉チェック工数80%削減、修繕工期30%短縮の実績があります。ここでは、3Dスキャンから設計データ連携までの作業フロー、対応する設計ソフト・ファイル形式、費用と期間の目安を、プラント設計・保全の現場目線でまとめました。
             </p>
           </div>
 
@@ -166,7 +166,7 @@ export default function PlantPiping3dModelPage() {
               3Dスキャンから設計データ連携までの流れ（5ステップ）
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              現地スキャンから設計ソフトへのデータ連携まで、5つのステップで作業を進めます。各ステップの内容と所要期間の目安を解説します。
+              現地スキャンから設計ソフトへのデータ連携まで、5ステップで進めます。各ステップの内容と所要期間の目安を見ていきましょう。
             </p>
 
             <div className="space-y-4 mb-8">
@@ -224,7 +224,7 @@ export default function PlantPiping3dModelPage() {
               対応する設計ソフトとファイル形式
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              配管3Dモデルは、お客様が使用する設計ソフトに合わせた形式で納品します。主要な対応ソフトと推奨ファイル形式を一覧にまとめました。
+              配管3Dモデルは、お客様が使用する設計ソフトに合わせた形式で納品します。主要な対応ソフトと推奨ファイル形式は次のとおりです。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -266,7 +266,7 @@ export default function PlantPiping3dModelPage() {
               配管3Dモデル化の4つのメリット
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              プラント配管の3Dモデル化を導入することで、設計・施工・保全の各フェーズで具体的な効果が得られます。
+              プラント配管の3Dモデル化は、設計・施工・保全の各フェーズで目に見える効果をもたらします。
             </p>
 
             <div className="space-y-6 mb-8">
@@ -307,7 +307,7 @@ export default function PlantPiping3dModelPage() {
               費用と期間の目安
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              配管3Dモデル化の費用は、対象エリアの広さ・配管密度・モデル化の精度要件により変動します。代表的な規模別の目安を下表にまとめました。
+              配管3Dモデル化の費用は、対象エリアの広さ・配管密度・モデル化の精度要件で変わります。規模別の目安は次のとおりです。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -397,7 +397,7 @@ export default function PlantPiping3dModelPage() {
               まとめ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              プラント配管の3Dモデル化は、既存設備を3Dレーザースキャナで正確に計測し、設計ソフトで活用できる3Dモデルとして再構築する技術です。図面と現況の不一致を解消し、設計・施工・保全の各フェーズで大幅な効率化を実現します。
+              プラント配管の3Dモデル化は、既存設備を3Dレーザースキャナで正確に計測し、設計ソフトで活用できる3Dモデルに再構築する技術です。図面と現況のズレを根本から解消し、設計・施工・保全の全フェーズで効率が大きく変わります。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm font-bold text-gray-800 mb-2">この記事のポイント：</p>
@@ -410,7 +410,7 @@ export default function PlantPiping3dModelPage() {
               </ul>
             </div>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              弊社では、プラント配管の3Dスキャンからモデル化・設計データ連携までワンストップで対応しています。配管改修・増設計画の基盤データとして、まずは対象エリアの3Dスキャンからご検討ください。
+              弊社では、プラント配管の3Dスキャンからモデル化・設計データ連携までワンストップで対応しています。配管改修・増設計画の基盤データとして、まずは対象エリアの3Dスキャンから始めてみませんか。
             </p>
           </div>
 
@@ -448,7 +448,7 @@ export default function PlantPiping3dModelPage() {
               <Link href="/blog/point-cloud-guide" className="block text-sm text-primary hover:underline">
                 → 点群データとは？取得方法・活用事例・必要なソフトウェアを解説
               </Link>
-              <Link href="/blog/what-is-3d-surveying" className="block text-sm text-primary hover:underline">
+              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">
                 → 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説
               </Link>
             </div>

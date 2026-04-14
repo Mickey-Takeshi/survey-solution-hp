@@ -4,4 +4,9 @@ const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
 
 // Server Action専用クライアント（service_roleキーでRLSをバイパス）
-export const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey);
+export const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {
+  db: { schema: "surveysolution_hp" },
+});
+
+// publicスキーマ用クライアント（RPC経由でsurveysolution_hpスキーマにアクセス）
+export const supabasePublic = createClient(supabaseUrl, supabaseServiceKey);

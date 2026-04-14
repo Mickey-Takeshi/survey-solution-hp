@@ -44,7 +44,7 @@ const faqJsonLd = {
       name: "3D測量と従来測量はどちらが精度が高いですか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "地上レーザースキャナを用いた3D測量の精度は±1〜3mmで、従来のTS測量（±2〜5mm）と同等以上の精度を実現します。さらに面的にデータを取得するため、計測漏れが起きにくく、結果として現場全体の精度が向上します。",
+        text: "地上レーザースキャナの精度は±1〜3mmで、TS測量（±2〜5mm）と同等以上です。加えて面的にデータを取得するため計測漏れが起きにくく、現場全体の精度が底上げされます。",
       },
     },
     {
@@ -52,7 +52,7 @@ const faqJsonLd = {
       name: "3D測量は従来測量よりコストが高いですか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "1回あたりの計測費用は3D測量の方が高くなる傾向があります。ただし、計測時間の短縮、手戻りの削減、追加測量の不要化を含めた工程全体で見ると、3D測量の方がトータルコストを削減できるケースが多くあります。特に大規模現場や複数回計測が必要な案件では費用対効果が高くなります。",
+        text: "1回あたりの計測費用は高くなる傾向があります。ただし、計測時間の短縮・手戻りの削減・追加測量の不要化まで含めた工程全体では、3D測量の方がトータルコストを抑えられるケースが多いのが実情です。特に大規模現場や複数回計測が必要な案件で費用対効果が高くなります。",
       },
     },
     {
@@ -60,7 +60,7 @@ const faqJsonLd = {
       name: "従来測量から3D測量に切り替えるタイミングはいつですか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "以下のような場合に3D測量への切り替えが有効です。①計測対象が複雑な形状の場合、②BIM/CIMデータが必要な場合、③手戻り・追加測量が頻発している場合、④工期短縮が求められる場合。まずは1案件で試験的に導入し、効果を検証してから本格導入するのがおすすめです。",
+        text: "計測対象が複雑な形状のとき、BIM/CIMデータが必要なとき、手戻りや追加測量が頻発しているとき、工期短縮が求められるときに切り替えが有効です。まずは1案件で試験導入して効果を検証し、そこから本格導入に進むのがスムーズです。",
       },
     },
   ],
@@ -117,7 +117,7 @@ export default function ThreeDVsTraditionalSurveyingPage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>3D測量は従来のTS（トータルステーション）測量と比較して、計測時間1/3〜1/5、精度±1〜3mm、データ量100万倍以上という性能差があります。</strong>1回あたりの計測コストは3D測量の方が高くなりますが、手戻り削減・工期短縮・追加測量の不要化を含めた工程全体では、コスト削減になるケースが多くあります。本記事では、精度・コスト・スピード・データ活用の4軸で両者を徹底比較し、どちらを選ぶべきかの判断基準を解説します。
+              <strong>3D測量は従来のTS（トータルステーション）測量と比べて、計測時間1/3〜1/5、精度±1〜3mm、データ量は100万倍以上。</strong>1回あたりの計測コストこそ3D測量が上ですが、手戻り削減・工期短縮・追加測量の不要化まで含めると、トータルではコストダウンになるケースが少なくありません。ここでは精度・コスト・スピード・データ活用の4軸で両者を比較し、どちらを選ぶべきかの判断基準を整理しました。
             </p>
           </div>
 
@@ -147,7 +147,7 @@ export default function ThreeDVsTraditionalSurveyingPage() {
               3D測量と従来測量の基本的な違い
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              3D測量と従来測量の最大の違いは「計測のアプローチ」にあります。従来のTS測量が測りたいポイントを1つずつ計測する「点の測量」であるのに対し、3D測量はレーザーやカメラで対象物全体を「面」として一括計測します。
+              3D測量と従来測量の一番の違いは「計測のアプローチ」です。従来のTS測量は測りたいポイントを1つずつ拾う「点の測量」。対して3D測量は、レーザーやカメラで対象物全体を「面」として一括計測します。
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -173,7 +173,7 @@ export default function ThreeDVsTraditionalSurveyingPage() {
             </div>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm text-gray-700 leading-relaxed">
-                <strong>ポイント：</strong>どちらが優れているかは一概には言えません。重要なのは、プロジェクトの規模・精度要件・予算・工期に応じて最適な手法を選ぶことです。以下、4つの軸で詳しく比較していきます。
+                <strong>ポイント：</strong>どちらが優れているかは一概に言えません。大切なのは、プロジェクトの規模・精度要件・予算・工期に合った手法を選ぶこと。以下、4つの軸で掘り下げてみます。
               </p>
             </div>
 
@@ -182,7 +182,7 @@ export default function ThreeDVsTraditionalSurveyingPage() {
               精度で比較する
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              精度は測量手法を選ぶ際の最重要指標の一つです。手法ごとの精度を比較します。
+              精度は手法選定の最重要ファクターのひとつ。手法別に並べてみましょう。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -213,7 +213,7 @@ export default function ThreeDVsTraditionalSurveyingPage() {
             </div>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm text-gray-700 leading-relaxed">
-                <strong>精度のポイント：</strong>TS測量の「1点の精度」は±2〜5mmと高水準ですが、計測点数が数十〜数百点に限られます。一方、3D測量は数億点のデータを取得するため、計測漏れがなく、現場全体としての精度が向上します。「点の精度」と「面の精度」の違いを理解することが重要です。
+                <strong>精度のポイント：</strong>TS測量の「1点の精度」は±2〜5mmと優秀ですが、計測点数は数十〜数百点止まり。一方、3D測量は数億点を取得するので計測漏れが起きず、現場全体の精度が底上げされます。「点の精度」と「面の精度」は分けて考えることが大切です。
               </p>
             </div>
 
@@ -222,7 +222,7 @@ export default function ThreeDVsTraditionalSurveyingPage() {
               コストで比較する
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              コスト比較では「1回の計測費用」と「プロジェクト全体のトータルコスト」を分けて考える必要があります。
+              コストを比べるときは、「1回の計測費用」と「プロジェクト全体のトータルコスト」を分けて考える必要があります。
             </p>
 
             <h3 className="text-lg font-bold text-gray-800 mb-3">1回あたりの計測費用</h3>
@@ -255,14 +255,14 @@ export default function ThreeDVsTraditionalSurveyingPage() {
 
             <h3 className="text-lg font-bold text-gray-800 mb-3">プロジェクト全体のトータルコスト（ROI分析）</h3>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              1回の計測費用だけを見ると従来測量の方が安価ですが、プロジェクト全体で見ると3D測量がコストメリットを生むケースが多くあります。
+              1回の計測費用だけ見れば従来測量が安い。ただし、プロジェクト全体で見ると3D測量の方がコストメリットを生むケースが実は多いのです。
             </p>
             <div className="space-y-3 mb-8">
               {[
-                { title: "手戻りコストの削減", desc: "3D測量は面的データを取得するため、設計段階での計測漏れによる手戻りを大幅に削減します。弊社実績では設計手戻りを平均50%削減しています。" },
-                { title: "追加測量の不要化", desc: "従来測量では「測り忘れ」のたびに現場再訪問が必要でした。3D測量はデータ上で後から任意の箇所を計測できるため、追加測量費用がかかりません。" },
-                { title: "人件費の削減", desc: "3D測量は1〜2名で作業可能なのに対し、従来測量は2〜3名が必要です。計測日数も短縮されるため、人件費が抑えられます。" },
-                { title: "工期短縮による間接費削減", desc: "現場作業時間が1/3〜1/5に短縮されるため、足場代・交通費・宿泊費などの間接費も削減できます。" },
+                { title: "手戻りコストの削減", desc: "面的データがあるので、設計段階での計測漏れによる手戻りが大幅に減ります。弊社の実績では設計手戻りを平均50%カットできました。" },
+                { title: "追加測量の不要化", desc: "従来測量は「測り忘れ」のたびに現場に戻る必要がありました。3D測量ならデータ上で後から任意の箇所を確認できるため、追加測量費用がゼロに。" },
+                { title: "人件費の削減", desc: "3D測量は1〜2名で作業可能。従来測量の2〜3名体制と比べ、計測日数も短くなるので人件費を抑えられます。" },
+                { title: "工期短縮による間接費削減", desc: "現場作業時間が1/3〜1/5に縮まるため、足場代・交通費・宿泊費といった間接費も連動して下がります。" },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3 bg-gray-50 p-4 rounded-lg">
                   <span className="text-primary font-bold shrink-0">+</span>
@@ -287,7 +287,7 @@ export default function ThreeDVsTraditionalSurveyingPage() {
               スピードで比較する
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              現場作業時間とデータ処理時間の両面で比較します。
+              現場作業時間とデータ処理時間の両面で見てみましょう。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -319,7 +319,7 @@ export default function ThreeDVsTraditionalSurveyingPage() {
             <p className="text-xs text-gray-500 mb-4">※現場条件・計測密度により変動します。</p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm text-gray-700 leading-relaxed">
-                <strong>注意点：</strong>3D測量は現場作業は短時間ですが、取得後のデータ処理（点群合成・ノイズ除去・モデリング）に時間がかかります。データ処理を含めた総所要時間は、現場作業だけの比較ほど大きな差にはなりません。ただし、現場の拘束時間が短い点は工程管理上の大きなメリットです。
+                <strong>注意点：</strong>3D測量は現場作業こそ短時間ですが、その後のデータ処理（点群合成・ノイズ除去・モデリング）に時間を要します。データ処理込みの総所要時間で見ると、差は現場作業ほど大きくありません。とはいえ、現場を早く解放できる点は工程管理上かなりのメリットです。
               </p>
             </div>
 
@@ -328,7 +328,7 @@ export default function ThreeDVsTraditionalSurveyingPage() {
               データ活用で比較する
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              計測後のデータ活用範囲は、3D測量と従来測量で大きく異なります。
+              計測後に「何ができるか」も、3D測量と従来測量では大きく違います。
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -357,7 +357,7 @@ export default function ThreeDVsTraditionalSurveyingPage() {
             </div>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm text-gray-700 leading-relaxed">
-                <strong>データ資産としての価値：</strong>3D測量で取得した点群データは、計測時点の現場を丸ごとデジタル保存したものです。将来の改修・増築・点検時にも活用でき、長期的なデータ資産となります。
+                <strong>データ資産としての価値：</strong>3D測量の点群データは、計測時点の現場を丸ごとデジタル保存したもの。将来の改修・増築・点検でも使えるため、長期的なデータ資産になります。
               </p>
             </div>
 
@@ -366,7 +366,7 @@ export default function ThreeDVsTraditionalSurveyingPage() {
               総合比較表
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              ここまでの比較を1つの表にまとめます。
+              ここまでの内容を1つの表に整理しました。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -407,14 +407,14 @@ export default function ThreeDVsTraditionalSurveyingPage() {
               こんな場合は3D測量がおすすめ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              以下の4つのケースでは、3D測量の導入メリットが特に大きくなります。
+              次の4つのケースでは、3D測量の導入効果が特に高くなります。
             </p>
             <div className="space-y-4 mb-8">
               {[
-                { num: "1", title: "複雑な形状の構造物を計測する場合", desc: "プラント配管・鉄骨構造・曲面を持つ建築物など、従来測量では計測点数が膨大になる対象物は、3D測量で面的に取得する方が圧倒的に効率的です。" },
-                { num: "2", title: "BIM/CIMデータが求められる場合", desc: "i-Constructionや設計BIM化が求められるプロジェクトでは、3D測量で取得した点群データからダイレクトにBIM/CIMモデルを構築できます。" },
-                { num: "3", title: "大規模現場・広域地形の計測", desc: "数千㎡〜数十haの現場では、ドローンやレーザースキャナの面的計測が威力を発揮します。従来測量と比べて計測時間を1/5〜1/8に短縮できます。" },
-                { num: "4", title: "定期計測・経年変化の管理", desc: "橋梁・トンネル・法面などの定期点検では、点群データ同士の差分比較により、ミリメートル単位の変位を定量的に把握できます。" },
+                { num: "1", title: "複雑な形状の構造物を計測する場合", desc: "プラント配管・鉄骨構造・曲面のある建築物など、従来測量だと計測点数が膨大になる対象は、3D測量の面的計測が圧倒的に効率的。" },
+                { num: "2", title: "BIM/CIMデータが求められる場合", desc: "i-Constructionや設計BIM化が必要なプロジェクトなら、3D測量の点群データからダイレクトにBIM/CIMモデルを構築できます。" },
+                { num: "3", title: "大規模現場・広域地形の計測", desc: "数千㎡〜数十haの現場では、ドローンやレーザースキャナの面的計測が本領発揮。従来測量との計測時間差は1/5〜1/8にもなります。" },
+                { num: "4", title: "定期計測・経年変化の管理", desc: "橋梁・トンネル・法面などの定期点検では、点群データの差分比較でミリメートル単位の変位を定量的に捉えられます。" },
               ].map((item) => (
                 <div key={item.num} className="flex items-start gap-4 bg-white border border-gray-200 p-5 rounded-lg">
                   <span className="shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">{item.num}</span>
@@ -431,7 +431,7 @@ export default function ThreeDVsTraditionalSurveyingPage() {
               こんな場合は従来測量で十分
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              一方、以下のケースでは従来測量の方がコストパフォーマンスが高い場合があります。
+              一方で、従来測量の方がコスパが良い場面もあります。
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -455,9 +455,9 @@ export default function ThreeDVsTraditionalSurveyingPage() {
             </h2>
             <div className="space-y-4 mb-8">
               {[
-                { q: "3D測量と従来測量はどちらが精度が高いですか？", a: "地上レーザースキャナを用いた3D測量の精度は±1〜3mmで、従来のTS測量（±2〜5mm）と同等以上です。さらに面的にデータを取得するため、計測漏れが起きにくく、現場全体としての精度が向上します。" },
-                { q: "3D測量は従来測量よりコストが高いですか？", a: "1回あたりの計測費用は3D測量の方が高くなる傾向があります。ただし、手戻り削減・工期短縮・追加測量の不要化を含めたトータルコストでは、3D測量の方がコスト削減になるケースが多くあります。" },
-                { q: "従来測量から3D測量に切り替えるタイミングはいつですか？", a: "計測対象が複雑な形状の場合、BIM/CIMデータが必要な場合、手戻り・追加測量が頻発している場合、工期短縮が求められる場合に切り替えが有効です。まずは1案件で試験導入し、効果を検証するのがおすすめです。" },
+                { q: "3D測量と従来測量はどちらが精度が高いですか？", a: "地上レーザースキャナの精度は±1〜3mmで、TS測量（±2〜5mm）と同等以上。加えて面的にデータを取るため計測漏れが起きにくく、現場全体の精度が底上げされます。" },
+                { q: "3D測量は従来測量よりコストが高いですか？", a: "1回あたりの計測費用は高くなる傾向があります。ただし手戻り削減・工期短縮・追加測量不要化まで含めたトータルコストでは、3D測量が有利になるケースが多いのが実情です。" },
+                { q: "従来測量から3D測量に切り替えるタイミングはいつですか？", a: "計測対象が複雑な形状のとき、BIM/CIMデータが必要なとき、手戻りや追加測量が頻発しているとき、工期短縮が求められるとき。まずは1案件で試してみて、効果を実感してから本格導入するのがスムーズです。" },
               ].map((item) => (
                 <div key={item.q} className="bg-gray-50 rounded-lg p-5">
                   <h3 className="font-bold text-gray-900 mb-2">Q. {item.q}</h3>
@@ -471,7 +471,7 @@ export default function ThreeDVsTraditionalSurveyingPage() {
               まとめ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              3D測量と従来測量はそれぞれに強みがあり、プロジェクトの条件に応じた使い分けが重要です。
+              3D測量と従来測量にはそれぞれの強みがあり、プロジェクト条件に合わせた使い分けがカギです。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm font-bold text-gray-800 mb-2">この記事のポイント：</p>
@@ -485,7 +485,7 @@ export default function ThreeDVsTraditionalSurveyingPage() {
               </ul>
             </div>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              どちらの手法が最適かは、対象物の規模・形状・精度要件・納品物によって異なります。弊社では両方の手法に対応しており、現場条件に合わせた最適なご提案が可能です。まずはお気軽にご相談ください。
+              どちらが最適かは、対象物の規模・形状・精度要件・納品物で変わります。弊社は両方の手法に対応しており、現場条件に合わせたご提案をしています。気軽にご相談ください。
             </p>
           </div>
 
@@ -517,7 +517,7 @@ export default function ThreeDVsTraditionalSurveyingPage() {
           <div className="mt-12 pt-8 border-t">
             <h3 className="text-lg font-bold text-gray-800 mb-4">関連記事</h3>
             <div className="space-y-3">
-              <Link href="/blog/what-is-3d-surveying" className="block text-sm text-primary hover:underline">
+              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">
                 → 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説
               </Link>
               <Link href="/blog/3d-surveying-cost" className="block text-sm text-primary hover:underline">

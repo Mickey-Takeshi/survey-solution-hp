@@ -44,7 +44,7 @@ const faqJsonLd = {
       name: "図面がまったくない建物でも現況図は作れますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "はい、作れます。3Dレーザースキャンは既存の図面がなくても、建物の現状を±2〜3mmの精度で計測し、点群データから平面図・断面図・立面図・BIMモデルを作成できます。竣工図が紛失した建物や、増改築を繰り返した建物でも対応可能です。",
+        text: "問題なく作れます。3Dレーザースキャンなら図面がなくても、建物の現状を±2〜3mmの精度で計測し、点群データから平面図・断面図・立面図・BIMモデルを起こせます。竣工図が紛失した建物や、増改築を繰り返した建物でも対応できます。",
       },
     },
     {
@@ -60,7 +60,7 @@ const faqJsonLd = {
       name: "入居者がいる状態でもスキャンできますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "はい、可能です。3Dレーザースキャナは非接触・無粉塵で計測するため、入居者やテナントが営業中でもスキャンできます。騒音もほとんどなく、1箇所あたり数分で計測が完了するため、業務への影響を最小限に抑えられます。",
+        text: "もちろん大丈夫です。3Dレーザースキャナは非接触・無粉塵なので、入居者やテナントの営業中でもスキャンできます。騒音もほぼなく、1箇所あたり数分で計測が終わるため、業務への影響は最小限です。",
       },
     },
   ],
@@ -117,7 +117,7 @@ export default function NoDrawingsSolutionPage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>図面がない建物の現況図を作る最も効率的な方法は、3Dレーザースキャンです。</strong>建物全体を±2〜3mmの精度で計測し、点群データから平面図・断面図・立面図・BIMモデルを作成できます。手作業の実測と比較して、図面作成期間を75%短縮できます。本記事では、図面のない建物で現況図を作成する方法を、手順・費用・事例とともに解説します。
+              <strong>図面がない建物の現況図を作る最も効率的な方法は、3Dレーザースキャンです。</strong>建物全体を±2〜3mmの精度で計測し、点群データから平面図・断面図・立面図・BIMモデルを一気に作成できます。手作業の実測と比べて、図面作成期間は75%も短縮。この記事では、図面のない建物で現況図を仕上げるまでの手順・費用・実際の事例をまとめました。
             </p>
           </div>
 
@@ -145,7 +145,7 @@ export default function NoDrawingsSolutionPage() {
               図面がない建物はなぜ多いのか
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              リノベーションや用途変更の計画時、「この建物の図面がない」という問題は非常に多く発生します。特に築30年以上の建物では、図面が存在しないケースが珍しくありません。主な原因は以下の3つです。
+              リノベーションや用途変更の計画時、「この建物の図面がない」という問題に直面する方は多いのではないでしょうか。特に築30年以上の建物では、図面が残っていないケースが珍しくありません。よくある原因は次の3つです。
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -185,7 +185,7 @@ export default function NoDrawingsSolutionPage() {
               現況図を作る3つの方法と比較
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              図面がない建物の現況図を作成する方法は主に3つあります。それぞれの精度・所要時間・コストを比較します。
+              図面がない建物の現況図を作る方法は大きく3つ。精度・所要時間・コストを比較してみましょう。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -234,7 +234,7 @@ export default function NoDrawingsSolutionPage() {
               3Dスキャンによる現況図作成の流れ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3Dスキャンで図面がない建物の現況図を作成する手順は、以下の5ステップです。
+              3Dスキャンで図面のない建物の現況図を作る流れは、次の5ステップです。
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -283,7 +283,7 @@ export default function NoDrawingsSolutionPage() {
               作成できる成果物の種類
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3Dスキャンで取得した点群データから、以下の成果物を作成できます。リノベーション設計に必要な図面を一括で揃えることが可能です。
+              3Dスキャンで取得した点群データからは、リノベーション設計に必要な図面を一括で揃えられます。作成できる成果物は次の通りです。
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -328,7 +328,7 @@ export default function NoDrawingsSolutionPage() {
               費用と期間の目安
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3Dスキャンによる現況図作成の費用と期間は、対象面積と成果物の種類によって異なります。以下に面積別の目安を示します。
+              3Dスキャンによる現況図作成の費用と期間は、対象面積と成果物の種類で変わります。面積別の目安をまとめました。
             </p>
             <div className="overflow-x-auto mb-8">
               <table className="w-full text-sm border-collapse">
@@ -407,7 +407,7 @@ export default function NoDrawingsSolutionPage() {
               {[
                 {
                   q: "図面がまったくない建物でも現況図は作れますか？",
-                  a: "はい、作れます。3Dレーザースキャンは既存の図面がなくても、建物の現状を±2〜3mmの精度で計測し、点群データから平面図・断面図・立面図・BIMモデルを作成できます。竣工図が紛失した建物や、増改築を繰り返した建物でも対応可能です。",
+                  a: "問題なく作れます。3Dレーザースキャンなら図面がなくても、建物の現状を±2〜3mmの精度で計測し、点群データから平面図・断面図・立面図・BIMモデルを起こせます。竣工図が紛失した建物や、増改築を繰り返した建物でも対応できます。",
                 },
                 {
                   q: "現況図の作成にはどのくらいの期間がかかりますか？",
@@ -415,7 +415,7 @@ export default function NoDrawingsSolutionPage() {
                 },
                 {
                   q: "入居者がいる状態でもスキャンできますか？",
-                  a: "はい、可能です。3Dレーザースキャナは非接触・無粉塵で計測するため、入居者やテナントが営業中でもスキャンできます。騒音もほとんどなく、1箇所あたり数分で計測が完了するため、業務への影響を最小限に抑えられます。",
+                  a: "もちろん大丈夫です。3Dレーザースキャナは非接触・無粉塵なので、入居者やテナントの営業中でもスキャンできます。騒音もほぼなく、1箇所あたり数分で計測が終わるため、業務への影響は最小限です。",
                 },
               ].map((item) => (
                 <div key={item.q} className="bg-gray-50 rounded-lg p-5">
@@ -430,7 +430,7 @@ export default function NoDrawingsSolutionPage() {
               まとめ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              図面がない建物の現況図を作成する方法として、3Dレーザースキャンは精度・スピード・コストの全面で手作業実測を上回ります。
+              図面がない建物の現況図作成に、3Dレーザースキャンは精度・スピード・コストのすべてで手作業実測を上回る選択肢です。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm font-bold text-gray-800 mb-2">この記事のポイント：</p>
@@ -477,7 +477,7 @@ export default function NoDrawingsSolutionPage() {
               <Link href="/blog/bim-3d-scan" className="block text-sm text-primary hover:underline">
                 → BIMと3Dスキャンの連携方法
               </Link>
-              <Link href="/blog/what-is-3d-surveying" className="block text-sm text-primary hover:underline">
+              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">
                 → 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説
               </Link>
               <Link href="/blog/3d-surveying-cost" className="block text-sm text-primary hover:underline">

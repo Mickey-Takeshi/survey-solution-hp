@@ -1,9 +1,18 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // trailing slashを統一（/about/ → /about など重複URLを解消）
+  trailingSlash: false,
+
   // 旧WordPress URLのリダイレクト設定
   async redirects() {
     return [
+      // 重複コンテンツ解消：what-is-3d-surveying → 3d-surveying（包括的な記事へ統合）
+      {
+        source: "/blog/what-is-3d-surveying",
+        destination: "/blog/3d-surveying",
+        permanent: true,
+      },
       // 削除済みドローンサービスページ → サービス一覧へ301リダイレクト
       {
         source: "/service/drone",

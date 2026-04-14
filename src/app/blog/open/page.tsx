@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   description:
     "株式会社SurveySolutionのWebサイトを公開しました。京都市を拠点に3Dスキャナによる測量サービスを提供しています。3D測量に関するお問い合わせはお気軽にどうぞ。",
   alternates: { canonical: "/blog/open" },
+  // 2020年の旧お知らせ記事のためnoindex（検索結果に表示しない）
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 const articleJsonLd = {
@@ -75,13 +80,13 @@ export default function ArticleOpenPage() {
               株式会社SurveySolutionのWebサイトを公開しました。
             </p>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              当社は京都市中京区を拠点に、3Dスキャナを用いた測量サービスを提供しております。
+              弊社は京都市中京区を拠点に、3Dスキャナを活用した測量サービスを手がけています。
             </p>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3D測量により、建物や構造物、土地の形状を高精度な三次元データとして取得。傾き調査、図面作成、歴史的建造物のデジタルアーカイブなど、様々なご要望にお応えいたします。
+              3D測量で建物や構造物、土地の形状を高精度な三次元データとして取得し、傾き調査や図面作成、歴史的建造物のデジタルアーカイブなど幅広いご要望にお応えしています。
             </p>
             <p className="text-base leading-loose text-gray-700 mb-8">
-              3D測量に関するご相談・お見積りは、お気軽にお問い合わせください。
+              3D測量に関するご相談・お見積りなど、どうぞお気軽にお問い合わせください。
             </p>
           </div>
 

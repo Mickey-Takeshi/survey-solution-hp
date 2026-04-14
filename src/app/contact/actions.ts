@@ -1,6 +1,6 @@
 "use server";
 
-import { supabaseAdmin } from "@/lib/supabase";
+import { supabasePublic } from "@/lib/supabase";
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
@@ -69,13 +69,13 @@ export async function submitContactForm(
   }
 
   try {
-    // Supabaseにデータ保存
-    const { error } = await supabaseAdmin.from("contacts").insert({
-      name,
-      company: company || null,
-      email,
-      phone: phone || null,
-      message,
+    // Supabaseにデータ保存（RPC経由）
+    const { error } = await supabasePublic.rpc("insert_contact", {
+      p_name: name,
+      p_company: company || null,
+      p_email: email,
+      p_phone: phone || null,
+      p_message: message,
     });
 
     if (error) {
@@ -91,7 +91,7 @@ export async function submitContactForm(
       await transporter.sendMail({
         from: `"SurveySolution お問い合わせ" <${process.env.SMTP_USER}>`,
         replyTo: "info@emplay.jp",
-        to: process.env.NOTIFICATION_EMAIL,
+        to: [process.env.NOTIFICATION_EMAIL, "takeshi@emplay.jp"].filter(Boolean).join(","),
         subject: `【お問い合わせ】${name}様（${company || "個人"}）`,
         html: `
           <h2>ホームページからお問い合わせがありました</h2>
