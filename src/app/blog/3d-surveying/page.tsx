@@ -30,7 +30,7 @@ const articleJsonLd = {
   description:
     "3D測量（三次元測量）の定義・3つの測量手法・5つのメリット・費用相場・7業種の活用事例・最新トレンドを、土地家屋調査士が徹底解説。",
   datePublished: "2021-01-21",
-  dateModified: "2026-02-20",
+  dateModified: "2026-07-23",
   author: {
     "@type": "Person",
     name: "齋藤 大輔",
@@ -149,8 +149,8 @@ export default function Article3DSurveyingPage() {
           {/* 記事ヘッダー */}
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-4">
-              <time dateTime="2026-02-20" className="text-sm tracking-wider text-gray-500">
-                2026.02.20 更新
+              <time dateTime="2026-07-23" className="text-sm tracking-wider text-gray-500">
+                2026.07.23 更新
               </time>
               <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded">
                 基礎知識
@@ -544,7 +544,7 @@ export default function Article3DSurveyingPage() {
           <div className="mt-12 pt-8 border-t">
             <h3 className="text-lg font-bold text-gray-800 mb-4">関連記事</h3>
             <div className="space-y-3">
-              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">→ 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説</Link>
+              <Link href="/blog/building-3d-scan" className="block text-sm text-primary hover:underline">→ 建物の3D計測とは？費用相場・精度・建築現場での活用シーンを解説</Link>
               <Link href="/blog/3d-surveying-cost" className="block text-sm text-primary hover:underline">→ 3D測量の費用相場はいくら？料金の決まり方と見積もりのポイント</Link>
               <Link href="/blog/3d-vs-traditional-surveying" className="block text-sm text-primary hover:underline">→ 3D測量 vs 従来測量｜精度・コスト・スピードを徹底比較</Link>
               <Link href="/blog/choose-3d-surveying-company" className="block text-sm text-primary hover:underline">→ 3D測量業者の選び方｜失敗しない5つのチェックポイント</Link>

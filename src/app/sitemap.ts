@@ -55,16 +55,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
 
     // ブログ記事 ★★★
-    { url: `${baseUrl}/blog/3d-surveying`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.9 },
+    { url: `${baseUrl}/blog/3d-surveying`, lastModified: new Date("2026-07-23"), changeFrequency: "yearly", priority: 0.9 },
+    { url: `${baseUrl}/blog/building-3d-scan`, lastModified: new Date("2026-07-23"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${baseUrl}/blog/3d-surveying-cost`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.7 },
-    { url: `${baseUrl}/blog/drone-surveying-cost`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.7 },
+    { url: `${baseUrl}/blog/drone-surveying-cost`, lastModified: new Date("2026-07-23"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${baseUrl}/blog/choose-3d-surveying-company`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.7 },
     { url: `${baseUrl}/blog/3d-vs-traditional-surveying`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.7 },
     { url: `${baseUrl}/blog/i-construction-3d-surveying`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.7 },
 
     // ブログ記事 ★★
     { url: `${baseUrl}/blog/point-cloud-guide`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/blog/laser-scanner-guide`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${baseUrl}/blog/laser-scanner-guide`, lastModified: new Date("2026-07-23"), changeFrequency: "yearly", priority: 0.6 },
     { url: `${baseUrl}/blog/drone-vs-laser`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.6 },
     { url: `${baseUrl}/blog/bim-3d-scan`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.6 },
     { url: `${baseUrl}/blog/labor-shortage-solution`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.6 },

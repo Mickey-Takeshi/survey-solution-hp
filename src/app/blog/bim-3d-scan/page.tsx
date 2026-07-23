@@ -463,6 +463,12 @@ export default function Bim3dScanPage() {
               <Link href="/blog/no-drawings-solution" className="block text-sm text-primary hover:underline">
                 → 図面がない建物の現況図を作る方法
               </Link>
+              <Link href="/blog/renovation-3d-scan" className="block text-sm text-primary hover:underline">
+                → リノベーション前の3D計測ガイド｜現況把握で設計の手戻りゼロ
+              </Link>
+              <Link href="/blog/building-3d-scan" className="block text-sm text-primary hover:underline">
+                → 建物の3D計測とは？費用相場・精度・建築現場での活用シーンを解説
+              </Link>
               <Link href="/blog/point-cloud-guide" className="block text-sm text-primary hover:underline">
                 → 点群データとは？取得方法・活用事例・ファイル形式をわかりやすく解説
               </Link>

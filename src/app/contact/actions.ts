@@ -1,6 +1,7 @@
 "use server";
 
 import { supabasePublic } from "@/lib/supabase";
+import { appendContactToSheet } from "@/lib/sheets";
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
@@ -123,6 +124,20 @@ export async function submitContactForm(
     } catch (emailErr) {
       console.error("Email notification failed:", emailErr);
       // メール送信失敗でもフォーム送信は成功とする
+    }
+
+    // スプレッドシートに追記（失敗してもフォーム送信は成功扱い）
+    try {
+      await appendContactToSheet({
+        name,
+        company: company || null,
+        email,
+        phone: phone || null,
+        message,
+      });
+      console.log("Sheet append succeeded");
+    } catch (sheetErr) {
+      console.error("Sheet append failed:", sheetErr);
     }
 
     return {

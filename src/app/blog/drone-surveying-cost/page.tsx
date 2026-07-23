@@ -4,20 +4,20 @@ import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "ドローン測量の費用はいくら？地上レーザーとのコスト比較",
+  title: "ドローン測量の費用相場は20万〜40万円｜面積別料金表と内訳を解説",
   description:
-    "ドローン測量（UAV測量）の費用相場を面積別に解説。1フライト（10ha以内）で20万〜40万円が目安。地上レーザースキャンとのコスト・精度・用途の違いを比較表で分かりやすく紹介します。",
-  keywords: ["ドローン測量 費用", "UAV測量 価格", "ドローン測量 地上レーザー 比較", "ドローン測量 料金"],
+    "【2026年7月更新】ドローン測量（UAV測量）の費用相場を面積別の料金表で解説。1フライト（10ha以内）20万〜40万円が目安。費用の内訳、地上レーザーとの比較、安く抑える3つのコツまで土地家屋調査士が紹介します。",
+  keywords: ["ドローン測量 費用", "ドローン測量 費用 相場", "ドローン測量 費用 内訳", "UAV測量 価格", "ドローン測量 地上レーザー 比較", "ドローン測量 料金"],
   alternates: { canonical: "/blog/drone-surveying-cost" },
 };
 
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "ドローン測量の費用はいくら？地上レーザーとのコスト比較",
-  description: "ドローン測量の費用相場を面積別に解説。地上レーザースキャンとのコスト・精度・用途の違いを比較。",
+  headline: "ドローン測量の費用相場は20万〜40万円｜面積別料金表と内訳を解説",
+  description: "ドローン測量の費用相場を面積別の料金表で解説。費用の内訳と地上レーザースキャンとのコスト・精度・用途の違いを比較。",
   datePublished: "2026-02-17",
-  dateModified: "2026-02-17",
+  dateModified: "2026-07-23",
   author: { "@type": "Person", name: "齋藤 大輔", jobTitle: "代表取締役・土地家屋調査士" },
   publisher: {
     "@type": "Organization",
@@ -79,10 +79,11 @@ export default function DroneSurveyingCostPage() {
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-4">
               <time dateTime="2026-02-17" className="text-sm tracking-wider text-gray-500">2026.02.17</time>
+              <time dateTime="2026-07-23" className="text-sm tracking-wider text-gray-500">（2026.07.23更新）</time>
               <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded">費用・相場</span>
             </div>
             <h1 className="text-2xl md:text-3xl font-bold text-gray-800 leading-relaxed">
-              ドローン測量の費用はいくら？地上レーザーとのコスト比較
+              ドローン測量の費用相場は20万〜40万円｜面積別料金表と内訳を解説
             </h1>
           </div>
 
@@ -99,7 +100,7 @@ export default function DroneSurveyingCostPage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>ドローン測量の費用は1フライト（10ha以内）で20万〜40万円、地上レーザースキャンは1日（500㎡以内）で30万〜60万円が目安です（税別）。</strong>ドローンは広域の地形把握、地上レーザーは構造物の高精度計測にそれぞれ強みがあります。現場条件で最適な手法は変わるので、両者の費用感をしっかり把握しておくことが大切です。ここでは面積別の費用相場と、コスト・精度・用途の違いを比較表で整理しました。
+              <strong>ドローン測量の費用は1フライト（10ha以内）で20万〜40万円、地上レーザースキャンは1日（500㎡以内）で30万〜60万円が目安です（税別）。</strong>ドローンは広域の地形把握、地上レーザーは構造物の高精度計測にそれぞれ強みがあります。現場条件で最適な手法は変わるので、両者の費用感をしっかり把握しておくことが大切です。ここでは面積別の費用相場と費用の内訳、コスト・精度・用途の違いを比較表で整理しました。
             </p>
           </div>
 
@@ -109,13 +110,14 @@ export default function DroneSurveyingCostPage() {
             <nav>
               <ol className="space-y-2 text-sm text-primary">
                 <li><a href="#drone-cost" className="hover:underline">1. ドローン測量の費用相場｜面積別の料金目安</a></li>
-                <li><a href="#laser-cost" className="hover:underline">2. 地上レーザースキャンの費用相場</a></li>
-                <li><a href="#comparison" className="hover:underline">3. ドローン vs 地上レーザー｜コスト・精度・用途を徹底比較</a></li>
-                <li><a href="#drone-fit" className="hover:underline">4. ドローン測量が向いているケース</a></li>
-                <li><a href="#laser-fit" className="hover:underline">5. 地上レーザーが向いているケース</a></li>
-                <li><a href="#cost-down" className="hover:underline">6. 費用を抑えるためのポイント</a></li>
-                <li><a href="#faq" className="hover:underline">7. よくある質問</a></li>
-                <li><a href="#summary" className="hover:underline">8. まとめ</a></li>
+                <li><a href="#cost-breakdown" className="hover:underline">2. ドローン測量費用の内訳｜何にいくらかかるのか</a></li>
+                <li><a href="#laser-cost" className="hover:underline">3. 地上レーザースキャンの費用相場</a></li>
+                <li><a href="#comparison" className="hover:underline">4. ドローン vs 地上レーザー｜コスト・精度・用途を徹底比較</a></li>
+                <li><a href="#drone-fit" className="hover:underline">5. ドローン測量が向いているケース</a></li>
+                <li><a href="#laser-fit" className="hover:underline">6. 地上レーザーが向いているケース</a></li>
+                <li><a href="#cost-down" className="hover:underline">7. 費用を抑えるためのポイント</a></li>
+                <li><a href="#faq" className="hover:underline">8. よくある質問</a></li>
+                <li><a href="#summary" className="hover:underline">9. まとめ</a></li>
               </ol>
             </nav>
           </div>
@@ -186,7 +188,44 @@ export default function DroneSurveyingCostPage() {
               </table>
             </div>
 
-            {/* 2. 地上レーザースキャンの費用相場 */}
+            {/* 2. 費用の内訳 */}
+            <h2 id="cost-breakdown" className="text-xl font-bold text-primary mt-12 mb-4 pb-2 border-b-2 border-primary">
+              ドローン測量費用の内訳｜何にいくらかかるのか
+            </h2>
+            <p className="text-base leading-loose text-gray-700 mb-6">
+              ドローン測量の見積もりは、大きく5つの項目で構成されます。1〜5haの現場（総額25万〜35万円）を例に、内訳の目安を示します。
+            </p>
+            <div className="overflow-x-auto mb-8">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="bg-primary text-white">
+                    <th className="px-4 py-3 text-left">費用項目</th>
+                    <th className="px-4 py-3 text-left">内容</th>
+                    <th className="px-4 py-3 text-left">構成比の目安</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { item: "フライト費用", desc: "機体運用・操縦者の人件費・保険料", ratio: "30〜40%" },
+                    { item: "標定点（GCP）設置・検測", desc: "精度を担保する基準点の設置と測量", ratio: "15〜20%" },
+                    { item: "データ処理費", desc: "写真解析・点群生成・オルソ画像作成", ratio: "25〜35%" },
+                    { item: "成果品作成費", desc: "図面・報告書などの納品物作成", ratio: "10〜15%" },
+                    { item: "諸経費", desc: "交通費・飛行申請などの事務手続き", ratio: "5〜10%" },
+                  ].map((row, i) => (
+                    <tr key={row.item} className={i % 2 === 0 ? "bg-gray-50" : ""}>
+                      <td className="px-4 py-3 font-bold text-gray-900 border-b">{row.item}</td>
+                      <td className="px-4 py-3 text-gray-700 border-b">{row.desc}</td>
+                      <td className="px-4 py-3 text-gray-700 border-b">{row.ratio}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-base leading-loose text-gray-700 mb-6">
+              ポイントは、フライトそのものよりデータ処理と精度管理（GCP）に費用がかかる点です。「飛ばすだけなら安い」という広告価格には、点群処理や図面化が含まれていないケースがあります。見積もりを比べるときは、納品物がどこまで含まれるかを必ず確認してください。
+            </p>
+
+            {/* 3. 地上レーザースキャンの費用相場 */}
             <h2 id="laser-cost" className="text-xl font-bold text-primary mt-12 mb-4 pb-2 border-b-2 border-primary">
               地上レーザースキャンの費用相場
             </h2>

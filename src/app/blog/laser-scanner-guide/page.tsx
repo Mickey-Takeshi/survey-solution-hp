@@ -4,21 +4,21 @@ import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "レーザースキャナーとは？種類・原理・測量での使い方を解説",
+  title: "レーザースキャナーとは？種類・原理・価格・測量での使い方を解説",
   description:
-    "レーザースキャナーとは、レーザー光で対象物の三次元座標を取得する計測機器です。ToF・位相差方式の原理、地上据置型・ハンドヘルド型・車載型・航空LiDARの4種類、測量現場での使い方を技術者向けに解説します。",
-  keywords: ["レーザースキャナー 測量", "3Dレーザースキャナー", "レーザースキャナー 種類", "レーザースキャナー 原理"],
+    "【2026年7月更新】レーザースキャナーとは、レーザー光で対象物の三次元座標を取得する計測機器です。ToF・位相差方式の原理、4種類の特徴、購入・レンタル・外注の価格比較、測量現場での使い方まで実務者が解説します。",
+  keywords: ["レーザースキャナー", "レーザースキャナーとは", "レーザースキャナー 測量", "3Dレーザースキャナー", "レーザースキャナー 種類", "レーザースキャナー 原理", "レーザースキャナー 価格"],
   alternates: { canonical: "/blog/laser-scanner-guide" },
 };
 
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "レーザースキャナーとは？種類・原理・測量での使い方を解説",
+  headline: "レーザースキャナーとは？種類・原理・価格・測量での使い方を解説",
   description:
-    "レーザースキャナーとは、レーザー光で対象物の三次元座標を取得する計測機器です。ToF・位相差方式の原理、4種類の特徴、測量現場での使い方を解説。",
+    "レーザースキャナーとは、レーザー光で対象物の三次元座標を取得する計測機器です。ToF・位相差方式の原理、4種類の特徴、価格、測量現場での使い方を解説。",
   datePublished: "2026-02-17",
-  dateModified: "2026-02-17",
+  dateModified: "2026-07-23",
   author: {
     "@type": "Person",
     name: "齋藤 大輔",
@@ -53,6 +53,14 @@ const faqJsonLd = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "機器本体の価格は、ハンドヘルド型で300〜800万円、地上据置型で500〜2,000万円程度です。計測業務を外注する場合は1日あたり30万円〜が目安です。自社導入のハードルが高ければ、レンタルや計測代行サービスを使う手もあります。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "レーザースキャナーはレンタルできますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、レンタル可能です。地上据置型で1日5万〜15万円が目安です。ただし操作と点群処理には専門技術が必要で、処理ソフトのライセンス費用も別途かかります。図面やBIMモデルなどの成果物まで必要な場合は、データ処理込みの計測外注と総額で比較することをおすすめします。",
       },
     },
     {
@@ -95,12 +103,15 @@ export default function LaserScannerGuidePage() {
               <time dateTime="2026-02-17" className="text-sm tracking-wider text-gray-500">
                 2026.02.17
               </time>
+              <time dateTime="2026-07-23" className="text-sm tracking-wider text-gray-500">
+                （2026.07.23更新）
+              </time>
               <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded">
                 技術解説
               </span>
             </div>
             <h1 className="text-2xl md:text-3xl font-bold text-gray-800 leading-relaxed">
-              レーザースキャナーとは？種類・原理・測量での使い方を解説
+              レーザースキャナーとは？種類・原理・価格・測量での使い方を解説
             </h1>
           </div>
 
@@ -130,10 +141,11 @@ export default function LaserScannerGuidePage() {
                 <li><a href="#types" className="hover:underline">2. レーザースキャナーの4つの種類</a></li>
                 <li><a href="#workflow" className="hover:underline">3. 測量でのレーザースキャナーの使い方</a></li>
                 <li><a href="#selection" className="hover:underline">4. レーザースキャナーの選び方｜用途別おすすめ</a></li>
-                <li><a href="#manufacturers" className="hover:underline">5. レーザースキャナーの主要メーカーと機種</a></li>
-                <li><a href="#vs-drone" className="hover:underline">6. レーザースキャン vs ドローン測量</a></li>
-                <li><a href="#faq" className="hover:underline">7. よくある質問</a></li>
-                <li><a href="#summary" className="hover:underline">8. まとめ</a></li>
+                <li><a href="#price" className="hover:underline">5. レーザースキャナーの価格｜購入・レンタル・外注の比較</a></li>
+                <li><a href="#manufacturers" className="hover:underline">6. レーザースキャナーの主要メーカーと機種</a></li>
+                <li><a href="#vs-drone" className="hover:underline">7. レーザースキャン vs ドローン測量</a></li>
+                <li><a href="#faq" className="hover:underline">8. よくある質問</a></li>
+                <li><a href="#summary" className="hover:underline">9. まとめ</a></li>
               </ol>
             </nav>
           </div>
@@ -313,7 +325,43 @@ export default function LaserScannerGuidePage() {
               </table>
             </div>
 
-            {/* 5. 主要メーカー */}
+            {/* 5. 価格 */}
+            <h2 id="price" className="text-xl font-bold text-primary mt-12 mb-4 pb-2 border-b-2 border-primary">
+              レーザースキャナーの価格｜購入・レンタル・外注の比較
+            </h2>
+            <p className="text-base leading-loose text-gray-700 mb-6">
+              レーザースキャナーを使う方法は「購入」「レンタル」「計測外注」の3つです。本体購入は据置型で500万〜2,000万円と高額なため、利用頻度に応じた選択が費用対効果を左右します。
+            </p>
+            <div className="overflow-x-auto mb-8">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="bg-primary text-white">
+                    <th className="px-4 py-3 text-left">導入形態</th>
+                    <th className="px-4 py-3 text-left">費用目安（税別）</th>
+                    <th className="px-4 py-3 text-left">向いているケース</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { form: "本体購入（地上据置型）", price: "500万〜2,000万円＋処理ソフト年50万〜100万円", fit: "年間を通して計測業務がある測量・建設会社" },
+                    { form: "本体購入（ハンドヘルド型）", price: "300万〜800万円", fit: "屋内計測・施設管理を内製化したい企業" },
+                    { form: "レンタル", price: "5万〜15万円/日（処理ソフト・PC別途）", fit: "操作・点群処理のスキルが社内にある場合" },
+                    { form: "計測外注", price: "20万〜60万円/日（データ処理・成果物込み）", fit: "スポット利用、図面やBIMなど成果物まで欲しい場合" },
+                  ].map((row, i) => (
+                    <tr key={row.form} className={i % 2 === 0 ? "bg-gray-50" : ""}>
+                      <td className="px-4 py-3 font-bold text-gray-900 border-b">{row.form}</td>
+                      <td className="px-4 py-3 text-gray-700 border-b">{row.price}</td>
+                      <td className="px-4 py-3 text-gray-700 border-b">{row.fit}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-base leading-loose text-gray-700 mb-6">
+              注意したいのは、レンタルでは機器代のほかに操作と点群処理の技術が必要になる点です。レジストレーションやノイズ除去に不慣れだと、せっかく計測しても使えるデータになりません。図面・BIMモデルなどの成果物まで必要なら、処理込みの外注と総額で比べてみてください。計測から納品までの具体的な料金は<Link href="/price" className="text-primary hover:underline">料金ページ</Link>で公開しています。
+            </p>
+
+            {/* 6. 主要メーカー */}
             <h2 id="manufacturers" className="text-xl font-bold text-primary mt-12 mb-4 pb-2 border-b-2 border-primary">
               レーザースキャナーの主要メーカーと機種
             </h2>
@@ -399,6 +447,7 @@ export default function LaserScannerGuidePage() {
               {[
                 { q: "レーザースキャナーの精度はどのくらいですか？", a: "地上据置型の場合、±1〜3mmの精度で計測できます。ハンドヘルド型は±5〜30mm、車載型MMSは±10〜50mm、航空LiDARは±5〜15cm程度です。計測距離や環境条件により変動しますが、対象物に合った機種を選定することで高精度な三次元データを取得できます。" },
                 { q: "レーザースキャナーの導入費用はどのくらいですか？", a: "機器本体はハンドヘルド型で300〜800万円、地上据置型で500〜2,000万円程度。計測業務を外注する場合は1日あたり30万円〜が目安です。自社導入のハードルが高ければ、レンタルや計測代行サービスを使う手もあります。" },
+                { q: "レーザースキャナーはレンタルできますか？", a: "はい、レンタル可能です。地上据置型で1日5万〜15万円が目安。ただし操作と点群処理には専門技術が必要で、処理ソフトのライセンス費用も別途かかります。図面やBIMモデルまで必要なら、データ処理込みの計測外注と総額で比較するのがおすすめです。" },
                 { q: "レーザースキャナーで取得したデータはどう活用できますか？", a: "点群データとして取得し、CAD図面の作成、BIM/CIMモデルの構築、土量計算、干渉チェック、変位計測、施工シミュレーションなどに使えます。建設・建築・プラント・インフラ点検・文化財保存など、活用の場は広がり続けています。" },
               ].map((item) => (
                 <div key={item.q} className="bg-gray-50 rounded-lg p-5">
@@ -458,6 +507,7 @@ export default function LaserScannerGuidePage() {
           <div className="mt-12 pt-8 border-t">
             <h3 className="text-lg font-bold text-gray-800 mb-4">関連記事</h3>
             <div className="space-y-3">
+              <Link href="/blog/building-3d-scan" className="block text-sm text-primary hover:underline">→ 建物の3D計測とは？費用相場・精度・活用シーンを解説</Link>
               <Link href="/blog/point-cloud-guide" className="block text-sm text-primary hover:underline">→ 点群データとは？</Link>
               <Link href="/blog/drone-vs-laser" className="block text-sm text-primary hover:underline">→ ドローン測量 vs 地上レーザースキャン</Link>
               <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">→ 3D測量とは？</Link>
