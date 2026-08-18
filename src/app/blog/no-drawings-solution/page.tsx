@@ -483,6 +483,12 @@ export default function NoDrawingsSolutionPage() {
               <Link href="/blog/3d-surveying-cost" className="block text-sm text-primary hover:underline">
                 → 3D測量の費用相場はいくら？料金の決まり方と見積もりのポイント
               </Link>
+              <Link href="/use-case/as-built-drawings" className="block text-sm text-primary hover:underline">
+                → 【活用事例】図面のない建物の平面図・立面図等の作製
+              </Link>
+              <Link href="/blog/renovation-3d-scan" className="block text-sm text-primary hover:underline">
+                → リノベーション前の3Dスキャン活用法
+              </Link>
             </div>
           </div>
 

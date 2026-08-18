@@ -44,9 +44,6 @@ export const metadata: Metadata = {
     "関西 測量会社",
     "株式会社SurveySolution",
   ],
-  alternates: {
-    canonical: siteUrl,
-  },
   openGraph: {
     type: "website",
     locale: "ja_JP",
@@ -202,11 +199,6 @@ const organizationJsonLd = {
   priceRange: "¥150,000〜",
   paymentAccepted: "銀行振込",
   sameAs: [],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "24",
-  },
 };
 
 const websiteJsonLd = {

@@ -20,6 +20,18 @@ const serviceLinks = [
   { label: "建築・リノベ向け", href: "/solution/architecture" },
 ];
 
+const useCaseLinks = [
+  { label: "図面のない建物の平面図作製", href: "/use-case/as-built-drawings" },
+  { label: "建物の傾き調査", href: "/use-case/building-tilt" },
+  { label: "床の不陸調査", href: "/use-case/floor-levelness" },
+  { label: "地下室の形状・位置の把握", href: "/use-case/basement-survey" },
+  { label: "山林の詳細な地形測量", href: "/use-case/mountain-forest-survey" },
+  { label: "日影シミュレーション", href: "/use-case/shadow-simulation" },
+  { label: "災害現場の現況把握図面", href: "/use-case/disaster-survey" },
+  { label: "空中越境物の把握調査", href: "/use-case/aerial-encroachment" },
+  { label: "活用事例をすべて見る", href: "/use-case" },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-[#2a2a2a] text-white">
@@ -64,7 +76,7 @@ export default function Footer() {
 
       {/* Footer Main Content */}
       <div className="max-w-[1200px] mx-auto px-4 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
             <Image
@@ -108,6 +120,22 @@ export default function Footer() {
             <h3 className="font-bold text-sm mb-4 text-white border-b border-gray-600 pb-2">サービス一覧</h3>
             <nav className="space-y-2 text-sm">
               {serviceLinks.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="block text-gray-300 hover:text-white transition-colors"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
+
+          {/* Use Cases */}
+          <div>
+            <h3 className="font-bold text-sm mb-4 text-white border-b border-gray-600 pb-2">活用事例</h3>
+            <nav className="space-y-2 text-sm">
+              {useCaseLinks.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
