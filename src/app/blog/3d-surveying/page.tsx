@@ -182,7 +182,7 @@ export default function Article3DSurveyingPage() {
           {/* リード文（AIO最適化：結論ファースト） */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>3D測量（三次元測量）とは、3Dレーザースキャナやドローンを使って対象物の形状を立体的にデータ化する測量技術です。</strong>1秒間に最大200万点の座標データ（点群データ）を取得し、従来測量の1/3〜1/5の時間で±1〜3mmの高精度な計測を実現します。2025年度のi-Construction 2.0推進やBIM/CIM原則適用を背景に、建設・建築・プラント・インフラ・文化財保存など7業種以上で導入が加速しています。
+              <strong>3D測量（三次元測量）とは、3Dレーザースキャナやドローンを使って対象物の形状を立体的にデータ化する測量技術です。</strong>1秒間に最大200万点の座標データ（点群データ）を取得し、従来測量の1/3〜1/5の時間で±1〜3mmの高精度な計測を実現します。i-Construction 2.0（2024年4月策定）の推進や2023年度からのBIM/CIM原則適用を背景に、建設・建築・プラント・インフラ・文化財保存など7業種以上で導入が加速しています。
             </p>
           </div>
 
@@ -419,7 +419,7 @@ export default function Article3DSurveyingPage() {
               <div className="bg-white border-l-4 border-primary p-5 rounded-r-lg">
                 <h3 className="font-bold text-gray-900 mb-2">①  i-Construction 2.0の本格化</h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  国土交通省の「i-Construction 2.0」では、「2040年度までに建設現場の省人化3割」が目標。2025年度からBIM/CIMの原則適用が段階的に拡大し、3D測量データの活用は公共工事の標準仕様になりつつあります。ICT施工や3次元出来形管理の適用範囲も広がっており、3D測量の需要は今後さらに増えるでしょう。
+                  国土交通省の「i-Construction 2.0」では、「2040年度までに建設現場の省人化3割」が目標。2023年度（令和5年度）から国土交通省直轄の詳細設計・工事でBIM/CIMが原則適用となり（当初目標の2025年度から前倒し）、3D測量データの活用は公共工事の標準仕様になりつつあります。ICT施工や3次元出来形管理の適用範囲も広がっており、3D測量の需要は今後さらに増えるでしょう。
                 </p>
               </div>
 
