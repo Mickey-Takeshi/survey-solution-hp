@@ -471,6 +471,12 @@ export default function IConstructionSurveyingPage() {
               <Link href="/blog/3d-surveying-cost" className="block text-sm text-primary hover:underline">
                 → 3D測量の費用相場はいくら？料金の決まり方と見積もりのポイント
               </Link>
+              <Link href="/blog/3d-surveying-trends-2026" className="block text-sm text-primary hover:underline">
+                → 2026å¹´ç 3Dæ¸¬éã®ææ°ãã¬ã³ã
+              </Link>
+              <Link href="/use-case/disaster-survey" className="block text-sm text-primary hover:underline">
+                → ãæ´»ç¨äºä¾ãç½å®³ç¾å ´ã®ç¾æ³ææ¡å³é¢ã»æ­é¢å³ã®ä½è£½
+              </Link>
             </div>
           </div>
 

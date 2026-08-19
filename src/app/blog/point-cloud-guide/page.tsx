@@ -460,6 +460,12 @@ export default function PointCloudGuidePage() {
               <Link href="/blog/bim-3d-scan" className="block text-sm text-primary hover:underline">
                 → BIMと3Dスキャンの連携方法｜スキャンtoBIMの手順と活用事例
               </Link>
+              <Link href="/case/plant-piping" className="block text-sm text-primary hover:underline">
+                → ãå°å¥äºä¾ãåå­¦å·¥å ´ã®éç®¡3Dåï½å¹²æ¸ãã§ãã¯å·¥æ°80%åæ¸
+              </Link>
+              <Link href="/use-case/site-heatmap" className="block text-sm text-primary hover:underline">
+                → ãæ´»ç¨äºä¾ãæ·å°ãã¼ããããä½æï¼æ°´ã®æµãèª¿æ»ï¼
+              </Link>
             </div>
           </div>
 

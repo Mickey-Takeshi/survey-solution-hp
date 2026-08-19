@@ -18,7 +18,7 @@ const articleJsonLd = {
   description:
     "3D測量業者の選び方を5つのチェックポイントで解説。保有機器・実績・納品物・見積もり・サポート体制の確認方法を紹介。",
   datePublished: "2026-02-17",
-  dateModified: "2026-02-17",
+  dateModified: "2026-08-19",
   author: {
     "@type": "Person",
     name: "齋藤 大輔",
@@ -94,6 +94,9 @@ export default function Choose3DSurveyingCompanyPage() {
             <div className="flex items-center gap-3 mb-4">
               <time dateTime="2026-02-17" className="text-sm tracking-wider text-gray-500">
                 2026.02.17
+              </time>
+              <time dateTime="2026-08-19" className="text-sm tracking-wider text-gray-500">
+                （2026.08.19更新）
               </time>
               <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded">
                 業者選び
@@ -431,6 +434,12 @@ export default function Choose3DSurveyingCompanyPage() {
           <div className="mt-12 pt-8 border-t">
             <h3 className="text-lg font-bold text-gray-800 mb-4">関連記事</h3>
             <div className="space-y-3">
+              <Link href="/service/laser-scan" className="block text-sm font-bold text-primary hover:underline">
+                &rarr; 地上レーザースキャン測量｜精度条件・環境制約・FAQ
+              </Link>
+              <Link href="/service/point-cloud" className="block text-sm font-bold text-primary hover:underline">
+                &rarr; 点群データ処理｜レジストレーションと納品形式
+              </Link>
               <Link href="/blog/3d-surveying-cost" className="block text-sm text-primary hover:underline">
                 &rarr; 3D測量の費用相場はいくら？料金の決まり方と見積もりのポイント
               </Link>
@@ -439,6 +448,9 @@ export default function Choose3DSurveyingCompanyPage() {
               </Link>
               <Link href="/blog/3d-vs-traditional-surveying" className="block text-sm text-primary hover:underline">
                 &rarr; 3D測量 vs 従来測量｜精度・コスト・スピードを徹底比較
+              </Link>
+              <Link href="/use-case" className="block text-sm text-primary hover:underline">
+                &rarr; 3Dæ¸¬éã®æ´»ç¨äºä¾ä¸è¦§ï¼18äºä¾ï¼
               </Link>
             </div>
           </div>

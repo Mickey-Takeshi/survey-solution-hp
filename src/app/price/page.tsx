@@ -257,6 +257,21 @@ export default function PricePage() {
         </div>
       </section>
 
+      {/* 業界別の料金目安 */}
+      <section className="py-12 bg-slate-50">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="text-lg font-bold text-gray-900 mb-2">業界別の詳しい料金目安</h2>
+          <p className="text-sm text-gray-600 mb-5">対象物や業界ごとの費用感・作業内容は、各ページで詳しく解説しています。</p>
+          <div className="space-y-3">
+            <Link href="/solution/construction" className="block text-sm text-primary hover:underline">→ 建設・土木向け3D測量の料金目安（出来形管理・土量計算・ICT施工）</Link>
+            <Link href="/solution/architecture" className="block text-sm text-primary hover:underline">→ 建築・リノベーション向け3D測量の料金目安（現況図作成・BIM化）</Link>
+            <Link href="/solution/plant" className="block text-sm text-primary hover:underline">→ プラント・工場向け3D測量の料金目安（配管・設備の3Dモデル化）</Link>
+            <Link href="/solution/infrastructure" className="block text-sm text-primary hover:underline">→ インフラ維持管理向け3D計測の料金目安（点検・経年比較）</Link>
+            <Link href="/solution/heritage" className="block text-sm text-primary hover:underline">→ 文化財・遺跡の3D記録の料金目安（デジタルアーカイブ）</Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-primary">
         <div className="max-w-[800px] mx-auto px-6 text-center text-white">

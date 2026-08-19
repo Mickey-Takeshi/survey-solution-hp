@@ -17,7 +17,7 @@ const articleJsonLd = {
   headline: "ドローン測量の費用相場は20万〜40万円｜面積別料金表と内訳を解説",
   description: "ドローン測量の費用相場を面積別の料金表で解説。費用の内訳と地上レーザースキャンとのコスト・精度・用途の違いを比較。",
   datePublished: "2026-02-17",
-  dateModified: "2026-07-23",
+  dateModified: "2026-08-19",
   author: { "@type": "Person", name: "齋藤 大輔", jobTitle: "代表取締役・土地家屋調査士" },
   publisher: {
     "@type": "Organization",
@@ -79,7 +79,7 @@ export default function DroneSurveyingCostPage() {
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-4">
               <time dateTime="2026-02-17" className="text-sm tracking-wider text-gray-500">2026.02.17</time>
-              <time dateTime="2026-07-23" className="text-sm tracking-wider text-gray-500">（2026.07.23更新）</time>
+              <time dateTime="2026-08-19" className="text-sm tracking-wider text-gray-500">（2026.08.19更新）</time>
               <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded">費用・相場</span>
             </div>
             <h1 className="text-2xl md:text-3xl font-bold text-gray-800 leading-relaxed">
@@ -442,9 +442,14 @@ export default function DroneSurveyingCostPage() {
           <div className="mt-12 pt-8 border-t">
             <h3 className="text-lg font-bold text-gray-800 mb-4">関連記事</h3>
             <div className="space-y-3">
+              <Link href="/solution/construction" className="block text-sm font-bold text-primary hover:underline">→ 建設・土木向け3D測量｜出来形管理と土量計算の実務</Link>
+              <Link href="/service/laser-scan" className="block text-sm font-bold text-primary hover:underline">→ 地上レーザースキャン測量｜得意な条件と制約</Link>
               <Link href="/blog/3d-surveying-cost" className="block text-sm text-primary hover:underline">→ 3D測量の費用相場はいくら？料金の決まり方と見積もりのポイント</Link>
               <Link href="/blog/3d-vs-traditional-surveying" className="block text-sm text-primary hover:underline">→ 3D測量 vs 従来測量｜精度・コスト・スピードを徹底比較</Link>
               <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">→ 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説</Link>
+              <Link href="/blog/drone-vs-laser" className="block text-sm text-primary hover:underline">
+                → ãã­ã¼ã³æ¸¬é vs å°ä¸ã¬ã¼ã¶ã¼ã¹ã­ã£ã³ï½ç²¾åº¦ã»ã³ã¹ãã»ç¨éã®éã
+              </Link>
             </div>
           </div>
 

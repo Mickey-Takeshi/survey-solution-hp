@@ -489,6 +489,9 @@ export default function NoDrawingsSolutionPage() {
               <Link href="/blog/renovation-3d-scan" className="block text-sm text-primary hover:underline">
                 → リノベーション前の3Dスキャン活用法
               </Link>
+              <Link href="/use-case/basement-survey" className="block text-sm text-primary hover:underline">
+                → ãæ´»ç¨äºä¾ãå°ä¸å®¤ã®å½¢ç¶ã¨ä½ç½®ã®ææ¡
+              </Link>
             </div>
           </div>
 

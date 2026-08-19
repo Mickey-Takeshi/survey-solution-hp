@@ -29,8 +29,8 @@ const articleJsonLd = {
   headline: "3D測量とは？方法・メリット・費用・活用事例を専門家が徹底解説【2026年最新】",
   description:
     "3D測量（三次元測量）の定義・3つの測量手法・5つのメリット・費用相場・7業種の活用事例・最新トレンドを、土地家屋調査士が徹底解説。",
-  datePublished: "2021-01-21",
-  dateModified: "2026-07-23",
+  datePublished: "2026-02-20",
+  dateModified: "2026-08-19",
   author: {
     "@type": "Person",
     name: "齋藤 大輔",
@@ -149,8 +149,8 @@ export default function Article3DSurveyingPage() {
           {/* 記事ヘッダー */}
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-4">
-              <time dateTime="2026-07-23" className="text-sm tracking-wider text-gray-500">
-                2026.07.23 更新
+              <time dateTime="2026-08-19" className="text-sm tracking-wider text-gray-500">
+                2026.08.19 更新
               </time>
               <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded">
                 基礎知識
@@ -549,6 +549,21 @@ export default function Article3DSurveyingPage() {
               <Link href="/blog/3d-vs-traditional-surveying" className="block text-sm text-primary hover:underline">→ 3D測量 vs 従来測量｜精度・コスト・スピードを徹底比較</Link>
               <Link href="/blog/choose-3d-surveying-company" className="block text-sm text-primary hover:underline">→ 3D測量業者の選び方｜失敗しない5つのチェックポイント</Link>
               <Link href="/blog/i-construction-3d-surveying" className="block text-sm text-primary hover:underline">→ i-Constructionと3D測量｜ICT施工に必要な測量技術を解説</Link>
+              <Link href="/blog/3d-surveying-use-cases" className="block text-sm text-primary hover:underline">
+                → 3Dæ¸¬éã®æ´»ç¨äºä¾10é¸ï½å»ºè¨­ã»å»ºç¯ã»ãã©ã³ãã®ç¾å ´ãã
+              </Link>
+            </div>
+          </div>
+
+          {/* 業界別ソリューション */}
+          <div className="mt-8 pt-8 border-t">
+            <h3 className="text-lg font-bold text-gray-800 mb-4">業界別の3D測量ソリューション</h3>
+            <div className="space-y-3">
+              <Link href="/solution/construction" className="block text-sm text-primary hover:underline">→ 建設・土木向け3D測量｜出来形管理・土量計算・ICT施工</Link>
+              <Link href="/solution/architecture" className="block text-sm text-primary hover:underline">→ 建築・リノベーション向け3D測量｜現況図作成・BIM化</Link>
+              <Link href="/solution/plant" className="block text-sm text-primary hover:underline">→ プラント・工場向け3D測量｜配管・設備の3Dモデル化</Link>
+              <Link href="/solution/infrastructure" className="block text-sm text-primary hover:underline">→ インフラ点検向け3D測量｜橋梁・トンネルの変状記録</Link>
+              <Link href="/solution/heritage" className="block text-sm text-primary hover:underline">→ 文化財・遺跡の3D記録｜デジタルアーカイブで永久保存</Link>
             </div>
           </div>
 

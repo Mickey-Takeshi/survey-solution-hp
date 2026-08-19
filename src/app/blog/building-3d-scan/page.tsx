@@ -25,7 +25,7 @@ const articleJsonLd = {
   description:
     "建物の3D計測の手法別の精度、規模別の費用相場、建築現場・建設現場での活用方法を解説。",
   datePublished: "2026-07-23",
-  dateModified: "2026-07-23",
+  dateModified: "2026-08-19",
   author: { "@type": "Person", name: "齋藤 大輔", jobTitle: "代表取締役・土地家屋調査士" },
   publisher: {
     "@type": "Organization",
@@ -86,7 +86,7 @@ export default function Building3dScanPage() {
           {/* 記事ヘッダー */}
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-4">
-              <time dateTime="2026-07-23" className="text-sm tracking-wider text-gray-500">2026.07.23</time>
+              <time dateTime="2026-08-19" className="text-sm tracking-wider text-gray-500">2026.08.19 更新</time>
               <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded">基礎知識</span>
             </div>
             <h1 className="text-2xl md:text-3xl font-bold text-gray-800 leading-relaxed">
@@ -155,7 +155,7 @@ export default function Building3dScanPage() {
                     { item: "現地作業時間", a: "住宅1棟で1〜2日", b: "住宅1棟で半日〜1日" },
                     { item: "精度", a: "±5〜10mm（測り方に依存）", b: "±1〜3mm（機器で担保）" },
                     { item: "測り忘れ", a: "再訪問が必要", b: "データ内で後から計測可能" },
-                    { item: "記録性", a: "野帳・写真", b: "点群データとして永久保存" },
+                    { item: "記録性", a: "野帳・写真", b: "点群データとして長期保存・再利用" },
                   ].map((row, i) => (
                     <tr key={row.item} className={i % 2 === 0 ? "bg-gray-50" : ""}>
                       <td className="px-4 py-3 font-bold text-gray-900 border-b">{row.item}</td>
@@ -392,10 +392,18 @@ export default function Building3dScanPage() {
           <div className="mt-12 pt-8 border-t">
             <h3 className="text-lg font-bold text-gray-800 mb-4">関連記事</h3>
             <div className="space-y-3">
+              <Link href="/solution/architecture" className="block text-sm font-bold text-primary hover:underline">→ 建築・リノベーション向け3D測量｜現況図・傾斜調査の実務</Link>
+              <Link href="/service/3d-modeling" className="block text-sm font-bold text-primary hover:underline">→ 点群からBIMモデルを作成｜LODと対応形式</Link>
               <Link href="/blog/no-drawings-solution" className="block text-sm text-primary hover:underline">→ 図面がない建物の現況図を作る方法｜3Dスキャンで正確に再現</Link>
               <Link href="/blog/renovation-3d-scan" className="block text-sm text-primary hover:underline">→ リノベーション前の3D計測ガイド｜現況把握で設計の手戻りゼロ</Link>
               <Link href="/blog/bim-3d-scan" className="block text-sm text-primary hover:underline">→ BIMと3Dスキャンの連携方法｜既存建物のBIM化フロー完全ガイド</Link>
               <Link href="/blog/laser-scanner-guide" className="block text-sm text-primary hover:underline">→ レーザースキャナーとは？種類・原理・価格・測量での使い方を解説</Link>
+              <Link href="/solution/architecture" className="block text-sm text-primary hover:underline">
+                → å»ºç¯ã»ãªããã¼ã·ã§ã³åã3Dæ¸¬éï½ç¾æ³å³ä½æã»BIMå
+              </Link>
+              <Link href="/use-case/building-tilt" className="block text-sm text-primary hover:underline">
+                → ãæ´»ç¨äºä¾ãå»ºç©ã®å¾ãèª¿æ»
+              </Link>
             </div>
           </div>
 

@@ -511,6 +511,9 @@ export default function LaserScannerGuidePage() {
               <Link href="/blog/point-cloud-guide" className="block text-sm text-primary hover:underline">→ 点群データとは？</Link>
               <Link href="/blog/drone-vs-laser" className="block text-sm text-primary hover:underline">→ ドローン測量 vs 地上レーザースキャン</Link>
               <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">→ 3D測量とは？</Link>
+              <Link href="/use-case/mountain-forest-survey" className="block text-sm text-primary hover:underline">
+                → ãæ´»ç¨äºä¾ãå±±æã®è©³ç´°ãªå°å½¢æ¸¬é
+              </Link>
             </div>
           </div>
 

@@ -472,8 +472,11 @@ export default function Bim3dScanPage() {
               <Link href="/blog/point-cloud-guide" className="block text-sm text-primary hover:underline">
                 → 点群データとは？取得方法・活用事例・ファイル形式をわかりやすく解説
               </Link>
-              <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">
-                → 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説
+              <Link href="/service/3d-modeling" className="block text-sm text-primary hover:underline">
+                → 3Dモデリング・BIM連携｜点群データからBIM/CIMモデルを作成
+              </Link>
+              <Link href="/case/plant-piping" className="block text-sm text-primary hover:underline">
+                → ãå°å¥äºä¾ãåå­¦å·¥å ´ã®éç®¡3Dåï½IFCå½¢å¼ã§BIMé£æº
               </Link>
             </div>
           </div>
