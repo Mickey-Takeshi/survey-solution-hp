@@ -472,10 +472,10 @@ export default function IConstructionSurveyingPage() {
                 → 3D測量の費用相場はいくら？料金の決まり方と見積もりのポイント
               </Link>
               <Link href="/blog/3d-surveying-trends-2026" className="block text-sm text-primary hover:underline">
-                → 2026å¹´ç 3Dæ¸¬éã®ææ°ãã¬ã³ã
+                → 2026年版 3D測量の最新トレンド
               </Link>
               <Link href="/use-case/disaster-survey" className="block text-sm text-primary hover:underline">
-                → ãæ´»ç¨äºä¾ãç½å®³ç¾å ´ã®ç¾æ³ææ¡å³é¢ã»æ­é¢å³ã®ä½è£½
+                → 【活用事例】災害現場の現況把握図面・断面図の作製
               </Link>
             </div>
           </div>

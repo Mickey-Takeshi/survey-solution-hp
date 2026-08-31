@@ -450,7 +450,7 @@ export default function Choose3DSurveyingCompanyPage() {
                 &rarr; 3D測量 vs 従来測量｜精度・コスト・スピードを徹底比較
               </Link>
               <Link href="/use-case" className="block text-sm text-primary hover:underline">
-                &rarr; 3Dæ¸¬éã®æ´»ç¨äºä¾ä¸è¦§ï¼18äºä¾ï¼
+                &rarr; 3D測量の活用事例一覧（18事例）
               </Link>
             </div>
           </div>

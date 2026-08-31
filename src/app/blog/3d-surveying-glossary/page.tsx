@@ -521,7 +521,7 @@ export default function SurveyingGlossaryPage() {
                 → レーザースキャナーとは？種類・精度・選び方を徹底解説
               </Link>
               <Link href="/blog/drone-vs-laser" className="block text-sm text-primary hover:underline">
-                → ãã­ã¼ã³æ¸¬é vs å°ä¸ã¬ã¼ã¶ã¼ã¹ã­ã£ã³ï½ç²¾åº¦ã»ã³ã¹ãã»ç¨éã®éã
+                → ドローン測量 vs 地上レーザースキャン｜精度・コスト・用途の違い
               </Link>
             </div>
           </div>

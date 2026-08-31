@@ -448,7 +448,7 @@ export default function DroneSurveyingCostPage() {
               <Link href="/blog/3d-vs-traditional-surveying" className="block text-sm text-primary hover:underline">→ 3D測量 vs 従来測量｜精度・コスト・スピードを徹底比較</Link>
               <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">→ 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説</Link>
               <Link href="/blog/drone-vs-laser" className="block text-sm text-primary hover:underline">
-                → ãã­ã¼ã³æ¸¬é vs å°ä¸ã¬ã¼ã¶ã¼ã¹ã­ã£ã³ï½ç²¾åº¦ã»ã³ã¹ãã»ç¨éã®éã
+                → ドローン測量 vs 地上レーザースキャン｜精度・コスト・用途の違い
               </Link>
             </div>
           </div>

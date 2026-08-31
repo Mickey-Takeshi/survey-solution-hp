@@ -399,10 +399,10 @@ export default function Building3dScanPage() {
               <Link href="/blog/bim-3d-scan" className="block text-sm text-primary hover:underline">→ BIMと3Dスキャンの連携方法｜既存建物のBIM化フロー完全ガイド</Link>
               <Link href="/blog/laser-scanner-guide" className="block text-sm text-primary hover:underline">→ レーザースキャナーとは？種類・原理・価格・測量での使い方を解説</Link>
               <Link href="/solution/architecture" className="block text-sm text-primary hover:underline">
-                → å»ºç¯ã»ãªããã¼ã·ã§ã³åã3Dæ¸¬éï½ç¾æ³å³ä½æã»BIMå
+                → 建築・リノベーション向け3D測量｜現況図作成・BIM化
               </Link>
               <Link href="/use-case/building-tilt" className="block text-sm text-primary hover:underline">
-                → ãæ´»ç¨äºä¾ãå»ºç©ã®å¾ãèª¿æ»
+                → 【活用事例】建物の傾き調査
               </Link>
             </div>
           </div>

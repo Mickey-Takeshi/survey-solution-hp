@@ -461,10 +461,10 @@ export default function PointCloudGuidePage() {
                 → BIMと3Dスキャンの連携方法｜スキャンtoBIMの手順と活用事例
               </Link>
               <Link href="/case/plant-piping" className="block text-sm text-primary hover:underline">
-                → ãå°å¥äºä¾ãåå­¦å·¥å ´ã®éç®¡3Dåï½å¹²æ¸ãã§ãã¯å·¥æ°80%åæ¸
+                → 【導入事例】化学工場の配管3D化｜干渉チェック工数80%削減
               </Link>
               <Link href="/use-case/site-heatmap" className="block text-sm text-primary hover:underline">
-                → ãæ´»ç¨äºä¾ãæ·å°ãã¼ããããä½æï¼æ°´ã®æµãèª¿æ»ï¼
+                → 【活用事例】敷地ヒートマップ作成（水の流れ調査）
               </Link>
             </div>
           </div>

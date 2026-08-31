@@ -550,7 +550,7 @@ export default function Article3DSurveyingPage() {
               <Link href="/blog/choose-3d-surveying-company" className="block text-sm text-primary hover:underline">→ 3D測量業者の選び方｜失敗しない5つのチェックポイント</Link>
               <Link href="/blog/i-construction-3d-surveying" className="block text-sm text-primary hover:underline">→ i-Constructionと3D測量｜ICT施工に必要な測量技術を解説</Link>
               <Link href="/blog/3d-surveying-use-cases" className="block text-sm text-primary hover:underline">
-                → 3Dæ¸¬éã®æ´»ç¨äºä¾10é¸ï½å»ºè¨­ã»å»ºç¯ã»ãã©ã³ãã®ç¾å ´ãã
+                → 3D測量の活用事例10選｜建設・建築・プラントの現場から
               </Link>
             </div>
           </div>

@@ -476,7 +476,7 @@ export default function Bim3dScanPage() {
                 → 3Dモデリング・BIM連携｜点群データからBIM/CIMモデルを作成
               </Link>
               <Link href="/case/plant-piping" className="block text-sm text-primary hover:underline">
-                → ãå°å¥äºä¾ãåå­¦å·¥å ´ã®éç®¡3Dåï½IFCå½¢å¼ã§BIMé£æº
+                → 【導入事例】化学工場の配管3D化｜IFC形式でBIM連携
               </Link>
             </div>
           </div>
