@@ -328,10 +328,15 @@ export default function DroneSurveyingCostPage() {
 
             {/* 中間CTA */}
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-8 text-center">
-              <p className="text-sm text-gray-700 mb-3">ドローン測量・地上レーザーの費用を具体的に知りたい方は、無料見積もりをご利用ください。</p>
-              <Link href="/contact" className="inline-block bg-primary text-white px-6 py-2.5 text-sm font-bold rounded hover:bg-primary-dark transition-colors">
-                無料見積もりを依頼する
-              </Link>
+              <p className="text-sm text-gray-700 mb-3">当社が対応するのは地上レーザースキャンです（ドローン計測は取り扱っておりません）。対象・面積によっては地上レーザーで代替できる場合がありますので、まずはご相談ください。</p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                <Link href="/service/laser-scan" className="inline-block bg-primary text-white px-6 py-2.5 text-sm font-bold rounded hover:bg-primary-dark transition-colors">
+                  地上レーザースキャンの詳細
+                </Link>
+                <Link href="/contact" className="inline-block border-2 border-primary text-primary px-6 py-2.5 text-sm font-bold rounded hover:bg-primary hover:text-white transition-colors">
+                  無料見積もりを依頼する
+                </Link>
+              </div>
             </div>
 
             {/* 5. 地上レーザーが向いているケース */}
@@ -426,7 +431,7 @@ export default function DroneSurveyingCostPage() {
           <div className="bg-primary/5 rounded-lg p-8 mt-12">
             <h3 className="text-lg font-bold text-primary mb-4 text-center">まずは無料見積もりから</h3>
             <p className="text-sm text-gray-600 mb-6 text-center">
-              計測対象の面積・用途をお伝えいただければ、最適な手法と概算費用を1〜2営業日でお出しします。
+              計測対象の面積・用途をお伝えいただければ、地上レーザースキャンでの実現可否と概算費用を1〜2営業日でお出しします。
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/contact" className="inline-block bg-primary text-white px-8 py-3 text-sm font-bold rounded hover:bg-primary-dark transition-colors">

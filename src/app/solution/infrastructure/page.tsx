@@ -9,7 +9,7 @@ import {
 } from "@/components/ContentExpansion";
 
 export const metadata: Metadata = {
-  title: "インフラ維持管理向け3D計測｜点検・経年比較に使う形状データを提供",
+  title: "インフラ維持管理向け3D計測｜橋梁・トンネルの点検と経年比較",
   description:
     "インフラ維持管理の点検・経年比較に使う3D形状データを提供。地下街接続検討や災害現況図の実例をもとに、計測計画、断面図、差分図、点群データを作成します。診断は道路管理者・点検技術者の領域です。",
   keywords: [

@@ -9,7 +9,7 @@ import {
 } from "@/components/ContentExpansion";
 
 export const metadata: Metadata = {
-  title: "文化財・遺跡の3D記録｜京都の計測事例とデジタルアーカイブ",
+  title: "文化財・遺跡の3D記録｜歴史的建造物のデジタルアーカイブ",
   description:
     "文化財・歴史的建造物の3Dスキャンによるデジタルアーカイブ。京都の登り窯・庭園・簡易敷地図面の事例をもとに、非接触計測、図面化、メッシュ化、保存形式の設計に対応します。",
   keywords: [

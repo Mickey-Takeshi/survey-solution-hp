@@ -19,17 +19,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: baseUrl, lastModified: new Date("2026-03-09"), changeFrequency: "monthly", priority: 1 },
 
     // サービス
-    { url: `${baseUrl}/service`, lastModified: new Date("2026-08-19"), changeFrequency: "monthly", priority: 0.9 },
-    { url: `${baseUrl}/service/laser-scan`, lastModified: new Date("2026-08-19"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/service/point-cloud`, lastModified: new Date("2026-08-19"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/service/3d-modeling`, lastModified: new Date("2026-08-19"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/service`, lastModified: new Date("2026-08-31"), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/service/laser-scan`, lastModified: new Date("2026-08-31"), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/service/point-cloud`, lastModified: new Date("2026-08-31"), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/service/3d-modeling`, lastModified: new Date("2026-08-31"), changeFrequency: "weekly", priority: 0.8 },
 
     // 業界別ソリューション
-    { url: `${baseUrl}/solution/construction`, lastModified: new Date("2026-08-19"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/solution/architecture`, lastModified: new Date("2026-08-19"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/solution/plant`, lastModified: new Date("2026-08-19"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/solution/infrastructure`, lastModified: new Date("2026-08-19"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/solution/heritage`, lastModified: new Date("2026-08-19"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/solution/construction`, lastModified: new Date("2026-08-31"), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/solution/architecture`, lastModified: new Date("2026-08-31"), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/solution/plant`, lastModified: new Date("2026-08-31"), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/solution/infrastructure`, lastModified: new Date("2026-08-31"), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/solution/heritage`, lastModified: new Date("2026-08-31"), changeFrequency: "weekly", priority: 0.8 },
 
     // 料金
     { url: `${baseUrl}/price`, lastModified: new Date("2026-04-15"), changeFrequency: "monthly", priority: 0.8 },
