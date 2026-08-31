@@ -18,7 +18,7 @@ const articleJsonLd = {
   description:
     "i-Construction対応の3D測量を解説。国交省の精度基準・必要な成果物・対応工程・計測手法の使い分けをまとめました。",
   datePublished: "2026-02-17",
-  dateModified: "2026-02-17",
+  dateModified: "2026-08-31",
   author: {
     "@type": "Person",
     name: "齋藤 大輔",
@@ -162,7 +162,7 @@ export default function IConstructionSurveyingPage() {
               i-Constructionで求められる3D測量の基準
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              国土交通省の「ICT活用工事における3次元計測技術の活用に関する手引き」等で、精度基準と計測方法の要件が定められています。
+              国土交通省の「3次元計測技術を用いた出来形管理要領（案）」等で、精度基準と計測方法の要件が定められています。
             </p>
             <p className="text-base leading-loose text-gray-700 mb-6">
               主な精度基準をまとめると次の通りです。
@@ -178,10 +178,10 @@ export default function IConstructionSurveyingPage() {
                 </thead>
                 <tbody>
                   {[
-                    { item: "起工測量（現況地形）", accuracy: "標高値 ±50mm以内", note: "面的に計測（0.25m^2あたり1点以上）" },
-                    { item: "出来形計測", accuracy: "標高値 ±50mm以内", note: "施工面全体を面的に計測" },
-                    { item: "岩線計測", accuracy: "標高値 ±50mm以内", note: "岩線の位置・形状を面的に把握" },
-                    { item: "検証点（標定点）", accuracy: "水平・標高 ±50mm以内", note: "既知点との較差で精度検証" },
+                    { item: "起工測量（現況地形）", accuracy: "鉛直・平面方向 ±100mm以内", note: "0.25m^2（0.5m×0.5mメッシュ）あたり1点以上" },
+                    { item: "岩線計測", accuracy: "鉛直・平面方向 ±100mm以内", note: "0.25m^2（0.5m×0.5mメッシュ）あたり1点以上" },
+                    { item: "部分払い出来高計測", accuracy: "鉛直・平面方向 ±200mm以内", note: "0.25m^2（0.5m×0.5mメッシュ）あたり1点以上" },
+                    { item: "出来形計測", accuracy: "鉛直・平面方向 ±50mm以内", note: "0.01m^2（0.1m×0.1mメッシュ）あたり1点以上／出来形評価用は1m^2あたり1点以上" },
                   ].map((row, i) => (
                     <tr key={row.item} className={i % 2 === 0 ? "bg-gray-50" : ""}>
                       <td className="px-4 py-3 font-bold text-gray-900 border-b">{row.item}</td>
@@ -423,7 +423,7 @@ export default function IConstructionSurveyingPage() {
               <p className="text-sm font-bold text-gray-800 mb-2">この記事のポイント：</p>
               <ul className="space-y-1.5 text-sm text-gray-700">
                 <li>・ i-Constructionは2016年開始の国交省施策で、3D測量が中核技術</li>
-                <li>・ 起工測量・出来形管理は標高値±50mm以内の精度が必要</li>
+                <li>・ 要求精度は起工測量・岩線計測が±100mm以内、出来形計測が±50mm以内</li>
                 <li>・ 必要な成果物は3次元設計データ・点群データ・出来形管理図表など</li>
                 <li>・ ドローンと地上レーザーは現場条件に応じて使い分ける</li>
                 <li>・ 加点評価・工数削減・品質向上の3つのメリットがある</li>

@@ -7,6 +7,14 @@ const nextConfig: NextConfig = {
   // 旧WordPress URLのリダイレクト設定
   async redirects() {
     return [
+      // 重複ブログを業界別ソリューションへ統合（コンテンツ拡充 2026-08-19）
+      { source: "/blog/soil-volume-3d", destination: "/solution/construction", statusCode: 301 },
+      { source: "/blog/slope-3d-surveying", destination: "/solution/construction", statusCode: 301 },
+      { source: "/blog/bridge-inspection-3d", destination: "/solution/infrastructure", statusCode: 301 },
+      { source: "/blog/tunnel-cross-section-3d", destination: "/solution/infrastructure", statusCode: 301 },
+      { source: "/blog/plant-piping-3d-model", destination: "/solution/plant", statusCode: 301 },
+      { source: "/blog/factory-layout-3d", destination: "/solution/plant", statusCode: 301 },
+      { source: "/blog/cultural-heritage-3d-archive", destination: "/solution/heritage", statusCode: 301 },
       // 重複コンテンツ解消：what-is-3d-surveying → 3d-surveying（包括的な記事へ統合）
       {
         source: "/blog/what-is-3d-surveying",

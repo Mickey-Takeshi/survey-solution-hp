@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
+import {
+  CaseStudySection,
+  EditorialMeta,
+  FaqSection,
+  TechnicalGuideSection,
+} from "@/components/ContentExpansion";
 
 export const metadata: Metadata = {
   title: "建設・土木向け3D測量｜出来形管理・土量計算・ICT施工対応",
@@ -33,12 +39,12 @@ const solutions = [
   {
     title: "高精度な土量計算",
     desc: "3Dスキャンで造成前後の地形データを取得し、切土・盛土の土量を3Dデータから正確に算出します。メッシュ法・等高線法の両方に対応し、発注者への説明資料も作成します。",
-    result: "土量計算の精度±3%以内を実現",
+    result: "算出条件と除去処理を記録し、説明可能な土量計算書を作成",
   },
   {
     title: "安全な法面・急傾斜地測量",
     desc: "地上レーザースキャナを活用し、人が立ち入れない急傾斜地の地形データを安全に取得します。断面図・等高線図を自動生成し、防災計画の基礎資料として活用できます。",
-    result: "危険区域の測量を非接触で100%安全に実施",
+    result: "立入範囲を抑えた非接触計測で現場リスクを低減",
   },
 ];
 
@@ -76,6 +82,32 @@ export default function ConstructionPage() {
           </p>
         </div>
       </section>
+
+      <CaseStudySection
+        title="建設・土木分野の導入事例"
+        introduction="出来形管理の効果は現場条件と作業範囲を伴って示します。共通ナビからでは分からない、計測対象・納品物・工程の詳細までご確認いただけます。"
+        cases={[
+          {
+            title: "高速道路の盛土工事で出来形管理工数を60%削減",
+            href: "/case/highway",
+            category: "導入事例｜高速道路",
+            summary: "施工延長約500mを月2回計測。従来のTS測量と手作業の帳票作成を、地上レーザースキャンによる面管理へ切り替えました。",
+            result: "計測2日→半日、帳票作成3日→1日",
+          },
+          {
+            title: "山林の起伏を非接触で詳細に把握",
+            href: "/use-case/mountain-forest-survey",
+            category: "活用事例｜地形測量",
+            summary: "人が入りにくい急斜面を複数地点から計測し、植生や遮蔽を確認しながら点群を統合。等高線図や断面図の基礎データを作成します。",
+          },
+          {
+            title: "災害現場の現況図・断面図を短納期で作成",
+            href: "/use-case/disaster-survey",
+            category: "活用事例｜災害対応",
+            summary: "二次災害のリスクがある範囲への立入りを抑えつつ、被災形状を面的に記録。復旧計画や災害査定に必要な図面へ展開します。",
+          },
+        ]}
+      />
 
       {/* こんな課題はありませんか */}
       <section className="py-12 md:py-16 bg-gray-50">
@@ -115,6 +147,42 @@ export default function ConstructionPage() {
         </div>
       </section>
 
+      <TechnicalGuideSection
+        heading="i-Construction 2.0と3次元出来形管理の実務"
+        introduction="3D計測は、点群を取ること自体ではなく、起工測量・設計照査・施工・出来形検査のどこで使うかを先に定めることで効果が出ます。発注図書と適用要領を確認し、必要精度、座標系、納品形式から逆算して計測計画を組みます。"
+        guides={[
+          {
+            title: "起工測量から完成検査までを一つの座標系でつなぐ",
+            lead: "国土交通省は2024年4月にi-Construction 2.0を策定し、2040年度までに建設現場の省人化を少なくとも3割、生産性を1.5倍へ高める目標を示しました。BIM/CIMは2023年度から直轄土木業務・工事で原則適用されており、3次元データを後工程へ引き渡せる設計が重要です。",
+            image: "/images/solution-construction-iconstruction-flow.png",
+            imageAlt: "起工測量、設計面との比較、完成出来形確認までの3次元測量フロー",
+            caption: "現況地形、設計面、完成形を同一座標系で比較する3段階の流れ（概念図）",
+            points: [
+              { title: "TS出来形と面管理を使い分ける", body: "構造物や工種によって求められる管理方法は異なります。対象工種の出来形管理要領を確認し、計測密度や評価単位を決めます。すべてを点群化するのではなく、検査で説明しやすい方法を選びます。" },
+              { title: "提出物から計測仕様を逆算する", body: "監督員との事前協議で、座標系、オリジナル点群、グリッドデータ、設計面との差分、帳票の形式を確定します。現場独自のファイル命名やフォルダ構成も計測前に共有します。" },
+              { title: "検査時に再現できる処理記録を残す", body: "植生・重機・仮設物の除去範囲、点群の間引き、TINやメッシュの生成条件を記録します。成果値だけでなく処理条件を残すことで、発注者が土量や出来形の根拠を追えるようにします。" },
+            ],
+            sources: [
+              { label: "国土交通省「i-Construction 2.0」を策定しました", href: "https://www.mlit.go.jp/report/press/kanbo08_hh_001085.html" },
+              { label: "国土交通省 BIM/CIM関連基準要領等（令和5年3月）", href: "https://www.mlit.go.jp/tec/tec_fr_000115.html" },
+            ],
+          },
+          {
+            title: "土量計算の精度を左右する3つの要素",
+            lead: "土量の信頼性は、計測機器の公称精度だけでは決まりません。表面モデルの作り方、対象外物の除去、計測時点の統一が結果を左右します。弊社では条件を計算書に残し、同じデータから再計算できる状態で納品します。",
+            image: "/images/solution-construction-volume-method.png",
+            imageAlt: "メッシュ法と等高線法による土量計算方法の比較",
+            caption: "規則格子で差分を積算するメッシュ法と、等高線間の面積から積算する方法の比較（概念図）",
+            points: [
+              { title: "目的に合うモデルとピッチを選ぶ", body: "細かいピッチほど常に正確とは限りません。地形の起伏、計測密度、要求精度、データ容量のバランスを取り、メッシュ法・TIN・等高線法の選定理由を明示します。" },
+              { title: "植生・仮設物・水面を分類する", body: "草木、重機、資材、足場が残った点群は土量を過大にします。自動分類だけに頼らず断面表示でも確認し、除去した範囲と補間の有無を記録します。" },
+              { title: "比較時点と基準面を固定する", body: "造成前後の測量日、工区境界、基準面が異なると差分に施工以外の要因が混ざります。再計測しやすい基準点配置と、工区ごとの締め時点を計画段階で定めます。" },
+            ],
+            note: "『±3%』などの一律な精度保証は、メッシュピッチ・地表条件・比較範囲を伴わないため掲載していません。必要精度は案件条件を確認して個別に定めます。",
+          },
+        ]}
+      />
+
       {/* 料金目安 */}
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="max-w-[800px] mx-auto px-6">
@@ -151,32 +219,18 @@ export default function ConstructionPage() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="py-12 md:py-16">
-        <div className="max-w-[800px] mx-auto px-6">
-          <div className="text-center mb-8">
-            <h2 className="section-title-ja">建設・土木の3D測量に関するよくある質問</h2>
-          </div>
-          <div className="space-y-6">
-            {[
-              { q: "i-Construction基準に準拠したデータを納品できますか？", a: "はい、対応しております。出来形管理要領に準拠した3次元データ（TS出来形、面管理等）を納品いたします。必要なデータ形式や精度基準についても事前にご相談ください。" },
-              { q: "どのような現場条件でも対応できますか？", a: "はい、地上レーザースキャナの特性を活かし、広大な敷地から狭小地、高低差のある地形まで幅広い現場条件に対応可能です。事前に現場状況をお伺いし、最適な計測方法をご提案いたします。" },
-              { q: "工事中の現場でも測量できますか？", a: "はい、対応可能です。重機の稼働スケジュールに合わせた計測計画を立案し、工事の進捗に影響を与えない時間帯に実施いたします。" },
-            ].map((faq, i) => (
-              <div key={i} className="border-b border-gray-200 pb-6">
-                <h3 className="flex items-start gap-3 text-base font-bold mb-3">
-                  <span className="text-primary text-xl font-bold shrink-0">Q.</span>
-                  {faq.q}
-                </h3>
-                <p className="flex items-start gap-3 text-sm leading-loose text-gray-700">
-                  <span className="text-red-500 text-xl font-bold shrink-0">A.</span>
-                  {faq.a}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <EditorialMeta pageName="建設・土木向け3D測量" path="/solution/construction" />
+
+      <FaqSection
+        title="建設・土木の3D測量に関するよくある質問"
+        faqs={[
+          { q: "i-Constructionの出来形管理要領に合わせて納品できますか？", a: "はい。対象工種と発注図書を確認し、面管理・TS出来形など必要な管理方法、座標系、データ形式、帳票を事前協議したうえで納品します。適用要領は年度や発注機関で異なるため、案件ごとに確認します。" },
+          { q: "土量計算の精度はどの程度ですか？", a: "一律の数値ではなく、計測密度、メッシュまたはTINの生成条件、植生・仮設物の除去範囲、基準面によって決まります。見積時に必要精度を伺い、算出条件を記録した計算書をご用意します。" },
+          { q: "工事中の現場でも測量できますか？", a: "はい。重機の稼働、搬入動線、朝礼や休工時間を踏まえて計測区画を分けます。動く重機や作業員はノイズになるため、施工管理者と停止時間・立入範囲を調整します。" },
+          { q: "急傾斜地や立入制限区域は計測できますか？", a: "安全区域に設置した地上レーザースキャナから見通せる範囲は非接触で計測できます。遮蔽が多い場合は設置点を増やし、それでも見えない範囲は未計測として明示します。現場の安全管理者の指示を優先します。" },
+          { q: "監督員との事前協議から支援できますか？", a: "可能です。必要な成果物、検査方法、座標系、ファイル形式、計測時期を整理するための資料を作成し、測量・点群処理の範囲で協議を支援します。" },
+        ]}
+      />
 
       {/* CTA */}
       <section className="py-16 bg-primary">

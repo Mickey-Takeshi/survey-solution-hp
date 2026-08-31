@@ -26,7 +26,7 @@ const articleJsonLd = {
   description:
     "ドローン測量と地上レーザースキャンの精度・費用・計測速度・対応現場を徹底比較。現場条件に応じた最適な測量手法の選び方を解説。",
   datePublished: "2026-02-17",
-  dateModified: "2026-02-17",
+  dateModified: "2026-08-31",
   author: {
     "@type": "Person",
     name: "齋藤 大輔",
@@ -561,7 +561,7 @@ export default function DroneVsLaserPage() {
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm text-gray-700 leading-relaxed">
                 <strong>飛行規制について：</strong>
-                2022年12月の航空法改正（レベル4飛行解禁）以降もDID上空や夜間飛行には国土交通省の許可・承認が必要です。弊社はすべての飛行許可を取得した上で業務を実施しています。
+                2022年12月の航空法改正（レベル4飛行解禁）以降もDID上空や夜間飛行には国土交通省の許可・承認が必要です。発注前に、依頼先が当該飛行に必要な許可・承認を得ているかを確認してください。
               </p>
             </div>
 
@@ -780,7 +780,7 @@ export default function DroneVsLaserPage() {
               併用が効果的なケース
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              実際のところ、ドローンと地上レーザーの併用が最も効果を発揮する場面は少なくありません。弊社でも併用を提案するケースが年々増えています。
+              実際のところ、ドローンと地上レーザーの併用が最も効果を発揮する場面は少なくありません。当社は地上レーザースキャンを担当し、必要に応じて他手法との組み合わせを含めた計測計画をご提案しています。
             </p>
             <div className="space-y-6 mb-8">
               <div className="bg-white border border-gray-200 rounded-lg p-6">

@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
+import {
+  CaseStudySection,
+  EditorialMeta,
+  FaqSection,
+  TechnicalGuideSection,
+} from "@/components/ContentExpansion";
 
 export const metadata: Metadata = {
   title: "3Dモデリング・BIM連携｜点群データからBIM/CIMモデルを作成",
@@ -57,7 +63,7 @@ const advantages = [
   },
   {
     title: "i-Construction・CIM対応",
-    desc: "国土交通省が推進するi-Construction/CIM基準に準拠した3次元モデルを作成します。公共工事の納品基準に対応したデータを提供します。",
+    desc: "発注図書と適用年度のBIM/CIM関連基準を確認し、必要な詳細度・属性・座標系・フォルダ構成に合わせて3次元モデルを作成します。",
   },
 ];
 
@@ -111,6 +117,39 @@ export default function ModelingPage() {
           </p>
         </div>
       </section>
+
+      <CaseStudySection
+        title="点群から3Dモデルを作成した導入・活用事例"
+        introduction="同じ点群でも、配管干渉、改修設計、図面作成では必要なモデル要素と詳細度が異なります。対象範囲と納品形式が分かる実案件を掲載しています。"
+        cases={[
+          {
+            title: "化学工場の配管点群をIFCモデルへ変換",
+            href: "/case/plant-piping",
+            category: "導入事例｜プラント",
+            summary: "800㎡の既存配管と設備を計測し、改造範囲の干渉確認に必要な形状をモデル化。汎用交換形式IFCで納品しました。",
+            result: "スキャン3日＋モデル10日",
+          },
+          {
+            title: "図面のない既存ビルを現況BIM化",
+            href: "/case/renovation",
+            category: "導入事例｜建築",
+            summary: "延床約2,000㎡の現況点群から平面・立面・断面とBIMモデルを作成し、改修設計のベースデータとして納品しました。",
+            result: "図面作成4週間→1週間",
+          },
+          {
+            title: "地下室の形状と地上との位置関係をモデル化",
+            href: "/use-case/basement-survey",
+            category: "活用事例｜地下空間",
+            summary: "図面のない地下室を計測し、狭所・暗所の形状と地上基準を統合。改修計画に必要な位置関係を3Dで整理しました。",
+          },
+          {
+            title: "点群から平面図・立面図・断面図を作成",
+            href: "/use-case/as-built-drawings",
+            category: "活用事例｜現況図",
+            summary: "増改築を含む現況を点群で保存し、必要縮尺の図面へ展開。後日の追加寸法確認にも使えるデータ構成で納品します。",
+          },
+        ]}
+      />
 
       {/* スキャンtoBIMの流れ */}
       <section className="py-12 md:py-16 bg-gray-50">
@@ -187,6 +226,43 @@ export default function ModelingPage() {
           </div>
         </div>
       </section>
+
+      <TechnicalGuideSection
+        heading="点群からBIMへ変換する際の自動化・LOD・互換性"
+        introduction="スキャンtoBIMは、点群をボタン一つで正しいBIM要素へ変換する作業ではありません。自動抽出できる規則形状と、人が意味を判断すべき部材を分け、モデルの利用目的から必要LODと属性を決めます。"
+        guides={[
+          {
+            title: "同じ建物でも目的により3段階の詳細度を使い分ける",
+            lead: "ボリューム検討なら外形、基本設計なら床・壁・開口、施工干渉なら柱・梁・設備接続部まで必要になります。対象全体を最高詳細度にすると、作成費とファイル負荷が増え、更新も難しくなります。",
+            image: "/images/service-3d-modeling-lod.png",
+            imageAlt: "建物モデルを外形、開口付き、構造部材付きの3段階で比較したLOD概念図",
+            caption: "同じ建物を、外形のみ・主要要素・詳細部材の3段階で表現する考え方（概念図）",
+            points: [
+              { title: "自動化できるのは候補抽出までと考える", body: "平面、円柱、配管中心線等は自動・半自動で抽出できますが、遮蔽、歪み、複合部材、保温材、建築的な意味の判断には人の確認が必要です。点群との偏差を確認して確定します。" },
+              { title: "LODと許容差を部位ごとに定義する", body: "躯体は詳細、家具は外形、非対象設備は簡略形状など、部位ごとに優先度を変えます。モデル詳細度だけでなく、点群からの許容偏差、属性の有無、未計測部の表現もBEPや仕様書へ記載します。" },
+              { title: "Revit・ArchiCADはネイティブ要素とIFCを確認する", body: "RVT/PLNなどのネイティブ形式とIFCでは、パラメータ、ファミリ、分類、形状表現が異なります。受け手のソフト・バージョンで試験読み込みし、座標・単位・要素分類を確認します。" },
+              { title: "Civil 3Dでは座標系とサーフェス構造を優先する", body: "地形・土木モデルでは、ローカル原点へ安易に移動せず、測地座標、単位、TINブレークライン、縦横断の基準を確認します。建築BIMと統合する場合は共有座標の運用を決めます。" },
+            ],
+            note: "費用は床面積だけでなく、対象要素数、遮蔽、LOD、属性、納品形式、検証方法で変わります。サンプル範囲を先行作成し、必要品質を合意してから全体へ展開できます。",
+            sources: [
+              { label: "国土交通省 BIM/CIM関連基準要領等", href: "https://www.mlit.go.jp/tec/tec_fr_000115.html" },
+            ],
+          },
+        ]}
+      />
+
+      <EditorialMeta pageName="3Dモデリング・BIM連携" path="/service/3d-modeling" />
+
+      <FaqSection
+        title="3Dモデリング・BIM連携に関するよくある質問"
+        faqs={[
+          { q: "点群からBIMモデルは自動作成できますか？", a: "平面・円柱等の候補抽出は自動化できますが、部材の意味、接続、遮蔽部、属性は人の確認が必要です。自動抽出後に点群との偏差を検証し、用途に必要な要素だけを確定します。" },
+          { q: "LODはどのように決めますか？", a: "改修検討、干渉確認、数量、維持管理など利用目的から決めます。対象部位ごとに形状詳細、属性、許容差を定義し、不要部分を簡略化することで費用と操作性を両立します。" },
+          { q: "Revit・ArchiCAD・Civil 3Dへ取り込めますか？", a: "対応可能です。ソフトとバージョン、ネイティブ形式またはIFC、共有座標、単位、分類、必要属性を確認し、可能であればサンプルで試験読み込みを行います。" },
+          { q: "点群に写っていない部分もモデル化できますか？", a: "既存図や現地確認を根拠に補える場合は、計測由来と推定を区別して表現します。根拠のない形状は実測として作らず、未計測・要確認としてモデルや一覧へ残します。" },
+          { q: "モデル作成費は何で決まりますか？", a: "床面積に加え、部材密度、配管本数、遮蔽、LOD、属性、許容差、納品形式、修正回数で決まります。代表範囲のサンプル作成後に全体工数を確定する方法も選べます。" },
+        ]}
+      />
 
       {/* 関連サービス */}
       <section className="py-12 md:py-16">

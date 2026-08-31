@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">建物の傾斜量と告示1653号の参考区分</title>
+  <desc id="desc">鉛直基準線に対する建物の傾きと、3/1000未満、3/1000以上6/1000未満、6/1000以上の三段階を示す図</desc>
+  <rect width="1200" height="675" fill="#F8F9FA"/>
+  <g font-family="'Noto Sans JP',sans-serif">
+    <line x1="405" y1="90" x2="405" y2="585" stroke="#718096" stroke-width="4" stroke-dasharray="12 12"/>
+    <text x="405" y="66" text-anchor="middle" font-size="22" fill="#475569">鉛直基準線</text>
+    <polygon points="350,555 438,132 680,132 650,555" fill="#DCEAF2" stroke="#1B3A5C" stroke-width="6"/>
+    <g stroke="#1B3A5C" stroke-width="4" fill="#FFFFFF">
+      <rect x="448" y="188" width="70" height="76" transform="rotate(-4 483 226)"/>
+      <rect x="558" y="188" width="70" height="76" transform="rotate(-4 593 226)"/>
+      <rect x="426" y="326" width="70" height="76" transform="rotate(-4 461 364)"/>
+      <rect x="536" y="326" width="70" height="76" transform="rotate(-4 571 364)"/>
+    </g>
+    <line x1="405" y1="555" x2="650" y2="555" stroke="#00A8C8" stroke-width="4" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="528" y="592" text-anchor="middle" font-size="24" font-weight="700" fill="#1B3A5C">水平変位</text>
+    <path d="M405 485 A72 72 0 0 1 420 487" fill="none" stroke="#E87924" stroke-width="6"/>
+    <text x="446" y="500" font-size="22" font-weight="700" fill="#C05621">傾斜</text>
+    <g transform="translate(790 135)">
+      <text x="0" y="-34" font-size="26" font-weight="700" fill="#1B3A5C">住宅紛争処理の参考区分</text>
+      <rect x="0" y="0" width="42" height="120" rx="8" fill="#2EAD68"/>
+      <text x="64" y="51" font-size="24" fill="#1F2937">3/1000未満</text>
+      <text x="64" y="83" font-size="18" fill="#475569">瑕疵の可能性：低い</text>
+      <rect x="0" y="135" width="42" height="120" rx="8" fill="#F2C94C"/>
+      <text x="64" y="186" font-size="24" fill="#1F2937">3/1000以上</text>
+      <text x="64" y="218" font-size="20" fill="#1F2937">6/1000未満</text>
+      <rect x="0" y="270" width="42" height="120" rx="8" fill="#D64545"/>
+      <text x="64" y="339" font-size="24" fill="#1F2937">6/1000以上</text>
+      <text x="0" y="440" font-size="18" fill="#475569">出典：平成12年建設省告示第1653号</text>
+      <text x="0" y="470" font-size="17" fill="#475569">建築基準法12条の判定基準ではありません</text>
+    </g>
+  </g>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#00A8C8"/>
+    </marker>
+  </defs>
+</svg>

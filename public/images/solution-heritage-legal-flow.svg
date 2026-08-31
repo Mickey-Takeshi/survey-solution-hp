@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">文化財3D計測の事前確認フロー</title>
+  <desc id="desc">所有者との目的確認、教育委員会等への事前相談、計測計画、計測と保存の4段階を示す図</desc>
+  <rect width="1200" height="675" fill="#F8F9FA"/>
+  <g font-family="'Noto Sans JP',sans-serif">
+    <text x="600" y="92" text-anchor="middle" font-size="34" font-weight="700" fill="#1B3A5C">文化財3D計測の事前確認フロー</text>
+    <g transform="translate(85 190)">
+      <g>
+        <rect width="220" height="250" rx="18" fill="#FFFFFF" stroke="#1B3A5C" stroke-width="4"/>
+        <circle cx="110" cy="72" r="38" fill="#DCEAF2"/>
+        <path d="M84 77 L103 96 L140 50" fill="none" stroke="#00A8C8" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="110" y="148" text-anchor="middle" font-size="24" font-weight="700" fill="#1B3A5C">目的・範囲</text>
+        <text x="110" y="188" text-anchor="middle" font-size="18" fill="#475569">所有者・管理団体</text>
+        <text x="110" y="218" text-anchor="middle" font-size="18" fill="#475569">との合意</text>
+      </g>
+      <path d="M240 125 H305" stroke="#00A8C8" stroke-width="6" marker-end="url(#arr)"/>
+      <g transform="translate(320 0)">
+        <rect width="220" height="250" rx="18" fill="#FFFFFF" stroke="#1B3A5C" stroke-width="4"/>
+        <circle cx="110" cy="72" r="38" fill="#DCEAF2"/>
+        <path d="M82 90 L82 56 L138 56 L138 90 M92 56 V42 H128 V56" fill="none" stroke="#00A8C8" stroke-width="6"/>
+        <text x="110" y="148" text-anchor="middle" font-size="24" font-weight="700" fill="#1B3A5C">事前相談</text>
+        <text x="110" y="188" text-anchor="middle" font-size="18" fill="#475569">教育委員会・担当部局</text>
+        <text x="110" y="218" text-anchor="middle" font-size="18" fill="#475569">許可要否の確認</text>
+      </g>
+      <path d="M560 125 H625" stroke="#00A8C8" stroke-width="6" marker-end="url(#arr)"/>
+      <g transform="translate(640 0)">
+        <rect width="220" height="250" rx="18" fill="#FFFFFF" stroke="#1B3A5C" stroke-width="4"/>
+        <circle cx="110" cy="72" r="38" fill="#DCEAF2"/>
+        <path d="M82 92 H138 M88 48 H132 V92 H88 Z M98 60 H122 M98 74 H122" fill="none" stroke="#00A8C8" stroke-width="5"/>
+        <text x="110" y="148" text-anchor="middle" font-size="24" font-weight="700" fill="#1B3A5C">計測計画</text>
+        <text x="110" y="188" text-anchor="middle" font-size="18" fill="#475569">三脚位置・動線・照射</text>
+        <text x="110" y="218" text-anchor="middle" font-size="18" fill="#475569">保存形式・公開範囲</text>
+      </g>
+      <path d="M880 125 H945" stroke="#00A8C8" stroke-width="6" marker-end="url(#arr)"/>
+      <g transform="translate(960 0)">
+        <rect width="155" height="250" rx="18" fill="#1B3A5C"/>
+        <circle cx="77.5" cy="72" r="38" fill="#00A8C8" opacity=".3"/>
+        <path d="M50 88 L77 48 L105 88 Z M77 48 V98" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+        <text x="77.5" y="148" text-anchor="middle" font-size="24" font-weight="700" fill="#FFFFFF">計測</text>
+        <text x="77.5" y="187" text-anchor="middle" font-size="18" fill="#DCEAF2">記録</text>
+        <text x="77.5" y="217" text-anchor="middle" font-size="18" fill="#DCEAF2">保存</text>
+      </g>
+    </g>
+    <text x="600" y="525" text-anchor="middle" font-size="21" fill="#475569">非接触計測でも、指定区分・設置方法・保存への影響に応じて個別確認</text>
+    <rect x="155" y="565" width="890" height="54" rx="10" fill="#FFF4E8" stroke="#E87924" stroke-width="2"/>
+    <text x="600" y="600" text-anchor="middle" font-size="19" fill="#8A3E12">許可・届出の要否は文化財の種別と具体的な行為により異なります</text>
+  </g>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#00A8C8"/>
+    </marker>
+  </defs>
+</svg>

@@ -30,7 +30,7 @@ const articleJsonLd = {
   description:
     "3D測量（三次元測量）の定義・3つの測量手法・5つのメリット・費用相場・7業種の活用事例・最新トレンドを、土地家屋調査士が徹底解説。",
   datePublished: "2026-02-20",
-  dateModified: "2026-08-19",
+  dateModified: "2026-08-31",
   author: {
     "@type": "Person",
     name: "齋藤 大輔",
@@ -433,7 +433,7 @@ export default function Article3DSurveyingPage() {
               <div className="bg-white border-l-4 border-primary p-5 rounded-r-lg">
                 <h3 className="font-bold text-gray-900 mb-2">③ デジタルツイン市場の急成長</h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  建設デジタルツイン（現実の建物・インフラをデジタル空間に再現する技術）の市場規模は、2025年の約9.8兆円から2030年には約23.3兆円へ拡大する見込みです（年平均成長率17%）。3D測量はそのデジタルツインの「基盤データ」を提供する技術であり、存在感は年々増しています。
+                  建設デジタルツイン（現実の建物・インフラをデジタル空間に再現する技術）の市場規模は、2025年の約9.8兆円から2030年には約23.3兆円へ拡大する見込みです（年平均成長率約19%）。3D測量はそのデジタルツインの「基盤データ」を提供する技術であり、存在感は年々増しています。
                 </p>
               </div>
 

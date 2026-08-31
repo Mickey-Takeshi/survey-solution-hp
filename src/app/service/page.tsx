@@ -93,7 +93,7 @@ const industries = [
   {
     title: "文化財・遺跡",
     href: "/solution/heritage",
-    description: "歴史的建造物・遺跡のデジタルアーカイブで文化財を永久保存",
+    description: "歴史的建造物・遺跡を複数形式で記録し、長期保存と将来の再利用に備えるデジタルアーカイブ",
   },
 ];
 
@@ -165,7 +165,7 @@ const serviceJsonLd = {
         "@type": "Service",
         name: s.title,
         description: s.description,
-        url: `https://surveysolution.pro/service/${s.slug}/`,
+        url: `https://surveysolution.pro/service/${s.slug}`,
       },
     })),
   },

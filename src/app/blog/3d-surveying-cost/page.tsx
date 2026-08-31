@@ -29,7 +29,7 @@ const articleJsonLd = {
   headline: "3D測量の費用相場はいくら？料金の決まり方と見積もりのポイント",
   description: "3D測量の費用相場を種類別に解説。地上レーザースキャンは30万円〜、ドローン測量は20万円〜が目安。",
   datePublished: "2026-02-17",
-  dateModified: "2026-02-17",
+  dateModified: "2026-08-19",
   author: { "@type": "Person", name: "齋藤 大輔", jobTitle: "代表取締役・土地家屋調査士" },
   publisher: {
     "@type": "Organization",
@@ -114,7 +114,7 @@ export default function SurveyingCostPage() {
           {/* 記事ヘッダー */}
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-4">
-              <time dateTime="2026-02-17" className="text-sm tracking-wider text-gray-500">2026.02.17</time>
+              <time dateTime="2026-08-19" className="text-sm tracking-wider text-gray-500">2026.08.19 更新</time>
               <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded">費用・相場</span>
             </div>
             <h1 className="text-2xl md:text-3xl font-bold text-gray-800 leading-relaxed">
@@ -419,6 +419,9 @@ export default function SurveyingCostPage() {
           <div className="mt-12 pt-8 border-t">
             <h3 className="text-lg font-bold text-gray-800 mb-4">関連記事</h3>
             <div className="space-y-3">
+              <Link href="/service/laser-scan" className="block text-sm font-bold text-primary hover:underline">→ 地上レーザースキャン測量｜機器スペックと計測計画</Link>
+              <Link href="/service/point-cloud" className="block text-sm font-bold text-primary hover:underline">→ 点群データ処理｜納品形式と品質管理</Link>
+              <Link href="/service/3d-modeling" className="block text-sm font-bold text-primary hover:underline">→ 3Dモデリング・BIM連携｜LODと費用の考え方</Link>
               <Link href="/blog/drone-surveying-cost" className="block text-sm text-primary hover:underline">→ ドローン測量の費用はいくら？地上レーザーとのコスト比較</Link>
               <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">→ 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説</Link>
               <Link href="/blog/choose-3d-surveying-company" className="block text-sm text-primary hover:underline">→ 3D測量業者の選び方｜失敗しない5つのチェックポイント</Link>

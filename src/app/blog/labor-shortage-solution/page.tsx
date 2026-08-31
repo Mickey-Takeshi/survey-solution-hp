@@ -18,7 +18,7 @@ const articleJsonLd = {
   description:
     "測量業界の人手不足を3D測量で解決する3つの方法を解説。計測要員の削減、現場作業時間の短縮、データ処理の自動化による省人化事例を紹介。",
   datePublished: "2026-02-17",
-  dateModified: "2026-02-17",
+  dateModified: "2026-08-31",
   author: {
     "@type": "Person",
     name: "齋藤 大輔",
@@ -160,7 +160,7 @@ export default function LaborShortageSolutionPage() {
                 <tbody>
                   {[
                     { item: "測量技術者数の減少率", value: "過去10年で約30%減", note: "国土地理院調べ" },
-                    { item: "55歳以上の割合", value: "約45%", note: "建設業全体での技術者高齢化率" },
+                    { item: "55歳以上の割合", value: "約36.7%", note: "建設業就業者に占める割合（国土交通省／総務省 労働力調査）" },
                     { item: "29歳以下の割合", value: "約10%", note: "若手人材の参入が低迷" },
                     { item: "有効求人倍率", value: "5〜7倍", note: "測量士・測量士補の求人難" },
                     { item: "人手不足を実感する企業", value: "約70%", note: "建設業団体アンケート" },

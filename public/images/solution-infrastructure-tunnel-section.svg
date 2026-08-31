@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">トンネルの設計断面と実測断面の差分</title>
+  <desc id="desc">馬蹄形トンネルについて設計断面を破線、実測断面を実線で重ね、内側への差分をオレンジ、外側への差分を青で示す図</desc>
+  <rect width="1200" height="675" fill="#F8F9FA"/>
+  <g transform="translate(90 35)" font-family="'Noto Sans JP',sans-serif">
+    <text x="510" y="45" text-anchor="middle" font-size="30" font-weight="700" fill="#1B3A5C">トンネル内空断面の差分管理</text>
+    <path d="M250 535 L250 315 C250 150 365 90 510 90 C655 90 770 150 770 315 L770 535 Z" fill="#E5EEF4" stroke="#718096" stroke-width="5" stroke-dasharray="14 12"/>
+    <path d="M242 535 L242 320 C242 158 356 104 507 101 C660 98 786 166 779 323 L779 535 Z" fill="#FFFFFF" stroke="#1B3A5C" stroke-width="7"/>
+    <path d="M250 315 C250 150 365 90 510 90 C655 90 770 150 770 315 L779 323 C786 166 660 98 507 101 C356 104 242 158 242 320 Z" fill="#77C8DF" opacity="0.65"/>
+    <path d="M250 440 L250 315 C250 150 365 90 510 90 C655 90 770 150 770 315 L770 440 L779 440 L779 323 C786 166 660 98 507 101 C356 104 242 158 242 320 L242 440 Z" fill="#F0A05A" opacity="0.58"/>
+    <path d="M250 535 L250 315 C250 150 365 90 510 90 C655 90 770 150 770 315 L770 535" fill="none" stroke="#718096" stroke-width="5" stroke-dasharray="14 12"/>
+    <path d="M242 535 L242 320 C242 158 356 104 507 101 C660 98 786 166 779 323 L779 535" fill="none" stroke="#1B3A5C" stroke-width="7"/>
+    <g stroke="#00A8C8" stroke-width="3" fill="none" marker-end="url(#arrow2)">
+      <line x1="510" y1="300" x2="510" y2="99"/>
+      <line x1="510" y1="300" x2="701" y2="189"/>
+      <line x1="510" y1="300" x2="777" y2="323"/>
+      <line x1="510" y1="300" x2="316" y2="189"/>
+    </g>
+    <g transform="translate(835 165)" font-size="22" fill="#334155">
+      <line x1="0" y1="0" x2="70" y2="0" stroke="#718096" stroke-width="5" stroke-dasharray="14 10"/>
+      <text x="90" y="8">設計断面</text>
+      <line x1="0" y1="55" x2="70" y2="55" stroke="#1B3A5C" stroke-width="7"/>
+      <text x="90" y="63">実測断面</text>
+      <rect x="0" y="105" width="70" height="25" fill="#F0A05A" opacity="0.8"/>
+      <text x="90" y="126">内側差分</text>
+      <rect x="0" y="160" width="70" height="25" fill="#77C8DF" opacity="0.9"/>
+      <text x="90" y="181">外側差分</text>
+    </g>
+    <text x="510" y="590" text-anchor="middle" font-size="20" fill="#475569">同一座標系で断面を重ね、経年変化を定量比較</text>
+  </g>
+  <defs>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#00A8C8"/>
+    </marker>
+  </defs>
+</svg>

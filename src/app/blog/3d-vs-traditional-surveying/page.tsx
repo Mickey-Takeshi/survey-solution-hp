@@ -18,7 +18,7 @@ const articleJsonLd = {
   description:
     "3D測量と従来のTS測量を精度・コスト・スピード・データ活用の4軸で徹底比較。導入判断に必要な情報を総合比較表付きで解説。",
   datePublished: "2026-02-17",
-  dateModified: "2026-02-17",
+  dateModified: "2026-08-19",
   author: {
     "@type": "Person",
     name: "齋藤 大輔",
@@ -94,6 +94,9 @@ export default function ThreeDVsTraditionalSurveyingPage() {
             <div className="flex items-center gap-3 mb-4">
               <time dateTime="2026-02-17" className="text-sm tracking-wider text-gray-500">
                 2026.02.17
+              </time>
+              <time dateTime="2026-08-19" className="text-sm tracking-wider text-gray-500">
+                （2026.08.19更新）
               </time>
               <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded">
                 比較解説
@@ -517,6 +520,12 @@ export default function ThreeDVsTraditionalSurveyingPage() {
           <div className="mt-12 pt-8 border-t">
             <h3 className="text-lg font-bold text-gray-800 mb-4">関連記事</h3>
             <div className="space-y-3">
+              <Link href="/service/laser-scan" className="block text-sm font-bold text-primary hover:underline">
+                → 地上レーザースキャン測量｜計測原理と現場条件
+              </Link>
+              <Link href="/service/point-cloud" className="block text-sm font-bold text-primary hover:underline">
+                → 点群データ作成・処理｜3D計測後の品質管理
+              </Link>
               <Link href="/blog/3d-surveying" className="block text-sm text-primary hover:underline">
                 → 3D測量とは？仕組み・メリット・従来測量との違いをわかりやすく解説
               </Link>

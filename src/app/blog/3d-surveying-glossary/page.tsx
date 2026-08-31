@@ -18,7 +18,7 @@ const articleJsonLd = {
   description:
     "3D測量の初心者〜中級者に向けて、点群データ・メッシュ・BIM/CIMなど現場で使われる用語30以上をカテゴリ別にわかりやすく解説する用語集です。",
   datePublished: "2026-02-17",
-  dateModified: "2026-02-17",
+  dateModified: "2026-08-31",
   author: {
     "@type": "Person",
     name: "齋藤 大輔",
@@ -423,7 +423,7 @@ export default function SurveyingGlossaryPage() {
               <div className="bg-white border border-gray-200 rounded-lg p-5">
                 <h3 className="font-bold text-gray-900 mb-2">i-Construction（アイ・コンストラクション）</h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  国土交通省が2016年から推進する建設現場のICT（情報通信技術）活用施策です。3D測量・3D設計・ICT建機施工・3D出来形管理の一連のプロセスをデジタル化し、建設業の生産性を2025年度までに20%向上させることを目標としています。3D測量はi-Constructionの起点となる技術です。
+                  国土交通省が2016年から推進する建設現場のICT（情報通信技術）活用施策です。3D測量・3D設計・ICT建機施工・3D出来形管理の一連のプロセスをデジタル化し、開始当初は2025年度までに建設現場の生産性を20%向上させることを目標としていましたが、2024年4月に策定されたi-Construction 2.0では2040年度までに省人化を少なくとも3割（生産性1.5倍）とする目標へ更新されています。3D測量はi-Constructionの起点となる技術です。
                 </p>
               </div>
 
