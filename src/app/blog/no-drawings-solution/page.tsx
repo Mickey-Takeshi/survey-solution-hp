@@ -3,12 +3,20 @@ import Link from "next/link";
 import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 
+const articleTitle = "図面がない建物の現況図を作る方法｜3Dスキャンで正確に再現";
+const articleDescription = "図面がない建物の現況図を作る方法を解説。既存資料の探し方、改修・購入前検討に合わせた準備、3Dスキャンによる平面図・断面図・BIMモデルの作成、費用と期間の目安を紹介します。";
+
 export const metadata: Metadata = {
-  title: "図面がない建物の現況図を作る方法｜3Dスキャンで正確に再現",
-  description:
-    "図面がない建物の現況図を作る最も効率的な方法は3Dレーザースキャンです。±2〜3mmの精度で計測し、点群データから平面図・断面図・BIMモデルを作成。手作業の実測と比較して図面作成期間を75%短縮できます。",
+  title: articleTitle,
+  description: articleDescription,
   keywords: ["図面がない 現況図 作成", "古い建物 図面起こし", "現況図面 作成方法", "3Dスキャン 図面作成"],
   alternates: { canonical: "/blog/no-drawings-solution" },
+  openGraph: {
+    type: "article", title: articleTitle, description: articleDescription,
+    url: "/blog/no-drawings-solution", publishedTime: "2026-02-17", modifiedTime: "2026-11-07",
+    images: [{ url: "/images/blog-building-architecture.jpg", width: 1200, height: 630, alt: "既存建物の外観イメージ" }],
+  },
+  twitter: { card: "summary_large_image", title: articleTitle, description: articleDescription, images: ["/images/blog-building-architecture.jpg"] },
 };
 
 const articleJsonLd = {
@@ -18,7 +26,7 @@ const articleJsonLd = {
   description:
     "図面がない建物の現況図を3Dレーザースキャンで作成する方法を解説。精度・費用・期間の目安と手作業実測との比較。",
   datePublished: "2026-02-17",
-  dateModified: "2026-02-17",
+  dateModified: "2026-11-07",
   author: {
     "@type": "Person",
     name: "齋藤 大輔",
@@ -44,7 +52,7 @@ const faqJsonLd = {
       name: "図面がまったくない建物でも現況図は作れますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "問題なく作れます。3Dレーザースキャンなら図面がなくても、建物の現状を±2〜3mmの精度で計測し、点群データから平面図・断面図・立面図・BIMモデルを起こせます。竣工図が紛失した建物や、増改築を繰り返した建物でも対応できます。",
+        text: "図面がない建物もご相談いただけます。立入り条件と必要な成果物を確認し、計測可能な範囲を、事前に確認した精度・仕様で図面化します。平面図・断面図・立面図・BIMモデルなどを目的に合わせて作成し、未計測の箇所や追加調査が必要な部分を区別します。",
       },
     },
     {
@@ -80,6 +88,7 @@ export default function NoDrawingsSolutionPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        image="/images/blog-mv.jpg"
         as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
@@ -95,6 +104,7 @@ export default function NoDrawingsSolutionPage() {
               <time dateTime="2026-02-17" className="text-sm tracking-wider text-gray-500">
                 2026.02.17
               </time>
+              <span className="text-xs text-gray-500">更新：<time dateTime="2026-11-07">2026.11.07</time></span>
               <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded">
                 課題解決
               </span>
@@ -117,7 +127,7 @@ export default function NoDrawingsSolutionPage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>図面がない建物の現況図を作る最も効率的な方法は、3Dレーザースキャンです。</strong>建物全体を±2〜3mmの精度で計測し、点群データから平面図・断面図・立面図・BIMモデルを一気に作成できます。手作業の実測と比べて、図面作成期間は75%も短縮。この記事では、図面のない建物で現況図を仕上げるまでの手順・費用・実際の事例をまとめました。
+              <strong>図面がない建物では、残っている資料を探し、必要に応じて現在の形状を計測して現況図を作成します。</strong>3Dレーザースキャンは、計測できる面を点群データにし、平面図・断面図・立面図・BIMモデルの作成に活用する方法です。この記事では、改修や購入前の検討に合わせた準備と、現況図を作成する手順・費用・成果物を紹介します。
             </p>
           </div>
 
@@ -126,6 +136,7 @@ export default function NoDrawingsSolutionPage() {
             <h2 className="text-lg font-bold text-gray-800 mb-4">目次</h2>
             <nav>
               <ol className="space-y-2 text-sm text-primary">
+                <li><a href="#purpose" className="hover:underline">まず確認：図面が必要になった目的と、手元の資料</a></li>
                 <li><a href="#why-no-drawings" className="hover:underline">1. 図面がない建物はなぜ多いのか</a></li>
                 <li><a href="#comparison" className="hover:underline">2. 現況図を作る3つの方法と比較</a></li>
                 <li><a href="#flow" className="hover:underline">3. 3Dスキャンによる現況図作成の流れ</a></li>
@@ -140,6 +151,27 @@ export default function NoDrawingsSolutionPage() {
 
           {/* 本文 */}
           <div className="prose prose-gray max-w-none">
+            <h2 id="purpose" className="scroll-mt-28 text-xl font-bold text-primary mt-12 mb-4 pb-2 border-b-2 border-primary">
+              図面が必要になった目的と、手元の資料を確認する
+            </h2>
+            <p className="text-base leading-loose text-gray-700 mb-5">
+              最初に、所有者・管理会社・過去の設計者や施工会社へ、竣工図、確認申請の控え、確認済証・検査済証、増改築の記録が残っていないか確認します。販売用の間取り図や写真も相談の入口になります。図面があっても、作成時点と現在の状態が合っているかを確かめましょう。
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4 mb-6">
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+                <h3 className="font-bold text-gray-900 mb-2">大規模リフォーム・改修の準備</h3>
+                <p className="text-sm leading-loose text-gray-700 mb-3">設計者と工事内容・必要図面を整理し、測量前に範囲や形式を合わせます。2025年の法改正後に確認したい手続きも含めて解説しています。</p>
+                <Link href="/blog/renovation-drawings-2025-law" className="text-sm text-primary underline underline-offset-4">大規模リフォームで図面がないときの準備を見る</Link>
+              </div>
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+                <h3 className="font-bold text-gray-900 mb-2">不動産の購入前検討</h3>
+                <p className="text-sm leading-loose text-gray-700 mb-3">建物の形状に加え、敷地の高低差・境界・斜面・昔の道路など、計画に影響する確認事項を整理します。</p>
+                <Link href="/blog/property-purchase-survey-guide" className="text-sm text-primary underline underline-offset-4">図面の確認から測量まで相談するガイドを見る</Link>
+              </div>
+            </div>
+            <p className="text-base leading-loose text-gray-700 mb-6">
+              <strong>現況図は、現在の形状を表す基礎資料です。</strong>確認申請の図書や建物の安全性を確認する調査とは役割が異なります。壁の内部など計測できない箇所もあるため、設計者と必要な追加調査を整理してから図面作成を進めます。
+            </p>
             {/* 1. 図面がない建物はなぜ多いのか */}
             <h2 id="why-no-drawings" className="text-xl font-bold text-primary mt-12 mb-4 pb-2 border-b-2 border-primary">
               図面がない建物はなぜ多いのか
@@ -177,7 +209,7 @@ export default function NoDrawingsSolutionPage() {
               ))}
             </div>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              こうした背景から、リノベーション・耐震診断・用途変更の際には「現状を正確に把握した現況図」を新たに作成する必要があります。
+              こうした場合、リノベーション・耐震診断・用途変更の検討に必要な情報を整理し、既存資料で不足する部分について現況図の作成を検討します。
             </p>
 
             {/* 2. 現況図を作る3つの方法と比較 */}
@@ -199,13 +231,13 @@ export default function NoDrawingsSolutionPage() {
                 </thead>
                 <tbody>
                   {[
-                    { item: "精度", a: "±10〜20mm", b: "±5〜10mm", c: "±2〜3mm" },
+                    { item: "精度を左右する条件", a: "計測方法・器具・作業条件", b: "撮影条件・基準点・処理方法", c: "機器・計測条件・処理方法" },
                     { item: "現場作業時間（500㎡）", a: "3〜5日", b: "1〜2日", c: "0.5〜1日" },
                     { item: "図面作成期間", a: "2〜4週間", b: "1〜2週間", c: "5〜7営業日" },
                     { item: "費用目安（500㎡）", a: "40万〜80万円", b: "30万〜50万円", c: "35万〜60万円" },
-                    { item: "計測漏れリスク", a: "高い", b: "中程度", c: "極めて低い" },
-                    { item: "BIM対応", a: "手動モデリング", b: "部分対応", c: "点群から直接変換" },
-                    { item: "再計測の必要性", a: "頻繁に発生", b: "時々発生", c: "ほぼ不要" },
+                    { item: "計測範囲の注意点", a: "必要寸法の測り漏れ", b: "写真に写らない箇所", c: "遮蔽物の裏や死角" },
+                    { item: "BIM対応", a: "実測結果を基にモデル作成", b: "写真測量の成果を基にモデル作成", c: "点群を基にモデル作成" },
+                    { item: "追加計測", a: "不足する寸法を再計測", b: "未取得箇所は追加撮影・補測", c: "未計測箇所は補測" },
                   ].map((row, i) => (
                     <tr key={row.item} className={i % 2 === 0 ? "bg-gray-50" : ""}>
                       <td className="px-4 py-3 font-bold text-gray-900 border-b">{row.item}</td>
@@ -218,7 +250,7 @@ export default function NoDrawingsSolutionPage() {
               </table>
             </div>
             <p className="text-sm text-gray-600 mb-6">
-              3Dスキャンは精度と作業効率の両面で優れています。特に「計測漏れがほぼ発生しない」点は、設計者にとって大きなメリットです。取得した点群データから後日、任意の箇所の寸法を確認できるため、現場への戻り作業が不要になります。
+              取得済みの点群データから、後日必要になった寸法や断面を確認できる点が3Dスキャンの利点です。ただし、遮蔽物の裏やレーザーが届かない箇所は取得できません。精度や作業時間は現場条件と成果物の仕様によって変わり、必要に応じて補測を行います。
             </p>
 
             {/* 中間CTA */}
@@ -251,7 +283,7 @@ export default function NoDrawingsSolutionPage() {
                 {
                   step: "STEP 3",
                   title: "点群データの合成・処理",
-                  desc: "各スキャンポイントで取得した点群データを統合し、建物全体の高精度3Dデータを生成します。ノイズ除去・座標合わせを行い、寸法精度±2〜3mmの点群を完成させます。",
+                  desc: "各スキャンポイントで取得した点群データを統合し、ノイズ除去・座標合わせを行います。事前に確認した精度・仕様に合わせて処理し、取得範囲や計測条件を確認します。",
                 },
                 {
                   step: "STEP 4",
@@ -283,7 +315,7 @@ export default function NoDrawingsSolutionPage() {
               作成できる成果物の種類
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-6">
-              3Dスキャンで取得した点群データからは、リノベーション設計に必要な図面を一括で揃えられます。作成できる成果物は次の通りです。
+              3Dスキャンで取得した点群データから、計測範囲と合意した仕様に応じて次の図面を作成できます。材料の強度や隠れた構造部など、別途調査が必要な情報は区別します。
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -407,7 +439,7 @@ export default function NoDrawingsSolutionPage() {
               {[
                 {
                   q: "図面がまったくない建物でも現況図は作れますか？",
-                  a: "問題なく作れます。3Dレーザースキャンなら図面がなくても、建物の現状を±2〜3mmの精度で計測し、点群データから平面図・断面図・立面図・BIMモデルを起こせます。竣工図が紛失した建物や、増改築を繰り返した建物でも対応できます。",
+                  a: "図面がない建物もご相談いただけます。立入り条件と必要な成果物を確認し、計測可能な範囲を、事前に確認した精度・仕様で図面化します。平面図・断面図・立面図・BIMモデルなどを目的に合わせて作成し、未計測の箇所や追加調査が必要な部分を区別します。",
                 },
                 {
                   q: "現況図の作成にはどのくらいの期間がかかりますか？",
@@ -430,13 +462,13 @@ export default function NoDrawingsSolutionPage() {
               まとめ
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              図面がない建物の現況図作成に、3Dレーザースキャンは精度・スピード・コストのすべてで手作業実測を上回る選択肢です。
+              図面がない建物では、利用目的と残っている資料を確認したうえで、必要な範囲の現況を計測します。3Dレーザースキャンは、複雑な形状や複数の図面が必要な場面で検討できる方法です。
             </p>
             <div className="bg-gray-50 p-5 rounded-lg mb-6">
               <p className="text-sm font-bold text-gray-800 mb-2">この記事のポイント：</p>
               <ul className="space-y-1.5 text-sm text-gray-700">
-                <li>• 築30年以上の建物では図面が存在しないケースが多く、現況図の新規作成が必要になる</li>
-                <li>• 3Dスキャンは±2〜3mmの精度で計測でき、手作業実測と比較して期間を75%短縮できる</li>
+                <li>• 改修・購入前検討など、図面を使う目的から不足している資料を整理する</li>
+                <li>• 必要な精度・計測範囲・成果物・立入り条件を、測量前にすり合わせる</li>
                 <li>• 平面図・断面図・立面図・展開図・BIMモデルを点群データから一括作成可能</li>
                 <li>• 非接触計測のため入居中・営業中の建物でもスキャン可能</li>
               </ul>

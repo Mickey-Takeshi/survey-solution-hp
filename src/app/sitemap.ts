@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { useCases } from "@/data/use-cases";
+import { advisoryArticles } from "@/data/advisory-articles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://surveysolution.pro";
@@ -51,7 +52,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/contact`, lastModified: new Date("2026-02-23"), changeFrequency: "yearly", priority: 0.9 },
 
     // ブログ一覧
-    { url: `${baseUrl}/blog`, lastModified: new Date("2026-07-23"), changeFrequency: "weekly", priority: 0.7 },
+    { url: `${baseUrl}/blog`, lastModified: new Date("2026-11-07"), changeFrequency: "weekly", priority: 0.7 },
+    ...Object.values(advisoryArticles).map((article) => ({
+      url: `${baseUrl}/blog/${article.slug}`,
+      lastModified: new Date(article.dateTime),
+      changeFrequency: "yearly" as const,
+      priority: 0.7,
+    })),
 
     // ブログ記事 ★★★
     { url: `${baseUrl}/blog/3d-surveying`, lastModified: new Date("2026-08-31"), changeFrequency: "yearly", priority: 0.9 },
@@ -68,8 +75,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog/drone-vs-laser`, lastModified: new Date("2026-08-31"), changeFrequency: "yearly", priority: 0.6 },
     { url: `${baseUrl}/blog/bim-3d-scan`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.6 },
     { url: `${baseUrl}/blog/labor-shortage-solution`, lastModified: new Date("2026-08-31"), changeFrequency: "yearly", priority: 0.6 },
-    { url: `${baseUrl}/blog/no-drawings-solution`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.7 },
-    { url: `${baseUrl}/blog/renovation-3d-scan`, lastModified: new Date("2026-04-15"), changeFrequency: "yearly", priority: 0.7 },
+    { url: `${baseUrl}/blog/no-drawings-solution`, lastModified: new Date("2026-11-07"), changeFrequency: "yearly", priority: 0.7 },
+    { url: `${baseUrl}/blog/renovation-3d-scan`, lastModified: new Date("2026-11-07"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${baseUrl}/blog/surveying-dx`, lastModified: new Date("2026-08-31"), changeFrequency: "yearly", priority: 0.6 },
     { url: `${baseUrl}/blog/3d-surveying-use-cases`, lastModified: blogDate, changeFrequency: "yearly", priority: 0.6 },
 

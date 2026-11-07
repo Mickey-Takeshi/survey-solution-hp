@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
+import { advisoryArticles } from "@/data/advisory-articles";
 
 export const metadata: Metadata = {
   title: "3D測量ブログ｜技術コラム・活用事例・最新情報",
@@ -19,7 +20,9 @@ const posts: {
   description: string;
   category: string;
   image?: string;
+  author?: "company";
 }[] = [
+  ...Object.values(advisoryArticles),
   // ★★★ 基礎知識（/blog/3d-surveying に統合済み）
   {
     slug: "3d-surveying",
@@ -141,7 +144,7 @@ const posts: {
     slug: "renovation-3d-scan",
     date: "2026.04.15",
     dateTime: "2026-04-15",
-    title: "リノベーション前の3D計測ガイド｜現況把握で設計の手戻りゼロ",
+    title: "リノベーション前の3D計測ガイド｜現況把握で設計の手戻りを減らす",
     description:
       "リノベーション前に3D計測をすると、現況把握から設計反映までが劇的に効率化します。住宅・店舗・ビルの用途別料金、計測の流れ、失敗しない5つのポイントを解説。",
     category: "課題解決",
@@ -229,10 +232,14 @@ const blogJsonLd = {
     headline: post.title,
     description: post.description,
     datePublished: post.dateTime,
-    author: {
+    author: post.author === "company" ? {
+      "@type": "Organization",
+      name: "株式会社SurveySolution",
+    } : {
       "@type": "Person",
       name: "齋藤 大輔",
     },
+    url: `https://surveysolution.pro/blog/${post.slug}`,
   })),
 };
 

@@ -3,10 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 
+const articleTitle = "リノベーション前の3D計測ガイド｜現況把握で設計の手戻りを減らす";
+const articleDescription = "リノベーション前の3D計測で、現在の形状を設計者・施主・施工者と共有。計測できる範囲と追加調査の違い、用途別の料金目安、納品までの流れ、依頼前の確認事項を解説します。";
+
 export const metadata: Metadata = {
-  title: "リノベーション前の3D計測ガイド｜現況把握で設計の手戻りゼロ",
-  description:
-    "リノベーション前に3D計測をすると、現況把握から設計反映までが劇的に効率化します。住宅・店舗・ビルの用途別料金、計測から納品までの流れ、失敗しないための5つのポイントを土地家屋調査士が解説。",
+  title: articleTitle,
+  description: articleDescription,
   keywords: [
     "リノベーション 3D計測",
     "リノベーション 3Dスキャン",
@@ -17,16 +19,22 @@ export const metadata: Metadata = {
     "スキャンtoBIM",
   ],
   alternates: { canonical: "/blog/renovation-3d-scan" },
+  openGraph: {
+    type: "article", title: articleTitle, description: articleDescription,
+    url: "/blog/renovation-3d-scan", publishedTime: "2026-04-15", modifiedTime: "2026-11-07",
+    images: [{ url: "/images/blog-building-architecture.jpg", width: 1200, height: 630, alt: "既存建物の外観イメージ" }],
+  },
+  twitter: { card: "summary_large_image", title: articleTitle, description: articleDescription, images: ["/images/blog-building-architecture.jpg"] },
 };
 
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "リノベーション前の3D計測ガイド｜現況把握で設計の手戻りゼロ",
+  headline: "リノベーション前の3D計測ガイド｜現況把握で設計の手戻りを減らす",
   description:
     "リノベーション前の3D計測のメリット・費用・流れを解説。住宅・店舗・ビルの用途別料金目安と、失敗しない5つのポイント。",
   datePublished: "2026-04-15",
-  dateModified: "2026-04-15",
+  dateModified: "2026-11-07",
   author: {
     "@type": "Person",
     name: "齋藤 大輔",
@@ -52,7 +60,7 @@ const faqJsonLd = {
       name: "リノベーション前の3D計測はなぜ必要ですか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "図面通りに建てられていない、経年変化で歪みが出ている、増改築で構造が変わっているなど、既存建物の現況は図面と一致しないことがほとんどです。3D計測なら±2〜3mmの精度で現況を把握でき、設計段階での手戻りをほぼゼロにできます。",
+        text: "増改築や経年変化で、既存図面と現在の形状が異なる場合があるためです。3D計測は、計測可能な面の形状を設計者と共有し、寸法や位置の不一致による手戻りを減らすために活用できます。精度は現場条件と計測仕様に応じて確認します。",
       },
     },
     {
@@ -60,7 +68,7 @@ const faqJsonLd = {
       name: "リノベーション向け3D計測の料金はいくらですか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "住宅リノベは15〜30万円、店舗・オフィスのリノベは30〜60万円、ビル・マンション全体のリノベは80万円〜が目安です。平面図・断面図・立面図のCADデータまで含めた金額で、追加料金なしでBIMモデルまで作成できる場合もあります。",
+        text: "住宅リノベは15〜30万円、店舗・オフィスのリノベは30〜60万円、ビル・マンション全体のリノベは80万円〜が目安です。対象範囲・図面やBIMの仕様・立入り条件によって変わるため、納品物と金額は個別見積もりでご確認ください。",
       },
     },
     {
@@ -68,7 +76,7 @@ const faqJsonLd = {
       name: "計測にはどのくらいの時間がかかりますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "住宅1棟なら現場スキャンは半日〜1日で完了します。データ処理と図面作成を含めた納品までの期間は、住宅なら1〜2週間、中規模ビルで2〜4週間が目安です。営業中の店舗やオフィスでも、非接触・無粉塵なので業務に影響を与えません。",
+        text: "住宅1棟の現場スキャンは半日〜1日、データ処理と図面作成を含めた納品は住宅で1〜2週間、中規模ビルで2〜4週間が目安です。実際の工程は計測範囲や現場条件に応じて確認します。入居中・営業中の場合は、立入りや作業時間を事前に調整します。",
       },
     },
     {
@@ -76,7 +84,7 @@ const faqJsonLd = {
       name: "家具がある状態でも計測できますか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "対応可能です。家具があっても壁・床・天井の形状は計測できます。ただし、家具で隠れる壁面は点群データに含まれないため、重要な寸法が必要な箇所は事前に片付けていただくと、より精度の高い現況データが取得できます。",
+        text: "家具がある状態でも、レーザーが届く面は計測できます。家具で隠れた面は取得できないため、必要な寸法と移動できる家具を事前に確認します。取得できなかった範囲は、追加調査の要否とともに整理します。",
       },
     },
     {
@@ -104,6 +112,7 @@ export default function Renovation3DScanPage() {
       <PageHeader
         title="ブログ"
         subtitle="BLOG"
+        image="/images/blog-mv.jpg"
         as="p"
         breadcrumbItems={[
           { name: "ブログ", path: "/blog" },
@@ -119,12 +128,13 @@ export default function Renovation3DScanPage() {
               <time dateTime="2026-04-15" className="text-sm tracking-wider text-gray-500">
                 2026.04.15
               </time>
+              <span className="text-xs text-gray-500">更新：<time dateTime="2026-11-07">2026.11.07</time></span>
               <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded">
                 課題解決
               </span>
             </div>
             <h1 className="text-2xl md:text-3xl font-bold text-gray-800 leading-relaxed">
-              リノベーション前の3D計測ガイド｜現況把握で設計の手戻りゼロ
+              リノベーション前の3D計測ガイド｜現況把握で設計の手戻りを減らす
             </h1>
           </div>
 
@@ -132,7 +142,7 @@ export default function Renovation3DScanPage() {
           <div className="relative aspect-video mb-10 rounded-lg overflow-hidden">
             <Image
               src="/images/blog-building-architecture.jpg"
-              alt="リノベーション前の3D計測イメージ - 既存建物の点群データ化"
+              alt="現況図を準備する既存建物の外観イメージ"
               fill
               className="object-cover"
             />
@@ -141,7 +151,7 @@ export default function Renovation3DScanPage() {
           {/* リード文 */}
           <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-10">
             <p className="text-base leading-loose text-gray-700">
-              <strong>リノベーション前に3D計測をすれば、設計の手戻りはほぼゼロになります。</strong>既存建物は図面通りに建っていないのが普通です。経年変化による歪み、増改築の履歴、図面の紛失——こうした不確実要素を、3Dレーザースキャンなら±2〜3mmの精度で一気に「見える化」できます。住宅1棟なら15万円〜・半日の現場作業で完了。リノベ設計者・施主・施工者の認識がそろい、追加工事や設計変更のリスクが激減します。
+              <strong>リノベーション前の3D計測は、現在の形状を設計者・施主・施工者で共有し、設計の手戻りを減らすために役立ちます。</strong>増改築や経年変化により、残っている図面と現況が異なる場合があります。必要な範囲を計測し、図面・点群・BIMモデルとして整理します。見えない部分の調査は別に検討し、計測条件に合わせて精度と工程を確認しましょう。
             </p>
           </div>
 
@@ -167,7 +177,7 @@ export default function Renovation3DScanPage() {
               なぜリノベ前の3D計測が必要なのか
             </h2>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              「リノベ設計を進めているけれど、現況と図面が合わない」——これは、既存建物の改修現場でほぼ必ず発生する問題です。原因は主に3つあります。
+              「リノベ設計を進めているけれど、現況と図面が合わない」。既存建物の改修では、次のような理由で資料と現況の照合が必要になります。
             </p>
             <div className="space-y-3 mb-6">
               {[
@@ -182,7 +192,7 @@ export default function Renovation3DScanPage() {
               ))}
             </div>
             <p className="text-base leading-loose text-gray-700 mb-4">
-              これらの問題をまとめて解決するのが、リノベ前の3D計測です。レーザースキャナを使えば、既存建物の現況を1日でミリ単位のデータに変換でき、設計段階から正確な情報を基に検討できます。
+              3D計測は、計測できる範囲の形状や寸法を現況資料にする方法です。作業日数や精度は、建物の規模・遮蔽物・立入り条件・必要な成果物に応じて決めます。大規模な改修で確認申請の準備が必要な場合は、<Link href="/blog/renovation-drawings-2025-law" className="text-primary underline underline-offset-4">2025年法改正後の図面準備と相談先</Link>もご覧ください。
             </p>
 
             {/* 2. メリット */}
@@ -191,10 +201,10 @@ export default function Renovation3DScanPage() {
             </h2>
             <div className="space-y-4 mb-8">
               {[
-                { num: "1", title: "設計の手戻りがほぼゼロになる", desc: "現況データが正確なので、設計段階で「実物と合わない」問題が起きません。基本設計→実施設計→施工の各段階で発生する手戻り工数を大幅に減らせます。" },
+                { num: "1", title: "寸法や位置の不一致による手戻りを減らす", desc: "現況資料と設計図を照合することで、建具や設備の配置を検討しやすくなります。未計測の箇所や構造・劣化の調査は別に整理します。" },
                 { num: "2", title: "施主への説明が圧倒的にわかりやすい", desc: "点群データから3Dモデルを作成すれば、施主と一緒に3Dビューで改修イメージを確認できます。「完成形がイメージできない」という施主の不安を一気に解消できます。" },
-                { num: "3", title: "追加工事のリスクを事前に把握できる", desc: "壁の内部・天井裏・床下など、普段見えない部分の状態を点群データで可視化。予期しない補修工事の発生を減らせます。" },
-                { num: "4", title: "1日で計測完了・業務への影響が最小", desc: "住宅1棟なら半日〜1日で現場スキャンが終わります。非接触・無粉塵なので、営業中の店舗やオフィスでも業務を止めずに計測できます。" },
+                { num: "3", title: "計測した範囲と、追加調査が必要な箇所を整理する", desc: "レーザーが届く露出面の形状を点群データにします。壁内部を透視するものではありません。天井裏・床下は点検口や立入り条件によって取得範囲が変わり、開口調査や材料・劣化の調査が必要な箇所は設計者と確認します。" },
+                { num: "4", title: "利用状況に合わせて計測工程を調整する", desc: "住宅1棟の現場スキャンは半日〜1日が目安です。実際の工程は対象範囲・立入り条件・営業時間に応じて調整し、営業中の場合は作業区域や時間帯を事前に相談します。" },
                 { num: "5", title: "図面・BIMモデルの納品で次工程がスムーズ", desc: "平面図・断面図・立面図のCADデータはもちろん、BIMモデルまで作成できます。Revit・ArchiCADにそのまま読み込めるので、設計フローを止めません。" },
               ].map((m) => (
                 <div key={m.num} className="flex items-start gap-4 bg-white border border-gray-200 p-5 rounded-lg">
@@ -258,7 +268,7 @@ export default function Renovation3DScanPage() {
             <div className="space-y-4 mb-8">
               {[
                 { step: "STEP 1", title: "ヒアリング・現地下見", desc: "建物の規模、計測範囲、納品物のご要望をお伺いします。必要に応じて現地を下見し、正確な見積もりを作成します。" },
-                { step: "STEP 2", title: "現場スキャン（半日〜1日）", desc: "地上レーザースキャナを使い、建物全体を3Dデータ化します。住宅1棟なら半日〜1日で完了。非接触・無粉塵で、入居者がいる状態でも対応できます。" },
+                { step: "STEP 2", title: "現場スキャン（半日〜1日が目安）", desc: "地上レーザースキャナで、合意した範囲の計測可能な面を取得します。工程は対象範囲・立入り条件に応じて調整し、入居中・営業中の作業は事前に相談します。" },
                 { step: "STEP 3", title: "データ処理・点群作成（3〜5日）", desc: "複数のスキャンデータを合成し、ノイズ除去・座標変換を経てクリーンな点群データに仕上げます。" },
                 { step: "STEP 4", title: "CAD図面・BIMモデル作成（5〜10日）", desc: "点群データから平面図・断面図・立面図のCADデータ、必要に応じてBIMモデルを作成します。" },
                 { step: "STEP 5", title: "納品・アフターサポート", desc: "納品後も追加の断面図作成やデータ形式変換などにご対応します。設計中に発生する疑問にも無料でお答えします。" },
@@ -283,10 +293,10 @@ export default function Renovation3DScanPage() {
             </h2>
             <div className="space-y-3 mb-8">
               {[
-                { title: "納品物の形式を事前にすり合わせる", desc: "設計者がRevit派かArchiCAD派か、CADデータはDXFかDWGか。こうした細部は先に決めておくと、納品後の手戻りがありません。" },
+                { title: "納品物の形式を事前にすり合わせる", desc: "設計者が使用するソフト、CADデータはDXFかDWGか、図面に必要な情報は何かを先に決め、納品後の変換や追加作業を減らします。" },
                 { title: "どこまで計測するか範囲を決める", desc: "敷地全体か、建物だけか、内部のみか。範囲が広がるほど費用も上がるので、必要最小限を事前に整理しましょう。" },
                 { title: "家具・什器の扱いを確認する", desc: "家具を動かすか、そのままスキャンするか。重要な寸法が必要な箇所は、計測当日までに片付けておくのが理想です。" },
-                { title: "天井裏・床下の調査を含めるか決める", desc: "配管・ダクトのルートを把握したいなら、点検口からの部分スキャンも検討しましょう。配管改修の手戻りを防げます。" },
+                { title: "天井裏・床下の調査を含めるか決める", desc: "点検口の位置や大きさ、機器を設置できる場所、レーザーが届く範囲を確認します。隠れた配管や部材まで取得できるとは限らないため、追加調査の必要性を設計者と整理します。" },
                 { title: "スケジュール余裕を確保する", desc: "現場スキャンから納品まで1〜2週間が目安です。設計締切から逆算して、余裕を持って依頼するのが成功の秘訣です。" },
               ].map((p, i) => (
                 <div key={i} className="flex items-start gap-3 bg-gray-50 p-4 rounded-lg">
@@ -304,16 +314,10 @@ export default function Renovation3DScanPage() {
               よくある質問
             </h2>
             <div className="space-y-4 mb-8">
-              {[
-                { q: "リノベーション前の3D計測はなぜ必要ですか？", a: "既存建物は図面通りに建っていないことが多く、経年変化や増改築で形状が変わっているためです。3D計測なら±2〜3mmの精度で現況を把握でき、設計段階での手戻りをほぼゼロにできます。" },
-                { q: "リノベーション向け3D計測の料金はいくらですか？", a: "住宅リノベは15〜30万円、店舗・オフィスのリノベは30〜60万円、ビル・マンション全体のリノベは80万円〜が目安です。平面図・断面図・立面図のCADデータまで含めた金額です。" },
-                { q: "計測にはどのくらいの時間がかかりますか？", a: "住宅1棟なら現場スキャンは半日〜1日で完了します。データ処理と図面作成を含めた納品までの期間は、住宅なら1〜2週間、中規模ビルで2〜4週間が目安です。" },
-                { q: "家具がある状態でも計測できますか？", a: "対応可能です。家具があっても壁・床・天井の形状は計測できます。重要な寸法が必要な箇所は事前に片付けていただくと、より精度の高いデータが取れます。" },
-                { q: "BIMモデルまで作ってもらえますか？", a: "はい、対応しています。点群データからRevit・ArchiCAD形式のBIMモデルを作成できます。費用は通常の現況図面作成＋30〜50万円が目安です。" },
-              ].map((item) => (
-                <div key={item.q} className="bg-gray-50 rounded-lg p-5">
-                  <h3 className="font-bold text-gray-900 mb-2">Q. {item.q}</h3>
-                  <p className="text-sm text-gray-700 leading-relaxed">{item.a}</p>
+              {faqJsonLd.mainEntity.map((item) => (
+                <div key={item.name} className="bg-gray-50 rounded-lg p-5">
+                  <h3 className="font-bold text-gray-900 mb-2">Q. {item.name}</h3>
+                  <p className="text-sm text-gray-700 leading-relaxed">{item.acceptedAnswer.text}</p>
                 </div>
               ))}
             </div>
@@ -347,6 +351,8 @@ export default function Renovation3DScanPage() {
           <div className="mt-12 pt-8 border-t">
             <h3 className="text-lg font-bold text-gray-800 mb-4">関連記事</h3>
             <div className="space-y-3">
+              <Link href="/blog/renovation-drawings-2025-law" className="block text-sm text-primary hover:underline">→ 大規模リフォームで図面がないときの準備と相談先</Link>
+              <Link href="/blog/kyoto-machiya-purchase-survey" className="block text-sm text-primary hover:underline">→ 京都の町家購入前に確認したい図面と敷地</Link>
               <Link href="/blog/no-drawings-solution" className="block text-sm text-primary hover:underline">→ 図面がない建物の現況図を作る方法｜3Dスキャンで正確に再現</Link>
               <Link href="/blog/bim-3d-scan" className="block text-sm text-primary hover:underline">→ BIM連携の3Dスキャン｜スキャンtoBIMの仕組みと導入メリット</Link>
               <Link href="/blog/3d-surveying-cost" className="block text-sm text-primary hover:underline">→ 3D測量・3Dモデリングの料金相場｜種類別の費用と見積もりのポイント</Link>
