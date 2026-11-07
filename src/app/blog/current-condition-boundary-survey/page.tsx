@@ -48,7 +48,7 @@ export default function CurrentConditionBoundarySurveyPage() {
         ["境界確認書・境界確定協議書と添付図面", "誰と、どの区間を、どの図面で確認したか", "対象区間・関係者・時点・境界標と現地との対応"],
         ["登記事項・旧公図・管理者の資料", "所有者、土地の区画、古い道や水路の経緯を調べる手掛かり", "他の資料との整合、未登記部分や管理区分など追加調査が必要な点"],
       ]} />
-      <ArticleText>古い資料だから使えない、新しい図面だからすべて確定済み、とは限りません。測った日付だけでなく、調査した範囲と残る課題を確認します。資料が不足している場合は、どこで取得できるかを含めて相談しましょう。</ArticleText>
+      <ArticleText>古い資料だから使えない、新しい図面だからすべて確定済み、とは限りません。測った日付だけでなく、調査した範囲と残る課題を確認します。資料が不足している場合は、どこで取得できるかを含めて相談しましょう。取得先や図面の読み方は、土地境界トラブル相談室の<SourceLink href="https://kyoukai-shokunin.com/knowledge/chiseki-sokuryozu/">地積測量図の取得方法・読み方</SourceLink>で詳しく解説されています。</ArticleText>
     </ArticleSection>
     <ArticleSection {...sections[2]}>
       <ArticleText>塀や植栽で囲まれた範囲、長く庭として使われてきた場所、販売図面で一体に見える土地が、そのまま売主の所有範囲とは限りません。昔の道路や水路が別の土地として残っていることもあるため、現況の見た目と権利・境界の資料を分けて確認します。</ArticleText>
@@ -70,7 +70,7 @@ export default function CurrentConditionBoundarySurveyPage() {
         ["隣地の屋根や塀が気になる", "境界の根拠と建物等の位置をそれぞれ確認する。形状の計測だけで越境を断定しない"],
         ["一部の土地を分けて売買したい", "分筆等の登記に向け、必要な境界調査・測量・関係者との確認を土地家屋調査士に相談する"],
       ]} />
-      <ArticleText>測量の必要性は売買の条件や今後の計画によって異なります。新しい図面を一律に作るのではなく、既存資料で使える情報と、今回確認し直す情報を分けて依頼しましょう。</ArticleText>
+      <ArticleText>測量の必要性は売買の条件や今後の計画によって異なります。新しい図面を一律に作るのではなく、既存資料で使える情報と、今回確認し直す情報を分けて依頼しましょう。境界を確認する際の作業の流れや、費用・期間を左右する条件は、土地境界トラブル相談室の<SourceLink href="https://kyoukai-shokunin.com/service/kyokai-kakutei/">境界確定測量の解説</SourceLink>も参考になります。</ArticleText>
     </ArticleSection>
     <ArticleSection {...sections[4]}>
       <ArticleList items={[
